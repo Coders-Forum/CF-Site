@@ -275,28 +275,28 @@ const galleryData = [
   },
   {
     title: "Weekly MeetUp",
-    desc: 'Madhumitha V, a second year student, explained about Internet of Things,CV module and presented her project "Drowsiness Detection" on IOT.',
+    desc: "Madhumitha V, a second year student, explained about Internet of Things, CV module and presented her project 'Drowsiness Detection' on IOT.",
     imgUrl: "assets/img/gallery/img33.jpeg",
     date: "7 September, 2023",
     filterType: "filter-card",
   },
   {
     title: "Weekly MeetUp",
-    desc: 'Shruti S, a second year student, discussed about Google Firebase and explained her IOT project "Automatic fish feeder".',
+    desc: "Shruti S, a second year student, discussed about Google Firebase and explained her IOT project 'Automatic fish feeder'.",
     imgUrl: "assets/img/gallery/img32.jpeg",
     date: "7 September, 2023",
     filterType: "filter-card",
   },
   {
     title: "Weekly MeetUp",
-    desc: 'Mohammed Jasim M, a second year student, gave a talk on Pygame and explained his project "Airspace".',
+    desc: "Mohammed Jasim M, a second year student, gave a talk on Pygame and explained his project 'Airspace'.",
     imgUrl: "assets/img/gallery/img31.jpeg",
     date: "7 September, 2023",
     filterType: "filter-card",
   },
   {
     title: "Weekly MeetUp",
-    desc: 'Hariharan B, a second year student, explained about the Pygame and demonstrated his project "Snake game".',
+    desc: "Hariharan B, a second year student, explained about the Pygame and demonstrated his project 'Snake game'.",
     imgUrl: "assets/img/gallery/img30.jpeg",
     date: "31 August, 2023",
     filterType: "filter-card",
@@ -506,7 +506,6 @@ const galleryData = [
   },
 ];
 
-
 // basic structure for rendering gallery items
 {
   /* <div class="col-lg-4 col-md-6 portfolio-item filter-card">
@@ -539,44 +538,76 @@ const galleryData = [
 </div>; */
 }
 
-const container = document.querySelector(
-  "#portfolio-imgs .row.d-flex.flex-wrap.gap-3.justify-content-center"
-);
+// ...existing galleryData array...
+
+const container = document.querySelector("#portfolio-imgs .row");
+
+// Clear container
+container.innerHTML = "";
+
+// Group images by month
+const groupedImages = {};
 galleryData.forEach((item) => {
-  const component = document.createElement("div");
-  component.className = `col-lg-4 col-md-6 portfolio-item ${item.filterType}`;
-  component.innerHTML = `<div class="portfolio-wrap">
-    <img
-      src="${item.imgUrl}"
-      class="img-fluid w-100"
-      style="height: 250px; object-fit: cover"
-      alt=""
-      loading="lazy"
-    />
-    <div class="portfolio-info">
-      <h4>${item.title}</h4>
-      <h6 style="color: #f5f5f5">
-        ${item.desc}
-      </h6>
-      <p>${item.date}</p>
-      <div class="portfolio-links">
-        <a
-          href="${item.imgUrl}"
-          data-gallery="portfolioGallery"
-          class="portfolio-lightbox"
-          data-title="${item.title}"
-          data-description="<p class='portfolio-lightbox-description'>${item.desc}</p><small class='portfolio-lightbox-date'>${item.date}</small>"
-        >
-          <i class="bi bi-arrows-angle-expand"></i>
-        </a>
-      </div>
-    </div>
-  </div>`;
-  container.appendChild(component);
+  const date = new Date(item.date);
+  const monthYear = date.toLocaleString("default", {
+    month: "long",
+    year: "numeric",
+  });
+
+  if (!groupedImages[monthYear]) {
+    groupedImages[monthYear] = [];
+  }
+  groupedImages[monthYear].push(item);
 });
 
+// Sort and render months
+Object.keys(groupedImages)
+  .sort((a, b) => new Date(b) - new Date(a))
+  .forEach((monthYear) => {
+    // Add month heading
+    container.innerHTML += `
+                <div class="col-12 month-section mb-4">
+                    <h2 class="month-heading mb-4">${monthYear}</h2>
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+                        ${groupedImages[monthYear]
+                          .map(
+                            (item) => `
+                            <div class="col">
+                                <div class="portfolio-wrap">
+                                    <img src="${item.imgUrl}"   
+                                        class="img-fluid w-100"
+                                        style="height: 250px; object-fit: cover"
+                                        alt="${item.title}"
+                                        loading="lazy"
+                                    />
+                                    <div class="portfolio-info">
+                                        <h4>${item.title}</h4>
+                                        <h6 style="color: #f5f5f5">${item.desc}</h6>
+                                        <p>${item.date}</p>
+                                        <div class="portfolio-links">
+                                            <a
+                                              href="${item.imgUrl}"
+                                              data-gallery="portfolioGallery"
+                                              class="portfolio-lightbox"
+                                              data-title="${item.title}"
+                                              data-description="<p class='portfolio-lightbox-description'>${item.desc}</p><small class='portfolio-lightbox-date'>${item.date}</small>"
+                                            >
+                                              <i class="bi bi-arrows-angle-expand"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `
+                          )
+                          .join("")}
+                    </div>
+                </div>
+            `;
+  });
+
+// Initialize GLightbox
 GLightbox({
   selector: ".portfolio-lightbox",
   touchNavigation: true,
 });
-
