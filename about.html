@@ -5,6 +5,279 @@
 
   <script>console.log("MADLOG-N:", Date.now());</script>
 
+  <!-- ALTERNATE SIMPLIFIED SCRIPT
+  
+  <script> // This script contains a lot of MADLOG 's
+    (function () {
+        const pageStart = performance.now();
+        const scriptRecords = [];
+
+        /** Capture performance info for script load */
+        function recordScriptPerformance() {
+            performance.getEntriesByType("resource")
+                .filter(r => r.initiatorType === "script")
+                .forEach(r => {
+                    scriptRecords.push({
+                        name: r.name.split("/").pop(),
+                        loadTime: r.duration.toFixed(2)
+                    });
+                });
+        }
+
+        /** Measure inline script execution time */
+        (function wrapInlineScripts() {
+            const oldAppendChild = Element.prototype.appendChild;
+
+            Element.prototype.appendChild = function (child) {
+                if (child.tagName === "SCRIPT" && !child.src) {
+                    const oldText = child.textContent;
+                    child.textContent = `
+                        console.time('INLINE_SCRIPT_EXEC');
+                        ${oldText}
+                        console.timeEnd('INLINE_SCRIPT_EXEC');
+                    `;
+                }
+                return oldAppendChild.call(this, child);
+            };
+        })();
+
+        /** Hook DOMContentLoaded */
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("MADLOG >>> DOMContentLoaded at", performance.now().toFixed(0), "ms");
+        });
+
+        /** Hook window.load */
+        window.addEventListener("load", function () {
+            console.log("MADLOG >>> Window Load at", performance.now().toFixed(0), "ms");
+
+            recordScriptPerformance();
+
+            console.log("%c[SCRIPT LOAD SUMMARY]", "color: orange; font-weight:bold;");
+            if (scriptRecords.length === 0) {
+                console.log("No external scripts detected.");
+            } else {
+                scriptRecords.forEach(r => {
+                    console.log(`Script: ${r.name} | Load Time: ${r.loadTime} ms`);
+                });
+            }
+        });
+    })();
+  </script>-->
+
+  <script> // This script contains a lot of MADLOG 's
+    (function() {
+      const START = performance.now();
+      const RESOURCE_TYPES = ['script','img','css','link','font','xmlhttprequest','fetch','other'];
+      const resourceMap = new Map(); // key -> aggregated stats
+      const ajaxRecords = []; // XHR/fetch records
+      const dynamicInlineExecs = []; // dynamic inline script exec times
+      const SLOW_THRESHOLD = 50; // ms for "slow" highlights
+
+      // --- Utilities
+      function addResourceRecord(key, rec) {
+        const s = resourceMap.get(key) || { name: key, type: rec.type || 'unknown', count:0, total:0, max:0, examples: [] };
+        s.count += 1;
+        s.total += rec.duration;
+        s.max = Math.max(s.max, rec.duration);
+        if (s.examples.length < 3) s.examples.push(rec);
+        resourceMap.set(key, s);
+      }
+
+      function formatMs(n) { return Number(n).toFixed(2); }
+
+      // --- Instrument fetch
+      if ('fetch' in window) {
+        const origFetch = window.fetch;
+        window.fetch = function(input, init) {
+          const url = (typeof input === 'string') ? input : (input && input.url) || 'unknown';
+          const t0 = performance.now();
+          return origFetch.apply(this, arguments).then(res => {
+            const dur = performance.now() - t0;
+            ajaxRecords.push({ type: 'fetch', url, duration: dur, status: res.status });
+            return res;
+          }).catch(err => {
+            const dur = performance.now() - t0;
+            ajaxRecords.push({ type: 'fetch', url, duration: dur, error: true });
+            throw err;
+          });
+        };
+      }
+
+      // --- Instrument XHR
+      (function() {
+        const XHR = window.XMLHttpRequest;
+        if (!XHR) return;
+        const origOpen = XHR.prototype.open;
+        const origSend = XHR.prototype.send;
+
+        XHR.prototype.open = function(method, url) {
+          try { this._pf_url = url; } catch(e){}
+          return origOpen.apply(this, arguments);
+        };
+
+        XHR.prototype.send = function(body) {
+          const url = this._pf_url || 'unknown-xhr';
+          const t0 = performance.now();
+          const onEnd = (status, err) => {
+            const dur = performance.now() - t0;
+            ajaxRecords.push({ type: 'xmlhttprequest', url, duration: dur, status: status, error: !!err });
+          };
+
+          this.addEventListener('load', () => onEnd(this.status, false), { once: true });
+          this.addEventListener('error', () => onEnd(this.status, true), { once: true });
+          this.addEventListener('abort', () => onEnd(this.status, true), { once: true });
+
+          return origSend.apply(this, arguments);
+        };
+      })();
+
+      // --- Wrap dynamic inline scripts (appendChild / insertBefore)
+      (function wrapAppend() {
+        const origAppend = Element.prototype.appendChild;
+        const origInsert = Element.prototype.insertBefore;
+
+        function tryWrapAndAppend(self, child, origFn) {
+          if (child && child.tagName === 'SCRIPT' && !child.src && child.textContent) {
+            // wrap inline script text with console.time markers (safe)
+            const label = 'INLINE_EXEC@' + (document.location.pathname.split('/').pop() || location.href);
+            const originalText = child.textContent;
+            // Replace content with measured code: try/finally ensures we always record time
+            child.textContent = `{
+              const __t0 = performance.now();
+              try {
+                ${originalText}
+              } finally {
+                const __dt = performance.now() - __t0;
+                try { window.__pf_inline_execs = window.__pf_inline_execs || []; window.__pf_inline_execs.push({label: "${label}", duration: __dt}); } catch(e){}
+              }
+            }`;
+            return origFn.call(self, child);
+          }
+          return origFn.call(self, child);
+        }
+
+        Element.prototype.appendChild = function(child) {
+          return tryWrapAndAppend(this, child, origAppend);
+        };
+        Element.prototype.insertBefore = function(newNode, refNode) {
+          return tryWrapAndAppend(this, newNode, origInsert);
+        };
+      })();
+
+      // --- Helper to collect resource timing entries (network)
+      function collectResourceTimings() {
+        try {
+          const entries = performance.getEntriesByType('resource') || [];
+          for (const r of entries) {
+            // Normalize initiator types we care about
+            let type = r.initiatorType || 'other';
+            // Some sheets show 'link' or 'other' for css; map them
+            if (r.name && /\.css($|\?)/i.test(r.name)) type = 'css';
+            if (r.name && /\.(woff2?|ttf|otf)($|\?)/i.test(r.name)) type = 'font';
+            const name = (r.name || 'unknown').split('/').pop();
+            addResourceRecord(name, { type, duration: r.duration, start: r.startTime, size: r.transferSize || 0, entry: r });
+          }
+        } catch (e) {
+          console.warn('collectResourceTimings error', e);
+        }
+      }
+
+      // --- When DOMContentLoaded fires
+      document.addEventListener('DOMContentLoaded', () => {
+        const t = performance.now() - START;
+        console.log('%cMADLOG >>> DOMContentLoaded at', 'color: teal', formatMs(t) + ' ms');
+      }, { once: true });
+
+      // --- On window load, assemble and print summary
+      window.addEventListener('load', () => {
+        const tLoad = performance.now() - START;
+        console.log('%cMADLOG >>> Window Load at', 'color: teal', formatMs(tLoad) + ' ms');
+
+        // collect resource timings
+        collectResourceTimings();
+
+        // collect dynamic inline execs if any
+        if (window.__pf_inline_execs && Array.isArray(window.__pf_inline_execs)) {
+          for (const it of window.__pf_inline_execs) {
+            dynamicInlineExecs.push(it);
+          }
+        }
+
+        // Aggregate ajaxRecords into resourceMap with prefix
+        for (const a of ajaxRecords) {
+          const key = (a.url || 'xhr').split('/').pop();
+          addResourceRecord(key + ' [xhr/fetch]', { type: a.type, duration: a.duration });
+        }
+
+        // Print top slow resources (by total)
+        const rows = [...resourceMap.values()]
+          .map(s => ({
+            Name: s.name,
+            Type: s.type,
+            Count: s.count,
+            'Total ms': Number(s.total).toFixed(2),
+            'Max ms': Number(s.max).toFixed(2),
+            ExampleStart: s.examples[0] ? Number(s.examples[0].start || 0).toFixed(2) : ''
+          }))
+          .sort((a,b) => b['Total ms'] - a['Total ms']);
+
+        console.log('%c[RESOURCE LOAD SUMMARY]', 'color: orange; font-weight:bold;');
+        if (rows.length) {
+          console.table(rows.slice(0, 200));
+        } else {
+          console.log('No resource timing entries found. (Are you running cross-origin resources without timing-allow-origin?)');
+        }
+
+        // print top slow individual resources
+        const slowOnes = rows.filter(r => Number(r['Total ms']) >= SLOW_THRESHOLD);
+        if (slowOnes.length) {
+          console.log('%c[TOP SLOW RESOURCES ≥ ' + SLOW_THRESHOLD + ' ms]', 'color: red; font-weight:bold;');
+          slowOnes.forEach(s => {
+            console.log(`${s.Name} (${s.Type}) — total: ${s['Total ms']} ms, max: ${s['Max ms']} ms`);
+          });
+        } else {
+          console.log('%cNo resources exceeded slow threshold: ' + SLOW_THRESHOLD + ' ms', 'color: green');
+        }
+
+        // Print AJAX summary
+        if (ajaxRecords.length) {
+          console.log('%c[XHR / fetch SUMMARY] (count: ' + ajaxRecords.length + ')', 'color: purple; font-weight:bold;');
+          console.table(ajaxRecords.map(a => ({
+            url: (a.url || '').split('/').pop(),
+            type: a.type,
+            duration: Number(a.duration).toFixed(2),
+            status: a.status || ''
+          })));
+        }
+
+        // Print dynamic inline script execs
+        if (dynamicInlineExecs.length) {
+          console.log('%c[DYNAMIC INLINE SCRIPT EXECUTION TIMES]', 'color: teal; font-weight:bold;');
+          dynamicInlineExecs.forEach(d => {
+            console.log(`${d.label} — ${formatMs(d.duration)} ms`);
+          });
+        }
+
+        // small total summary
+        console.log('%c[PAGE TIMINGS]','color: blue; font-weight:bold;');
+        console.log('Start -> load: ' + formatMs(tLoad) + ' ms (measured from profiler injection)');
+
+        // optionally: clear stored perf entries to keep memory low
+        try { performance.clearResourceTimings(); } catch(e){}
+      }, { once: true });
+
+      // If user wants an on-demand snapshot call:
+      window.__pf_takeSnapshot = function() {
+        collectResourceTimings();
+        const out = [...resourceMap.values()].map(s => ({name: s.name, type: s.type, total: s.total, max: s.max, count: s.count}));
+        return out;
+      };
+
+      // Helpful note to console so you know profiler is active
+      console.log('%c[profiler] Resource profiler injected. Waiting for window.load...', 'color: gray');
+
+    })();
+  </script>
 
   <title>Coders Forum | About Us</title>
   <meta charset="utf-8">
@@ -94,6 +367,18 @@
 
 
 <body>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        console.log("MADLOG SIMPLIFIED >>> DOMContentLoaded:", Date.now());
+    });
+
+    window.addEventListener("load", () => {
+        console.log("MADLOG SIMPLIFIED >>> Window LOAD:", Date.now());
+    });
+  </script>
+
+
 
   <script>console.log("MADLOG-A:", Date.now());</script>
 
