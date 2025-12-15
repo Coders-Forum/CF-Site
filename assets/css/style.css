@@ -963,14 +963,7 @@ section {
   overflow: hidden;
 }
 
-.section-title {
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
+.section-title,
 .IP-section-title {
   padding-bottom: 40px;
   display: flex;
@@ -983,7 +976,6 @@ section {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -995,20 +987,17 @@ section {
   font-size: 22px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 1px;
   text-transform: uppercase;
   color: #373737;
   font-family: "Poppins", sans-serif;
-  width: 500px;
 }
 
 .IP-section-title h2 {
   font-size: 14px;
   font-weight: 500;
   padding: 0;
-  line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -1022,69 +1011,47 @@ section {
   padding: 30px;
 }
 
+.section-title h2,
+.section-title-wf h2 {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  line-height: 1.2;
+}
+
+.section-title h2::before,
+.section-title-wf h2::before,
 .section-title h2::after,
-h2::before {
+.section-title-wf h2::after {
   content: "";
+  display: inline-block;
   width: 120px;
-  height: 2px;
-  display: inline-block;
+  height: 1.5px;
   background: gold;
-  margin: 4px 10px;
 }
 
-.section-title-wf h2::after,
-h2::before {
-  content: "";
-  width: 120px;
-  height: 3px;
-  display: inline-block;
-  background: gold;
-  margin: 4px 10px;
-}
-
-/* the lines before and after people's name which is larger than 15 characters is wrapping around next line, so selecting those abnormal divs and styling them below. */
-#walloffame :nth-child(14) .section-title-wf h2::after,
-#walloffame :nth-child(14) .section-title-wf h2::before,
-#walloffame :nth-child(15) .section-title-wf h2::after,
-#walloffame :nth-child(15) .section-title-wf h2::before,
-#walloffame :nth-child(16) .section-title-wf h2::after,
-#walloffame :nth-child(16) .section-title-wf h2::before,
-#walloffame :nth-child(17) .section-title-wf h2::after,
-#walloffame :nth-child(17) .section-title-wf h2::before {
-  content: "";
-  width: 70px;
-  height: 3px;
-  display: inline-block;
-  background: gold;
-  margin: 4px 10px;
-}
-
-/* Hide lines (::before and ::after) on mobile view */
 @media (max-width: 667px) {
-  #walloffame :nth-child(14) .section-title-wf h2::after,
-  #walloffame :nth-child(14) .section-title-wf h2::before,
-  #walloffame :nth-child(15) .section-title-wf h2::after,
-  #walloffame :nth-child(15) .section-title-wf h2::before,
-  #walloffame :nth-child(16) .section-title-wf h2::after,
-  #walloffame :nth-child(16) .section-title-wf h2::before,
-  #walloffame :nth-child(17) .section-title-wf h2::after,
-  #walloffame :nth-child(17) .section-title-wf h2::before {
+  .section-title h2::before,
+  .section-title h2::after,
+  .section-title-wf h2::before,
+  .section-title-wf h2::after {
     display: none;
+  }
+
+  /* mobile text size only */
+  .section-title-wf h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
   }
 }
 
-.IP-section-title h2::after,
-h2::before {
-  content: "";
-  width: 120px;
-  height: 2px;
-  display: inline-block;
-  background: gold;
-  margin: 4px 10px;
-}
-
-.section-title p {
-  margin: 0;
+.section-title p,
+.IP-section-title p {
   margin: 0;
   font-size: 34px;
   font-weight: 700;
@@ -1094,54 +1061,15 @@ h2::before {
 }
 
 .IP-section-title p {
-  margin: 0;
-  margin: 0;
   font-size: 40px;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #1e1c1c;
 }
 
 @media (max-width: 991px) {
+  .section-title h2::before,
   .section-title h2::after,
-  h2::before {
-    content: "";
+  .section-title-wf h2::before,
+  .section-title-wf h2::after {
     width: 50px;
-    height: 2px;
-    display: inline-block;
-    background: #ffde9e;
-    margin: 4px 10px;
-  }
-
-  .section-title-wf h2::after,
-  h2::before {
-    content: "";
-    width: 40px;
-    height: 3px;
-    display: inline-block;
-    background: gold;
-    margin: 4px 10px;
-  }
-}
-
-@media (max-width: 667px) {
-  .section-title h2::after,
-  h2::before,
-  .section-title-wf h2::after,
-  h2::before {
-    display: none;
-  }
-
-  .section-title-wf h2 {
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0;
-    line-height: 1px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #373737;
-    font-family: "Poppins", sans-serif;
   }
 }
 
@@ -1193,11 +1121,13 @@ h2::before {
   }
 }
 
+
 @media screen and (max-width: 1024px) {
   .wall-of-fame-image {
     max-height: 300px;
   }
 }
+
 
 /*--------------------------------------------------------------
 # About
