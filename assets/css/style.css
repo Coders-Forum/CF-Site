@@ -2699,6 +2699,39 @@ h4 {
   margin-top: 10px;
 }
 
+.show-more-toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d4af37; /* gold default */
+  transition: color 0.3s ease;
+}
+
+/* hover → black */
+.show-more-toggle:hover {
+  color: #000000;
+}
+
+/* expanded → stay gold */
+.show-more-toggle[aria-expanded="true"] {
+  color: #d4af37;
+}
+
+/* eye animation */
+.eye-icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.show-more-toggle[aria-expanded="true"] .eye-icon {
+  transform: scale(1.15);
+  opacity: 0.7;
+}
+
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
