@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3M7SMRS80F');
+    </script>
   <meta charset="UTF-8" />
   <title>Coding Corner</title>
 
@@ -20,16 +39,17 @@
 
     * {
       box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
 
     body {
       min-height: 100vh;
       background: radial-gradient(circle at top, #1b1b28 0, var(--bg) 45%, #000 100%);
       color: var(--text-main);
-      padding: 40px 12px;
       animation: pageFadeIn 0.6s ease-out;
     }
 
@@ -114,6 +134,7 @@
       align-items: center;
       justify-content: space-between;
       font-weight: 600;
+      font-size: inherit;
       padding: 3px 2px;
       color: var(--text-main);
     }
@@ -333,25 +354,20 @@
     .page {
       width: 100%;
       max-width: 960px;
-      margin: 60px auto;
+      margin: 30px auto;
     }
-
-    /* ================= HERO SECTION FIX ================= */
-/* ================= HERO (FINAL, CORRECT) ================= */
-
-#hero {
-  width: 100%;
-  height: 100vh;
-
+    #hero {
+  position: relative;
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
   background:
     radial-gradient(
       circle at center,
-      rgba(0,0,0,0.35) 0%,
-      rgba(0,0,0,0.75) 60%,
+      rgba(0,0,0,0.55) 0%,
+      rgba(0,0,0,0.8) 70%,
       rgba(0,0,0,0.95) 100%
     ),
-    url("assets/img/hero-bg.jpg")
-    center / cover no-repeat;
+    url("assets/img/hero-bg.jpg") center / cover no-repeat;
 
   display: flex;
   align-items: center;
@@ -359,24 +375,78 @@
   text-align: center;
 }
 
+#hero .container {
+  z-index: 2;
+  position: relative;
+}
 
-#hero h1 {
-  font-size: 40px;
-  font-weight: 700;
-  letter-spacing: 2px;
+.hero-title {
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: 4px;
   color: #fff;
+  text-shadow: 0 4px 20px rgba(0,0,0,0.9);
+}
+/* ===== Visual Coding Corner label on Hero (CSS-only) ===== */
+
+#hero::after {
+  content: "CODING CORNER";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #ffffff;
+
+  text-shadow:
+    0 4px 15px rgba(0,0,0,0.9),
+    0 0 30px rgba(0,0,0,0.7);
+
+  z-index: 3;
+  pointer-events: none; /* important */
+}
+
+/* Ensure hero can layer text */
+#hero {
+  position: relative;
 }
 
 
   </style>
 </head>
 <body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="#hero">Coders Forum</a></h1>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class='nav-link scrollto active' href='/'>Home</a></li>
+          <li><a class='nav-link scrollto' href='/about'>About</a></li>
+          <li><a class='nav-link scrollto' href='/inter_prep'>Interview Prep</a></li>
+          <li><a class='nav-link scrollto ' href='/events'>Events</a></li>
+          <li><a class='nav-link scrollto ' href='/practice'>Practice</a></li>
+          <li><a class='nav-link scrollto' href='/gallery'>Gallery</a></li>
+          <li><a class='nav-link scrollto' href='/walloffame'>Wall Of Fame</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header><!-- End Header -->
+
   <!-- Interview Preparation Hero -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
   <div class="container" data-aos="fade-up">
     <div class="row justify-content-center">
       <div class="col-xl-10 col-lg-10">
-        <h1>INTERVIEW PREPARATION</h1>
+        <h4>CODING CORNER</h4>
       </div>
     </div>
   </div>
@@ -1503,8 +1573,88 @@
           </div>
         </details>
       </details>
+      <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
 
-      
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Coders Forum</h3>
+              <p>
+                Department of Computer Science and Engineering<br>
+                Panimalar Engineering College, <br>
+                Bangalore Trunk Road,<br>
+                Varadharajapuram, Poonamallee <br>
+                Chennai - 600 123 <br><br>
+                <i class="bi bi-telephone" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">+91 93846 78960</span><br>
+                <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <a href="mailto:coders_forum@outlook.com" style = "color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
+            </p>
 
+              <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" style = "display : flex ; align-items : center ; justify-content : center ;">
+            <img src="./assets/img/club-logo.png" style = "width : 300px; height : auto ;">
+          </div>
+          <div class="col-lg-4 col-md-6 d-none d-sm-block">
+              <div class="row">
+              <div class="col-sm-6 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-link"></i> <a href='/about'>About Us</a></li>
+                  <li><i class="bx bx-link"></i> <a href='/events'>Events</a></li>
+                  <li><i class="bx bx-link"></i> <a href='/practice'>Practice</a></li>
+                  <li><i class="bx bx-link"></i> <a href='/gallery'>Gallery</a></li>
+                  <li><i class="bx bx-link"></i> <a href='/walloffame'>Wall of Fame</a></li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-6 footer-links">
+                <h4>Initiators</h4>
+                <ul>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Mobile Two-Column Layout -->
+          <div class="col-12 footer-links d-md-none" style = "margin-top: 30px;">
+            <div class="row">
+              <div class="col-6">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-link"></i> <a href='/about'>About Us</a></li>
+                  <li><i class="bx bx-link"></i> <a href='/events'>Events</a></li>
+                  <li><i class="bx bx-link"></i> <a href='/practice'>Practice</a></li>
+                  <li><i class="bx bx-link"></i> <a href='/gallery'>Gallery</a></li>
+                  <li><i class="bx bx-link"></i> <a href='/walloffame'>Wall of Fame</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h4>Initiators</h4>
+                <ul>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
