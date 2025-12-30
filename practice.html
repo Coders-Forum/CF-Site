@@ -1,598 +1,1510 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+  <meta charset="UTF-8" />
+  <title>Coding Corner</title>
 
-  <title>Coders Forum | Practice</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    :root {
+      --bg: #050509;
+      --bg-soft: #0c0c14;
+      --gold: #f2c94c;
+      --gold-soft: #d4a42b;
+      --card: #11111a;
+      --card-soft: #181824;
+      --text-main: #f5f5f5;
+      --text-muted: #aaaaaa;
+      --border-soft: #282840;
+      --green: #1ec773;
+    }
 
-  <meta name="title" content="Coders Forum | Practice" />
-  <meta name="description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
-  <meta name="keywords" content="panimalar, coding, society, psdc, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
-  <meta name="robots" content="index, follow">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="language" content="English">
-  
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
 
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://codersforum.netlify.app" />
-  <meta property="og:title" content="Coders Forum | Panimalar" />
-  <meta property="og:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
-  <meta property="og:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
+    body {
+      min-height: 100vh;
+      background: radial-gradient(circle at top, #1b1b28 0, var(--bg) 45%, #000 100%);
+      color: var(--text-main);
+      padding: 40px 12px;
+      animation: pageFadeIn 0.6s ease-out;
+    }
 
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:url" content="https://codersforum.netlify.app" />
-  <meta property="twitter:title" content="Coders Forum | Panimalar" />
-  <meta property="twitter:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
-  <meta property="twitter:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
+    @keyframes pageFadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
 
-  <link href="assets/img/club-logo.ico" rel="icon">
+    .page {
+      width: 100%;
+      max-width: 960px;
+    }
 
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    h1 {
+      text-align: center;
+      margin-bottom: 28px;
+      font-size: 34px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      position: relative;
+    }
 
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+    h1::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      bottom: -8px;
+      width: 120px;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      transform: translateX(-50%);
+    }
 
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    h2 {
+      font-size: 22px;
+      margin-bottom: 12px;
+      color: var(--gold);
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
 
-  <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    section {
+      margin-bottom: 34px;
+    }
 
-      gtag('config', 'G-3M7SMRS80F');
-    </script>
 
+    .practice {
+      background: linear-gradient(135deg, rgba(242, 201, 76, 0.08), transparent);
+      border-radius: 14px;
+      padding: 18px 20px 20px;
+      border: 1px solid rgba(242, 201, 76, 0.25);
+      backdrop-filter: blur(10px);
+    }
+
+    .accordion details {
+      border-radius: 10px;
+      padding: 8px 12px;
+      margin-bottom: 10px;
+      background: var(--card);
+      border: 1px solid var(--border-soft);
+      transition: border 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease,
+        background 0.25s ease;
+    }
+
+    .accordion details:hover {
+      border-color: var(--gold-soft);
+      transform: translateY(-1px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      background: var(--card-soft);
+    }
+
+    .accordion summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-weight: 600;
+      padding: 3px 2px;
+      color: var(--text-main);
+    }
+
+    .accordion summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .accordion summary::after {
+      content: "▾";
+      font-size: 13px;
+      transition: transform 0.2s ease;
+      color: var(--gold);
+    }
+
+    details[open] > summary::after {
+      transform: rotate(-180deg);
+    }
+
+    .day-content {
+      padding: 8px 4px 2px 6px;
+      border-top: 1px dashed var(--border-soft);
+      margin-top: 6px;
+      animation: fadeInSoft 0.25s ease-out;
+    }
+
+    @keyframes fadeInSoft {
+      from {
+        opacity: 0;
+        transform: translateY(4px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .problem-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 4px 2px;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .problem-row span {
+      flex: 1;
+      margin-right: 16px;
+    }
+
+    .solve-btn {
+      border: none;
+      padding: 6px 18px;
+      text-decoration: none;
+      font-size: 13px;
+      border-radius: 999px;
+      background: var(--green);
+      color: #ffffff;
+      cursor: pointer;
+      font-weight: 600;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      transition: background 0.18s ease, transform 0.15s ease,
+        box-shadow 0.2s ease, filter 0.18s ease;
+    }
+
+    .solve-btn::after {
+      content: "›";
+      font-size: 14px;
+    }
+
+    .solve-btn:hover {
+      background: #1ad06f;
+      transform: translateY(-1px) translateX(1px);
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+      filter: brightness(1.03);
+    }
+
+    .solve-btn:active {
+      transform: translateY(0);
+      box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    /* CHALLENGES SECTION ------------------------------------------------ */
+
+    .challenges-wrapper {
+      padding: 18px 0 6px;
+    }
+
+    .challenges-inner {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      margin-top: 14px;
+    }
+
+    .arrow-btn {
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background: radial-gradient(circle at 30% 30%, #1f1f2a, #05050a);
+      font-size: 20px;
+      color: var(--gold-soft);
+      transition: background 0.2s ease, transform 0.15s ease,
+        box-shadow 0.2s ease, border-color 0.2s ease;
+      user-select: none;
+    }
+
+    .arrow-btn:hover {
+      background: radial-gradient(circle at 30% 30%, #29293a, #080812);
+      border-color: var(--gold);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 22px rgba(0, 0, 0, 0.5);
+    }
+
+    .challenge-strip {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: stretch;
+      gap: 14px;
+      perspective: 1200px;
+    }
+
+    .challenge-card {
+      border-radius: 16px;
+      padding: 16px 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background: var(--card);
+      border: 1px solid var(--border-soft);
+      text-align: center;
+      min-width: 160px;
+      color: var(--text-muted);
+      transition: transform 0.25s ease, box-shadow 0.25s ease,
+        border 0.25s ease, background 0.25s ease, filter 0.25s ease;
+      transform-origin: center;
+    }
+
+    .challenge-card p {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .challenge-card.main {
+      min-width: 260px;
+      transform: translateY(-4px) scale(1.04);
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.75);
+      border-color: var(--gold);
+      background: radial-gradient(circle at top, #221c10, #0d0d16);
+      filter: saturate(1.1);
+    }
+
+    .challenge-card:not(.main) {
+      opacity: 0.85;
+      transform: translateY(3px) scale(0.96) rotateY(-6deg);
+    }
+
+    .challenge-card:nth-child(3):not(.main) {
+      transform: translateY(3px) scale(0.96) rotateY(6deg);
+    }
+
+    .challenge-card:hover {
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.7);
+      border-color: var(--gold-soft);
+      transform: translateY(-6px) scale(1.02);
+      background: var(--card-soft);
+      filter: saturate(1.05);
+    }
+
+    .challenge-title {
+      font-weight: 600;
+      margin-bottom: 10px;
+      font-size: 16px;
+      color: var(--gold);
+    }
+
+    .challenge-card .solve-btn {
+      align-self: center;
+      margin-top: 4px;
+    }
+
+    /* Small screens ----------------------------------------------------- */
+    @media (max-width: 768px) {
+      body {
+        padding: 24px 10px;
+      }
+
+      .challenges-inner {
+        flex-direction: column;
+      }
+
+      .challenge-strip {
+        order: 1;
+      }
+
+      .arrow-btn {
+        order: 2;
+      }
+    }
+
+
+/* ================= HERO SECTION ================= */
+
+
+    .page {
+      width: 100%;
+      max-width: 960px;
+      margin: 60px auto;
+    }
+
+    /* ================= HERO SECTION FIX ================= */
+/* ================= HERO (FINAL, CORRECT) ================= */
+
+#hero {
+  width: 100%;
+  height: 100vh;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(0,0,0,0.35) 0%,
+      rgba(0,0,0,0.75) 60%,
+      rgba(0,0,0,0.95) 100%
+    ),
+    url("assets/img/hero-bg.jpg")
+    center / cover no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+
+#hero h1 {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+
+  </style>
 </head>
-
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-lg-between">
-
-      <h1 class="logo me-auto me-lg-0"><a href="#hero">Coders Forum</a></h1>
-
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto" href="/index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="/about.html">About</a></li>
-          <li><a class="nav-link scrollto" href="./Inter_Prep.html">Interview Prep</a></li>
-          <li><a class="nav-link scrollto" href="/events.html">Events</a></li>
-          <li><a class="nav-link scrollto active " href="/practice.html">Practice</a></li>
-          <li><a class="nav-link scrollto" href="/gallery.html">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="/walloffame.html">Wall Of Fame</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav>
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
+  <!-- Interview Preparation Hero -->
   <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-8 col-lg-8">
-          <h1>Coding Corner</h1>
-          <h3 >Precision in Progress</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main id="main">
-
-    <section id="PECCodeQuest-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4" >
-          <div class="col-lg-10 mx-auto">
-            <div class="portfolio-description" style = "margin-bottom: 40px;">
-              <h2>Practice for PEC Code Quest</h2>
-            </div>
-            <p style = "display : flex; align-items: center; justify-content: center;">
-              The practice problems for the upcoming PEC Code Quest are now available for you to sharpen your coding skills. Whether you're a seasoned coder or just getting started, these problems are designed to challenge and prepare you for the main event.
-            </p>
-
-            <p style = "display : flex; align-items: center; justify-content: center;">
-             <a href="/codeQuest.html#practiceNow" class="get-started-btn scrollto" id = "learn-more-btn">Practice Now &nbsp;<i class="bi bi-arrow-right"></i></a>
-            </p>
-          </div>
-        </div>
-            
-    </section>
-
-    <!-- ======= King Python Section ======= -->
-    <section id="Python" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>September Monthly Coding Contest - King Python</h2>
-          <ol>
-            <li>26 September 2023</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-    
-    <section id="Python" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4" >
-          <div class="col-lg-10 mx-auto">
-            <div class="portfolio-description" style = "margin-bottom: 40px;">
-              <h2>Problem Overview</h2>
-              <p style = "text-align: justify; margin-left: 40px; margin-right: 40px;">
-                Dive into the world of Python,a programming language that blends power with simplicity.It's versatility extends from web development to the realms of data science and automation.It invites you to explore, innovate , create and working with these structures fosters a deeper understanding of algorithms, data manipulation, and the art of breaking down complex problems into manageable steps.</p>
-              </p>
-            </div>
-            
-            <div class="portfolio-info">
-              <h3 style = "color: #373737; text-align: center;">Find the Runner-Up Score!</h3>
-              <p style = "text-align: justify;">
-                In this problem, you're tasked with the calculation of final score that the team has secured.The problem teaches you how to work with manipulation & sorting of strings.You'll learn about strings and basic list operations.
-              </p>
-              <div style = "display:flex; justify-content: center;">
-                <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/king-python">Solve Challenge</i></a>
-                <a class = "solution-btn" target="_blank" href=""></a>
-              </div>
-            </div>
-
-            <div class="portfolio-info" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Alphabet Rangoli</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                The problem deals with creating pattern based on strings.Your goal is to construct a rangoli alphabet pattern using strings.By solving,you will be trained in the concepts of string foramtting and standard libraries of Python.
-              </p>
-              <div style = "display:flex; justify-content: center;">
-                <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/king-python">Solve Challenge</i></a>
-                <a class = "solution-btn" target="_blank" href=""></a>
-              </div>
-            </div>
-
-            <div class="portfolio-info" id = "challenges" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Triangle Quest</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                In this problem,you have to deal with string handling and methods of python.You'll perform the problem using looping techniques and specific functions.At the end of the task you will be skilled in iterations and in-built methods of python.</p> 
-                <div style = "display:flex; justify-content: center;">
-                  <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/king-python">Solve Challenge</i></a>
-                  <a class = "solution-btn" target="_blank" href=""></a>
-                </div>
-            </div>
-            <div class="portfolio-info" id = "challenges" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Encryption</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                Here,you are given with a set of text to deal with encryption.You have to encrypt the function and arrage in grid of rows and columns.For this you have to be expertise in concepts of encrypting a set of code and dispalying the constraints.
-                <div style = "display:flex; justify-content: center;">
-                  <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/king-python">Solve Challenge</i></a>
-                  <a class = "solution-btn" target="_blank" href=""></a>
-                </div>
-            </div>
-            <div class="portfolio-description" style = "margin-top: 30px;">
-              <h2>Key concepts</h2>
-              <div class="container justify-content-center">
-                <div class = "row justify-content-center"  style = "margin-top: 40px;">
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-table"></i>   String Sorting</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-sitemap"></i>   Python Libraries</h5>
-                  </div>
-                  
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-project-diagram"></i>   Encryption</h5>
-                  </div>
-                </div>
-
-
-                <div class = "row justify-content-center">
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-cogs"></i>   Algorithmic Startegies</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-recycle"></i>   List Operation</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-code-branch"></i>   Looping Techniques</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- ======= Craze.c & Hashking Section ======= -->
-    <section id="Craze.C and Hasking" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>August Monthly Coding Contest - #include &LT;craze.c&GT;</h2>
-          <ol>
-            <li>29 August 2023</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-
-    <section id="Craze.C-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4" >
-          <div class="col-lg-10 mx-auto">
-            <div class="portfolio-description" style = "margin-bottom: 40px;">
-              <h2>Problem Overview</h2>
-              <p style = "text-align: justify; margin-left: 40px; margin-right: 40px;">
-                C is one of the basic progamming in computer science, showcasing real-world situations into coding and fun.Focusing on the concepts and the flow of program will establish a deeper understanding of stack operation,algorithms and the skill of solving real-world entities.
-            </div>
-            
-            <div class="portfolio-info">
-              <h3 style = "color: #373737; text-align: center;">Diagonal Text</h3>
-              <p style = "text-align: justify;">
-                In this problem, you're tasked with displaying text in diagonal manner.Your goal is to print the given string in top-right to bottom-left order.In order to achieve this task you need to learn the concepts of indexing, looping techniques and multidimensional strings.
-              </p>
-              <div style = "display:flex; justify-content: center;">
-                <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/include-craze-c-august-monthly-contest">Solve Challenge</i></a>
-                <a class = "solution-btn" target="_blank" href=""></a>
-              </div>
-            </div>
-
-            <div class="portfolio-info" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Word Count</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                Here, you're presented with a group of sentence.Your task is to count the number of words present in the given sentence and display it on the screen.For this you need know about the string manipulation.You will gain knowledge on how to handle strings.
-              <div style = "display:flex; justify-content: center;">
-                <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/include-craze-c-august-monthly-contest">Solve Challenge</i></a>
-                <a class = "solution-btn" target="_blank" href=""></a>
-              </div>
-            </div>
-
-            <div class="portfolio-info" id = "challenges" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Goal!</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                In this problem,you will explore a scenario where you have to judge the number of goals and conclude the winner team.So you will be dealing with arrays and conditional statements to solve the given task.
-              </p>
-                <div style = "display:flex; justify-content: center;">
-                  <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/include-craze-c-august-monthly-contest">Solve Challenge</i></a>
-                  <a class = "solution-btn" target="_blank" href="="></a>
-                </div>
-            </div>
-            <div class="portfolio-info" id = "challenges" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Minimum Withdrawal</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-               Here,you're showcased with a scenario in ATM machine.You have to calculate the number of withdrawals needed to satisfy the cash requirement of the user.This will make you to dive deep into the concepts of stack operations.</p>
-                <div style = "display:flex; justify-content: center;">
-                  <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/include-craze-c-august-monthly-contest">Solve Challenge</i></a>
-                  <a class = "solution-btn" target="_blank" href=""></a>
-                </div>
-            </div>
-    </section>
-
-
-    <section id="Craze.C and Hasking" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>August Monthly Coding Contest - #HASHKING</h2>
-          <ol>
-            <li>29 August 2023</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="Hasking-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4" >
-          <div class="col-lg-10 mx-auto">
-            <div class="portfolio-description" style = "margin-bottom: 40px;">
-              <h2>Problem Overview</h2>
-              <p style = "text-align: justify; margin-left: 40px; margin-right: 40px;">
-                Hashing techniques is used to stores key-value pairs, using a hash function to map keys to specific locations in string and arrays.This gives you better understanding in division hashing, multiplication hashing and double hashing.It involves techniques to handle cases where multiple keys hash to the same location, ensuring efficient data retrieval.
-              </p>
-            </div>
-            
-            <div class="portfolio-info">
-              <h3 style = "color: #373737; text-align: center;">Make Palindrome-CF</h3>
-              <p style = "text-align: justify;">
-                In this problem, you're tasked with creating a longest palindrome.In order to solve this you have to deal with array manipulation and looping stategies.Atlast you would be knowing the key concept of palindrome and its flow of execution.
-              </p>
-              <div style = "display:flex; justify-content: center;">
-                <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/august-monthly-contest-hashking-29aug2023">Solve Challenge</i></a>
-                <a class = "solution-btn" target="_blank" href=""></a>
-              </div>
-            </div>
-
-            <div class="portfolio-info" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Ice Cream Parlor</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                Here,a scenario of icecream parlor in which you have to list the id numbers of different flavours.For this you have to learn deeply about the hashtable datastruture in order to solve this current scenario.
-              <div style = "display:flex; justify-content: center;">
-                <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/august-monthly-contest-hashking-29aug2023">Solve Challenge</i></a>
-                <a class = "solution-btn" target="_blank" href=""></a>
-              </div>
-            </div>
-
-            <div class="portfolio-info" id = "challenges" style = "margin-top: 30px;">
-            <h3 style = "color: #373737; text-align: center;">First Unique character</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                In this problem,you will be checking a set of string.To solve this you need to understand the concept of string indexing and slicing.You will learn the important aspects of string manipulation while solving the problem.
-              </p>
-                <div style = "display:flex; justify-content: center;">
-                  <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/august-monthly-contest-hashking-29aug2023">Solve Challenge</i></a>
-                  <a class = "solution-btn" target="_blank" href="="></a>
-                </div>
-            </div>
-            <div class="portfolio-info" id = "challenges" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Longest Consecutive Seqence</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-               While solving this problem you will be dealing with arrays.The key concept of array is required to accomplish this given task.You will be using array as key tool to find the sequence.</p>
-                <div style = "display:flex; justify-content: center;">
-                  <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/august-monthly-contest-hashking-29aug2023">Solve Challenge</i></a>
-                  <a class = "solution-btn" target="_blank" href=""></a>
-                </div>
-            </div>
-            <div class="portfolio-description" style = "margin-top: 30px;">
-              <h2>Key concepts</h2>
-              <div class="container justify-content-center">
-                <div class = "row justify-content-center"  style = "margin-top: 40px;">
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-table"></i>   String Manipulation</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-sitemap"></i>   Multidimensional String</h5>
-                  </div>
-                  
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-project-diagram"></i>   Array Handling</h5>
-                  </div>
-                </div>
-
-
-                <div class = "row justify-content-center">
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-cogs"></i>   Algorithmic Thinking</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-recycle"></i>   Hashing Techniques</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-code-branch"></i>   Conditional Statements</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-     <!-- ======= Matricks Section ======= -->
-    <section id="matricks" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>July Monthly Coding Contest - [MATRICKS]</h2>
-          <ol>
-            <li>27 July 2023</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="matricks-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4" >
-          <div class="col-lg-10 mx-auto">
-            <div class="portfolio-description" style = "margin-bottom: 40px;">
-              <h2>Problem Overview</h2>
-              <p style = "text-align: justify; margin-left: 40px; margin-right: 40px;">
-                2D matrices and grids are fundamental structures in computer science, mirroring real-world scenarios from images and maps to game boards and spreadsheets. Mastering the procedures of working with these structures fosters a deeper understanding of algorithms, data manipulation, and the art of breaking down complex problems into manageable steps.
-              </p>
-            </div>
-            
-            <div class="portfolio-info">
-              <h3 style = "color: #373737; text-align: center;">Matrix 90-degrees Rotation</h3>
-              <p style = "text-align: justify;">
-                In this problem, you're tasked with rotating a square matrix by 90 degrees clockwise in-place. You'll learn about matrix manipulation, in-place rotation techniques, and algorithmic thinking. By transposing the matrix and then reversing its rows, you can achieve the desired rotation. The problem teaches you how to work with nested loops, efficient data manipulation, and handling input and output.
-              </p>
-              <div style = "display:flex; justify-content: center;">
-                <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/coders-forum-july-monthly-contest-matricks">Solve Challenge</i></a>
-                <a class = "solution-btn" target="_blank" href="https://github.com/Coders-Forum/July-Monthly-Contest-MATricks/tree/main/Answers/Matrix%2090-degrees%20Rotation">View Solution &nbsp; <i style="font-size: 0.9rem;" class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-
-            <div class="portfolio-info" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">Island Count Problem</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                Here, you'll explore a scenario involving land and water represented by a binary matrix. Your goal is to count the number of islands formed by connected land cells. To solve this problem, you'll utilize Depth-First Search (DFS) to traverse through connected land cells and determine the number of islands. You'll gain experience in graph traversal, recursive approaches, and efficient ways of handling large data structures.
-              </p>
-              <div style = "display:flex; justify-content: center;">
-                <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/coders-forum-july-monthly-contest-matricks">Solve Challenge</i></a>
-                <a class = "solution-btn" target="_blank" href="https://github.com/Coders-Forum/July-Monthly-Contest-MATricks/tree/main/Answers/Island%20Count%20Problem">View Solution &nbsp; <i style="font-size: 0.9rem;" class="fas fa-external-link-alt"></i></a>
-              </div>
-            </div>
-
-            <div class="portfolio-info" id = "challenges" style = "margin-top: 30px;">
-              <h3 style = "color: #373737; text-align: center;">MineSweeper Game Logic</h3>
-              <h5></h5>
-              <p style = "text-align: justify;">
-                In this problem, you're presented with a 2D grid of characters that need to be transformed based on specific rules. You'll perform transformations depending on the characters encountered in the grid, and these transformations might propagate to neighboring cells. Depth-First Search (DFS) will be your tool of choice to achieve this. The problem emphasizes recursive transformations, conditional logic, and systematic grid manipulation.
-              </p>
-                <div style = "display:flex; justify-content: center;">
-                  <a class = "solve-challenge-btn" target="_blank" href="https://www.hackerrank.com/coders-forum-july-monthly-contest-matricks">Solve Challenge</i></a>
-                  <a class = "solution-btn" target="_blank" href="https://github.com/Coders-Forum/July-Monthly-Contest-MATricks/tree/main/Answers/MineSweeper%20Game%20Logic">View Solution &nbsp; <i style="font-size: 0.9rem;" class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-            <div class="portfolio-description" style = "margin-top: 30px;">
-              <h2>Key concepts</h2>
-              <div class="container justify-content-center">
-                <div class = "row justify-content-center"  style = "margin-top: 40px;">
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-table"></i>   Matrix Manipulation</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-sitemap"></i>   Graph Theory</h5>
-                  </div>
-                  
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-project-diagram"></i>   Graph Traversal</h5>
-                  </div>
-                </div>
-
-
-                <div class = "row justify-content-center">
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-cogs"></i>   Algorithmic Thinking</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-recycle"></i>   Recursion</h5>
-                  </div>
-                  <div class = "col-lg-3 outcomes">
-                    <h5><i class="fas fa-code-branch"></i>   Conditional Logic</h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-
-  </main><!-- End #main -->
-
- <!-- ======= Footer ======= -->
- <footer id="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-info">
-            <h3>Coders Forum</h3>
-            <p>
-              Department of Computer Science and Engineering<br>
-              Panimalar Engineering College, <br>
-              Bangalore Trunk Road,<br>
-              Varadharajapuram, Poonamallee <br>
-              Chennai - 600 123 <br><br>
-              <i class="bi bi-telephone" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">+91 93846 78960</span><br>
-              <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <a href="mailto:coders_forum@outlook.com" style = "color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
-            </p>
-            <div class="social-links mt-3">
-              <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6" style = "display : flex ; align-items : center ; justify-content : center ;">
-          <img src="./assets/img/club-logo.png" style = "width : 300px; height : auto ;">
-        </div>
-        <div class="col-lg-4 col-md-6 d-none d-sm-block">
-            <div class="row">
-            <div class="col-sm-6 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
-                <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
-                <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
-                <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
-                <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
-              </ul>
-            </div>
-
-            <div class="col-sm-6 col-md-6 footer-links">
-              <h4>Initiators</h4>
-              <ul>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
-              </ul>
-            </div>
-          </div>
-        </div> 
-
-        <!-- Mobile Two-Column Layout -->
-        <div class="col-12 footer-links d-md-none" style = "margin-top: 30px;">
-          <div class="row">
-            <div class="col-6">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
-                <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
-                <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
-                <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
-                <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <h4>Initiators</h4>
-              <ul>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
+  <div class="container" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <div class="col-xl-10 col-lg-10">
+        <h1>INTERVIEW PREPARATION</h1>
       </div>
     </div>
   </div>
-</footer>
+  </section>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<div class="page">
 
-  <script src="assets/js/main.js"></script>
+  <!-- PRACTICE ----------------------------------------------------------- -->
+  <section class="practice">
+    <h2>Practice</h2>
+    <div class="accordion">
+
+      <!--
+      <details open>
+        <summary>Week 1</summary> -->
+
+        <!-- Day 1 -->
+        <details> 
+          <summary>Day 1</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Hello world</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-hello-world/problem"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Too many AB</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/toomanyab"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Simple Array Sum</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/simple-array-sum/problem"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Target sum pair</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-1</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+
+        <details>
+          <summary>Day 2</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Data types</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-data-types/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Empty sand clock</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Mini-max Sum</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Remove duplicate</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-2</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+        <details>
+          <summary>Day 3</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Operators</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-operators/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Sum Divisible</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Staircase problem</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Distance Between The Strings</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-3</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/select-all-sql/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 4</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Conditional operator</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-conditional-statements/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Formatting issues</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Birthday cake candle</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Common prefix</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-4</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/select-by-id/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 5</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Class v/s instance</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-class-vs-instance/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Is it possible to form a matrix</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Grading students</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Square pattern</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-5</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+      
+      <details>
+          <summary>Day 6</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Loops</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-loops/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Back to nursery</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Diagonal difference</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Habit tracker</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-6</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/japanese-cities-name/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 7</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Loop review</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-review-loop/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Number pattern generator</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Compare the triplets</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Bookmark checker</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-7</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-1/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 8</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Arrays</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-arrays/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Pyramid of numbers</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Plus minus</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Find the Runner-Up Score</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-8</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 9</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Dictionaries and maps</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Vowel Count</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Bill division</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/bon-appetit/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Find Frequency</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-9</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-3/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 10</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Recursion </span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-recursion/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Reverse Words In Sentence</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Find digit</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/find-digits/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Time Converter</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-10</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-4/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 11</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Binary number</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-binary-numbers/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Missing Elements Checker</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Time conversion</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Array Rotation</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-11</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 12</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: 2D arrays</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-2d-arrays/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Sum Of Two Elements In Array</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: The hurdle race</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/the-hurdle-race/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Index Sum Array</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-12</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-6/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 13</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Inheritance</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-inheritance/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Common Elements In Two Arrays</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: A very big sum</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Number of Pages??</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-13</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-7/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 14</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Abstract class</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-abstract-classes/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Think Binarical</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Angry professor</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/angry-professor/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Alphabet Decryption</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-14</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 15</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Scope</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-scope/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Improve At Last</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Designer PDF Viewer</span>
+              <a class="solve-btn"
+                 href="http://hackerrank.com/challenges/designer-pdf-viewer/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Grid Escape</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-15</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 16</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Linked List</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-linked-list/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Who Is Fake</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Utopian tree</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/utopian-tree/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Keypad Cipher</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-16</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-10/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 17</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Exceptions</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-exceptions-string-to-integer/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Disarium Number</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Reapeated string</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/repeated-string/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Coder Shoes</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-17</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-11/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 18</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Exceptions part-2</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-more-exceptions/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: BMI</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Camel Case</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/camelcase/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Find The Target</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-18</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/weather-observation-station-12/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 19</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Queues and Stacks</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-queues-stacks/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Harshad Number</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Migratory birds</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Swap Bro</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-19</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 20</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Interfaces</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-interfaces/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Is That No Ball?</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Beautiful days at the movies</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: EMI</span>
+              <a class="solve-btn"
+                 href="www.google.com"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-20</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 21</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Sorting</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-sorting/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Second Highest</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Apple and Orange</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Chocolate feast</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/chocolate-feast/problem?isFullScreen=false"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-21</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 22</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Generics</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-generics/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Between two sets</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/between-two-sets/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: 2D arrays</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Arrays DS</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/arrays-ds/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-22</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 23</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Binary tree</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-binary-search-trees/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Preorder traversal</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/tree-preorder-traversal/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Subarray division</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/the-birthday-bar/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Breaking the best and worst record</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/breaking-best-and-worst-records/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-23</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 24</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Binary Intro</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-binary-trees/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Postorder traversal</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/tree-postorder-traversal/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Divisible sum pair</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/divisible-sum-pairs/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Counting valleys</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/counting-valleys/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-24</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/revising-aggregations-the-count-function/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 25</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Linked list deletion</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-linked-list-deletion/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Inorder traversal</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/tree-inorder-traversal/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Electronic shop</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/electronics-shop/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Compare two linked list</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/compare-two-linked-lists/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-25</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/revising-aggregations-the-average-function/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 26</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Intro to complexity</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-running-time-and-complexity/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Print the elements</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Cut the sticks</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/cut-the-sticks/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Compare two linked list</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/tree-level-order-traversal/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-26</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/revising-aggregations-sum/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 27</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Nested logic</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-nested-logic/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Linked list operation</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Save the prisoner</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/save-the-prisoner/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Reverse a linked list</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/reverse-a-linked-list/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-27</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/average-population/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 28</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Intro to testing</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-testing/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Linked list operation-2</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Circular array rotation</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/circular-array-rotation/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Height of binary tree</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-28</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/earnings-of-employees/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 29</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Regex</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-regex-patterns/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Linked list operation-3</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Strange advertising</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/strange-advertising/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Binary search tree</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/binary-search-tree-insertion/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-29</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/average-population-of-each-continent/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      <details>
+          <summary>Day 30</summary>
+          <div class="day-content">
+            <div class="problem-row">
+              <span>Problem 1: Bitwise AND</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/30-bitwise-and/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 2: Day of the programmer</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/day-of-the-programmer/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 3: Linked list operation-4</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 4: Merge two sorted arrays</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+            <div class="problem-row">
+              <span>Problem 5: SQL-30</span>
+              <a class="solve-btn"
+                 href="https://www.hackerrank.com/challenges/african-cities/problem?isFullScreen=true"
+                 target="_blank">Solve</a>
+            </div>
+          </div>
+        </details>
+      </details>
+
+      
 
 </body>
-
 </html>
