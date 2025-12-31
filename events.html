@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
 
   <title>Coders Forum | Events</title>
-  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <meta name="title" content="Coders Forum | Events" />
+  <meta name="title" content="Coders Forum | Panimalar" />
   <meta name="description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
-  <meta name="keywords" content="coders forum events, panimalar, coding, society, psdc, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
+  <meta name="keywords" content="panimalar, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
   <meta name="robots" content="index, follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
+
+  <link href="assets/img/club-logo.ico" rel="icon">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
@@ -28,7 +33,6 @@
   <meta property="twitter:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
   <meta property="twitter:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
 
-  <link href="assets/img/club-logo.ico" rel="icon">
 
   <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet"> -->
 
@@ -41,10 +45,10 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
 
   <link href="assets/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+  <link rel="stylesheet" href="./assets/css/events.css" />
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
   <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -52,538 +56,481 @@
 
       gtag('config', 'G-3M7SMRS80F');
     </script>
+  </head>
 
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <body>
+    <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="#hero">Coders Forum</a></h1>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto" href="/index.html">Home</a></li>
-          <li><a class="nav-link scrollto" href="/about.html">About</a></li>
+          <li><a class="nav-link scrollto active" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="./about.html">About</a></li>
           <li><a class="nav-link scrollto" href="./Inter_Prep.html">Interview Prep</a></li>
-          <li><a class="nav-link scrollto active" href="/events.html">Events</a></li>
-          <li><a class="nav-link scrollto " href="/practice.html">Practice</a></li>
-          <li><a class="nav-link scrollto" href="/gallery.html">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="/walloffame.html">Wall Of Fame</a></li>
+          <li><a class="nav-link scrollto " href="./events.html">Events</a></li>
+          <li><a class="nav-link scrollto " href="./practice.html">Practice</a></li>
+          <li><a class="nav-link scrollto" href="./gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="./walloffame.html">Wall Of Fame</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
 
     </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center justify-content-center">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
-        <div class="col-xl-8 col-lg-8">
-          <h1>Events</h1>
-          <h3 >Adventures Await You</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <main id="main">
-
-    <section id="Summer-Code-Blitz" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Summer Code Blitz</h2>
-          <ol>
-            <li>16 June 2024</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======= Code-Blitz Section ======= -->
-    <section id="code-blitz-section" class="portfolio-details">
-      <div class="container">
-
-          <div class="row gy-4 justify-content-between">
-            <div class="col-lg-8">
-              <div class="portfolio-details-slider swiper">
-                <div class="swiper-wrapper align-items-center">
-  
-                  <div class="code-blitz-events-img">
-                    <img src="./assets/img/codeblitz1.jpg"  alt="">
-                  </div>
-  
-                </div>
-              </div>
-            </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3 style = "color: #373737;">Highlights</h3>
-              <ul>
-                <li><strong>Contest Name</strong>:Summer Code Blitz</li>
-                <li><strong>Date</strong>: June 16<sup>th</sup>, 2024 </li>
-              </ul>
-              <strong>For More Details Visit</strong>:<a class="cta-btn" style="margin-left: 5px;"  href="./CodeBlitz.html">Summer Code Blitz &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
-            </div>
-            <br><br><br>
-            <div class="portfolio-description">
-              <h2>Event Overview</h2>
-              <p style = "text-align: justify;">
-                Get ready for the ultimate coding adventure this June with our Summer Holiday Weekly Coding Contest Series on HackerRank! </p><br>
-               <p>The <b>Summer Code Blitz</b> invites all students from Panimalar Engineering College to showcase their coding skills and compete with their peers.</p>
-                <p></p>Don't forget to register for exciting contest ,compete with student of all Department and climb the leaderboard!
-                </p>
-              <a class="cta-btn" style="display: flex; align-items: center; justify-content: center;"  href="./CodeBlitz.html">More Details &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
-
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="codeQuest" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>PEC Code Quest</h2>
-          <ol>
-            <li>20 January 2024</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======= Code Quest Section ======= -->
-    <section id="codeQuest-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4 justify-content-between">
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="./assets/img/flyers/codeQuest.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="./assets/img/events/cq-winners.jpg" alt="">
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3 style = "color: #373737;">Highlights</h3>
-              <ul>
-                <li><strong>Winners</strong>
-                  <ol>
-                    <li>Atchaiyaraj S &amp; Adrian Calvin K A</li>
-                    <li>Domesan U </li>
-                    <li>K R Nijandhan  &amp; Venis Xavier V</li>
-                    <li>Ramchandru R &amp; Siranjeevi P</li>
-                    <li>Roffin Jason N  &amp; Arun Kumar C</li>
-                  </ol>
-                </li>
-                <li><strong>For More Details Visit</strong>:<a class="cta-btn" style="margin-left: 5px;"  href="./codeQuest.html">PEC Code Quest &nbsp;<i class="bi bi-box-arrow-up-right"></i></a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Event Overview</h2>
-              <p style = "text-align: justify;">
-                Participants are given a set of challenging coding problems to solve within a given time frame.  
-                <strong>The contest is designed to test their problem-solving abilities, algorithmic thinking, time complexities
-                 and programming proficiency</strong>. With multiple rounds and increasing difficulty levels, PEC Code Quest 
-                 ensures that students are constantly challenged and pushed to their limits.
-                <br>
-                </p>
-              <a class="cta-btn" style="display: flex; align-items: center; justify-content: center;"  href="./codeQuest.html">More Details &nbsp;<i class="bi bi-box-arrow-up-right"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="Hashking" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>August Monthly Coding Contest - #HASHKING</h2>
-          <ol>
-            <li>29 August 2023</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======= Hashking Section ======= -->
-    <section id="hashking-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="./assets/img/events/hashking.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/events/participants.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/events/hashking-winners.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3 style = "color: #373737;">Highlights</h3>
-              <ul>
-                <li><strong>Winners</strong>: 
-                  <ol>
-                    <li>Maria Robin Andrew</li>
-                    <li>Dhayanand Bhoopalan</li>
-                    <li>Emmanuel Jonathan</li>
-                  </ol>
-                </li>
-                <li><strong>Contest URL</strong>: <a href="https://www.hackerrank.com/august-monthly-contest-hashking-29aug2023">Contest - [#HASHKING]</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Event Overview</h2>
-              <p style = "text-align: justify;">
-                Get ready to take the throne as the supreme HashKing! Mark your calendars for August 29, 2023 and participate in a contest that will push your boundaries, ignite your coding passion, and reward your commitment to mastering the art of hashing. 
-                <br><br>
-                Remember to save the date, register, and prepare yourself for an exhilarating competition that guarantees both mental stimulation and unparalleled excitement!
-                </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="C" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>August Monthly Coding Contest - #INCLUDE &lt;CRAZE.C&gt;</h2>
-          <ol>
-            <li>29 August 2023</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======= C Section ======= -->
-    <section id="C-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="./assets/img/events/c.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/events/august-event-participants.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/events/craze-c-winners.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-            <div class="col-lg-4">
-              <div class="portfolio-info">
-                <h3 style = "color: #373737;">Highlights</h3>
-                <ul>
-                  <li><strong>Winners</strong>: 
-                    <ol>
-                      <li>Mohana Priya. S R</li>
-                      <li>Samuel Varghese. J</li>
-                      <li>Muthu Usha Rani. M</li>
-                    </ol>
-                  </li>
-                  <li><strong>Contest URL</strong>: <a href="https://www.hackerrank.com/include-craze-c-august-monthly-contest">Contest - [#INCLUDE &lt;CRAZE.C&gt;]</a></li>
-                </ul>
-              </div>
-            <div class="portfolio-description">
-              <h2>Event Overview</h2>
-              <p style = "text-align: justify;">
-                Get ready to be crowned as the C Mastermind! Come and join us on August 29, 2023 for a competition that will enhance your coding skills, ignite your love for C programming, and recognize your commitment to mastering the complexities of the C language.
-                <br><br>
-                Mark your calendars, sign up, and prepare for an exciting contest that will test your intelligence and amplify your coding proficiency!
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <section id="matricks" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>July Monthly Coding Contest - [MATRICKS]</h2>
-          <ol>
-            <li>27 July 2023</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======= Matricks Section ======= -->
-    <section id="matricks-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="./assets/img/events/matricks1.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/events/participants.png" alt="">
-                </div>
-
-                <div class="swiper-slide">
-                  <img src="assets/img/events/winners.png" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3 style = "color: #373737;">Highlights</h3>
-              <ul>
-                <li><strong>Winners</strong>: 
-                  <ol>
-                    <li>Elavarasar. P</li>
-                    <li>Vasanth. R</li>
-                    <li>Maria Robin Andrew</li>
-                  </ol>
-                </li>
-                <li><strong>Contest URL</strong>: <a href="https://www.hackerrank.com/coders-forum-july-monthly-contest-matricks">Contest - [MATRICKS]</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Event Overview</h2>
-              <p style = "text-align: justify;">
-                The [MATRICKS] - Coding contest was a highly anticipated event hosted by Coders Forum, where coding enthusiasts from diverse backgrounds came together to showcase their technical prowess and problem-solving abilities. The contest provided participants with a platform to engage in thrilling coding challenges that tested their coding skills, logic, and creativity.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-
-    <section id="inauguration" class="breadcrumbs">
-      <div class="container">
-
-        <div class="d-flex justify-content-between align-items-center">
-          <h2>Club Inauguration</h2>
-          <ol>
-            <li>25 July 2023</li>
-          </ol>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ======= inauguration Section ======= -->
-    <section id="inauguration-section" class="portfolio-details">
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <div class="portfolio-details-slider swiper">
-              <div class="swiper-wrapper align-items-center">
-
-                <div class="swiper-slide">
-                  <img src="./assets/img/events/Inaguration-poster.png" alt="">
-                </div>
-                
-                <div class="swiper-slide">
-                  <img src="assets/img/events/members.jpg" alt="">
-                </div>
-
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info">
-              <h3 style = "color: #373737;">Highlights</h3>
-              <ul>
-                <li><strong>Guest of Honor</strong>: 
-                  <p style = "text-align: center;"> Mrs. Archana. G
-                  <br>Data Engg. Associate, Accenture </p>
-                </li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>Event Overview</h2>
-              <p>
-                The inauguration ceremony featured a warm welcome address, introducing our club's vision and mission. Witnessed the unveiling of our club's Website and other social media pages, symbolizing unity and growth. Our esteemed Guest of Honor, Mrs. Archana. G, graced the occasion with her inspiring words.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-  </main><!-- End #main -->
-
-
- <!-- ======= Footer ======= -->
- <footer id="footer">
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-
-        <div class="col-lg-4 col-md-6">
-          <div class="footer-info">
-            <h3>Coders Forum</h3>
-            <p>
-              Department of Computer Science and Engineering<br>
-              Panimalar Engineering College, <br>
-              Bangalore Trunk Road,<br>
-              Varadharajapuram, Poonamallee <br>
-              Chennai - 600 123 <br><br>
-              <i class="bi bi-telephone" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">+91 93846 78960</span><br>
-              <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <a href="mailto:coders_forum@outlook.com" style = "color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
-           </p>
-            <div class="social-links mt-3">
-              <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-              <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-
-              </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6" style = "display : flex ; align-items : center ; justify-content : center ;">
-          <img src="./assets/img/club-logo.png" style = "width : 300px; height : auto ;">
-        </div>
-        <div class="col-lg-4 col-md-6 d-none d-sm-block">
-            <div class="row">
-            <div class="col-sm-6 col-md-6 footer-links">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
-                <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
-                <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
-                <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
-                <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
-              </ul>
-            </div>
-
-            <div class="col-sm-6 col-md-6 footer-links">
-              <h4>Initiators</h4>
-              <ul>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
-              </ul>
-            </div>
-          </div>
-        </div> 
-
-        <!-- Mobile Two-Column Layout -->
-        <div class="col-12 footer-links d-md-none" style = "margin-top: 30px;">
-          <div class="row">
-            <div class="col-6">
-              <h4>Useful Links</h4>
-              <ul>
-                <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
-                <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
-                <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
-                <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
-                <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
-              </ul>
-            </div>
-            <div class="col-6">
-              <h4>Initiators</h4>
-              <ul>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
-                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-
+  </header>
+    <div class="hero-wrapper">
+  <img src="./assets/img/hero-bg.jpg" alt="bg-img" class="header-img">
+
+  <div class="px-4 pt-5 text-center border-bottom hero-content">
+    <h1 class="display-4 fw-bold">
+      Our Community Events
+    </h1>
+
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">
+        Weekly meetups, monthly contests, seasonal challenges and more...
+      </p>
+
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <button class="animated-button" onclick="window.location.href='./Meetup.html'">
+          <span class="text">View Meetups</span>
+          <span class="circle"></span>
+        </button>
       </div>
     </div>
   </div>
-</footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<div class="container">
 
-  <script src="assets/js/main.js"></script>
+    <div class="timeline-item"><div class="timeline-progress"></div> <div class="timeline-dot"></div>   <span class="timeline-date">16 June 2024</span>
+    <div class="container col-xxl-8 px-4 py-5 container-style">
+      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Highlight <hr>
+          </h4>
+          <p> 
+            <b>Contest Name:</b> Summer Code Blitz
+            <br />
+            <b>Date: </b>June 16th, 2024<br />
+          </p> <hr>
+          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Event Overview
+          </h2>
+          <p>
+            Join the Summer Code Blitz this June on HackerRank!
+            <br />Students from Panimalar Engineering College can showcase their
+            coding skills, compete across departments, and climb the
+            leaderboard.
+            <br />
+            Register now to be part of the weekly coding contest series!
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a
+              href="https://codersforum.netlify.app/codeblitz"
+              class="neu-container"
+            >
+              <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                More Details
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img
+            src="./assets/img/codeblitz1.jpg"
+            class="d-block mx-lg-auto img-fluid zoomable-img"
+            alt="Event Image"
+            loading="lazy"
+            style="
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); border-radius: 20px;"
+          />
+        </div>
+      </div>
+    </div>
+    </div>
 
-</body>
+    <div class="timeline-item"><div class="timeline-progress"></div> <div class="timeline-dot"></div>   <span class="timeline-date">20 January 2024</span>
+    <div class="container col-xxl-8 px-4 py-5 container-style">
+      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Highlight
+          </h4>
+          <hr>
+          <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Winners
+          </h5>
+          <p>
+            <ol>
+              <li>
+                Atchaiyaraj S & Adrian Calvin K A
+              </li>
+              <li>
+                Domesan U
+              </li>
+              <li>
+                K R Nijandhan & Venis Xavier V
+              </li>
+              <li>
+                Ramchandru R & Siranjeevi P
+              </li>
+              <li>
+                Roffin Jason N & Arun Kumar C
+              </li>
+            </ol>
+          </p>
+          <hr>
+          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Event Overview
+          </h2>
+          <p>
+            Participants tackle challenging coding problems under time limits, testing their problem-solving, algorithmic thinking, and programming skills. 
+            <br>With multiple rounds and rising difficulty, PEC Code Quest keeps students sharp and motivated.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a
+              href="https://codersforum.netlify.app/codequest"
+              class="neu-container"
+            >
+              <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                More Details
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">  
+  <div class="mini-slider-container">
+    <div class="mini-slide">                        
+      <div class="mini-item zoomable-img"><img src="./assets/img/flyers/CodeQuest.png" alt=""></div>
+      <div class="mini-item zoomable-img"><img src="./assets/img/events/cq-winners.jpg" alt=""></div>
+    </div>
+    <div class="mini-controls">
+      <button class="mini-prev">◁</button>
+      <button class="mini-next">▷</button>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
+    <div class="timeline-item"> <div class="timeline-progress"></div><div class="timeline-dot"></div>   <span class="timeline-date">29 August 2023</span>
+      <div class="container col-xxl-8 px-4 py-5 container-style">
+        <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+              Highlight
+            </h4>
+            <hr>
+            <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+              Winners
+            </h5>
+            <p>
+              <ol>
+                <li>
+                  Maria Robin Andrew
+                </li>
+                <li>Dhayanand Bhoopalan
+                </li>
+                <li>Emmanuel Jonathan
+                </li>
+              </ol>
+            </p>
+            <hr>
+            <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+              Event Overview
+            </h2>
+            <p>
+              Gear up to claim the title of HashKing on August 29, 2023! Join this thrilling contest to test your limits, fuel your coding passion, and master the art of hashing.
+              <br>Register now for an exciting and rewarding challenge!
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <a
+                href="https://www.hackerrank.com/august-monthly-contest-hashking-29aug2023"
+                class="neu-container"
+              >
+                <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                  More Details
+                </button></a
+              >
+            </div>
+          </div>
+          <div class="col-10 col-sm-8 col-lg-6">  
+    <div class="mini-slider-container">
+      <div class="mini-slide">
+        <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking.png" alt=""></div>
+        <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking-winners.png" alt=""></div>
+        <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking-winners.png" alt=""></div>
+      </div>
+      <div class="mini-controls">
+        <button class="mini-prev">◁</button>
+        <button class="mini-next">▷</button>
+      </div>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timeline-item"> <div class="timeline-progress"></div> <div class="timeline-dot"></div>  <span class="timeline-date">29 August 2023</span>
+    <div class="container col-xxl-8 px-4 py-5 container-style">
+      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Highlight
+          </h4>
+          <hr>
+          <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Winners
+          </h5>
+          <p>
+            <ol>
+              <li>
+                Mohana Priya. S R
+              </li>
+              <li>Samuel Varghese. J
+              </li>
+              <li>Muthu Usha Rani. M
+              </li>
+            </ol>
+          </p>
+          <hr>
+          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Event Overview
+          </h2>
+          <p>
+            Prepare to be crowned the C Mastermind on August 29, 2023! Join this exciting contest to sharpen your coding skills, celebrate your passion for C programming, and showcase your mastery of the language.
+            <br>Register now and put your skills to the test!
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a
+              href="https://www.hackerrank.com/include-craze-c-august-monthly-contest"
+              class="neu-container"
+            >
+              <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                More Details
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">  
+  <div class="mini-slider-container">
+    <div class="mini-slide">
+      <div class="mini-item  zoomable-img"><img src="./assets/img/events/c.png" alt=""></div>
+      <div class="mini-item  zoomable-img"><img src="./assets/img/events/august-event-participants.png" alt=""></div>
+      <div class="mini-item  zoomable-img"><img src="./assets/img/events/craze-c-winners.png" alt=""></div>
+    </div>
+    <div class="mini-controls">
+      <button class="mini-prev">◁</button>
+      <button class="mini-next">▷</button>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="timeline-item"> <div class="timeline-progress"></div> <div class="timeline-dot"></div>  <span class="timeline-date">27 July 2023</span>
+    <div class="container col-xxl-8 px-4 py-5 container-style">
+      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Highlight
+          </h4>
+          <hr>
+          <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Winners
+          </h5>
+          <p>
+            <ol>
+              <li>Elavarasar. P
+              </li>
+              <li>Vasanth. R
+              </li>
+              <li>Maria Robin Andrew
+              </li>
+            </ol>
+          </p>
+          <hr>
+          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Event Overview
+          </h2>
+          <p>
+            [MATRICKS] - The coding contest hosted by Coders Forum brought together enthusiasts from various backgrounds to showcase their skills. 
+            <br>It offered a thrilling platform to test coding expertise, logic, and creativity through challenging problems.
+          </p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a
+              href="https://www.hackerrank.com/coders-forum-july-monthly-contest-matricks"
+              class="neu-container"
+            >
+              <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                More Details
+              </button></a
+            >
+          </div>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">  
+  <div class="mini-slider-container">
+    <div class="mini-slide">
+      <div class="mini-item  zoomable-img"><img src="./assets/img/events/matricks1.png" alt=""></div>
+      <div class="mini-item  zoomable-img"><img src="./assets/img/events/participants.png" alt=""></div>
+      <div class="mini-item  zoomable-img"><img src="./assets/img/events/winners.png" alt=""></div>
+    </div>
+    <div class="mini-controls">
+      <button class="mini-prev">◁</button>
+      <button class="mini-next">▷</button>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    <div class="timeline-item"> <div class="timeline-progress"></div> <div class="timeline-dot"></div>  <span class="timeline-date">25 July 2023</span>
+    <div class="container col-xxl-8 px-4 py-5 container-style" style="margin-bottom: 50px;">
+      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-lg-6">
+          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Highlight
+          </h4>
+          <hr>
+          <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Guest of Honor:
+          </h5>
+          <p>
+            Mrs. Archana. G
+Data Engg. Associate, Accenture
+          </p>
+          <hr>
+          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+            Event Overview
+          </h2>
+          <p>
+            The inauguration began with a warm welcome highlighting the club’s vision and mission, followed by the launch of its website and social media pages, marking unity and growth.
+            <br> Guest of Honor Mrs. Archana G inspired the audience with her words.
+          </p>
+        </div>
+        <div class="col-10 col-sm-8 col-lg-6">  
+  <div class="mini-slider-container">
+    <div class="mini-slide">
+      <div class="mini-item  zoomable-img"><img src="./assets/img/events/Inaguration-poster.png" alt=""></div>
+      <div class="mini-item  zoomable-img"><img src="./assets/img/events/members.jpg" alt=""></div>
+    </div>
+    <div class="mini-controls">
+      <button class="mini-prev">◁</button>
+      <button class="mini-next">▷</button>
+    </div>
+  </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="imageModal" tabindex="-1">
+      <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content bg-dark">
+          <div class="modal-header border-0">
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center align-items-center">
+            <img id="modalImage" src="" class="img-fluid rounded-4 shadow-lg" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+    <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Coders Forum</h3>
+              <p>
+                Department of Computer Science and Engineering<br>
+                Panimalar Engineering College, <br>
+                Bangalore Trunk Road,<br>
+                Varadharajapuram, Poonamallee <br>
+                Chennai - 600 123 <br><br>
+                <i class="bi bi-telephone" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">+91 93846 78960</span><br>
+                <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <a href="mailto:coders_forum@outlook.com" style = "color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
+            </p>
+
+              <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" style = "display : flex ; align-items : center ; justify-content : center ;">
+            <img src="./assets/img/club-logo.png" style = "width : 300px; height : auto ;">
+          </div>
+          <div class="col-lg-4 col-md-6 d-none d-sm-block">
+              <div class="row">
+              <div class="col-sm-6 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-6 footer-links">
+                <h4>Initiators</h4>
+                <ul>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Mobile Two-Column Layout -->
+          <div class="col-12 footer-links d-md-none" style = "margin-top: 30px;">
+            <div class="row">
+              <div class="col-6">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h4>Initiators</h4>
+                <ul>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/events.js"></script>
+  </body>
 </html>
