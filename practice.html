@@ -14,6 +14,10 @@
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
     <script>
+      function unlockPage() {
+    document.getElementById("signin-overlay").style.display = "none";
+    document.getElementById("page-content").style.display = "block";
+  }
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
@@ -414,10 +418,94 @@
   position: relative;
 }
 
+/* Lock page initially */
+.locked {
+  display: none;
+}
+
+/* Fullscreen overlay */
+#signin-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+/* Center box */
+.signin-box {
+  background: #111;
+  padding: 32px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  border-radius: 12px;
+  color: white;
+}
+
+.signin-box h2 {
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+.signin-box p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.signin-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #f2c94c;
+  color: black;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
 
   </style>
 </head>
 <body>
+<!-- ===== SIGN-IN OVERLAY ===== -->
+<div id="signin-overlay">
+  <div class="signin-box">
+    <h2>Sign-In Required</h2>
+    <p>
+      Please sign in or sign up to participate.
+    </p>
+
+    <a
+      href="https://www.hackerrank.com/interview-prep-updated"
+      target="_blank"
+      class="signin-btn"
+      onclick="unlockPage()"
+    >
+      Go to Contest
+    </a>
+  </div>
+</div>
+
+<!-- ===== ACTUAL PAGE CONTENT (LOCKED INITIALLY) ===== -->
+<div id="page-content" class="locked">
+
+  <!-- HEADER -->
+  <header>...</header>
+
+  <!-- HERO -->
+  <section class="hero">...</section>
+
+  <!-- CODING CORNER / PRACTICE -->
+  <section class="practice">...</section>
+
+  <!-- FOOTER -->
+  <footer>...</footer>
+
+</div>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top ">
@@ -477,7 +565,7 @@
             <div class="problem-row">
               <span>Problem 2: Too many AB</span>
               <a class="solve-btn"
-                 href="https://www.hackerrank.com/toomanyab"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/1-toomanyab-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -489,7 +577,7 @@
             <div class="problem-row">
               <span>Problem 4: Target sum pair</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/target-sum-pair-2"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -513,7 +601,7 @@
             <div class="problem-row">
               <span>Problem 2: Empty sand clock</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/2-emptysandclock-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -525,7 +613,7 @@
             <div class="problem-row">
               <span>Problem 4: Remove duplicate</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/remove-duplicates"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -550,7 +638,7 @@
             <div class="problem-row">
               <span>Problem 2: Sum Divisible</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/7-sumdivisible-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -562,7 +650,7 @@
             <div class="problem-row">
               <span>Problem 4: Distance Between The Strings</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/distance-between-the-strings"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -587,7 +675,7 @@
             <div class="problem-row">
               <span>Problem 2: Formatting issues</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/3-formattingissues-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -599,7 +687,7 @@
             <div class="problem-row">
               <span>Problem 4: Common prefix</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/common-prefix-35"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -624,7 +712,7 @@
             <div class="problem-row">
               <span>Problem 2: Is it possible to form a matrix</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/8-isitpossible-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -636,7 +724,7 @@
             <div class="problem-row">
               <span>Problem 4: Square pattern</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/square-pattern-19-1"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -661,7 +749,7 @@
             <div class="problem-row">
               <span>Problem 2: Back to nursery</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/10-backtonursery-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -673,7 +761,7 @@
             <div class="problem-row">
               <span>Problem 4: Habit tracker</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/habit-tracker"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -698,7 +786,7 @@
             <div class="problem-row">
               <span>Problem 2: Number pattern generator</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/11-numberpatterngenerator-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -710,7 +798,7 @@
             <div class="problem-row">
               <span>Problem 4: Bookmark checker</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/bookmark-checker"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -735,7 +823,7 @@
             <div class="problem-row">
               <span>Problem 2: Pyramid of numbers</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/12-pyramidofnumbers-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -747,7 +835,7 @@
             <div class="problem-row">
               <span>Problem 4: Find the Runner-Up Score</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/find-the-runner-up-score-2-2"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -772,7 +860,7 @@
             <div class="problem-row">
               <span>Problem 2: Vowel Count</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/13-vowelcount-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -784,7 +872,7 @@
             <div class="problem-row">
               <span>Problem 4: Find Frequency</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/27-findfrequency-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -809,7 +897,7 @@
             <div class="problem-row">
               <span>Problem 2: Reverse Words In Sentence</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/15-reversewordsinsentence-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -821,7 +909,7 @@
             <div class="problem-row">
               <span>Problem 4: Time Converter</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/time-convertor"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -846,7 +934,7 @@
             <div class="problem-row">
               <span>Problem 2: Missing Elements Checker</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/16-missingelementschecker-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -858,7 +946,7 @@
             <div class="problem-row">
               <span>Problem 4: Array Rotation</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/17-arrayrotation-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -883,7 +971,7 @@
             <div class="problem-row">
               <span>Problem 2: Sum Of Two Elements In Array</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/18-sumoftwoelementsinarray-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -895,7 +983,7 @@
             <div class="problem-row">
               <span>Problem 4: Index Sum Array</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/21-indexsumarray-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -920,7 +1008,7 @@
             <div class="problem-row">
               <span>Problem 2: Common Elements In Two Arrays</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/20-commonelementsintwoarrays-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -932,7 +1020,7 @@
             <div class="problem-row">
               <span>Problem 4: Number of Pages??</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/number-of-pages-1"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -957,7 +1045,7 @@
             <div class="problem-row">
               <span>Problem 2: Think Binarical</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/22-thinkbinarical-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -969,7 +1057,7 @@
             <div class="problem-row">
               <span>Problem 4: Alphabet Decryption</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/alphabet-decryption"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -994,7 +1082,7 @@
             <div class="problem-row">
               <span>Problem 2: Improve At Last</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/24-improveatlast-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1006,7 +1094,7 @@
             <div class="problem-row">
               <span>Problem 4: Grid Escape</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/grid-escape-1"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1031,7 +1119,7 @@
             <div class="problem-row">
               <span>Problem 2: Who Is Fake</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/26-whoisfake-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1043,7 +1131,7 @@
             <div class="problem-row">
               <span>Problem 4: Keypad Cipher</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/keypad-cipher"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1068,7 +1156,7 @@
             <div class="problem-row">
               <span>Problem 2: Disarium Number</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/29-disariumnumber-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1080,7 +1168,7 @@
             <div class="problem-row">
               <span>Problem 4: Coder Shoes</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/6-codershoes-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1105,7 +1193,7 @@
             <div class="problem-row">
               <span>Problem 2: BMI</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/34-bmi-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1117,7 +1205,7 @@
             <div class="problem-row">
               <span>Problem 4: Find The Target</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/23-findthetarget-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1142,7 +1230,7 @@
             <div class="problem-row">
               <span>Problem 2: Harshad Number</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/31-harshadnumber-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1154,7 +1242,7 @@
             <div class="problem-row">
               <span>Problem 4: Swap Bro</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/25-swapbro-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1179,7 +1267,7 @@
             <div class="problem-row">
               <span>Problem 2: Is That No Ball?</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/28-isthatnoballcricket-cf-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1191,7 +1279,7 @@
             <div class="problem-row">
               <span>Problem 4: EMI</span>
               <a class="solve-btn"
-                 href="www.google.com"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/35-emi-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1216,7 +1304,7 @@
             <div class="problem-row">
               <span>Problem 2: Second Highest</span>
               <a class="solve-btn"
-                 href="https://www.hackerrank.com/"
+                 href="https://www.hackerrank.com/contests/interview-prep-updated/challenges/33-secondhighest-cf"
                  target="_blank">Solve</a>
             </div>
             <div class="problem-row">
@@ -1656,5 +1744,38 @@
       </div>
     </div>
   </footer>
+  <!-- ===== HackerRank Sign-in Modal ===== -->
+<div class="modal fade" id="hackerrankModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-light border border-warning">
+      <div class="modal-header border-0">
+        <h5 class="modal-title text-warning">HackerRank Sign In Required</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body text-center">
+        <p>
+          You must be signed in to HackerRank to participate in this contest.
+        </p>
+        <p class="text-muted" style="font-size: 14px;">
+          Click below to continue to HackerRank.
+        </p>
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <a
+          id="hackerrankLink"
+          href="#"
+          target="_blank"
+          class="btn btn-warning fw-bold"
+        >
+          Go to HackerRank
+        </a>
+        <button class="btn btn-outline-light" data-bs-dismiss="modal">
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
