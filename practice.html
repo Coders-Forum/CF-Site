@@ -13,21 +13,60 @@
   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
-    <script>
-      function unlockPage() {
-    document.getElementById("signin-overlay").style.display = "none";
-    document.getElementById("page-content").style.display = "block";
-  }
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-3M7SMRS80F');
-    </script>
+    
   <meta charset="UTF-8" />
   <title>Coding Corner</title>
 
   <style>
+
+    /* Hide page initially */
+#page-content {
+  display: none;
+}
+
+/* Full-screen overlay */
+#signin-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+/* Center box */
+.signin-box {
+  background: #111;
+  color: #fff;
+  padding: 32px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.signin-box h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+.signin-box p {
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+.signin-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 18px;
+  background: #f2c94c;
+  color: #000;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
     :root {
       --bg: #050509;
       --bg-soft: #0c0c14;
@@ -470,11 +509,13 @@
   </style>
 </head>
 <body>
-<!-- ===== SIGN-IN OVERLAY ===== -->
+
+  <!-- ===== HackerRank Sign-in Overlay ===== -->
 <div id="signin-overlay">
   <div class="signin-box">
-    <h2>Sign-In Required</h2>
+    <h2>HackerRank Sign-In Required</h2>
     <p>
+      This is a HackerRank contest.<br>
       Please sign in or sign up to participate.
     </p>
 
@@ -489,22 +530,7 @@
   </div>
 </div>
 
-<!-- ===== ACTUAL PAGE CONTENT (LOCKED INITIALLY) ===== -->
-<div id="page-content" class="locked">
 
-  <!-- HEADER -->
-  <header>...</header>
-
-  <!-- HERO -->
-  <section class="hero">...</section>
-
-  <!-- CODING CORNER / PRACTICE -->
-  <section class="practice">...</section>
-
-  <!-- FOOTER -->
-  <footer>...</footer>
-
-</div>
 
 
   <!-- ======= Header ======= -->
@@ -1776,6 +1802,30 @@
     </div>
   </div>
 </div>
+
+<script>
+  function unlockPage() {
+    // Remember user has acknowledged sign-in
+    localStorage.setItem("cf_hackerrank_ack", "true");
+
+    document.getElementById("signin-overlay").style.display = "none";
+    document.getElementById("page-content").style.display = "block";
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const acknowledged = localStorage.getItem("cf_hackerrank_ack");
+
+    if (acknowledged === "true") {
+      // Already acknowledged → show page
+      document.getElementById("signin-overlay").style.display = "none";
+      document.getElementById("page-content").style.display = "block";
+    } else {
+      // First visit → show overlay
+      document.getElementById("signin-overlay").style.display = "flex";
+      document.getElementById("page-content").style.display = "none";
+    }
+  });
+</script>
 
 </body>
 </html>
