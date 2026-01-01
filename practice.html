@@ -1805,27 +1805,28 @@
 
 <script>
   function unlockPage() {
-    // Remember user has acknowledged sign-in
-    localStorage.setItem("cf_hackerrank_ack", "true");
+    // Remember only for this browser session
+    sessionStorage.setItem("cf_hackerrank_ack", "true");
 
     document.getElementById("signin-overlay").style.display = "none";
     document.getElementById("page-content").style.display = "block";
   }
 
   window.addEventListener("DOMContentLoaded", () => {
-    const acknowledged = localStorage.getItem("cf_hackerrank_ack");
+    const acknowledged = sessionStorage.getItem("cf_hackerrank_ack");
 
     if (acknowledged === "true") {
-      // Already acknowledged → show page
+      // Same session → no overlay
       document.getElementById("signin-overlay").style.display = "none";
       document.getElementById("page-content").style.display = "block";
     } else {
-      // First visit → show overlay
+      // New session → show overlay
       document.getElementById("signin-overlay").style.display = "flex";
       document.getElementById("page-content").style.display = "none";
     }
   });
 </script>
+
 
 </body>
 </html>
