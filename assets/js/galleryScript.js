@@ -11,224 +11,224 @@ const galleryData = [
   {
     title: 'Weekly MeetUp',
     desc: 'Sanjay K, a pre-final year student, explained about the neural networks and the training of ML model using python in Machine Learning.',
-    imgUrl: 'assets/img/gallery/img65.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img65.jpg',
     date: '28 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Sakkthivel T, a pre-final year student, delved into the workings and architectural aspects of Amazon Web Services, exploring the tools of cloud computing.',
-    imgUrl: 'assets/img/gallery/img64.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img64.jpg',
     date: '28 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Madhavakumar D, a pre-final year student, gave a lightning talk on the significance of Java and its diverse applications in the current world.',
-    imgUrl: 'assets/img/gallery/img63.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img63.jpg',
     date: '28 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Rishab H, a pre-final year student, emphasized a lightning talk on Hard Disk Data recovery working mechanism.',
-    imgUrl: 'assets/img/gallery/img62.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img62.jpg',
     date: '28 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Shruthi S, a second-year student, elucidated the complexity of SoundSynth-Streamlined Speech Summarization system, with a live demonstration of its capabilities.',
-    imgUrl: 'assets/img/gallery/img61.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img61.jpg',
     date: '28 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Ponnandhakumar P, a pre-final year student, explained the working of a Python-coded Telegram bot that he has developed and deployed it using API Keys.',
-    imgUrl: 'assets/img/gallery/img60.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img60.jpg',
     date: '28 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Aalia Fathima, a second year student, discussed about insightful explanation on Search Engine Optimization crucial for optimizing websites and enhancing online visibility.',
-    imgUrl: 'assets/img/gallery/img59.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img59.jpg',
     date: '21 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Emmanuel Prithish S, a second year student, gave a lightning talk on Machine Learning algorithms.',
-    imgUrl: 'assets/img/gallery/img58.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img58.jpg',
     date: '21 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Sanjay K, a pre-final year student, delivered a detailed overview of Amazon Athena for analyzing data stored in Amazon S3 using standard SQL.',
-    imgUrl: 'assets/img/gallery/img57.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img57.jpg',
     date: '21 March, 2024',
     filterType: ''
   },
   {
     title: 'March- HACKATHON',
     desc: 'Participants demonstrated their problem-solving skills and expertise, showcasing their innovative solutions during the energetic atmosphere of hackathon.',
-    imgUrl: 'assets/img/gallery/img74.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img74.jpg',
     date: '15 March, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'March - HACKATHON',
     desc: 'Participants demonstrated their problem-solving skills and expertise, showcasing their innovative solutions during the energetic atmosphere of hackathon.',
-    imgUrl: 'assets/img/gallery/img73.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img73.jpg',
     date: '15 March, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'March - HACKATHON',
     desc: 'Winners of the March Hackathon, where innovation and expertise collide in a showcase of problem-solving brilliance.',
-    imgUrl: 'assets/img/gallery/img72.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img72.jpg',
     date: '15 March, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'March - HACKATHON',
     desc: 'Winners of the March Hackathon, where innovation and expertise collide in a showcase of problem-solving brilliance.',
-    imgUrl: 'assets/img/gallery/img71.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img71.jpg',
     date: '15 March, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'March - HACKATHON',
     desc: 'Participants demonstrated their problem-solving skills and expertise, showcasing their innovative solutions during the energetic atmosphere of hackathon.',
-    imgUrl: 'assets/img/gallery/img70.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img70.jpg',
     date: '15 March, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'March - HACKATHON',
     desc: 'Participants demonstrated their problem-solving skills and expertise, showcasing their innovative solutions during the energetic atmosphere of hackathon.',
-    imgUrl: 'assets/img/gallery/img69.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img69.jpg',
     date: '15 March, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Varshini S, a second year student, conducted a game on Technical connections based on programming languages.',
-    imgUrl: 'assets/img/gallery/img55.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img55.jpg',
     date: '14 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Johith Raj S S, a second year student, discussed about the concept of Multiple linear regression in machine learning.',
-    imgUrl: 'assets/img/gallery/img54.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img54.jpg',
     date: '14 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Ajitha M, a second year student, explained about the components and features of React JS.',
-    imgUrl: 'assets/img/gallery/img53.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img53.jpg',
     date: '14 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'An insightful two-round quiz was organized on Database Management System and Programming Languages, allowing participants to showcase their knowledge and skills comprehensively.',
-    imgUrl: 'assets/img/gallery/img52.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img52.jpg',
     date: '5 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Johith Raj S S, a second year student, demonstrated the concept of linear regression uing python in machine learning.',
-    imgUrl: 'assets/img/gallery/img51.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img51.jpg',
     date: '5 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Madhavakumar D,a pre-final year student, demonstrated QR code generation and decoding using Python.',
-    imgUrl: 'assets/img/gallery/img50.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img50.jpg',
     date: '5 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'A responsive quiz was conducted on python which offered participants an engaging opportunity to understand the concepts in depth.',
-    imgUrl: 'assets/img/gallery/img49.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img49.jpg',
     date: '1 March, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Johith Raj S S, a second year student, explained the concept of linear regression in machine learning.',
-    imgUrl: 'assets/img/gallery/img48.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img48.jpg',
     date: '1 March, 2024',
     filterType: ''
   },
   {
     title: 'Coding Contest - Coffee with Java',
     desc: 'Winners of February monthly coding contest - Coffee with Java, capturing the moment.',
-    imgUrl: 'assets/img/gallery/img68.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img68.jpg',
     date: '26 February, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'Coding Contest - Coffee with Java',
     desc: 'Participants exhibited their problem-solving prowess in the programming contests, showcasing their skills and expertise effectively.',
-    imgUrl: 'assets/img/gallery/img67.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img67.jpg',
     date: '26 February, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'Coding Contest - Coffee with Java',
     desc: 'Participants exhibited their problem-solving prowess in the programming contests, showcasing their skills and expertise effectively.',
-    imgUrl: 'assets/img/gallery/img66.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img66.jpg',
     date: '26 February, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Madhavakumar D, a pre-final year student, shared valuable insights on JavaScript code to unveil answers, demonstrating strategies for code comprehension.',
-    imgUrl: 'assets/img/gallery/img46.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img46.jpg',
     date: '23 February, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: "Rishab H, a pre-final year student, explored JavaScript's transformative capabilities, focusing on its complex methods for constructing web pages.",
-    imgUrl: 'assets/img/gallery/img45.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img45.jpg',
     date: '23 February, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Kumar K, a pre-final year student, engaged in a detailed discussion concerning programming strategies and insights, particularly from the perspective of interview preparation.',
-    imgUrl: 'assets/img/gallery/img44.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img44.jpg',
     date: '20 February, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Sakkthivel T, a pre-final year student, delved into the building a Mass Email Automation System using Amazon Web Services, showcasing its architecture and functionalities.',
-    imgUrl: 'assets/img/gallery/img43.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img43.jpg',
     date: '20 February, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Jeswin Joseph J, a pre-final year student, provided a detailed overview of Django templates, emphasizing its workflow and essential role in web development.',
-    imgUrl: 'assets/img/gallery/img42.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img42.jpg',
     date: '20 February, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Kumar K,a pre-final year student, discussed the insights of Power BI and demonstrated a Data Visualization on Real Mart Analysis.',
-    imgUrl: 'assets/img/gallery/img41.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img41.jpg',
     date: '6 February, 2024',
     filterType: ''
   },
