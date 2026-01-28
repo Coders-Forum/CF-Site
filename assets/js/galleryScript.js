@@ -235,140 +235,140 @@ const galleryData = [
   {
     title: 'Weekly MeetUp',
     desc: 'A Quiz game was enthusiastically conducted on C programming and javascript for participants to showcase their expertise and understanding across a diverse array of coding languages and concepts.',
-    imgUrl: 'assets/img/gallery/img40.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img40.jpg',
     date: '6 February, 2024',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Jerrish N,a pre-final year student, explained the features and workflow of Unity 3D.',
-    imgUrl: 'assets/img/gallery/img39.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img39.jpg',
     date: '6 February, 2024',
     filterType: ''
   },
   {
     title: 'PEC Code Quest',
     desc: 'Winners of PEC Code Quest, an Inter-Department Coding Contest conducted through Hackerrank.',
-    imgUrl: 'assets/img/gallery/img36.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img36.jpg',
     date: '23 January, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'PEC Code Quest',
     desc: 'Contestants Solving complex challenges in the Final round of PEC Code Quest.',
-    imgUrl: 'assets/img/gallery/img37.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img37.jpg',
     date: '23 January, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'PEC Code Quest',
     desc: 'Contestants solving challenges in the Semi-Final Round of PEC Code Quest.',
-    imgUrl: 'assets/img/gallery/img38.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img38.jpg',
     date: '22 January, 2024',
     filterType: 'filter-highlight'
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Rishab H, a pre-final year student, discussed about JS promise,await and also uses of it in async functions.',
-    imgUrl: 'assets/img/gallery/img35.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img35.jpeg',
     date: '22 December, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Madhavkumar D, a pre-final year student, discussed and demonstrated audio conferencing application in java with his real-time project.',       
-    imgUrl: 'assets/img/gallery/img34.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img34.jpeg',
     date: '22 December, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Madhumitha V, a second year student, explained about Internet of Things,CV module and presented her project "Drowsiness Detection" on IOT.',   
-    imgUrl: 'assets/img/gallery/img33.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img33.jpeg',
     date: '7 September, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Shruti S, a second year student, discussed about Google Firebase and explained her IOT project "Automatic fish feeder".',
-    imgUrl: 'assets/img/gallery/img32.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img32.jpeg',
     date: '7 September, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Mohammed Jasim M, a second year student, gave a talk on Pygame and explained his project "Airspace".',
-    imgUrl: 'assets/img/gallery/img31.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img31.jpeg',
     date: '7 September, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Hariharan B, a second year student, explained about the Pygame and demonstrated his project "Snake game".',
-    imgUrl: 'assets/img/gallery/img30.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img30.jpeg',
     date: '31 August, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Arundhathi T, a pre-final year student, gave a brief note on Internet of Things.',
-    imgUrl: 'assets/img/gallery/img29.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img29.jpeg',
     date: '31 August, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Michael Josil M, a pre-final year student, imparted a detailed description about the Google Cloud.',
-    imgUrl: 'assets/img/gallery/img28.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img28.jpeg',
     date: '31 August, 2023',
     filterType: ''
   },
   {
     title: 'Coding Contest - #HASHKING',
     desc: 'Winners of August monthly coding contest - #HASHKING, immersing the moment.',
-    imgUrl: 'assets/img/gallery/img27.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img27.jpeg',
     date: '29 August, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Coding Contest - #include <craze.c>',
     desc: 'Winners of August monthly coding contest - #include <craze.c>, embracing the event.',
-    imgUrl: 'assets/img/gallery/img26.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img26.jpeg',
     date: '29 August, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'August Monthly Coding Contest',
     desc: "A showcase of programmers' atypical coding knowledge, as they test their problem-solving skills.",
-    imgUrl: 'assets/img/gallery/img25.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img25.jpeg',
     date: '29 August, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Karthick V, a pre-final year student, explained the Django fundamentals with a live demo.',
-    imgUrl: 'assets/img/gallery/img24.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img24.jpeg',
     date: '17 August, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Ramanan K.B, a final year student, gave a guest lecture on how to choose a Framework with his own project.',
-    imgUrl: 'assets/img/gallery/img23.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img23.jpeg',
     date: '17 August, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Suresh H, a final year student, gave an insightful discussion on Frontend and Backend framework.',
-    imgUrl: 'assets/img/gallery/img22.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img22.jpeg',
     date: '17 August, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Raj Dhyaneshvar, a final year student, sparking curiosity with a lightning session on API Keys.',
-    imgUrl: 'assets/img/gallery/img21.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img21.jpeg',
     date: '10 August, 2023',
     filterType: ''
   },
@@ -452,42 +452,42 @@ const galleryData = [
   {
     title: 'Club Inauguration',
     desc: 'Karthick V of III CSE D, Greeting the group with a welcome note',
-    imgUrl: 'assets/img/gallery/img7.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img7.jpeg',
     date: '25 July, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Club Inauguration',
     desc: 'Snapshot of the special moment when our coding community came together, to mark the Inauguration of Coders Forum Club.',
-    imgUrl: 'assets/img/gallery/img8.jpg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img8.jpg',
     date: '25 July, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Club Inauguration',
     desc: 'Mrs. Anitha Moses, Co-Ordinator, addressed the gathering. Her words left a lasting impact, inspiring and motivating all the audience.',        
-    imgUrl: 'assets/img/gallery/img9.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img9.jpeg',
     date: '25 July, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img4.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img4.jpeg',
     date: '21 July, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img5.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img5.jpeg',
     date: '21 July, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img6.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img6.jpeg',
     date: '21 July, 2023',
     filterType: 'filter-highlight'
   },
@@ -508,7 +508,7 @@ const galleryData = [
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img3.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img3.jpeg',
     date: '20 July, 2023',
     filterType: 'filter-highlight'
   }
