@@ -375,56 +375,56 @@ const galleryData = [
   {
     title: 'Weekly MeetUp',
     desc: 'Rishab H, a pre-final year student, delved into  Git, Github and Netlify, simplifying version control and Web Hosting for all of us.',
-    imgUrl: 'assets/img/gallery/img20.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img20.jpeg',
     date: '10 August, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Jeswin Joseph J shared invaluable insights into Figma, guiding through its features and possibilities.',
-    imgUrl: 'assets/img/gallery/img19.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img19.jpeg',
     date: '10 August, 2023',
     filterType: ''
   },
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img18.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img18.jpeg',
     date: '9 August, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img17.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img17.jpeg',
     date: '8 August, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img16.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img16.jpeg',
     date: '8 August, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Weekly MeetUp',
     desc: "Madhavakumar D, in an interactive and entertaining talk, discusses his skill and understanding in Python's KeyBoard Module.",
-    imgUrl: 'assets/img/gallery/img13.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img13.jpeg',
     date: '4 August, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Jeswin Rhymond J, a pre-final year student, utilizing the MeetUp to get his questions answered.',
-    imgUrl: 'assets/img/gallery/img14.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img14.jpeg',
     date: '4 August, 2023',
     filterType: ''
   },
   {
     title: 'Weekly MeetUp',
     desc: 'Vasanth R, a Pre-Final Year student, gave a Lightning Talk about his current research.',
-    imgUrl: 'assets/img/gallery/img15.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img15.jpeg',
     date: '4 August, 2023',
     filterType: ''
   },
@@ -445,7 +445,7 @@ const galleryData = [
   {
     title: 'Coding Contest - [MATRICKS]',
     desc: 'Winners of July monthly coding contest - [MATRICKS], capturing the moment.',
-    imgUrl: 'assets/img/gallery/img12.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img12.jpeg',
     date: '27 July, 2023',
     filterType: 'filter-highlight'
   },
@@ -501,7 +501,7 @@ const galleryData = [
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img2.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img2.jpeg',
     date: '20 July, 2023',
     filterType: 'filter-highlight'
   },
