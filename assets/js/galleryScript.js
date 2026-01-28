@@ -431,14 +431,14 @@ const galleryData = [
   {
     title: 'Coding Contest - [MATRICKS]',
     desc: "A showcase of participants' exceptional programming knowledge, as they test their problem-solving ability.",
-    imgUrl: 'assets/img/gallery/img10.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img10.jpeg',
     date: '27 July, 2023',
     filterType: 'filter-highlight'
   },
   {
     title: 'Coding Contest - [MATRICKS]',
     desc: "A showcase of participants' exceptional programming knowledge, as they test their problem-solving ability.",
-    imgUrl: 'assets/img/gallery/img11.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img11.jpeg',
     date: '27 July, 2023',
     filterType: 'filter-highlight'
   },
@@ -494,7 +494,7 @@ const galleryData = [
   {
     title: 'Selection Round',
     desc: 'Participants, Presenting their innovative projects during the Selection Round, which was held to choose qualified Club Members.',
-    imgUrl: 'assets/img/gallery/img1.jpeg',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img1.jpeg',
     date: '20 July, 2023',
     filterType: 'filter-highlight'
   },
