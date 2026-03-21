@@ -85,16 +85,17 @@
 }
 
     :root {
-      --bg: #050509;
+      --bg: #1a1a1a;
       --bg-soft: #0c0c14;
-      --gold: #f2c94c;
+      --gold: #ffa116;
       --gold-soft: #d4a42b;
-      --card: #11111a;
+      --card: #2a2a2a;
+      --card-hover:#333333;
       --card-soft: #181824;
-      --text-main: #f5f5f5;
-      --text-muted: #aaaaaa;
-      --border-soft: #282840;
-      --green: #1ec773;
+      --text-main: #eff1f6;
+      --text-muted: #9da3af;
+      --border-soft: #3e3e3e;
+      --green: #00b8a3;
     }
 
     * {
@@ -172,20 +173,19 @@
     }
 
     .accordion details {
-      border-radius: 10px;
-      padding: 4px 12px;
-      margin-bottom: 10px;
+      border-radius: 8px;
+      padding: 10px 16px;
+      margin-bottom: 8px;
       background: var(--card);
       border: 1px solid var(--border-soft);
-      transition: border 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease,
-        background 0.25s ease;
+      transition: all 0.2s ease;
     }
 
     .accordion details:hover {
-      border-color: var(--gold-soft);
-      transform: translateY(-1px);
+      border-color: #505050;
+      transform: none;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
-      background: var(--card-soft);
+      background: var(--card-hover);
     }
 
     .accordion summary {
@@ -194,8 +194,9 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      font-weight: 600;
-      font-size: inherit;
+      font-weight: 500;
+      font-size: 15px;
+      letter-spacing: 0.5px;
       padding: 3px 2px;
       color: var(--text-main);
     }
@@ -216,9 +217,11 @@
     }
 
     .day-content {
-      padding: 8px 4px 2px 6px;
-      border-top: 1px dashed var(--border-soft);
-      margin-top: 6px;
+      padding: 15px;
+      border-radius:0 0 10px 10px ;
+      background-color: #1a1a1a;
+      border-top: 1px solid var(--border-soft);
+      margin-top: 0;
       animation: fadeInSoft 0.25s ease-out;
     }
 
@@ -234,48 +237,64 @@
     }
 
     .problem-row {
+      background:#2a2a2a;
+      margin-bottom: 8px;
+      padding: 12px 18px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 4px 2px;
+      padding: 10px 16px;
+      border: 1px solid transparent;
+      border-bottom: 1px solid#333;
+      border-radius: 8px;
       font-size: 14px;
+      transition:all 0.3s ease;
       color: var(--text-muted);
     }
-
+    .problem-row:last-child{
+      border-bottom: none;
+    }
+    .problem-row:hover{
+      background: #323232;
+    }
     .problem-row span {
-      flex: 1;
+      flex: 2;
       margin-right: 16px;
+      font-size: 14px;
+      color:var(--text-main);
     }
 
     .solve-btn {
-      border: none;
-      padding: 6px 18px;
+      border: 1px solid rgba(0,184,163,0.3);
+      padding: 4px 14px;
       text-decoration: none;
+      text-transform: none;
       font-size: 13px;
-      border-radius: 999px;
-      background: var(--green);
-      color: #ffffff;
+      border-radius: 5px;
+      background: rgba(0,184,163,0.15);
+      color: var(--green);
       cursor: pointer;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: 0.4px;
       text-transform: uppercase;
       display: inline-flex;
       align-items: center;
       gap: 6px;
-      box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+      box-shadow: none;
       transition: background 0.18s ease, transform 0.15s ease,
         box-shadow 0.2s ease, filter 0.18s ease;
     }
 
     .solve-btn::after {
-      content: "›";
+      content: "";
       font-size: 14px;
     }
 
     .solve-btn:hover {
-      background: #1ad06f;
-      transform: translateY(-1px) translateX(1px);
-      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.45);
+      background: var(--green);
+      color: white;
+      transform: none;
+      box-shadow:none;
       filter: brightness(1.03);
     }
 
@@ -412,8 +431,8 @@
 /* ================= HERO SECTION ================= */
 
     #header{
-      background:#050509 !important;
-      height: 80px;
+      background: #1a1a1a; !important;
+      height: 80px
       display:flex;
       align-items:center;
       position :fixed;
