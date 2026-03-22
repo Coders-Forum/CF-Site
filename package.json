@@ -1,0 +1,21 @@
+{
+  "name": "cf-site",
+  "version": "1.0.0",
+  "description": "1. Fork the repository to your account.\r 2. Do all the required changes in your fork.\r 3. Once you are done with your changes, pull the latest changes from our repository  \r    (this is to fetch any parallel changes made after you forked the repo).\r 4. Check your changes to ensure they do not break the current code.\r 5. Create a pull request (pr) to `dev_main`.\r 6. Make sure to provide a clear and proper description in your pr.\r 7. If we receive more than one pr at the same time, after merging one pr, the next contributor may be asked to pull the latest changes again and re-check their pr for conflicts.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sanjhanaselvakumar/CF-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sanjhanaselvakumar/CF-Site/issues"
+  },
+  "homepage": "https://github.com/Sanjhanaselvakumar/CF-Site#readme"
+}

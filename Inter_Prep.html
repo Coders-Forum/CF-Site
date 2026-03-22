@@ -1,0 +1,2982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Coders Forum | Interview Prep</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <meta name="title" content="Coders Forum | Panimalar" />
+  <meta name="description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta name="keywords" content="panimalar, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+
+  <link href="assets/img/club-logo.ico" rel="icon">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codersforum.netlify.app" />
+  <meta property="og:title" content="Coders Forum | Panimalar" />
+  <meta property="og:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta property="og:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://codersforum.netlify.app" />
+  <meta property="twitter:title" content="Coders Forum | Panimalar" />
+  <meta property="twitter:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta property="twitter:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
+
+
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3M7SMRS80F');
+    </script>
+    
+  <style>
+    body{
+      background-color: #000;
+    }
+    .mark {
+      color: #C80036;
+      background-color: #FFF5E1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #fff;
+    }
+
+    .hero-card {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      font-family: "Roboto";
+    }
+
+    .faq-card {
+      border-radius: 10px;
+      font-family: "Roboto";
+    }
+
+    .question {
+      cursor: pointer;
+      padding: 10px;
+      color: white;
+      border-radius: 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .question:hover{
+      color:gold;
+    }
+
+    .answer {
+      display: none;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 22px;
+    }
+
+    @media (max-width: 1200px) {
+      .container {
+        max-width: 95%;
+      }
+
+      .hero-card {
+        height: auto;
+      }
+
+      .card-body {
+        width: 40%;
+      }
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      h2 {
+        font-size: 1.8em;
+      }
+
+      .hero-card {
+        height: auto;
+      }
+
+      .card-body {
+        width: 80%;
+        padding: 10px;
+      }
+
+      .faq-card {
+        padding: 15px;
+      }
+
+      .faq-card h3 {
+        font-size: 1.5em;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 1.5em;
+      }
+
+      h2 {
+        font-size: 1.5em;
+      }
+
+      .hero-card {
+        height: 100vh;
+      }
+
+      .card-body {
+        width: 90%;
+        padding: 8px;
+      }
+
+      .faq-card {
+        padding: 10px;
+      }
+
+      .faq-card h3 {
+        font-size: 1em;
+      }
+    }
+    .box {
+           color: white;
+        }
+
+        .header {
+            background-color: black;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+            border-color: black;
+            border-bottom: 8px;
+        }
+        .header h1 {
+          font-family: "Tajawal";
+          font-weight: bold;
+          font-style: normal;
+          color: black;
+          font-size: 50px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .card {
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease;
+            max-width: 750px;
+            height: 100px;
+        }
+        .card:hover {
+            transform: translateY(-10px);
+        }
+        .btn-custom {
+            color: #fff;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-family: "Bree Serif";
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #2c9e12;
+            color: #ffffff;
+        }
+        .collapse-content {
+            margin-top: 20px;
+        }
+        .collapse-content p {
+            font-size: 18px;
+        }
+        .easy { color: green; }
+        .medium { color: orange; }
+        .hard { color: red; }
+
+       
+        .collapse.slide-horizontal {
+            position: relative;
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+            width: 100%;
+        }
+        .collapse.show.slide-horizontal {
+            transform: translateX(0);
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #191919;
+            box-shadow: 5px 5px 5px 5px #191919;
+            margin-bottom: 30px;
+            border-color: #fafafa;
+        }
+        .btn-container {
+            text-align: center;
+        }
+
+        .row {
+            justify-content: center;
+        }
+
+        .btn {
+          background-color: green;
+          
+        }
+
+        .btn:hover {
+          background-color: green;
+        }
+
+        .easy {
+          color: black;
+        }
+
+        .medium {
+          color: black;
+        }
+
+        .hard {
+          color: black;
+        }
+
+        .btn1 {
+          width: 50%;
+          color: black;
+        }
+        
+        .box {
+           color: white;
+        }
+
+        .header {
+            background-color: black;
+            color: #fff;
+            
+            text-align: center;
+            
+            border-color: black;
+            
+        }
+        .header h1 {
+          font-family: "Tajawal";
+          font-weight: bold;
+          font-style: normal;
+          color: black;
+          font-size: 50px;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .btn-custom {
+            color: #fff;
+            border-radius: 8px;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-family: 'Oswald', sans-serif;
+            transition: background-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #2c9e12;
+        }
+        .collapse-content {
+            margin-top: 20px;
+        }
+        .collapse-content p {
+            font-size: 18px;
+        }
+       
+        .collapse.slide-horizontal {
+            position: relative;
+            transform: translateX(-100%);
+            transition: transform 0.4s ease;
+            width: 100%;
+        }
+        .collapse.show.slide-horizontal {
+            transform: translateX(0);
+        }
+
+        .box {
+            padding: 20px;
+            border-radius: 12px;
+            background-color: #191919;
+            box-shadow: 5px 5px 5px 5px #191919;
+            margin-bottom: 30px;
+            border-color: #fafafa;
+        }
+        .btn-container {
+            text-align: center;
+        }
+
+        .row {
+            justify-content: center;
+        }
+
+        .btn {
+          background-color: green;
+          
+        }
+
+        .btn:hover {
+          background-color: green;
+        }
+
+        .easy {
+          color: black;
+          font-family: 'RaleWay';
+          font-weight: bolder;
+          font-size: 30px;
+        }
+
+        .medium {
+          color: black;
+          font-family: 'Roboto';
+          font-weight: bolder;
+          font-size: 24px;
+        }
+
+        .hard {
+          color: black;
+          font-family: 'Roboto';
+          font-weight: bolder;
+          font-size: 24px;
+        }
+
+        .btn1 {
+          height:60px;
+          width: 200px;
+          color: #ffffff;
+          font-family: "Bree Serif";
+          font-size: 20px;
+          padding-top: 12px;
+        }
+
+        #bi-arrow{
+          margin-top: 10px;
+        }
+
+    #button {
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    font-family: "Bree Serif";
+    font-size: 20px;
+    position: relative;
+    bottom: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  #button:hover {
+    background-color: darkgreen;
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  #button:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  a{
+    color: #fff;
+  }
+  a:hover{
+    color: gold;
+  }
+
+  @media (max-width: 768px) {
+  #hero h1 {
+    font-size: 40px;
+    line-height: 1.3;
+    }
+  }
+
+  @media (max-width: 480px) {
+  #hero h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    }
+  }
+
+
+
+  </style>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo logo-sm-10 me-auto logo-lg-4"><a href="./index.html" >Coders Forum</a></h1>
+    
+      <nav id="navbar" class="navbar navbar-sm-2 navbar-lg-8">
+        <ul>
+          <li><a class="nav-link scrollto" href="./index.html">Home</a></li>
+          <li><a class="nav-link scrollto " href="./about.html">About</a></li>
+          <li><a class="nav-link scrollto active" href="./Inter_Prep.html">Interview Prep</a></li>
+          <li><a class="nav-link scrollto" href="./events.html">Events</a></li>
+          <li><a class="nav-link scrollto" href="./practice.html">Practice</a></li>
+          <li><a class="nav-link scrollto" href="./gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="./walloffame.html">Wall Of Fame</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+
+
+
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <!-- <canvas id="confetti-canvas"></canvas> -->
+      <div class="container" data-aos="fade-up">
+        <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+          <div class="col-xl-10 col-lg-10">
+            <h1 style="font-size: 60px;" style="color: #fff;">INTERVIEW PREPARATION</h1>
+            
+            <h3 ><span style="font-weight: bolder;">" </span>The way to get started is to quit talking and begin doing <span style="font-weight: bolder">"</span></h3>
+          </div>
+        </div>
+      </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Rules & Regulations Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+        <div class="IP-section-title">
+          <p style="color: #fff;">Rules & Regulations</p> 
+          <h2 class="mb-5">ADHERE TO IT</h2>
+
+          <div class="container bg-dark row-lg-3 row-md-4 row-sm-12 mb-3" style="border: 2px;color: white;border-radius: 20px; width: 100%">
+            <ul class="p-5">
+                <p class="text-center mb-3" style="color: #fff; font-size: 30px;">NOTE</p> 
+                <li class="p-2" style="color:beige; font-size: 22px;">
+                    All participants must register for these three contests before starting <span style="font-weight: bolder;">Interview Prep.</span>
+                </li>
+                <li class="p-2" style="color: white; font-size: 22px;">
+                    Just click this link and register yourself before starting the contest 
+                    <i class="bi bi-arrow-right"></i>&nbsp;
+                    <a href="https://www.hackerrank.com/archive-pec-code-quest-roundtwo-coders-forum" style="font-weight:bold;">"Code Quest"</a>
+                </li>
+                <li class="p-2" style="color: beige; font-size: 22px;">
+                  Just click this link and register yourself before starting the contest 
+                  <i class="bi bi-arrow-right"></i>&nbsp;
+
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges" style="font-weight:bold">"Code Blitz"</a>
+
+                
+              </li>
+              <li class="p-2" style="color: white; font-size: 22px;">
+                Just click this link and register yourself before starting the contest 
+                <i class="bi bi-arrow-right"></i>&nbsp;
+                <a href="https://www.hackerrank.com/domains/tutorials/30-days-of-code" style="font-weight:bold">"30 Days of Code"</a>
+            </li>
+            </ul>
+        </div>
+        
+        <div class="container bg-dark row-lg-3 row-md-4 row-sm-12" style="border:2px;color: white;border-radius: 20px; width: 100%">
+            <ul class="p-5">
+                <p class="text-center mb-3" style="color: #fff;font-size: 30px;">GENERAL INSTRUCTIONS</p> 
+                <li class="p-2" style="color:beige; font-size: 22px; font-weight: normal;">
+                    This platform is exclusive and open to all the Pre-Final and Final year Students of Panimalar Engineering College.
+                </li>
+                <li class="p-2" style="color: white; font-size: 22px; font-weight: normal;">
+                    Students are requested to create a "Hackerrank" profile before starting.
+                </li>
+                <li class="p-2" style="color: beige; font-size: 22px; font-weight: normal;">
+                    If you don't have an account, click this link and register yourself before starting the challenge 
+                    <i class="bi bi-arrow-right"></i>&nbsp;
+                    <a href="https://www.hackerrank.com/about-us/home/" class="text-decoration-none" style="font-size: 24px; font-weight:bolder; color: #ffffff;">"Hacker<span style="color: #2EC866;">Rank</span>"</a>
+                </li>
+                <li class="p-2" style="color: white; font-size: 22px;">
+                    Each day's challenge will be unlocked on a daily basis, and participants should aim to submit their solutions before the next challenge is released.
+                </li>
+                <li class="p-2" style="color: beige; font-size: 22px;">
+                    Make sure that you complete the task daily as consistency is the key.
+                </li>
+                <li class="p-2" style="color: white; font-size: 22px;">
+                    You are allowed multiple attempts to solve the problem within the given time. The last submitted code will be considered for evaluation.
+                </li>
+                <li class="p-2" style="color: beige; font-size: 22px;">
+                    Avoid plagiarism and copying from external sources.
+                </li>
+                <li class="p-2" style="color: white; font-size: 22px;">
+                    The problem has to be solved in Java, and after completing, make sure to submit the code.
+                </li>
+                <li class="p-2" style="color: beige; font-size: 22px;">
+                    Ensure that your code passes all the provided test cases. Partial credits will be awarded for passing some test cases.
+                </li>
+            </ul>
+        </div>
+        
+        
+      </div>
+        </div>
+
+      </div>
+    </section><!-- Rules & Regulations Section -->
+
+
+    <!-- ======= Daily Challenges Section ======= -->
+    <section id="portfolio" class="portfolio">
+      <div class="container" data-aos="fade-up">
+    
+        <div class="IP-section-title">
+          <p style="color: #fff;">Daily Challenges</p>
+          <h2>PUSH YOUR LIMITS</h2>
+        </div>
+
+      <!-- Day 1 Challenges in Separate Box -->
+      <div class="container section" style="font-family: 'oswald', San-serif;">
+        <div class="box bg-dark">
+            <div class="text-center mt-2 p-5">
+                <h2>Day 1 Challenges</h2>
+                <button class="btn btn-custom mt-3" id="day1-btn" data-bs-toggle="collapse" data-bs-target="#day1-challenges">
+                  <i class="bi bi-unlock"></i> View Challenges
+                </button>
+            </div>
+          <div class="collapse" id="day1-challenges">
+            <div class="row collapse-content">
+                <!-- Challenge 1 -->
+                <div class="col-md-12 card mb-4">
+                    <div class="d-flex flex-row justify-content-center ">
+                        <h5 class="easy" style="font-size: 30px; color:black;">
+                            Challenge 1 
+                        </h5>&nbsp;&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>&nbsp;&nbsp;
+                          <a href="https://www.hackerrank.com/challenges/30-hello-world/problem" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                      </div>
+                </div>
+                <!-- Challenge 2 -->
+                <div class="col-md-12 card mb-4">
+                  <div class="d-flex flex-row justify-content-center ">
+                      <h5 class="easy" style="font-size: 30px; color:black;">
+                          Challenge 2 
+                      </h5>&nbsp;&nbsp;
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/1-toomanyab-cf" class="btn btn1 center" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+                  </div>
+              </div>
+                <!-- Challenge 3 -->
+                <div class="col-md-12 card mb-4">
+                  <div class="d-flex flex-row justify-content-center ">
+                      <h5 class="easy" style="font-size: 30px; color:black;">
+                          Challenge 3
+                      </h5>&nbsp;&nbsp;
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/simple-array-sum/problem" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+                  </div>
+              </div>
+                <!-- Challenge 4 -->
+                <div class="col-md-12 card mb-4">
+                  <div class="d-flex flex-row justify-content-center ">
+                      <h5 class="easy" style="font-size: 30px; color:black;">
+                          Challenge 4 
+                      </h5>&nbsp;&nbsp;
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/target-sum-pair-2" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+                  </div>
+              </div>
+                <!-- Challenge 5 -->
+                <div class="col-md-12 card mb-4">
+                  <div class="d-flex flex-row justify-content-center ">
+                      <h5 class="easy" style="font-size: 30px; color:black;">
+                          Challenge 5 
+                      </h5>&nbsp;&nbsp;
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/revising-the-select-query/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <!-- Day 2 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 2 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day2-btn" data-bs-toggle="collapse" data-bs-target="#day2-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day2-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 1 
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-data-types/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">
+                      Challenge 2 
+                  </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/2-emptysandclock-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+          </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">
+                      Challenge 3
+                  </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+          </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">
+                      Challenge 4 
+                  </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/remove-duplicates-61-1"  id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+          </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">
+                      Challenge 5 
+                  </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/revising-the-select-query-2/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Day 3 Challenges in Separate Box -->
+      <div class="container section" style="font-family: 'oswald', San-serif;">
+          <div class="box bg-dark">
+              <div class="text-center mt-2 p-5">
+                  <h2>Day 3 Challenges</h2>
+                  <button class="btn btn-custom mt-3" id="day3-btn" data-bs-toggle="collapse" data-bs-target="#day3-challenges">
+                    <i class="bi bi-unlock"></i> View Challenges
+                  </button>
+              </div>
+            <div class="collapse" id="day3-challenges">
+              <div class="row collapse-content">
+                  <!-- Challenge 1 -->
+                  <div class="col-md-12 card mb-4">
+                      <div class="d-flex flex-row justify-content-center ">
+                          <h5 class="easy" style="font-size: 30px; color:black;">
+                              Challenge 1 
+                          </h5>&nbsp;&nbsp;
+                          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                          </svg>&nbsp;&nbsp;
+                            <a href="https://www.hackerrank.com/challenges/30-operators/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                        </div>
+                  </div>
+                  <!-- Challenge 2 -->
+                  <div class="col-md-12 card mb-4">
+                    <div class="d-flex flex-row justify-content-center ">
+                        <h5 class="easy" style="font-size: 30px; color:black;">
+                            Challenge 2 
+                        </h5>&nbsp;&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>&nbsp;&nbsp;
+                        <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/7-sumdivisible-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+                    </div>
+                </div>
+                  <!-- Challenge 3 -->
+                  <div class="col-md-12 card mb-4">
+                    <div class="d-flex flex-row justify-content-center ">
+                        <h5 class="easy" style="font-size: 30px; color:black;">
+                            Challenge 3
+                        </h5>&nbsp;&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>&nbsp;&nbsp;
+                        <a href="https://www.hackerrank.com/challenges/staircase/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+                    </div>
+                </div>
+                  <!-- Challenge 4 -->
+                  <div class="col-md-12 card mb-4">
+                    <div class="d-flex flex-row justify-content-center ">
+                        <h5 class="easy" style="font-size: 30px; color:black;">
+                            Challenge 4 
+                        </h5>&nbsp;&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>&nbsp;&nbsp;
+                        <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/distance-between-the-strings" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+                    </div>
+                </div>
+                  <!-- Challenge 5 -->
+                  <div class="col-md-12 card mb-4">
+                    <div class="d-flex flex-row justify-content-center ">
+                        <h5 class="easy" style="font-size: 30px; color:black;">
+                            Challenge 5 
+                        </h5>&nbsp;&nbsp;
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                          <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                        </svg>&nbsp;&nbsp;
+                        <a href="https://www.hackerrank.com/challenges/select-all-sql/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  
+    <!-- Day 4 Challenges in Separate Box -->
+    <div class="container section" style="font-family: 'oswald', San-serif;">
+      <div class="box bg-dark">
+          <div class="text-center mt-2 p-5">
+              <h2>Day 4 Challenges</h2>
+              <button class="btn btn-custom mt-3" id="day4-btn" data-bs-toggle="collapse" data-bs-target="#day4-challenges">
+                <i class="bi bi-unlock"></i> View Challenges
+              </button>
+          </div>
+        <div class="collapse" id="day4-challenges">
+          <div class="row collapse-content">
+              <!-- Challenge 1 -->
+              <div class="col-md-12 card mb-4">
+                  <div class="d-flex flex-row justify-content-center ">
+                      <h5 class="easy" style="font-size: 30px; color:black;">
+                          Challenge 1 
+                      </h5>&nbsp;&nbsp;
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>&nbsp;&nbsp;
+                        <a href="https://www.hackerrank.com/challenges/30-conditional-statements/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                    </div>
+              </div>
+              <!-- Challenge 2 -->
+              <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 2 
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                    <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/3-formattingissues-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+                </div>
+              </div>
+              <!-- Challenge 3 -->
+              <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 3
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                    <a href="https://www.hackerrank.com/challenges/birthday-cake-candles/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+                </div>
+              </div>
+              <!-- Challenge 4 -->
+              <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 4 
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                    <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/common-prefix-35" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+                </div>
+              </div>
+              <!-- Challenge 5 -->
+              <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 5 
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                    <a href="https://www.hackerrank.com/challenges/select-by-id/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Day 5 Challenges in Separate Box -->
+    <div class="container section" style="font-family: 'oswald', San-serif;">
+      <div class="box bg-dark">
+          <div class="text-center mt-2 p-5">
+              <h2>Day 5 Challenges</h2>
+              <button class="btn btn-custom mt-3" id="day5-btn" data-bs-toggle="collapse" data-bs-target="#day5-challenges">
+                <i class="bi bi-unlock"></i> View Challenges
+              </button>
+          </div>
+        <div class="collapse" id="day5-challenges">
+          <div class="row collapse-content">
+              <!-- Challenge 1 -->
+              <div class="col-md-12 card mb-4">
+                  <div class="d-flex flex-row justify-content-center ">
+                      <h5 class="easy" style="font-size: 30px; color:black;">
+                          Challenge 1 
+                      </h5>&nbsp;&nbsp;
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                      </svg>&nbsp;&nbsp;
+                        <a href="https://www.hackerrank.com/challenges/30-class-vs-instance/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                    </div>
+              </div>
+              <!-- Challenge 2 -->
+              <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 2 
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                    <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/8-isitpossible-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+                </div>
+              </div>
+              <!-- Challenge 3 -->
+              <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 3
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                    <a href="https://www.hackerrank.com/challenges/grading/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+                </div>
+              </div>
+              <!-- Challenge 4 -->
+              <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 4 
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                    <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/square-pattern-19-1" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+                </div>
+              </div>
+              <!-- Challenge 5 -->
+              <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 5 
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                    <a href="https://www.hackerrank.com/challenges/japanese-cities-attributes/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+
+  <!-- Day 6 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 6 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day6-btn" data-bs-toggle="collapse" data-bs-target="#day6-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day6-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">
+                        Challenge 1 
+                    </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-loops/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">
+                      Challenge 2 
+                  </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/10-backtonursery-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">
+                      Challenge 3
+                  </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/diagonal-difference/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">
+                      Challenge 4 
+                  </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/habit-tracker" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">
+                      Challenge 5 
+                  </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/japanese-cities-name/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Day 7 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 7 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day7-btn" data-bs-toggle="collapse" data-bs-target="#day7-challenges" >
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day7-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-review-loop/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/11-numberpatterngenerator-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/compare-the-triplets/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/bookmark-checker
+                  " id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-1/problem?isFullScreen=true " id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 8 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 8 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day8-btn" data-bs-toggle="collapse" data-bs-target="#day8-challenges" >
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day8-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-arrays/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/12-pyramidofnumbers-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/plus-minus/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/find-the-runner-up-score-2-2" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-2/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 9 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 9 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day9-btn" data-bs-toggle="collapse" data-bs-target="#day9-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day9-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-dictionaries-and-maps/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/13-vowelcount-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/bon-appetit/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/27-findfrequency-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-3/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 10 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 10 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day10-btn" data-bs-toggle="collapse" data-bs-target="#day10-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day10-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-recursion/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/15-reversewordsinsentence-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/find-digits/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/time-convertor" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-4/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 11 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 11 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day11-btn" data-bs-toggle="collapse" data-bs-target="#day11-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day11-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-binary-numbers/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/16-missingelementschecker-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/time-conversion/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/17-arrayrotation-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 12 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 12 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day12-btn" data-bs-toggle="collapse" data-bs-target="#day12-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day12-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-2d-arrays/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/18-sumoftwoelementsinarray-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/the-hurdle-race/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/21-indexsumarray-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-6/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Day 13 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 13 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day13-btn" data-bs-toggle="collapse" data-bs-target="#day13-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day13-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-inheritance/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/20-commonelementsintwoarrays-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/a-very-big-sum/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/number-of-pages-1" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-7/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 14 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 14 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day14-btn" data-bs-toggle="collapse" data-bs-target="#day14-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day14-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-abstract-classes/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/22-thinkbinarical-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/angry-professor/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/alphabet-decryption" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Day 15 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 15 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day15-btn" data-bs-toggle="collapse" data-bs-target="#day15-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day15-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-scope/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/24-improveatlast-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/designer-pdf-viewer/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/grid-escape-1" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-9/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Day 16 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 16 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day16-btn" data-bs-toggle="collapse" data-bs-target="#day16-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day16-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-linked-list/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/26-whoisfake-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/utopian-tree/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/codeblitz-2/challenges/keypad-cipher" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-10/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Day 17 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 17 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day17-btn" data-bs-toggle="collapse" data-bs-target="#day17-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day17-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-exceptions-string-to-integer/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/29-disariumnumber-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/repeated-string/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/6-codershoes-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-11/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Day 18 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 18 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day18-btn" data-bs-toggle="collapse" data-bs-target="#day18-challenges" >
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day18-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-more-exceptions/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/34-bmi-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/camelcase/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/23-findthetarget-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/weather-observation-station-12/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- Day 19 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 19 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day19-btn" data-bs-toggle="collapse" data-bs-target="#day19-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day19-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-queues-stacks/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/31-harshadnumber-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/migratory-birds/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/25-swapbro-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/salary-of-employees/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <!-- Day 20 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 20 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day20-btn" data-bs-toggle="collapse" data-bs-target="#day20-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day20-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-interfaces/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/28-isthatnoballcricket-cf-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/beautiful-days-at-the-movies/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/35-emi-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  <!-- Day 21 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 21 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day21-btn" data-bs-toggle="collapse" data-bs-target="#day21-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day21-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-sorting/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/contests/archive-pec-code-quest-roundtwo-coders-forum/challenges/33-secondhighest-cf" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/apple-and-orange/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/chocolate-feast/problem?isFullScreen=false" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/name-of-employees/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Day 22 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 22 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day22-btn" data-bs-toggle="collapse" data-bs-target="#day22-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day22-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-generics/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/between-two-sets?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/arrays-ds/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/2d-array/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/more-than-75-marks/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Day 23 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 23 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day23-btn" data-bs-toggle="collapse" data-bs-target="#day23-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day23-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-binary-search-trees?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/tree-preorder-traversal?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/the-birthday-bar?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/breaking-best-and-worst-records?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/what-type-of-triangle?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Day 24 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 24 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day24-btn" data-bs-toggle="collapse" data-bs-target="#day24-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day24-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-binary-trees?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/tree-postorder-traversal?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/divisible-sum-pairs?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/counting-valleys?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/revising-aggregations-the-count-function?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Day 25 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 25 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day25-btn" data-bs-toggle="collapse" data-bs-target="#day25-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day25-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-linked-list-deletion?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/tree-inorder-traversal?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/electronics-shop?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/compare-two-linked-lists?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/revising-aggregations-the-average-function?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- Day 26 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 26 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day26-btn" data-bs-toggle="collapse" data-bs-target="#day26-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day26-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-running-time-and-complexity?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/print-the-elements-of-a-linked-list/problem?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/cut-the-sticks?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/tree-level-order-traversal?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/revising-aggregations-sum?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Day 27 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 27 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day27-btn" data-bs-toggle="collapse" data-bs-target="#day27-challenges" >
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day27-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-nested-logic?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/insert-a-node-at-the-tail-of-a-linked-list?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/save-the-prisoner?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/reverse-a-linked-list?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/average-population?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Day 28 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 28 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day28-btn" data-bs-toggle="collapse" data-bs-target="#day28-challenges" >
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day28-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-testing?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/insert-a-node-at-the-head-of-a-linked-list?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/circular-array-rotation?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/earnings-of-employees?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Day 29 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 29 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day29-btn" data-bs-toggle="collapse" data-bs-target="#day29-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day29-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-regex-patterns?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/delete-a-node-from-a-linked-list?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/strange-advertising?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/binary-search-tree-insertion?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/average-population-of-each-continent?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Day 30 Challenges in Separate Box -->
+  <div class="container section" style="font-family: 'oswald', San-serif;">
+    <div class="box bg-dark">
+        <div class="text-center mt-2 p-5">
+            <h2>Day 30 Challenges</h2>
+            <button class="btn btn-custom mt-3" id="day30-btn" data-bs-toggle="collapse" data-bs-target="#day30-challenges">
+              <i class="bi bi-unlock"></i> View Challenges
+            </button>
+        </div>
+      <div class="collapse" id="day30-challenges">
+        <div class="row collapse-content">
+            <!-- Challenge 1 -->
+            <div class="col-md-12 card mb-4">
+                <div class="d-flex flex-row justify-content-center ">
+                    <h5 class="easy" style="font-size: 30px; color:black;">Challenge 1 </h5>&nbsp;&nbsp;
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                      <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                    </svg>&nbsp;&nbsp;
+                      <a href="https://www.hackerrank.com/challenges/30-bitwise-and?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">FOCUS</a>
+                  </div>
+            </div>
+            <!-- Challenge 2 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 2 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/day-of-the-programmer?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 3 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 3</h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/insert-a-node-at-a-specific-position-in-a-linked-list?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">KNOWLEDGE</a>
+              </div>
+            </div>
+            <!-- Challenge 4 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 4 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/merge-two-sorted-linked-lists?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">OUT OF BOX</a>
+              </div>
+            </div>
+            <!-- Challenge 5 -->
+            <div class="col-md-12 card mb-4">
+              <div class="d-flex flex-row justify-content-center ">
+                  <h5 class="easy" style="font-size: 30px; color:black;">Challenge 5 </h5>&nbsp;&nbsp;
+                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="26" fill="black" class="bi bi-arrow-right" viewBox="0 0 16 16" id="bi-arrow">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg>&nbsp;&nbsp;
+                  <a href="https://www.hackerrank.com/challenges/african-cities?isFullScreen=true" id="button" class="btn btn1" style="border-radius: 8px;" target="_blank">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+    </section>
+    <!-- End of Daily Challenges Section -->
+
+    <!-- ======= FAQ Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="IP-section-title">
+          <p style="color: #fff;">Frequently Asked Questions (FAQS)</p> 
+          <h2 >ANSWERS YOU SEEK</h2>
+        </div>
+        <div class="container bg-dark p-5" style="border: 2px solid;border-radius: 20px;border-width: 0px;">
+          <div class="faq-card">
+            <div class="question" onclick="toggleAnswer('answer1', this)">
+              <h5><span>+</span> How should I prepare for an interview? </h5>
+            </div>
+            <div class="answer" id="answer1">
+              <p>Research the company, understand the job description, practice common interview questions, prepare questions to ask the interviewer, and review your resume to discuss your experiences confidently.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer2', this)">
+              <h5> <span>+</span> What is a coding interview?</h5>
+            </div>
+            <div class="answer" id="answer2">
+              <p>A coding interview is a technical assessment where candidates are asked to solve programming problems, typically using a whiteboard or an online coding platform. It assesses problem-solving skills, coding abilities, and knowledge of algorithms and data structures.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer3', this)">
+              <h5> <span>+</span> What programming languages should I know?</h5>
+            </div>
+            <div class="answer" id="answer3">
+              <p>It’s beneficial to be proficient in at least one programming language that you can use for coding interviews, such as Java or C++. Make sure to familiarize yourself with the language's syntax and common libraries.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer4', this)">
+              <h5><span>+</span> How should I prepare for a coding interview? </h5>
+            </div>
+            <div class="answer" id="answer4">
+              <p>Review data structures and algorithms, practice coding problems on platforms like LeetCode or HackerRank, and understand system design concepts. Mock interviews can also help simulate the interview experience.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer5', this)">
+              <h5><span>+</span> Should I consider internships before the placement process?</h5>
+            </div>
+            <div class="answer" id="answer5">
+              <p>Yes, internships provide practical experience, enhance your resume, and can often lead to full-time job offers. They also help you build a professional network.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer6', this)">
+              <h5><span>+</span> How can I practice my communication skills? </h5>
+            </div>
+            <div class="answer" id="answer6">
+              <p>Practice can be achieved through public speaking, writing, engaging in discussions, and participating in networking events. Joining groups like Toastmasters can also help improve verbal communication skills.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer7', this)">
+              <h5><span>+</span> How do I prepare for aptitude tests? </h5>
+            </div>
+            <div class="answer" id="answer7">
+              <p>Practice quantitative, verbal, and logical reasoning questions. Familiarize yourself with the format and time constraints of the test. Numerous online platforms offer mock tests for preparation.</p>
+            </div>
+      
+            <div class="question" onclick="toggleAnswer('answer8', this)">
+              <h5> <span>+</span> Should I focus more on technical or soft skills? </h5>
+            </div>
+            <div class="answer" id="answer8">
+              <p>Both are important. Technical skills are crucial for performing the job, but soft skills like communication, teamwork, and problem-solving are equally valued by employers as they contribute to a positive work environment.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+      </div>
+    </section><!-- FAQ Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Coders Forum</h3>
+              <p>
+                Department of Computer Science and Engineering<br>
+                Panimalar Engineering College, <br>
+                Bangalore Trunk Road,<br>
+                Varadharajapuram, Poonamallee <br>
+                Chennai - 600 123 <br><br>
+                <i class="bi bi-telephone" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">+91 93846 78960</span><br>
+                <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <a href="mailto:coders_forum@outlook.com" style = "color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
+            </p>
+
+              <div class="social-links mt-3">
+                <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6" style = "display : flex ; align-items : center ; justify-content : center ;">
+            <img src="./assets/img/club-logo.png" style = "width : 300px; height : auto ;">
+          </div>
+          <div class="col-lg-4 col-md-6 d-none d-sm-block">
+              <div class="row">
+              <div class="col-sm-6 col-md-6 footer-links">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
+                </ul>
+              </div>
+
+              <div class="col-sm-6 col-md-6 footer-links">
+                <h4>Initiators</h4>
+                <ul>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+
+          <!-- Mobile Two-Column Layout -->
+          <div class="col-12 footer-links d-md-none" style = "margin-top: 30px;">
+            <div class="row">
+              <div class="col-6">
+                <h4>Useful Links</h4>
+                <ul>
+                  <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
+                  <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h4>Initiators</h4>
+                <ul>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
+  <script src="assets/confetti-js-master/dist/index.min.js"></script>
+    
+  <!-- <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const startDate = new Date('2024-12-04T00:00:00');
+      const now = new Date();
+      const challengeDuration = 72 * 60 * 60 * 1000;
+      const totalChallenges = 30;
+  
+      function formatTime(ms) {
+        const totalSeconds = Math.floor(ms / 1000);
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor((totalSeconds % 3600) / 60);
+        const seconds = totalSeconds % 60;
+  
+        return `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      }
+  
+      for (let day = 1; day <= totalChallenges; day++) {
+        const challengeStart = new Date(startDate.getTime() + (day - 1) * 24 * 60 * 60 * 1000);
+        const challengeEnd = new Date(challengeStart.getTime() + challengeDuration);
+  
+        const dayButton = document.getElementById(`day${day}-btn`);
+  
+        if (now >= challengeStart && now <= challengeEnd) {
+          dayButton.disabled = false;
+          dayButton.innerHTML = `<i class="bi bi-unlock"></i> View Challenges`;
+          dayButton.style.backgroundColor = "#FF8A08";
+          dayButton.style.fontFamily = "Bree Serif";
+          dayButton.style.color = "#ffffff";
+  
+          if (day > 1) {
+            const prevButton = document.getElementById(`day${day - 1}-btn`);
+            const lockTime = challengeStart.getTime() + challengeDuration;
+  
+            const updateTimer = setInterval(() => {
+              const remainingTime = lockTime - new Date();
+  
+              if (remainingTime <= 0) {
+                clearInterval(updateTimer);
+                prevButton.disabled = true;
+                prevButton.style.backgroundColor = "#808080";
+                prevButton.style.fontFamily = "Bree Serif";
+                prevButton.style.color = "#ffffff";
+                prevButton.innerHTML = `<i class="bi bi-check-circle"></i> Completed`;
+              } else {
+                prevButton.disabled = false;
+                prevButton.style.backgroundColor = "red";
+                prevButton.style.fontFamily = "Bree Serif";
+                prevButton.innerHTML = `<i class="bi bi-clock"></i> Challenge Ends in: ${formatTime(remainingTime)}`;
+              }
+            }, 1000);
+          }
+        } else if (now < challengeStart && now >= new Date(startDate.getTime() + (day - 2) * 24 * 60 * 60 * 1000)) {
+          const updateTimer = setInterval(() => {
+            const remainingTime = challengeStart - new Date();
+  
+            if (remainingTime <= 0) {
+              clearInterval(updateTimer);
+              dayButton.disabled = false;
+              dayButton.innerHTML = `<i class="bi bi-unlock"></i> View Challenges`;
+              dayButton.style.backgroundColor = "#FF8A08";
+              dayButton.style.fontFamily = "Bree Serif";
+              dayButton.style.color = "#ffffff";
+            } else {
+              dayButton.disabled = true;
+              dayButton.innerHTML = `<i class="bi bi-lock"></i> Unlocks in: ${formatTime(remainingTime)}`;
+              dayButton.style.backgroundColor = "#2c9e12";
+              dayButton.style.fontFamily = "Bree Serif";
+              dayButton.style.color = "#ffffff";
+              dayButton.style.borderWidth = "0px";
+            }
+          }, 1000);
+        } else if (now > challengeEnd) {
+          dayButton.disabled = true;
+          dayButton.style.backgroundColor = "transparent";
+          dayButton.style.color = "#ffffff";
+          dayButton.innerHTML = `<i class="bi bi-check-circle"></i> Completed`;
+        } else {
+          dayButton.disabled = true;
+          dayButton.innerHTML = `<i class="bi bi-lock"></i> View Challenges`;
+        }
+      }
+    });
+  </script> -->
+    
+
+<script>
+    const div1 = document.getElementById('resource-1');
+    const div2 = document.getElementById('resource-2');
+    const div3 = document.getElementById('resource-3');
+    const div4 = document.getElementById('resource-4');
+    const div5 = document.getElementById('resource-5');
+    const div6 = document.getElementById('resource-6');
+    const div7 = document.getElementById('resource-7');
+
+    div1.style.cursor = 'pointer';
+    div2.style.cursor = 'pointer';
+    div3.style.cursor = 'pointer';
+    div4.style.cursor = 'pointer';
+    div5.style.cursor = 'pointer';
+    div6.style.cursor = 'pointer';
+    div7.style.cursor = 'pointer';
+
+    div1.addEventListener('click', function() {
+        const linkToOpen = 'https://www.edx.org/course/cs50s-web-programming-with-python-and-javascript';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div2.addEventListener('click', function() {
+        const linkToOpen = 'https://www.udemy.com/course/docker-essentials/';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div3.addEventListener('click', function() {
+        const linkToOpen = 'https://www.youtube.com/watch?v=ot94H3-d5d8';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div5.addEventListener('click', function() {
+        const linkToOpen = 'practice.html';
+        window.open(linkToOpen, '_parent');
+    });
+
+    div6.addEventListener('click', function() {
+        const linkToOpen = 'https://www.youtube.com/playlist?list=PLpPqplz6dKxW5ZfERUPoYTtNUNvrEebAR';
+        window.open(linkToOpen, '_blank');
+    });
+
+    div7.addEventListener('click', function() {
+      const linkToOpen = 'https://freeforstudents.org/';
+      window.open(linkToOpen, '_blank');
+  });
+</script> 
+
+<script>
+  window.addEventListener('DOMContentLoaded', (event) => {
+    const confettiSettings = { target: 'confetti-canvas' };
+    const confetti = new ConfettiGenerator(confettiSettings);
+    confetti.render();
+
+    setTimeout(() => {
+      confetti.clear();
+    },20000); 
+  });
+
+</script>
+
+<script>
+  function toggleAnswer(answerId, questionElement) {
+    const answer = document.getElementById(answerId);
+    const span = questionElement.querySelector('span');
+    
+    if (answer.style.display === "block") {
+      answer.style.display = "none";
+      span.textContent = "+";
+    } else {
+      answer.style.display = "block";
+      span.textContent = "-";
+    }
+  }
+</script>
+
+</body>
+
+</html>
