@@ -2,7 +2,7 @@ const achievers = [
   {
     id: "2022PECCS155",
     name: "Gayathri J",
-    img: "assets/img/achievers/gayathri.jpeg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/gayathri.jpeg",
     achievements: [
       "Winner of February Monthly Contest, 2025 - Decrypt and Code",
     ],
@@ -10,43 +10,43 @@ const achievers = [
   {
     id: "2023PECCS486",
     name: "Shabeshvaran S",
-    img: "assets/img/achievers/shabeshvaran.jpeg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/shabeshvaran.jpeg",
     achievements: ["Winner of January Monthly Contest, 2025 - Techscribe"],
   },
   {
     id: "2023PECCS588",
     name: "Saikumar J",
-    img: "assets/img/achievers/saikumar.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/saikumar.jpg",
     achievements: ["Winner of September Monthly Contest, 2024 - Pattern Craft"],
   },
   {
     id: "2022PECCS504",
     name: "Monish B",
-    img: "assets/img/achievers/monish.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/monish.jpg",
     achievements: ["Winner of August Monthly Contest, 2024 - Replica Rush"],
   },
   {
     id: "2023PECCS840",
     name: "Bharath V",
-    img: "assets/img/achievers/bharath.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/bharath.jpg",
     achievements: ["Winner of July Monthly Contest, 2024 - Automate.PY"],
   },
   {
     id: "2023PECCS556",
     name: "Rahul N",
-    img: "assets/img/achievers/rahul.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/rahul.jpg",
     achievements: ["Winner of July Monthly Contest, 2024 - Automate.PY"],
   },
   {
     id: "2023PECCS432",
     name: "Uvashree S",
-    img: "assets/img/achievers/uvashree.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/uvashree.jpg",
     achievements: ["Active Contributor"],
   },
   {
     id: "2022PECCS625",
     name: "Allen Roddick A",
-    img: "assets/img/achievers/allen.png",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/allen.png",
     achievements: [
       "Active Contributor",
       "Winner of July Monthly Contest, 2024 - Automate.PY",
@@ -55,25 +55,25 @@ const achievers = [
   {
     id: "2022PECCS206",
     name: "Lakshmi Priya A",
-    img: "assets/img/achievers/lakshmi_priya_2.jpeg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/lakshmi_priya_2.jpeg",
     achievements: ["Active Contributor"],
   },
   {
     id: "2022PECCS578",
     name: "Johith Raj S S",
-    img: "assets/img/achievers/johith.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/johith.jpg",
     achievements: ["Active Contributor"],
   },
   {
     id: "2021PECCS306",
     name: "Kumar K",
-    img: "assets/img/achievers/kum.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/kum.jpg",
     achievements: ["Active Contributor"],
   },
   {
     id: "2022PECCS227",
     name: "Nikhitha K.V",
-    img: "assets/img/achievers/nikitha.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/nikitha.jpg",
     achievements: [
       "Winner of August Monthly Contest, 2024 - Replica Rush",
       "Winner of February Monthly Contest, 2024 - Coffee With Java",
@@ -82,25 +82,25 @@ const achievers = [
   {
     id: "2021PECAI236",
     name: "Atchaiyaraj S",
-    img: "assets/img/achievers/atc.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/atc.jpg",
     achievements: ["Winner of PEC Code Quest"],
   },
   {
     id: "2021PECAI229",
     name: "Adrian Calvin K.A",
-    img: "assets/img/achievers/ac.jpg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/ac.jpg",
     achievements: ["Winner of PEC Code Quest"],
   },
   {
     id: "2021PECCS296",
     name: "Jeswin Rhymond J",
-    img: "assets/img/achievers/Rhymond.jpeg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Rhymond.jpeg",
     achievements: ["Winner of September Monthly Contest, 2023 - King Python"],
   },
   {
     id: "2020PECCS149",
     name: "Mohana Priya S.R",
-    img: "assets/img/achievers/Mohana.jpeg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Mohana.jpeg",
     achievements: [
       "Winner of August Monthly Contest, 2023 - #include &lt;craze.c&gt;",
     ],
@@ -108,13 +108,13 @@ const achievers = [
   {
     id: "2020PECCS145",
     name: "Maria Robin Andrew",
-    img: "assets/img/achievers/Maria.jpeg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Maria.jpeg",
     achievements: ["Winner of August Monthly Contest, 2023 - #HashKing"],
   },
   {
     id: "2020PECCS399",
     name: "Elavarasar P",
-    img: "assets/img/achievers/elevarasar.jpeg",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/elevarasar.jpeg",
     achievements: ["Winner of July Monthly Contest, 2023 - MATRICKS"],
   },
 ];
