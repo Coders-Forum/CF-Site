@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <script>console.log("MADLOG-N:", Date.now());</script>
+
+  <!-- ALTERNATE SIMPLIFIED SCRIPT
+  
+  <script> // This script contains a lot of MADLOG 's
+    (function () {
+        const pageStart = performance.now();
+        const scriptRecords = [];
+
+        /** Capture performance info for script load */
+        function recordScriptPerformance() {
+            performance.getEntriesByType("resource")
+                .filter(r => r.initiatorType === "script")
+                .forEach(r => {
+                    scriptRecords.push({
+                        name: r.name.split("/").pop(),
+                        loadTime: r.duration.toFixed(2)
+                    });
+                });
+        }
+
+        /** Measure inline script execution time */
+        (function wrapInlineScripts() {
+            const oldAppendChild = Element.prototype.appendChild;
+
+            Element.prototype.appendChild = function (child) {
+                if (child.tagName === "SCRIPT" && !child.src) {
+                    const oldText = child.textContent;
+                    child.textContent = `
+                        console.time('INLINE_SCRIPT_EXEC');
+                        ${oldText}
+                        console.timeEnd('INLINE_SCRIPT_EXEC');
+                    `;
+                }
+                return oldAppendChild.call(this, child);
+            };
+        })();
+
+        /** Hook DOMContentLoaded */
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("MADLOG >>> DOMContentLoaded at", performance.now().toFixed(0), "ms");
+        });
+
+        /** Hook window.load */
+        window.addEventListener("load", function () {
+            console.log("MADLOG >>> Window Load at", performance.now().toFixed(0), "ms");
+
+            recordScriptPerformance();
+
+            console.log("%c[SCRIPT LOAD SUMMARY]", "color: orange; font-weight:bold;");
+            if (scriptRecords.length === 0) {
+                console.log("No external scripts detected.");
+            } else {
+                scriptRecords.forEach(r => {
+                    console.log(`Script: ${r.name} | Load Time: ${r.loadTime} ms`);
+                });
+            }
+        });
+    })();
+  </script>-->
+
+  <script> // This script contains a lot of MADLOG 's
+    (function() {
+      const START = performance.now();
+      const RESOURCE_TYPES = ['script','img','css','link','font','xmlhttprequest','fetch','other'];
+      const resourceMap = new Map(); // key -> aggregated stats
+      const ajaxRecords = []; // XHR/fetch records
+      const dynamicInlineExecs = []; // dynamic inline script exec times
+      const SLOW_THRESHOLD = 50; // ms for "slow" highlights
+
+      // --- Utilities
+      function addResourceRecord(key, rec) {
+        const s = resourceMap.get(key) || { name: key, type: rec.type || 'unknown', count:0, total:0, max:0, examples: [] };
+        s.count += 1;
+        s.total += rec.duration;
+        s.max = Math.max(s.max, rec.duration);
+        if (s.examples.length < 3) s.examples.push(rec);
+        resourceMap.set(key, s);
+      }
+
+      function formatMs(n) { return Number(n).toFixed(2); }
+
+      // --- Instrument fetch
+      if ('fetch' in window) {
+        const origFetch = window.fetch;
+        window.fetch = function(input, init) {
+          const url = (typeof input === 'string') ? input : (input && input.url) || 'unknown';
+          const t0 = performance.now();
+          return origFetch.apply(this, arguments).then(res => {
+            const dur = performance.now() - t0;
+            ajaxRecords.push({ type: 'fetch', url, duration: dur, status: res.status });
+            return res;
+          }).catch(err => {
+            const dur = performance.now() - t0;
+            ajaxRecords.push({ type: 'fetch', url, duration: dur, error: true });
+            throw err;
+          });
+        };
+      }
+
+      // --- Instrument XHR
+      (function() {
+        const XHR = window.XMLHttpRequest;
+        if (!XHR) return;
+        const origOpen = XHR.prototype.open;
+        const origSend = XHR.prototype.send;
+
+        XHR.prototype.open = function(method, url) {
+          try { this._pf_url = url; } catch(e){}
+          return origOpen.apply(this, arguments);
+        };
+
+        XHR.prototype.send = function(body) {
+          const url = this._pf_url || 'unknown-xhr';
+          const t0 = performance.now();
+          const onEnd = (status, err) => {
+            const dur = performance.now() - t0;
+            ajaxRecords.push({ type: 'xmlhttprequest', url, duration: dur, status: status, error: !!err });
+          };
+
+          this.addEventListener('load', () => onEnd(this.status, false), { once: true });
+          this.addEventListener('error', () => onEnd(this.status, true), { once: true });
+          this.addEventListener('abort', () => onEnd(this.status, true), { once: true });
+
+          return origSend.apply(this, arguments);
+        };
+      })();
+
+      // --- Wrap dynamic inline scripts (appendChild / insertBefore)
+      (function wrapAppend() {
+        const origAppend = Element.prototype.appendChild;
+        const origInsert = Element.prototype.insertBefore;
+
+        function tryWrapAndAppend(self, child, origFn) {
+          if (child && child.tagName === 'SCRIPT' && !child.src && child.textContent) {
+            // wrap inline script text with console.time markers (safe)
+            const label = 'INLINE_EXEC@' + (document.location.pathname.split('/').pop() || location.href);
+            const originalText = child.textContent;
+            // Replace content with measured code: try/finally ensures we always record time
+            child.textContent = `{
+              const __t0 = performance.now();
+              try {
+                ${originalText}
+              } finally {
+                const __dt = performance.now() - __t0;
+                try { window.__pf_inline_execs = window.__pf_inline_execs || []; window.__pf_inline_execs.push({label: "${label}", duration: __dt}); } catch(e){}
+              }
+            }`;
+            return origFn.call(self, child);
+          }
+          return origFn.call(self, child);
+        }
+
+        Element.prototype.appendChild = function(child) {
+          return tryWrapAndAppend(this, child, origAppend);
+        };
+        Element.prototype.insertBefore = function(newNode, refNode) {
+          return tryWrapAndAppend(this, newNode, origInsert);
+        };
+      })();
+
+      // --- Helper to collect resource timing entries (network)
+      function collectResourceTimings() {
+        try {
+          const entries = performance.getEntriesByType('resource') || [];
+          for (const r of entries) {
+            // Normalize initiator types we care about
+            let type = r.initiatorType || 'other';
+            // Some sheets show 'link' or 'other' for css; map them
+            if (r.name && /\.css($|\?)/i.test(r.name)) type = 'css';
+            if (r.name && /\.(woff2?|ttf|otf)($|\?)/i.test(r.name)) type = 'font';
+            const name = (r.name || 'unknown').split('/').pop();
+            addResourceRecord(name, { type, duration: r.duration, start: r.startTime, size: r.transferSize || 0, entry: r });
+          }
+        } catch (e) {
+          console.warn('collectResourceTimings error', e);
+        }
+      }
+
+      // --- When DOMContentLoaded fires
+      document.addEventListener('DOMContentLoaded', () => {
+        const t = performance.now() - START;
+        console.log('%cMADLOG >>> DOMContentLoaded at', 'color: teal', formatMs(t) + ' ms');
+      }, { once: true });
+
+      // --- On window load, assemble and print summary
+      window.addEventListener('load', () => {
+        const tLoad = performance.now() - START;
+        console.log('%cMADLOG >>> Window Load at', 'color: teal', formatMs(tLoad) + ' ms');
+
+        // collect resource timings
+        collectResourceTimings();
+
+        // collect dynamic inline execs if any
+        if (window.__pf_inline_execs && Array.isArray(window.__pf_inline_execs)) {
+          for (const it of window.__pf_inline_execs) {
+            dynamicInlineExecs.push(it);
+          }
+        }
+
+        // Aggregate ajaxRecords into resourceMap with prefix
+        for (const a of ajaxRecords) {
+          const key = (a.url || 'xhr').split('/').pop();
+          addResourceRecord(key + ' [xhr/fetch]', { type: a.type, duration: a.duration });
+        }
+
+        // Print top slow resources (by total)
+        const rows = [...resourceMap.values()]
+          .map(s => ({
+            Name: s.name,
+            Type: s.type,
+            Count: s.count,
+            'Total ms': Number(s.total).toFixed(2),
+            'Max ms': Number(s.max).toFixed(2),
+            ExampleStart: s.examples[0] ? Number(s.examples[0].start || 0).toFixed(2) : ''
+          }))
+          .sort((a,b) => b['Total ms'] - a['Total ms']);
+
+        console.log('%c[RESOURCE LOAD SUMMARY]', 'color: orange; font-weight:bold;');
+        if (rows.length) {
+          console.table(rows.slice(0, 200));
+        } else {
+          console.log('No resource timing entries found. (Are you running cross-origin resources without timing-allow-origin?)');
+        }
+
+        // print top slow individual resources
+        const slowOnes = rows.filter(r => Number(r['Total ms']) >= SLOW_THRESHOLD);
+        if (slowOnes.length) {
+          console.log('%c[TOP SLOW RESOURCES ≥ ' + SLOW_THRESHOLD + ' ms]', 'color: red; font-weight:bold;');
+          slowOnes.forEach(s => {
+            console.log(`${s.Name} (${s.Type}) — total: ${s['Total ms']} ms, max: ${s['Max ms']} ms`);
+          });
+        } else {
+          console.log('%cNo resources exceeded slow threshold: ' + SLOW_THRESHOLD + ' ms', 'color: green');
+        }
+
+        // Print AJAX summary
+        if (ajaxRecords.length) {
+          console.log('%c[XHR / fetch SUMMARY] (count: ' + ajaxRecords.length + ')', 'color: purple; font-weight:bold;');
+          console.table(ajaxRecords.map(a => ({
+            url: (a.url || '').split('/').pop(),
+            type: a.type,
+            duration: Number(a.duration).toFixed(2),
+            status: a.status || ''
+          })));
+        }
+
+        // Print dynamic inline script execs
+        if (dynamicInlineExecs.length) {
+          console.log('%c[DYNAMIC INLINE SCRIPT EXECUTION TIMES]', 'color: teal; font-weight:bold;');
+          dynamicInlineExecs.forEach(d => {
+            console.log(`${d.label} — ${formatMs(d.duration)} ms`);
+          });
+        }
+
+        // small total summary
+        console.log('%c[PAGE TIMINGS]','color: blue; font-weight:bold;');
+        console.log('Start -> load: ' + formatMs(tLoad) + ' ms (measured from profiler injection)');
+
+        // optionally: clear stored perf entries to keep memory low
+        try { performance.clearResourceTimings(); } catch(e){}
+      }, { once: true });
+
+      // If user wants an on-demand snapshot call:
+      window.__pf_takeSnapshot = function() {
+        collectResourceTimings();
+        const out = [...resourceMap.values()].map(s => ({name: s.name, type: s.type, total: s.total, max: s.max, count: s.count}));
+        return out;
+      };
+
+      // Helpful note to console so you know profiler is active
+      console.log('%c[profiler] Resource profiler injected. Waiting for window.load...', 'color: gray');
+
+    })();
+  </script>
+
+  <title>Coders Forum | About Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="title" content="Coders Forum | About" />
+  <meta name="description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta name="keywords" content="panimalar, coding, society, psdc, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+
+  <script>console.log("MADLOG-O:", Date.now());</script>
+
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codersforum.netlify.app" />
+  <meta property="og:title" content="Coders Forum | Panimalar" />
+  <meta property="og:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta property="og:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
+
+  <script>console.log("MADLOG-P:", Date.now());</script>
+
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://codersforum.netlify.app" />
+  <meta property="twitter:title" content="Coders Forum | Panimalar" />
+  <meta property="twitter:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta property="twitter:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
+
+  <script>console.log("MADLOG-Q:", Date.now());</script>
+
+
+  <link href="assets/img/club-logo.ico" rel="icon">
+  <script>console.log("MADLOG-Q.1:", Date.now());</script>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <script>console.log("MADLOG-R:", Date.now());</script>
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <script>console.log("MADLOG-R.1:", Date.now());</script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script>console.log("MADLOG-R.2:", Date.now());</script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <script>console.log("MADLOG-R.3:", Date.now());</script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.min.css" rel="stylesheet">
+  <script>console.log("MADLOG-R.4:", Date.now());</script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css" rel="stylesheet">
+  <script>console.log("MADLOG-R.5:", Date.now());</script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" rel="stylesheet">
+  <script>console.log("MADLOG-R.6:", Date.now());</script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
+
+  <script>console.log("MADLOG-S:", Date.now());</script>
+
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script>console.log("MADLOG-T:", Date.now());</script>
+
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-3M7SMRS80F');
+  </script>
+
+  <script>console.log("MADLOG-U:", Date.now());</script>
+
+
+</head>
+
+  <script>console.log("MADLOG-V:", Date.now());</script>
+  <script>console.log("MADLOG-W:", Date.now());</script>
+  <script>console.log("MADLOG-X:", Date.now());</script>
+  <script>console.log("MADLOG-Y:", Date.now());</script>
+  <script>console.log("MADLOG-Z:", Date.now());</script>
+
+
+
+<body>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        console.log("MADLOG SIMPLIFIED >>> DOMContentLoaded:", Date.now());
+    });
+
+    window.addEventListener("load", () => {
+        console.log("MADLOG SIMPLIFIED >>> Window LOAD:", Date.now());
+    });
+  </script>
+
+
+
+  <script>console.log("MADLOG-A:", Date.now());</script>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="/index.html" >Coders Forum</a></h1>
+    
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="/index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="/about.html">About</a></li>
+          <li><a class="nav-link scrollto" href="./Inter_Prep.html">Interview Prep</a></li>
+          <li><a class="nav-link scrollto" href="/events.html">Events</a></li>
+          <li><a class="nav-link scrollto" href="/practice.html">Practice</a></li>
+          <li><a class="nav-link scrollto" href="/gallery.html">Gallery</a></li>
+          <li><a class="nav-link scrollto" href="/walloffame.html">Wall Of Fame</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+    </div>
+
+
+
+  </header><!-- End Header -->
+
+  <script>console.log("MADLOG-B:", Date.now());</script>
+
+
+  <main id="main">
+
+    <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+        <div class="col-xl-8 col-lg-8">
+          <h1>About Us</h1>
+          <h3>Discover Our Story</h3>
+         </div>
+      </div>
+      </div>
+    </section>
+
+  <script>console.log("MADLOG-C:", Date.now());</script>
+
+
+
+    <section class="inner-page">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class = "col-lg-6 order-1 order-lg-2"  data-aos="fade-up" data-aos-delay="200">
+              <div class="section-title">
+                  <p>Our Story</p> 
+                  <h2>Discover Our Story</h2>
+              </div>
+              <div>
+                  <p style = "text-align : justify; text-indent: 30px;">
+                      Welcome to Coders Forum - a dynamic and thriving community of passionate individuals driven by a shared love for programming and an insatiable thirst for technical knowledge. We are a gathering of enthusiastic students who are eager to explore the fascinating world of coding and embark on a journey of innovation and continuous learning.
+                  </p>
+                  
+                  <p style = "text-align : justify; text-indent: 30px;">
+                    At Coders Forum, we believe in the power of collaboration, the joy of discovery, and the limitless possibilities that arise when like-minded minds unite.
+                    
+                    We empower coders through an inclusive community, fostering innovation, and driving a positive impact on technology and society. We provide a nurturing platform for aspiring coders to flourish, develop skills, and forge lasting connections through engaging events and knowledge-sharing. Embracing diversity and open collaboration, We aim to cultivate confident problem solvers and critical thinkers who shape the future of coding. Together, We transcend boundaries, driving innovation, and inspiring a brighter world. Whether you are a seasoned coder or just beginning your coding adventure, our doors are wide open to all who wish to immerse themselves in the captivating realm of technology and programming.
+                  </p>  
+              </div>
+          </div>
+        <div class = "col-lg-6 order-1 order-lg-2 hero-img"  data-aos="fade-up" data-aos-delay="200" style = "display: flex; align-items: center; justify-content: center;">
+          <img src = "./assets/img/team/cf-members.jpg" style= "width: 95%; height: auto;" class="img-fluid animated"> 
+        </div>
+      </div>
+      <p>
+        <br>
+        <br>
+      </p>
+    </div>
+
+  <script>console.log("MADLOG-D:", Date.now());</script>
+
+
+    <div class="container" data-aos="fade-up" >
+      <div class="section-title">
+          <p>Core Tenets</p> 
+          <h2>Empowering Excellence</h2>
+      </div>
+
+      <div  class = "col-lg-12 order-1 order-lg-2"  data-aos="fade-up" data-aos-delay="200">
+          <p style = "text-align : justify; text-indent: 30px;">
+              <h5 style = "font-size: 22px;"> <i class="ri-group-line ri-2x" style = "color: #ffc451;"></i><b> Collaboration </b></h5> 
+              <span style = "padding-left: 60px;">We believe in the power of teamwork and cooperation.  We welcome individuals from diverse backgrounds, experiences, and skill levels. In our community, everyone's voice is valued and respected. By collaborating and supporting each other, we can achieve greater heights and solve complex problems together.</span>
+          </p>
+          <br>
+          <p style = "text-align : justify; text-indent: 30px;">
+              <h5 style = "font-size: 22px;"> <i class="ri-book-line ri-2x" style = "color: #ffc451;"></i><b> Continuous Learning </b></h5> 
+              <span style = "padding-left: 60px;">Learning is a lifelong journey, and we are committed to fostering a culture of continuous growth and improvement. Our community thrives on sharing knowledge, experiences, and insights to help one another grow. We embrace new challenges as opportunities to expand our knowledge and skills.
+          </p>
+          <br>
+          <p style = "text-align : justify; text-indent: 30px;">
+              <h5 style = "font-size: 22px;"> <i class="ri-heart-line ri-2x" style = "color: #ffc451;"></i><b> Supportive Environment </b></h5> 
+              <span style = "padding-left: 60px;">We encourage open and constructive discussions.  Our community provides a safe and supportive space for sharing ideas, asking questions, and seeking assistance. We lift each other up, fostering a positive and encouraging atmosphere.</p>
+      </div>
+      <p>
+          <br>
+          <br>
+      </p>
+  </div>
+
+  <script>console.log("MADLOG-E:", Date.now());</script>
+
+
+    <div class="container" data-aos="fade-up" >
+        
+    <div class="row">
+        <div class = "col-lg-6"  data-aos="fade-up" data-aos-delay="200" style = "display: flex; align-items: center; justify-content: center;">
+            <img src = "./assets/img/mission-1.jpg" style= "border-radius: 50%; width: 400px; height: 400px;" class="img-fluid animated"> 
+        </div>
+
+        <div  class = "col-lg-6"  data-aos="fade-up" data-aos-delay="200">
+            <div class="section-title">
+                <p>Our Mission</p> 
+                <h2>Vision Driven Endeavors</h2>
+            </div>
+            <p style = "text-align : justify;">
+              <b>Explore Technical Horizons:</b> Introduce members to diverse technical sources like GitHub, HackerRank, LeetCode, etc., fostering a culture of continuous learning and exploration.
+            </p>
+            <p style = "text-align : justify;">
+              <b>Foster a Strong Network:</b>  Facilitate connections with fellow members, including seniors, to encourage collaboration, support personal projects, and create a thriving community of like-minded coders.
+            </p>
+            <p style = "text-align : justify;">
+              <b>Cultivate Knowledge Sharing:</b>  Provide a platform for club members to discuss their ongoing learning journeys and project developments, promoting exposure to various coding disciplines.
+            </p>
+            <p style = "text-align : justify;">
+              <b>Stay Informed and Updated:</b>  Engage in discussions about current trends and technical news, ensuring members stay informed and relevant in the ever-evolving world of technology.
+            </p>
+            <p style = "text-align : justify;">
+              <b>Build Confidence and Interpersonal Skills:</b>  Create a supportive environment that encourages members to overcome stage-fear, develop public speaking skills, and foster inter-personal growth.
+            </p>
+           
+        </div>
+    </div>
+        <p>
+          <br>
+          <br>
+        </p>
+    </div>
+
+  
+    </div>
+    </section>
+
+  <script>console.log("MADLOG-F:", Date.now());</script>
+
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <p>Our Team</p> 
+          <h2>Leading the Vision</h2>
+        </div>
+
+        <div class="row justify-content-center d-flex align-items-center justify-content-center">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/mohamed-jasim-b57802259/" target="_blank">
+              <div class="team-card" id="jasim">
+                  <img src="./assets/img/team/jasim.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Mohamed Jasim M</h4>
+                  <p class="text-muted"><b>Lead | CodeMaster</b></p>
+              </div>
+            </a>
+          </div>  
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/johithraj/" target="_blank">
+              <div class="team-card" id="johith">
+                  <img src="./assets/img/team/johith.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Johith Raj S S</h4>
+                  <p class="text-muted"><b>Co-Lead | CodeScribe</b></p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/emmanuel-prithish/" target="_blank">
+              <div class="team-card" id="prithish">
+                  <img src="./assets/img/team/prithish.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Emmanuel Prithish S</h4>
+                  <p class="text-muted"><b>Co-Lead | WebGuardian</b></p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/madhumitha-velusamy-80a209254/" target="_blank">
+              <div class="team-card" id="madhumitha">
+                  <img src="./assets/img/team/madhumitha.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Madhumitha V</h4>
+                  <p class="text-muted"><b>Co-Lead | PixelCrafter</b></p>
+              </div>
+            </a>
+          </div>  
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/shruti0405/" target="_blank">
+              <div class="team-card" id="shruti">
+                  <img src="./assets/img/team/shruti.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Shruti S</h4>
+                  <p class="text-muted"><b>Co-Lead | CommunityBridge</b></p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/aalia-fathima-a46b462a2/" target="_blank">
+              <div class="team-card"  id="aalia">
+                  <img src="./assets/img/team/aalia.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Aalia Fathima W</h4>
+                  <p class="text-muted"><b>Co-Lead | Operations Sentinel</b></p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  <script>console.log("MADLOG-G:", Date.now());</script>
+
+
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <p>Initiators</p> 
+          <h2>Behind the Vision</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/madhavakumar-dhandapani/" target="_blank">
+              <div class="team-card" id="madhavakumar">
+                  <img src="./assets/img/team/madhav.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Madhavakumar D</h4>
+                  <p class="text-muted"><b>Initiator &amp; Strategist</b></p>
+              </div>
+            </a>
+          </div>  
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/hrishab59/" target="_blank">
+              <div class="team-card" id="rishab">
+                  <img src="./assets/img/team/rishab.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Rishab H</h4>
+                  <p class="text-muted"><b>Initiator &amp; Strategist</b></p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/kvg08/" target="_blank">
+              <div class="team-card"  id="karthick">
+                  <img src="./assets/img/team/karthick.jpeg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Karthick V</h4>
+                  <p class="text-muted"><b>Initiator &amp; Strategist</b></p>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/jeswinjosephj/" target="_blank">
+              <div class="team-card" id="jeswin">
+                  <img src="./assets/img/team/jeswin.jpg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Jeswin Joseph J</h4>
+                  <p class="text-muted"><b>Initiator &amp; Strategist</b></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <script>console.log("MADLOG-H:", Date.now());</script>
+
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <p>Convenors</p> 
+          <h2>Guiding the Vision</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <a href="https://www.linkedin.com/in/dr-jabasheela-l-14097621/" target="_blank">
+              <div class="team-card" id="jabasheela">
+                  <img src="./assets/img/team/HOD.png" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Dr. L. Jabasheela</h4>
+                  <p class="text-muted"><b>Convenor | HoD - CSE</b></p>
+              </div>
+            </a>
+          </div>  
+          <div class="col-lg-4 col-md-4 col-sm-6">
+            <a href="">
+              <div class="team-card" id="anitha">
+                  <img src="./assets/img/team/anitha_mam.jpeg" alt="Team Member" class="img-fluid">
+                  <h4 class="mt-3">Mrs. Anitha Moses</h4>
+                  <p class="text-muted"><b>Faculty In-Charge</b></p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main><!-- End #main -->
+
+  <script>console.log("MADLOG-I:", Date.now());</script>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-info">
+            <h3>Coders Forum</h3>
+            <p>
+              Department of Computer Science and Engineering<br>
+              Panimalar Engineering College, <br>
+              Bangalore Trunk Road,<br>
+              Varadharajapuram, Poonamallee <br>
+              Chennai - 600 123 <br><br>
+              <i class="bi bi-telephone" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">+91 93846 78960</span><br>
+              <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <a href="mailto:coders_forum@outlook.com" style = "color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
+            </p>
+            <div class="social-links mt-3">
+              <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
+              <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+          </div>
+        </div>
+
+  <script>console.log("MADLOG-J:", Date.now());</script>
+
+
+        <div class="col-lg-4 col-md-6" style = "display : flex ; align-items : center ; justify-content : center ;">
+          <img src="./assets/img/club-logo.png" style = "width : 300px; height : auto ;">
+        </div>
+        <div class="col-lg-4 col-md-6 d-none d-sm-block">
+            <div class="row">
+            <div class="col-sm-6 col-md-6 footer-links">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+                <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
+                <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
+                <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
+                <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
+              </ul>
+            </div>
+
+            <div class="col-sm-6 col-md-6 footer-links">
+              <h4>Initiators</h4>
+              <ul>
+                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+              </ul>
+            </div>
+          </div>
+        </div> 
+
+        <!-- Mobile Two-Column Layout -->
+        <div class="col-12 footer-links d-md-none" style = "margin-top: 30px;">
+          <div class="row">
+            <div class="col-6">
+              <h4>Useful Links</h4>
+              <ul>
+                <li><i class="bx bx-link"></i> <a href="/about.html">About Us</a></li>
+                <li><i class="bx bx-link"></i> <a href="/events.html">Events</a></li>
+                <li><i class="bx bx-link"></i> <a href="/practice.html">Practice</a></li>
+                <li><i class="bx bx-link"></i> <a href="/gallery.html">Gallery</a></li>
+                <li><i class="bx bx-link"></i> <a href="/walloffame.html">Wall of Fame</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <h4>Initiators</h4>
+              <ul>
+                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
+                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
+                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
+                <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+  <script>console.log("MADLOG-K:", Date.now());</script>
+
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script>console.log("MADLOG-L:", Date.now());</script>
+
+
+  <script src="assets/js/main.js"></script>
+
+  <script>console.log("MADLOG-M:", Date.now());</script>
+
+
+</body>
+
+</html>

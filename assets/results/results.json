@@ -1,0 +1,988 @@
+[
+    {
+        "RANK": "1",
+        "SCORE": "962.5",
+        "TEAM NAME": "TECHBUSTERS",
+        "NAME": "CHANDRAMOHITH P",
+        "ROLL NO.": "2022PECCS645",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "I"
+    },
+    {  
+        "NAME": "ABISHEK S J",
+        "ROLL NO.": "2022PECCS612",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "I"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "962.5",
+        "TEAM NAME": "CODE CRAFTERS",
+        "NAME": "JESWIN RHYMOND J",
+        "ROLL NO.": "2021PECCS296",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "D"
+    },
+    {  
+        "NAME": "JIRILIN BABU S",
+        "ROLL NO.": "2021PECCS297",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "962.5",
+        "TEAM NAME": "BYTE BATTLERS",
+        "NAME": "VARSHINI P",
+        "ROLL NO.": "2021PECCS220",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "VARSHINI K",
+        "ROLL NO.": "2021PECCS219",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "1",
+        "SCORE": "962.5",
+        "TEAM NAME": "NAGAPPAN",
+        "NAME": "MAHAVEER A",
+        "ROLL NO.": "2022PECIT376",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "E"
+    },
+    {
+        "NAME": "NAGAPPAN S",
+        "ROLL NO.": "2022PECIT388",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "E"
+    },
+    {
+        "RANK": "5",
+        "SCORE": "915",
+        "TEAM NAME": "CODECRAFTERS",
+        "NAME": "SWETHA B",
+        "ROLL NO.": "2022PECIT239",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "C"
+    },
+    {
+        "NAME": "YAMINI P",
+        "ROLL NO.": "2022PECIT254",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "C"
+    },
+    {
+        "RANK": "6",
+        "SCORE": "912.5",
+        "TEAM NAME": "TEAM NEO",
+        "NAME": "K R NIJANDHAN",
+        "ROLL NO.": "2021PECEE163",
+        "DEPT": "EEE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "VENIS XAVIER V",
+        "ROLL NO.": "2021PECEE201",
+        "DEPT": "EEE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "7",
+        "SCORE": "902.5",
+        "TEAM NAME": "CODE CRUSADERS",
+        "NAME": "GOKUL S",
+        "ROLL NO.": "2022PECCB319",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "JAI ARUN  K",
+        "ROLL NO.": "2022PECCB331",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "7",
+        "SCORE": "902.5",
+        "TEAM NAME": "ELITE MINDS",
+        "NAME": "NITIN SAAI BARATH T ",
+        "ROLL NO.": "2022PECIT397",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "E"
+    },
+    {
+        "NAME": "NITHISH NARAYANAN P B",
+        "ROLL NO.": "2022PECIT396",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "E"
+    },
+    {
+        "RANK": "7",
+        "SCORE": "902.5",
+        "TEAM NAME": "SPHINX",
+        "NAME": "SRIVIDYA S",
+        "ROLL NO.": "2022PECIT232",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "C"
+    },
+    {
+        "NAME": "VAISHALI R",
+        "ROLL NO.": "2022PECIT246",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "C"
+    },
+    {
+        "RANK": "10",
+        "SCORE": "875",
+        "TEAM NAME": "CODE SQUAD",
+        "NAME": "MADHUMITHA V",
+        "ROLL NO.": "2022PECCS210",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "JANNAT S ",
+        "ROLL NO.": "2022PECCS180",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "11",
+        "SCORE": "857.24",
+        "TEAM NAME": "DOWHILE CODING",
+        "NAME": "HARIHARAN ",
+        "ROLL NO.": "2022PECEC498",
+        "DEPT": "ECE",
+        "YEAR": "II",
+        "SECTION": "G"
+    },
+    {
+        "NAME": "GANESHRAJ",
+        "ROLL NO.": "2022PECEC479",
+        "DEPT": "ECE",
+        "YEAR": "II",
+        "SECTION": "G"
+    },
+    {
+        "RANK": "11",
+        "SCORE": "857.24",
+        "TEAM NAME": "CODEAHOLICS",
+        "NAME": "SHRUTI S",
+        "ROLL NO.": "2022PECCS294",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "VARSHINI S",
+        "ROLL NO.": "2022PECCS329",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "13",
+        "SCORE": "852.5",
+        "TEAM NAME": "CODE CRUSADERS",
+        "NAME": "PRITHIKA S",
+        "ROLL NO.": "2021PECCC123",
+        "DEPT": "CCE",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "JIIVITHA A",
+        "ROLL NO.": "2021PECCC108",
+        "DEPT": "CCE",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "13",
+        "SCORE": "852.5",
+        "TEAM NAME": "SPAM BOTS",
+        "NAME": "MONISHA V",
+        "ROLL NO.": "2022PECCS222",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "JANANI M",
+        "ROLL NO.": "2022PECCS176",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "15",
+        "SCORE": "837.5",
+        "TEAM NAME": "HACKERS",
+        "NAME": "S PRATHYUSH",
+        "ROLL NO.": "2022PECEE190",
+        "DEPT": "EEE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "RUBESH R",
+        "ROLL NO.": "2022PECEE197",
+        "DEPT": "EEE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "16",
+        "SCORE": "807.24",
+        "TEAM NAME": "DYNAMITE",
+        "NAME": "AISHWARYA S",
+        "ROLL NO.": "2021PECIT107",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "NAVARATHNA G",
+        "ROLL NO.": "2021PECIT159",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "16",
+        "SCORE": "807.24",
+        "TEAM NAME": "NOTORIOUSGEEKS",
+        "NAME": "ATCHAYARAJI R",
+        "ROLL NO.": "2022PECCS130",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "HARI NANDHINI",
+        "ROLL NO.": "2022PECCS160",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "16",
+        "SCORE": "807.24",
+        "TEAM NAME": "BYTEMASTERS",
+        "NAME": "SAKKTHIVEL T",
+        "ROLL NO.": "2021PECCB223",
+        "DEPT": "CSBS",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "GAUTHAMAN  S",
+        "ROLL NO.": "2021PECCB187",
+        "DEPT": "CSBS",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "19",
+        "SCORE": "800",
+        "TEAM NAME": "LCODE",
+        "NAME": "HEMANTH KARTHIK M",
+        "ROLL NO.": "2022PECCB329",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "ASMATH AKBAR ALI T",
+        "ROLL NO.": "2022PECCB300",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "20",
+        "SCORE": "792.5",
+        "TEAM NAME": "CYBER SAPIENS ",
+        "NAME": "GOWSHIK G S ",
+        "ROLL NO.": "2022PECCB320",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "KARI CHARAN",
+        "ROLL NO.": "2022PECCB340",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "21",
+        "SCORE": "790",
+        "TEAM NAME": "405 FOUND",
+        "NAME": "UMA MAGESWARI D",
+        "ROLL NO.": "2022PECCB192 ",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "VAISHNAVI NG",
+        "ROLL NO.": "2022PECCB193",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "21",
+        "SCORE": "790",
+        "TEAM NAME": "TECH NERDS",
+        "NAME": "ISWARYA PRATHIBAA K S",
+        "ROLL NO.": "2022PECCS174",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "NASIYA S",
+        "ROLL NO.": "2022PECCS225",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "23",
+        "SCORE": "767.76",
+        "TEAM NAME": "ATTACKONTECHNOLOGY",
+        "NAME": "RAMCHANDRU R",
+        "ROLL NO.": "2021PECIT191",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "SIRANJEEVI P",
+        "ROLL NO.": "2021PECIT205",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "23",
+        "SCORE": "767.76",
+        "TEAM NAME": "TECHNOPHILES",
+        "NAME": "RAMYA A B ",
+        "ROLL NO.": "2022PECCS259",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "C"
+    },
+    {
+        "NAME": "RADHIKA K",
+        "ROLL NO.": "2022PECCS254",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "C"
+    },
+    {
+        "RANK": "25",
+        "SCORE": "746.05",
+        "TEAM NAME": "IT HACKER",
+        "NAME": "SARAVANAN S",
+        "ROLL NO.": "2022PECIT314",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "26",
+        "SCORE": "745.26",
+        "TEAM NAME": "CODERS",
+        "NAME": "DIVYA R",
+        "ROLL NO.": "2022PECIT134",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "DHARANI S",
+        "ROLL NO.": "2022PECIT128",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "27",
+        "SCORE": "712.5",
+        "TEAM NAME": "PHENIX",
+        "NAME": "MICHAEL JOSIL M",
+        "ROLL NO.": "2021PECCS323",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "MOHAN B",
+        "ROLL NO.": "2021PECCS326",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "27",
+        "SCORE": "712.5",
+        "TEAM NAME": "TECHIANS",
+        "NAME": "ABISHEK KANNUSWAMY G R",
+        "ROLL NO.": "2021PECIT227",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "C"
+    },
+    {
+        "NAME": "MANOJ SAYEE M P",
+        "ROLL NO.": "2021PECIT281",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "C"
+    },
+    {
+        "RANK": "27",
+        "SCORE": "712.5",
+        "TEAM NAME": "DIGITAL DESTROYERS ",
+        "NAME": "ELAKKIYA M",
+        "ROLL NO.": "2022PECIT137",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "BETSEE NATASHA",
+        "ROLL NO.": "2022PECIT118 ",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "27",
+        "SCORE": "712.5",
+        "TEAM NAME": "DEVIANTS",
+        "NAME": "DEVOTTHAM D K",
+        "ROLL NO.": "2022PECCB308",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "BHARANIVELAN J",
+        "ROLL NO.": "2022PECCB303",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "27",
+        "SCORE": "712.5",
+        "TEAM NAME": "TEAM WETRIED",
+        "NAME": "SUNDAR KARTHIK S",
+        "ROLL NO.": "2021PECCB153",
+        "DEPT": "CSBS",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "32",
+        "SCORE": "662.5",
+        "TEAM NAME": "SYNTAX SQUAD",
+        "NAME": "BHUVANESHWARI S",
+        "ROLL NO.": "2022PECCS134",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "DEEPIKA P B",
+        "ROLL NO.": "2022PECCS143",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "32",
+        "SCORE": "662.5",
+        "TEAM NAME": "INFINITE CODERS",
+        "NAME": "VISHWANATHAN N",
+        "ROLL NO.": "2022PECIT281",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "C"
+    },
+    {
+        "NAME": "K MOHAMMAD AASHATH",
+        "ROLL NO.": "2022PECIT379",
+        "DEPT": "IT",
+        "YEAR": "II",
+        "SECTION": "E"
+    },
+    {
+        "RANK": "32",
+        "SCORE": "662.5",
+        "TEAM NAME": "CODE HEIST",
+        "NAME": "AJAY KUMAR B",
+        "ROLL NO.": "2022PECCS615",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "I"
+    },
+    {
+        "NAME": "BHARATH V",
+        "ROLL NO.": "2022PECCS642",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "I"
+    },
+    {
+        "RANK": "32",
+        "SCORE": "662.5",
+        "TEAM NAME": "RANGERS",
+        "NAME": "KHALID AHAMED M",
+        "ROLL NO.": "2021PECAI275",
+        "DEPT": "AIDS",
+        "YEAR": "III",
+        "SECTION": "C"
+    },
+    {
+        "NAME": "DINESH P",
+        "ROLL NO.": "2021PECAI251",
+        "DEPT": "AIDS",
+        "YEAR": "III",
+        "SECTION": "C"
+    },
+    {
+        "RANK": "36",
+        "SCORE": "652.5",
+        "TEAM NAME": "REDHAT",
+        "NAME": "DOMESAN U",
+        "ROLL NO.": "2021PECCS392",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "E"
+    },
+    {
+        "RANK": "36",
+        "SCORE": "652.5",
+        "TEAM NAME": "BINARY DIVAS",
+        "NAME": "M POOJITHA",
+        "ROLL NO.": "2021PECCS169",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "C B RUPA SRI",
+        "ROLL NO.": "2021PECCS184",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "36",
+        "SCORE": "652.5",
+        "TEAM NAME": "DEVIANTS",
+        "NAME": "KAMALESH S",
+        "ROLL NO.": "2022PECCB338",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "KAMESH M",
+        "ROLL NO.": "2022PECCB339",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "39",
+        "SCORE": "637.5",
+        "TEAM NAME": "CODE CONQUERORS",
+        "NAME": "MOHAMED JASIM M",
+        "ROLL NO.": "2022PECCS498",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "G"
+    },
+    {
+        "NAME": "SUDARSON BHARATHWAAJ G",
+        "ROLL NO.": "2022PECCS373",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "E"
+    },
+    {
+        "RANK": "40",
+        "SCORE": "612.5",
+        "TEAM NAME": "GOC",
+        "NAME": "PRADARSH S ",
+        "ROLL NO.": "2022PECEE187",
+        "DEPT": "EEE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "SRIVATHSAN R",
+        "ROLL NO.": "2022PECEE213",
+        "DEPT": "EEE",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "41",
+        "SCORE": "610",
+        "TEAM NAME": "CUANTICO",
+        "NAME": "ENOS NISHANTH J",
+        "ROLL NO.": "2022PECCB316",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "ARUNACHALAM V",
+        "ROLL NO.": "2022PECCB298",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "42",
+        "SCORE": "600",
+        "TEAM NAME": "DATA DYNAMO",
+        "NAME": "KISHORE S",
+        "ROLL NO.": "2022PECCB346",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "DINESH P",
+        "ROLL NO.": "2022PECCB313",
+        "DEPT": "CSBS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "42",
+        "SCORE": "600",
+        "TEAM NAME": "TECH NERDS",
+        "NAME": "VAISHNAVI N",
+        "ROLL NO.": "2022PECCS325",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "YUVAPADMASRI M S",
+        "ROLL NO.": "2022PECCS336",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "44",
+        "SCORE": "587.5",
+        "TEAM NAME": "NOVA",
+        "NAME": "BALAJI M",
+        "ROLL NO.": "2021PECIT238",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "C"
+    },
+    {
+        "NAME": "BHUVANESHWAR S",
+        "ROLL NO.": "2021PECIT241",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "C"
+    },
+    {
+        "RANK": "45",
+        "SCORE": "573.55",
+        "TEAM NAME": "CODE CRUSADERS",
+        "NAME": "SWATHY S",
+        "ROLL NO.": "2021PECCS210",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "THIRUSELVALAKSHMI V",
+        "ROLL NO.": "2021PECCS216",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "46",
+        "SCORE": "569.74",
+        "TEAM NAME": "SQUAD SQUARE ",
+        "NAME": "K S RAMANA",
+        "ROLL NO.": "2022PECCS426",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "F"
+    },
+    {
+        "NAME": "SANTHOSHKUMAR V ",
+        "ROLL NO.": "2022PECCS454",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "F"
+    },
+    {
+        "RANK": "47",
+        "SCORE": "560.39",
+        "TEAM NAME": "SHARAM",
+        "NAME": "SHALINI P",
+        "ROLL NO.": "2021PECAI151",
+        "DEPT": "AIDS",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "RAMYA R",
+        "ROLL NO.": "2021PECAI141",
+        "DEPT": "AIDS",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "48",
+        "SCORE": "557.24",
+        "TEAM NAME": "EMERGING PROGRAMMERS",
+        "NAME": "HARSHITHA LOGANATHAN",
+        "ROLL NO.": "2021PECCS135",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "LITIKA GOPINATHAN",
+        "ROLL NO.": "2021PECCS153",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "48",
+        "SCORE": "557.24",
+        "TEAM NAME": "CODEX PHOENIX",
+        "NAME": "SANJAYKUMAR S",
+        "ROLL NO.": "2022PECAI334",
+        "DEPT": "AIDS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "NEERAJ J V",
+        "ROLL NO.": "2022PECAI298",
+        "DEPT": "AIDS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "48",
+        "SCORE": "557.24",
+        "TEAM NAME": "CODE SMITH",
+        "NAME": "HARIHARAN ",
+        "ROLL NO.": "2022PECEC498",
+        "DEPT": "ECE",
+        "YEAR": "II",
+        "SECTION": "G"
+    },
+    {
+        "NAME": "LAITH ",
+        "ROLL NO.": "2022PECEC540",
+        "DEPT": "ECE",
+        "YEAR": "II",
+        "SECTION": "G"
+    },
+    {
+        "RANK": "48",
+        "SCORE": "557.24",
+        "TEAM NAME": "CODING DIVAS",
+        "NAME": "SANJUKTHA D",
+        "ROLL NO.": "2021PECEC205",
+        "DEPT": "ECE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "SHAHIDHA S",
+        "ROLL NO.": "2021PECEC207",
+        "DEPT": "ECE",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "48",
+        "SCORE": "557.24",
+        "TEAM NAME": "CODEBREAKERS",
+        "NAME": "ROFFIN JASON N",
+        "ROLL NO.": "2021PECCB222",
+        "DEPT": "CSBS",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "ARUN KUMAR C",
+        "ROLL NO.": "2021PECCB172",
+        "DEPT": "CSBS",
+        "YEAR": "III",
+        "SECTION": "B"
+    },
+    {},
+    {
+        "RANK": "48",
+        "SCORE": "557.24",
+        "TEAM NAME": "CODE777",
+        "NAME": "SENTHIL KUMARAN M",
+        "ROLL NO.": "2022PECAI348",
+        "DEPT": "AIDS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "NAME": "PARAMASIVAM J",
+        "ROLL NO.": "2022PECAI304",
+        "DEPT": "AIDS",
+        "YEAR": "II",
+        "SECTION": "D"
+    },
+    {
+        "RANK": "54",
+        "SCORE": "550",
+        "TEAM NAME": "ATCAC",
+        "NAME": "ATCHAIYARAJ S",
+        "ROLL NO.": "2021PECAI236",
+        "DEPT": "AIDS",
+        "YEAR": "III",
+        "SECTION": "C"
+    },
+    {
+        "NAME": "ADRIAN CALVIN K A",
+        "ROLL NO.": "2021PECAI229",
+        "DEPT": "AIDS",
+        "YEAR": "III",
+        "SECTION": "C"
+    },
+    {
+        "RANK": "55",
+        "SCORE": "540",
+        "TEAM NAME": "JAVA JESTERS",
+        "NAME": "AYSHA IDRIS ",
+        "ROLL NO.": "2022PECCS131",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "AALIA FATHIMA W",
+        "ROLL NO.": "2022PECCS102",
+        "DEPT": "CSE",
+        "YEAR": "II",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "56",
+        "SCORE": "547.24",
+        "TEAM NAME": "CODING GEEKS",
+        "NAME": "DAEN KISHO C T",
+        "ROLL NO.": "2021PECEC385",
+        "DEPT": "ECE",
+        "YEAR": "III",
+        "SECTION": "E"
+    },
+    {
+        "NAME": "CHANDRAPRAKASH V",
+        "ROLL NO.": "2021PECCS377",
+        "DEPT": "CSE",
+        "YEAR": "III",
+        "SECTION": "E"
+    },
+    {
+        "RANK": "57",
+        "SCORE": "544.74",
+        "TEAM NAME": "MISSION CRAFTERS",
+        "NAME": "REENA SHARON Y",
+        "ROLL NO.": "2022PECAI182",
+        "DEPT": "AIDS",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "NAME": "SHINY ZERUBBA RAJIVE S",
+        "ROLL NO.": "2022PECAI198",
+        "DEPT": "AIDS",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "58",
+        "SCORE": "517.76",
+        "TEAM NAME": "SPAM BYTES",
+        "NAME": "SWETHA K",
+        "ROLL NO.": "2022PECAI214",
+        "DEPT": "AIDS",
+        "YEAR": "II",
+        "SECTION": "B"
+    },
+    {
+        "RANK": "59",
+        "SCORE": "509.74",
+        "TEAM NAME": "WONDERNESS OF BEAUTY",
+        "NAME": "DEEPTHIGA E",
+        "ROLL NO.": "2021PECIT122",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "NAME": "JANANI  N",
+        "ROLL NO.": "2021PECIT143",
+        "DEPT": "IT",
+        "YEAR": "III",
+        "SECTION": "A"
+    },
+    {
+        "RANK": "60",
+        "SCORE": "507.24",
+        "TEAM NAME": "DISQUALIFIER",
+        "NAME": "V NAVEENKANNAA",
+        "ROLL NO.": " 2022PECEE286",
+        "DEPT": "EEE",
+        "YEAR": "II",
+        "SECTION": "C"
+    }
+]
