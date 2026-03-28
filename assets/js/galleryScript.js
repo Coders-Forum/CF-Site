@@ -7,7 +7,8 @@ rules to build this below array of objects in future:
 2. filtertype: if its weekly meetup leave it empty else if its events or contests add filter-highlight
 3. remaining properties just follow the same template.
 */
-const galleryData = [{
+const galleryData = [
+    {
     title: 'Weekly MeetUp',
     desc: 'Kishore RBT ,Explained His Machine learning Project , The tools and tech stack He used.',
     imgUrl: 'https://ik.imagekit.io/codersforum/img%20141.jpg?updatedAt=1774692529906',
