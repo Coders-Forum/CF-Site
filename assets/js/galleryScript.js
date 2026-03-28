@@ -9,6 +9,20 @@ rules to build this below array of objects in future:
 */
 const galleryData = [
     {
+    title: 'The Final Destination',
+    desc: 'The contest blended creativity and problem solving making it both intense and memorable for everyone who took part.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20143.jpg',
+    date: '2 June, 2025',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'The Final Destination',
+    desc: 'The final destination was a five round treasure hunt style coding contest designed to test different technical skills in a fun and challenging way.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20142.jpg',
+    date: '2 June, 2025',
+    filterType: 'filter-highlight'
+  },
+    {
     title: 'Weekly MeetUp',
     desc: 'Kishore RBT ,Explained His Machine learning Project , The tools and tech stack He used.',
     imgUrl: 'https://ik.imagekit.io/codersforum/img%20141.jpg?updatedAt=1774692529906',
