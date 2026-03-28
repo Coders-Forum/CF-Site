@@ -10,7 +10,7 @@ const meetups = [
     desc: "Weekly Meetup 52 covered DevOps, recursion, JavaScript, and interview experiences.",
     date: "2025-11-04",
     momLink: "https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing",
-    resourcesLink :"https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing"
+    resourcesLink :"https://drive.google.com/drive/folders/1egDQlgUStlmY2-XBw-srTTHIwjyxZsAS?usp=drive_link"
   },
   {
     title: "Meetup 51",
@@ -18,7 +18,7 @@ const meetups = [
     desc: "Weekly Meetup 51 covered DevOps, recursion, JavaScript, and interview experiences.",
     date: "2025-11-11",
     momLink: "https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing",
-    resourcesLink :"https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing"
+    resourcesLink :"https://drive.google.com/drive/folders/1egDQlgUStlmY2-XBw-srTTHIwjyxZsAS?usp=drive_link"
   },
   {
     title: "Meetup 50",
@@ -26,7 +26,7 @@ const meetups = [
     desc: "Weekly Meetup 50 covered DevOps, recursion, JavaScript, and interview experiences.",
     date: "2025-11-18",
     momLink: "https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing",
-    resourcesLink :"https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing"
+    resourcesLink :"https://drive.google.com/drive/folders/1egDQlgUStlmY2-XBw-srTTHIwjyxZsAS?usp=drive_link"
   },
   {
     title: "Meetup 49",
@@ -34,7 +34,7 @@ const meetups = [
     desc: "Weekly Meetup 52 covered DevOps, recursion, JavaScript, and interview experiences.",
     date: "2025-11-04",
     momLink: "https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing",
-    resourcesLink :"https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing"
+    resourcesLink :"https://drive.google.com/drive/folders/1egDQlgUStlmY2-XBw-srTTHIwjyxZsAS?usp=drive_link"
   },
   {
     title: "Meetup 48",
@@ -42,7 +42,7 @@ const meetups = [
     desc: "Weekly Meetup 51 covered DevOps, recursion, JavaScript, and interview experiences.",
     date: "2025-11-11",
     momLink: "https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing",
-    resourcesLink :"https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing"
+    resourcesLink :"https://drive.google.com/drive/folders/1egDQlgUStlmY2-XBw-srTTHIwjyxZsAS?usp=drive_link"
   },
   {
     title: "Meetup 47",
@@ -50,7 +50,7 @@ const meetups = [
     desc: "Weekly Meetup 50 covered DevOps, recursion, JavaScript, and interview experiences.",
     date: "2025-11-18",
     momLink: "https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing",
-    resourcesLink :"https://drive.google.com/file/d/1P6vC5NU-9Ayc4hoZofX97tP891T8s4Gs/view?usp=sharing"
+    resourcesLink :"https://drive.google.com/drive/folders/1egDQlgUStlmY2-XBw-srTTHIwjyxZsAS?usp=drive_link"
   },
   
 ];
@@ -69,7 +69,7 @@ function createCard(meetup) {
             <a href="${meetup.momLink}" target="_blank" class="meetup-btn btn btn-outline-dark">
               View MOM
             </a>
-            <a href="${meetup.momLink}" target="_blank" class="meetup-btn btn btn-outline-dark">
+            <a href="${meetup.resourcesLink}" target="_blank" class="meetup-btn btn btn-outline-dark">
               Resources
             </a>
           </div>

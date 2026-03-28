@@ -488,7 +488,7 @@
 
       flex: 0 0 33.333%;
       max-width: 33.333%;
-      height: 420px;
+      height: 475px;
 
       border-radius: 1rem;
       background-size: cover;
@@ -510,6 +510,7 @@
       .meetup-card {
         flex: 0 0 50%;
         max-width: 50%;
+        max-height: 400px;
       }
     }
 
@@ -517,7 +518,8 @@
       .meetup-card {
         flex: 0 0 100%;
         max-width: 100%;
-        height: auto;
+        /* height: auto; */
+        max-height: 400px;
       }
     }
 
@@ -586,11 +588,25 @@
       height: 300px;
       width: 100% !important;
       object-fit: cover;
+      pointer-events: none;
     }
 
     .meetup-body {
       padding: 12px;
     }
+    .meetup-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  position: relative;
+  z-index: 5;
+}
+
+.meetup-btn {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+}
 
     .row.align-items-stretch>[class*="col-"] {
       display: flex;
