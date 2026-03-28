@@ -65,6 +65,14 @@ function createCard(meetup) {
         <div class="card-body meetup-body">
           <h5>${meetup.title}</h5>
           <p class="meetup-desc">${meetup.desc}</p>
+          <div class="meetup-actions mt-auto">
+            <a href="${meetup.momLink}" target="_blank" class="meetup-btn btn btn-outline-dark">
+              View MOM
+            </a>
+            <a href="${meetup.momLink}" target="_blank" class="meetup-btn btn btn-outline-dark">
+              Resources
+            </a>
+          </div>
         </div>
       </div>
     </div>
