@@ -488,7 +488,7 @@
 
       flex: 0 0 33.333%;
       max-width: 33.333%;
-      height: 420px;
+      height: 475px;
 
       border-radius: 1rem;
       background-size: cover;
@@ -510,6 +510,7 @@
       .meetup-card {
         flex: 0 0 50%;
         max-width: 50%;
+        max-height: 400px;
       }
     }
 
@@ -517,14 +518,15 @@
       .meetup-card {
         flex: 0 0 100%;
         max-width: 100%;
-        height: auto;
+        /* height: auto; */
+        max-height: 400px;
       }
     }
 
     @media (max-width: 576px) {
       .carousel-item .row {
-      display: flex;
-      justify-content: center;
+        display: flex;
+        justify-content: center;
         /*flex-wrap: nowrap;*/
         overflow-x: hidden;
       }
@@ -586,11 +588,25 @@
       height: 300px;
       width: 100% !important;
       object-fit: cover;
+      pointer-events: none;
     }
 
     .meetup-body {
       padding: 12px;
     }
+    .meetup-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+  position: relative;
+  z-index: 5;
+}
+
+.meetup-btn {
+  flex: 1;
+  padding: 8px;
+  cursor: pointer;
+}
 
     .row.align-items-stretch>[class*="col-"] {
       display: flex;
@@ -1267,105 +1283,13 @@
               </div>
             </div>
             <div id="meetup-wrapper">
-  <div id="blogCarousel" class="carousel slide" data-bs-touch="true">
-
-    <div class="carousel-inner">
-      <!-- JS will inject slides here -->
-    </div>
-  </div>
-</div>
-
-            <!-- <div id="meetup-wrapper">
               <div id="blogCarousel" class="carousel slide" data-bs-touch="true">
+
                 <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="row g-3">
-                      <div class="col-12 col-lg-4
- meetup-card selected-card" data-date="2025-11-04">
-                        <div class="m-card h-100">
-                          <img src="./assets/img/Meetup1.jpg" class="card-img-top blog-card-img" />
-                          <div class="card-body meetup-body">
-                            <h5>Meetup 50</h5>
-                            <p class="meetup-desc">
-                              Weekly Meetup 50 covered DevOps, recursion, JavaScript, and interview experiences.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-12 col-lg-4
- meetup-card selected-card" data-date="2025-11-11">
-                        <div class="m-card h-100">
-                          <img src="./assets/img/Meetup2.jpg" class="card-img-top blog-card-img" />
-                          <div class="card-body meetup-body">
-                            <h5>Meetup 51</h5>
-                            <p class="meetup-desc">
-                              Weekly Meetup 51 covered DevOps, recursion, JavaScript, and interview experiences.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-12 col-lg-4
- meetup-card selected-card" data-date="2025-11-18">
-                        <div class="m-card h-100">
-                          <img src="./assets/img/Meetup1.jpg" class="card-img-top blog-card-img" />
-                          <div class="card-body meetup-body">
-                            <h5>Meetup 52</h5>
-                            <p class="meetup-desc">
-                              Weekly Meetup 52 covered DevOps, recursion, JavaScript, and interview experiences.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="carousel-item">
-                    <div class="row g-3">
-                      <div class="col-12 col-lg-4
- meetup-card selected-card" data-date="2025-11-04">
-                        <div class="m-card h-100">
-                          <img src="./assets/img/Meetup1.jpg" class="card-img-top blog-card-img" />
-                          <div class="card-body meetup-body">
-                            <h5>Meetup 50</h5>
-                            <p class="meetup-desc">
-                              Weekly Meetup 50 covered DevOps, recursion, JavaScript, and interview experiences.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-12 col-lg-4
- meetup-card selected-card" data-date="2025-11-11">
-                        <div class="m-card h-100">
-                          <img src="./assets/img/Meetup2.jpg" class="card-img-top blog-card-img" />
-                          <div class="card-body meetup-body">
-                            <h5>Meetup 51</h5>
-                            <p class="meetup-desc">
-                              Weekly Meetup 51 covered DevOps, recursion, JavaScript, and interview experiences.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-
-                      <div class="col-12 col-lg-4
- meetup-card selected-card" data-date="2025-11-18">
-                        <div class="m-card h-100">
-                          <img src="./assets/img/Meetup1.jpg" class="card-img-top blog-card-img" />
-                          <div class="card-body meetup-body">
-                            <h5>Meetup 52</h5>
-                            <p class="meetup-desc">
-                              Weekly Meetup 52 covered DevOps, recursion, JavaScript, and interview experiences.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <!-- JS will inject slides here -->
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </section>
       </div>
