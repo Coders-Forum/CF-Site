@@ -1083,11 +1083,29 @@ section {
   border: 20px ridge #e29a3f;
   border-radius: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   background-image: url(assets/img/card-bg.png);
   overflow: hidden;
   width: 100%;
+
+  /* Starts hidden until image loads */
+  opacity: 0;
+  transform: translateY(20px) scale(1);
+
+  /* Handles fade-in, slide-up, AND hover smoothly */
+  transition: opacity 0.8s ease-out, transform 0.3s ease;
 }
+
+/* Image loaded → reveal card */
+.premium-card.is-loaded {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover effect (after loaded only) */
+.premium-card.is-loaded:hover {
+  transform: translateY(0) scale(1.02);
+}
+
 
 .photo-frame {
   display: inline-block;
