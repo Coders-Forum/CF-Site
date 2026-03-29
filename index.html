@@ -183,6 +183,42 @@
           <h2>ADVENTURES AWAIT YOU</h2>
         </div>
 
+        <!--New Event Posters-->
+        
+        <div class="row d-flex align-items-center justify-content-center" style = "margin-top: 30px;" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-6" id="poster-div">
+            <img src="https://ik.imagekit.io/codersforum/Events%20poster/merry%20quest.jpeg?updatedAt=1774777173382" id="poster" class="img-fluid" style="height: 400px; width:800px;" alt="">
+            </div>
+            
+          <div class="col-lg-6" id="poster-div">
+            <img src="https://ik.imagekit.io/codersforum/Events%20poster/cura%20code.jpeg?updatedAt=1774777173079" id="poster" class="img-fluid" style="height: 400px; width:800px;" alt="">
+            </div>
+            </div>
+
+            <div class="row d-flex align-items-center justify-content-center" style = "margin-top: 30px;" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-6" id="poster-div">
+            <img src="https://ik.imagekit.io/codersforum/Events%20poster/replica%20rush.jpeg?updatedAt=1774777173197" id="poster" class="img-fluid" style="height: 400px; width:800px;" alt="">
+            </a>
+            </div>
+          <div class="col-lg-6" id="poster-div">
+        <img src="https://ik.imagekit.io/codersforum/Events%20poster/tfd.jpeg" id="poster" style="height: 400px; width:800px;" class="img-fluid" alt="">
+          </a>
+          </div>
+        </div>
+        
+
+        <!--See More Button-->
+        <div class="text-center mt-4">
+  <button class="btn btn-warning"
+    data-bs-toggle="collapse"
+    data-bs-target="#oldEvents"
+    id="toggleBtn">
+    See More
+  </button>
+</div>
+        <!--Old Event Posters-->
+        <div class="collapse" id="oldEvents">
+
         <div class="row d-flex align-items-center justify-content-center" style = "margin-top: 30px;" data-aos="zoom-in" data-aos-delay="200">
           <div class="col-lg-6" id="poster-div">
             <a href="events.html#Summer-Code-Blitz">
@@ -224,7 +260,7 @@
             </a>
           </div>
         </div>
-    
+        </div>
       </div>
     </section>
     <!-- End Portfolio Section -->
@@ -602,6 +638,19 @@ window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     confetti.clear();
   }, 40000);
+});
+</script>
+  <!--Toggle See more and see less button-->
+<script>
+const collapseElement = document.getElementById("oldEvents");
+const button = document.getElementById("toggleBtn");
+
+collapseElement.addEventListener("show.bs.collapse", function () {
+  button.textContent = "See Less";
+});
+
+collapseElement.addEventListener("hide.bs.collapse", function () {
+  button.textContent = "See More";
 });
 </script>
 
