@@ -1083,11 +1083,29 @@ section {
   border: 20px ridge #e29a3f;
   border-radius: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   background-image: url(assets/img/card-bg.png);
   overflow: hidden;
   width: 100%;
+
+  /* Starts hidden until image loads */
+  opacity: 0;
+  transform: translateY(20px) scale(1);
+
+  /* Handles fade-in, slide-up, AND hover smoothly */
+  transition: opacity 0.8s ease-out, transform 0.3s ease;
 }
+
+/* Image loaded → reveal card */
+.premium-card.is-loaded {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Hover effect (after loaded only) */
+.premium-card.is-loaded:hover {
+  transform: translateY(0) scale(1.02);
+}
+
 
 .photo-frame {
   display: inline-block;
@@ -2697,6 +2715,39 @@ h4 {
   font-size: 1rem;
   color: white;
   margin-top: 10px;
+}
+
+.show-more-toggle {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #d4af37; /* gold default */
+  transition: color 0.3s ease;
+}
+
+/* hover → black */
+.show-more-toggle:hover {
+  color: #000000;
+}
+
+/* expanded → stay gold */
+.show-more-toggle[aria-expanded="true"] {
+  color: #d4af37;
+}
+
+/* eye animation */
+.eye-icon {
+  font-size: 1rem;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.show-more-toggle[aria-expanded="true"] .eye-icon {
+  transform: scale(1.15);
+  opacity: 0.7;
 }
 
 @keyframes gradientShift {
