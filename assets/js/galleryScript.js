@@ -9,6 +9,267 @@ rules to build this below array of objects in future:
 */
 const galleryData = [
     {
+    title: 'Weekly MeetUp',
+    desc: 'Participants engaged in an interactive networking session, divided into ML, LeetCode, and OSC teams.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20179.jpeg',
+    date: '12 February, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Vishal I.M, Presented on deploying and monitoring Kubernetes applications using Helm and Prometheus in the DevOps lifecycle.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20178.jpeg',
+    date: '12 February, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Ansari ,Explained what GSoC is, how the selection/contribution process works, and introduced GitHub pull requests.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20177.jpeg',
+    date: '12 February, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'The Imposter Game was a fun interactive activity where participants identified the odd one out using technical clues, encouraging logical thinking, teamwork, and quick problem-solving.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20176.jpeg',
+    date: '29 January, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Dharshana S, Presented a session on learning Linux using mobile and basic Linux commands.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20175.jpeg',
+    date: '29 January, 2026',
+    filterType: ''
+  },
+   {
+    title: 'Weekly MeetUp',
+    desc: 'Ruth Jasmine M ,Planned a discussion on Bootstrap and similar UI tools for building clean, responsive web pages.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20174.jpeg',
+    date: '29 January, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Two teams actively worked together to find the correct output of a given code.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20173.jpeg',
+    date: '22 January, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Parasuram ,Discussed how modern chess engines work and the technology behind them.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20172.jpeg',
+    date: '22 January, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Divya Dharshini, Explained how Linux handles audio input and output through low-level device files.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20171.jpeg',
+    date: '22 January, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Members were divided into two teams and discussed their experiences, project doubts, and learning journeys among themselves.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20170.jpeg',
+    date: '9 January, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Micheal Anto Jerrish C, delivered a Lightning Talk on Augmented Reality (AR) & Virtual Reality (VR), explaining key concepts, differences, real-world applications, and their relevance for future developers.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20169.jpeg',
+    date: '9 January, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Sowmya ,gave a PD on How a II year student should prepare for placements, offering practical guidance for early career preparation.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20168.jpeg',
+    date: '9 January, 2026',
+    filterType: ''
+  },
+  {
+    title: 'Merry Quest',
+    desc: 'Merry Quest is a grid-based bingo-style problem-solving challenge where participants complete tasks across a dynamic board. Each cell presents unique coding or logical problems, and players must strategize their path to achieve winning patterns while maximizing their score.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/Events%20poster/merry%20quest.jpeg?updatedAt=1774777173382',
+    date: '7 December, 2024 to 27 December,2024 ',
+    filterType: 'filter-highlight'
+  },
+  
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Aiysha ,shared her interview experience, motivating members with her practical takeaways.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20167.jpeg',
+    date: '11 September, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Johith Raj ,delivered a PD on recursion and backtracking, making complex concepts easier to grasp.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20166.jpeg',
+    date: '11 September, 2025',
+    filterType: ''
+  },
+   {
+    title: 'Weekly MeetUp',
+    desc: 'Rishab, gave a PD on DevOps, sharing his insights and clarifying members’ doubts with real-time examples.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20165.jpeg',
+    date: '11 September, 2025',
+    filterType: ''
+  },
+   {
+    title: 'Weekly MeetUp',
+    desc: 'Erlina ,conducted a Coding Corner session. She explained the Rotating Matrix problem with step-by-step logic.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20164.jpeg',
+    date: '3 September, 2025',
+    filterType: ''
+  },
+   {
+    title: 'Weekly MeetUp',
+    desc: 'Bharath Raj ,presented a PD session on Problem Solving. He explained the Trapping Rain Water and Snake Matrix problems with clarity.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20163.jpeg',
+    date: '3 September, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Members were divided into two teams and engaged in a word-bidding activity. Each team challenged the other to build tech terms starting from the ending letter of the opponent’s word.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20162.jpeg',
+    date: '3 September, 2025',
+    filterType: ''
+  },
+  
+  {
+    title: 'CuraCode',
+    desc: 'problems were created, they were shuffled and redistributed, ensuring fairness and surprise. Each participant then attempted the problems individually, solving those crafted by other teams. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20161.jpg',
+    date: '29 August, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'CuraCode',
+    desc: 'problems were created, they were shuffled and redistributed, ensuring fairness and surprise. Each participant then attempted the problems individually, solving those crafted by other teams. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20160.jpg',
+    date: '29 August, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Madhavakumar D (Alumni), shared a thoughtful session on the emergence of ai agents, highlighting their growing role in automation and problem-solving',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20159.jpg',
+    date: '28 August, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Bharath V, gave an engaging talk on ixp and document understanding, breaking down complex concepts with clarity.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20158.jpg',
+    date: '28 August, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Muralidharan, presented on pseudo-random generators with a fixed seed value, explaining how javascript simplifies reproducibility.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20157.jpg',
+    date: '28 August, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Replica-Rush 2.0',
+    desc: 'The collection of designs was then shuffled among the participants, challenging everyone to build a website based on someone else’s design and user requirements.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20156.jpg',
+    date: '31 July, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Replica-Rush 2.0',
+    desc: 'The collection of designs was then shuffled among the participants, challenging everyone to build a website based on someone else’s design and user requirements.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20155.jpg',
+    date: '31 July, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Replica-Rush 2.0',
+    desc: 'The collection of designs was then shuffled among the participants, challenging everyone to build a website based on someone else’s design and user requirements.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20154.jpg',
+    date: '31 July, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Sanjhana ,delivered an insightful talk on Generative AI, exploring the creative side of machines and showing how AI can be imaginative, not just logical.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20153.jpg',
+    date: '29 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Lakshman ,truly inspired everyone with stories from his work experience and interview journey which was a deeply motivating session that sparked confidence.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20152.jpg',
+    date: '29 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Avinash, enthusiastically broke down two LeetCode problems, making complex ideas clear and engaging.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20151.jpg',
+    date: '29 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'we celebrated the second anniversary of Coders Forum along with the new members from second year.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20150.jpg',
+    date: '25 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Bala, Sanjay, Amrish and Sai shared their experience from the infosys hackathon, talking about the challenges they faced, the tech stacks they used and what they learned overall.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20149.JPG',
+    date: '17 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Everyone took part in a fun trivia quiz game that tested knowledge across tech and general topics.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20148.jpg',
+    date: '17 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Johith ,shared ideas about large language models, talking about potential use cases and project goals.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20147.jpg',
+    date: '17 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'we wrapped things up with a fun coding game where each team had to fix a broken pattern but with a twist: no talking, no hints, just pass the laptop and code.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20146.JPG',
+    date: '11 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'we had our members sharing their knowledge on various topics. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20145.jpg',
+    date: '11 July, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Madhavakumar ,led us through a fascinating discussion on pseudo randomness, breaking down how randomness is actually faked in computers and why it matters more than most people realise.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20144.jpg?updatedAt=1774701928574',
+    date: '11 July, 2025',
+    filterType: ''
+  },
+    {
     title: 'The Final Destination',
     desc: 'The contest blended creativity and problem solving making it both intense and memorable for everyone who took part.',
     imgUrl: 'https://ik.imagekit.io/codersforum/img%20143.jpg',
