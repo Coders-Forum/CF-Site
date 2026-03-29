@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
+
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 
   <title>Coders Forum | Events</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="title" content="Coders Forum | Panimalar" />
-  <meta name="description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
-  <meta name="keywords" content="panimalar, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
+  <meta name="description"
+    content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta name="keywords"
+    content="panimalar, cse, programmers club, coders forum, cse club, clubs, technical clubs, panimalar club, pani, pani club, panimalar tcs, tcs, progamming club, panimalar, progamming club, best club in panimalar, psdc, panimalar student, club at panimalar, society panimalar, college clubs, coding club chennai, chennai clubs, chennai coding, programming club chennai, tcs chennai, tamil nadu, club in tamilnadu, poonamallee clubs, poonamallee coding, college chennai, cultural chennai, college cultural chennai, club chennai, it chennai, chennai computers">
   <meta name="robots" content="index, follow">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta name="language" content="English">
@@ -23,14 +22,16 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://codersforum.netlify.app" />
   <meta property="og:title" content="Coders Forum | Panimalar" />
-  <meta property="og:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta property="og:description"
+    content="Coders Forum is a growing network of student developers and programmers in Chennai." />
   <meta property="og:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image" />
   <meta property="twitter:url" content="https://codersforum.netlify.app" />
   <meta property="twitter:title" content="Coders Forum | Panimalar" />
-  <meta property="twitter:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
+  <meta property="twitter:description"
+    content="Coders Forum is a growing network of student developers and programmers in Chennai." />
   <meta property="twitter:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
 
 
@@ -44,63 +45,693 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" rel="stylesheet">
 
-  
+
   <link rel="stylesheet" href="./assets/css/events.css" />
   <link href="assets/css/style.css" rel="stylesheet" />
   <style>
-    
-#header {
-  background: rgba(0, 0, 0, 0.9); 
-  backdrop-filter: blur(6px);    
-  z-index: 9999;            
-}
+    #events {
+      padding: 0;
+    }
 
-*{
-  font-family:"Open Sans", sans-serif;
-}
+    /*This is meetup section's styling */
+    calendar-wrapper {
+      max-width: 220px;
+    }
 
-body {
-  opacity: 0;
-  transition: opacity 0.6s ease;
-  overflow-x: hidden;
-  max-width: 100%;
-}
+    .flip-calendar {
+      border-radius: 12px;
+      overflow: hidden;
+    }
 
-body.page-loaded {
-  opacity: 1;
-}
+    .flip-box {
+      position: relative;
+      width: 120px;
+      height: 100px;
+      margin: auto;
+      perspective: 800px;
+    }
 
-body.page-transition {
-  opacity: 0;
-}
+    .flip-face {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      font-weight: 700;
+      background: #fff;
+      border-radius: 10px;
+      backface-visibility: hidden;
+      transition: transform 0.6s ease;
+    }
 
-.header-img{
-  height: 100vh;
-  width: 100%;
-}
+    .flip-face.back {
+      transform: rotateX(180deg);
+    }
+
+    .flip-box.flip .front {
+      transform: rotateX(-180deg);
+    }
+
+    .flip-box.flip .back {
+      transform: rotateX(0deg);
+    }
+
+    @media (max-width: 576px) {
+      .flip-box {
+        width: 100px;
+        height: 90px;
+      }
+
+      .calendar-wrapper {
+        max-width: 100%;
+        margin-top: 10px;
+      }
+    }
+
+    .date-input {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #eee;
+      outline-color: rgb(62, 61, 62);
+      background-color: rgb(222, 215, 215);
+    }
+
+    .datepicker-container {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 2rem auto;
+    }
+
+    .datepicker {
+      position: absolute;
+      top: 100%;
+      z-index: 100;
+      margin-top: 2px;
+      background: #fff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .datepicker button {
+      cursor: pointer;
+      border: none;
+      border-radius: 3px;
+      background: transparent;
+      font-size: 14px;
+      font-weight: 500;
+      text-transform: uppercase;
+      touch-action: manipulation;
+    }
+
+    .days,
+    .dates {
+      display: grid;
+      grid-template-columns: repeat(7, 32px);
+      gap: 10px;
+      margin-block: 10px;
+    }
+
+    .days span {
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .dates button {
+      color: slategray;
+      aspect-ratio: 1;
+    }
+
+    .dates button:disabled {
+      opacity: 0.5;
+      pointer-events: none;
+      user-select: none;
+    }
+
+    .dates button:hover {
+      background: rgba(119, 136, 153, 0.1);
+    }
+
+    .dates button.today {
+      background: rgba(147, 112, 216, 0.2);
+      color: mediumpurple;
+    }
+
+    .dates button.selected {
+      background: #ffc451;
+      color: #fff;
+    }
+
+    .datepicker-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .datepicker-header select,
+    .datepicker-header input {
+      font-size: 14px;
+      border: 1px solid #eee;
+      outline-color: mediumpurple;
+      max-width: 64px;
+    }
+
+    .datepicker-header button {
+      color: slategray;
+    }
+
+    .datepicker-header button:hover {
+      color: mediumpurple;
+    }
+
+    .datepicker-footer {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #eee;
+    }
+
+    .datepicker-footer button {
+      background: rgba(119, 136, 153, 0.1);
+      padding: 3px 10px;
+    }
+
+    .datepicker-footer button.apply {
+      background: #ffc451;
+      color: #fff;
+    }
+
+    .datepicker .dates button.highlighted {
+      background-color: #ffc451;
+      color: black;
+      font-weight: bold;
+      border-radius: 6px;
+    }
+
+    .datepicker .dates button.highlighted:hover {
+      background-color: #d4af37;
+    }
+
+    .object-fit-cover {
+      object-fit: cover;
+      height: 100%;
+    }
+
+    .crop-image {
+      border-radius: 15px;
+    }
+
+    .animated-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 28px;
+      border: 0;
+      font-size: 16px;
+      background-color: #ffc451;
+      color: #111;
+      border-radius: 100px;
+      font-weight: 600;
+      cursor: pointer;
+      overflow: hidden;
+      text-decoration: none;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .animated-button .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #ffc451;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
+
+    .animated-button .text {
+      position: relative;
+      z-index: 2;
+      transform: none !important;
+      transition: none !important;
+    }
+
+    .animated-button:hover {
+      background-color: #ffc451;
+      color: #000;
+      border-radius: 12px;
+    }
+
+    .animated-button:hover .circle {
+      width: 220px;
+      height: 220px;
+      opacity: 1;
+    }
+
+    .animated-button:active {
+      transform: scale(0.95);
+    }
+
+    .cssbuttons-io-button {
+      background: #a370f0;
+      color: white;
+      font-family: inherit;
+      padding: 0.35em 3.3em 0.35em 1.2em;
+      font-size: 17px;
+      font-weight: 500;
+      border-radius: 0.9em;
+      border: none;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      box-shadow: inset 0 0 1.6em -0.6em #714da6;
+      overflow: hidden;
+      position: relative;
+      height: 2.8em;
+      cursor: pointer;
+    }
+
+    .cssbuttons-io-button .icon {
+      background: white;
+      position: absolute;
+      right: 0.3em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.2em;
+      width: 2.2em;
+      border-radius: 0.7em;
+      box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+      transition: all 0.3s;
+    }
+
+    .cssbuttons-io-button .icon svg {
+      width: 1.1em;
+      transition: transform 0.3s;
+      color: #7b52b9;
+    }
+
+    .cssbuttons-io-button:hover .icon {
+      width: calc(100% - 0.6em);
+    }
+
+    .cssbuttons-io-button:hover .icon svg {
+      transform: translateX(0.1em);
+    }
+
+    .stagger-dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 1rem;
+    }
+
+    .stagger-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background: #111;
+      color: #ffc451;
+      border: 1px solid #333;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.25s ease, transform 0.18s ease;
+    }
+
+    .stagger-btn:hover {
+      background: #ffc451;
+      color: #000;
+    }
+
+    .stagger-icon {
+      transition: transform 300ms cubic-bezier(.4, 0, .2, 1);
+      transform-origin: center;
+    }
+
+    .stagger-menu {
+      position: absolute;
+      top: calc(100% + 8px);
+      left: 0;
+      width: max-content;
+      min-width: 160px;
+      padding: 8px;
+      margin: 0;
+      list-style: none;
+      background: #1a1a1a;
+      border: 1px solid #333;
+      border-radius: 8px;
+      transform-origin: top center;
+      transform: scaleY(0);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 300ms cubic-bezier(.2, .8, .2, 1), opacity 220ms ease;
+      box-shadow: 0 8px 30px rgba(255, 215, 0, 0.15);
+      z-index: 100;
+      overflow: hidden;
+    }
+
+    .stagger-dropdown.open .stagger-menu {
+      transform: scaleY(1);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .stagger-dropdown.open .stagger-icon {
+      transform: rotate(180deg);
+    }
+
+    .stagger-item {
+      padding: 8px 12px;
+      cursor: pointer;
+      font-size: 14px;
+      color: #f5f5f5;
+      border-radius: 6px;
+      transform: translateY(-8px);
+      opacity: 0;
+      transition: transform 320ms cubic-bezier(.2, .8, .2, 1), opacity 320ms ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .stagger-item:hover {
+      background: #333;
+      color: #ffc451;
+    }
+
+    .stagger-dropdown.open .stagger-item:nth-child(1) {
+      transition-delay: 60ms;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .stagger-dropdown.open .stagger-item:nth-child(2) {
+      transition-delay: 120ms;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .stagger-dropdown.open .stagger-item:nth-child(3) {
+      transition-delay: 180ms;
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .search-box {
+      position: relative;
+      width: 30rem;
+    }
+
+    .search-box input {
+      background-color: #111;
+      border: 1px solid #333;
+      color: #f5f5f5;
+      padding-right: 40px;
+    }
+
+    .search-box input::placeholder {
+      color: #888;
+    }
+
+    .search-box .search-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+      color: #60a5fa;
+    }
+
+    .carousel-item .row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: nowrap;
+    }
+
+    .meetup-card {
+      position: relative;
+      display: flex;
+      justify-content: center;
+
+      flex: 0 0 33.333%;
+      max-width: 33.333%;
+      height: 420px;
+
+      border-radius: 1rem;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      overflow: hidden;
+
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(255, 215, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .meetup-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 12px 24px rgba(255, 215, 0, 0.4);
+    }
+
+    @media (max-width: 1200px) {
+      .meetup-card {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .meetup-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .carousel-item .row {
+      display: flex;
+      justify-content: center;
+        /*flex-wrap: nowrap;*/
+        overflow-x: hidden;
+      }
+
+      .carousel-item .meetup-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .blog-card-img {
+        height: 220px;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .meetup-card.is-selected {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media (min-width: 992px) {
+      .meetup-card.is-selected {
+        height: auto;
+        display: flex;
+        justify-content: center;
+      }
+
+      .meetup-card.is-selected .m-card {
+        width: 100%;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .meetup-card.is-selected .blog-card-img {
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      .meetup-card.is-selected .card-body {
+        padding: 1rem 1.25rem;
+        text-align: left;
+      }
+    }
+
+    .m-card {
+      height: 100%;
+      border: 1px solid #dccfcf;
+      border-radius: 8px;
+    }
+
+    .m-card img {
+      border-radius: 8px;
+    }
+
+    .blog-card-img {
+      height: 300px;
+      width: 100% !important;
+      object-fit: cover;
+    }
+
+    .meetup-body {
+      padding: 12px;
+    }
+
+    .row.align-items-stretch>[class*="col-"] {
+      display: flex;
+      align-items: stretch;
+    }
+
+    .carousel-btn:hover {
+      background: #ffc451;
+      color: #000;
+    }
+
+    .carousel-btn.prev {
+      position: absolute;
+      left: -55px;
+    }
+
+    .carousel-btn.next {
+      position: absolute;
+      right: -55px;
+    }
+
+    .dot-expand-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      height: 2.5rem;
+      border-radius: 9999px;
+      background-color: #111;
+      padding: 0 1rem;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(.4, 0, .2, 1);
+      color: #ffc451;
+      border: 1px solid #333;
+    }
+
+    .dot-expand-btn:hover {
+      background-color: #ffc451;
+      color: #000;
+    }
+
+    .navbar,
+    .navbar .container,
+    .stagger-dropdown {
+      overflow: visible !important;
+    }
+
+    .stagger-menu {
+      max-height: none !important;
+      overflow: visible !important;
+      z-index: 9999 !important;
+    }
+
+    @media (max-width: 768px) {
+      .stagger-btn {
+        font-size: 13px;
+        padding: 8px 12px;
+      }
+
+      .carousel-btn.prev,
+      .carousel-btn.next {
+        left: 10px;
+        right: 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .animated-button {
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      .dot-expand-btn {
+        font-size: 0.9rem;
+        padding: 0 .75rem;
+      }
+
+      .main-container {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+      }
+
+      .register-btn {
+        font-size: 0.95rem;
+        padding: 10px;
+      }
+    }
+
+    /*This is the whole page and event section styling */
+    #header {
+      background: rgba(0, 0, 0, 0.9);
+      backdrop-filter: blur(6px);
+      z-index: 9999;
+    }
+
+    * {
+      font-family: "Open Sans", sans-serif;
+    }
+
+    body {
+      opacity: 0;
+      transition: opacity 0.6s ease;
+      overflow-x: hidden;
+      max-width: 100%;
+    }
+
+    body.page-loaded {
+      opacity: 1;
+    }
+
+    body.page-transition {
+      opacity: 0;
+    }
+
+    .header-img {
+      height: 100vh;
+      width: 100%;
+    }
 
 
-.hero-content h1,
-.hero-content p {
-  color: #fff;
-  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-}
+    .hero-content h1,
+    .hero-content p {
+      color: #fff;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+    }
 
-@media (max-width: 576px) {
-  .hero-content h1 {
-    font-size: 2.2rem;
-  }
+    @media (max-width: 576px) {
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
 
-  .header-img{
-    width: 100%;
-  }
+      .header-img {
+        width: 100%;
+      }
 
-  .hero-content p {
-    font-size: 1rem;
-  }
-}
+      .hero-content p {
+        font-size: 1rem;
+      }
+    }
 
-.neu-container {
+    .neu-container {
       background: white;
       display: flex;
       align-items: center;
@@ -128,403 +759,410 @@ body.page-transition {
       color: black;
     }
 
-.mini-controls {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-}
+    .mini-controls {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
 
-.mini-controls button {
-  width: 40px;
-  height: 35px;
-  border-radius: 8px;
-  background: rgba(255,255,255,0.7);
-  border: 2px solid #333;
-  cursor: pointer;
-  transition: 0.2s;
-}
+    .mini-controls button {
+      width: 40px;
+      height: 35px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.7);
+      border: 2px solid #333;
+      cursor: pointer;
+      transition: 0.2s;
+    }
 
-.mini-controls button:hover {
-  transform: scale(1.1);
-  background: white;
-}
+    .mini-controls button:hover {
+      transform: scale(1.1);
+      background: white;
+    }
 
-.container-style{
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); border-radius: 20px; margin-top: 50px;
-}
+    .container-style {
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+      border-radius: 20px;
+      margin-top: 50px;
+    }
 
-.mini-slide {
-  display: flex;
-  gap: 0;                     
-  transition: none;
-}
+    .mini-slide {
+      display: flex;
+      gap: 0;
+      transition: none;
+    }
 
-.mini-slider-container {
-  border-radius: 20px;
-  position: relative;
-  width: 100%;
-  height: 320px;
-  overflow: hidden;
-  border-radius: 20px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  background: #ffffff;
-}
+    .mini-slider-container {
+      border-radius: 20px;
+      position: relative;
+      width: 100%;
+      height: 320px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+      background: #ffffff;
+    }
 
-.mini-item {
-  flex: 0 0 100%;
-  height: 330px;
-  overflow: hidden;
-  border-radius: 20px;
-}
+    .mini-item {
+      flex: 0 0 100%;
+      height: 330px;
+      overflow: hidden;
+      border-radius: 20px;
+    }
 
-.mini-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: scale-down;
-  border-radius: inherit;
-}
+    .mini-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: scale-down;
+      border-radius: inherit;
+    }
 
-.timeline-item {
-  position: relative;
-  padding-left: 60px;   
-}
+    .timeline-item {
+      position: relative;
+      padding-left: 60px;
+    }
 
-.timeline-item img {
-  cursor: pointer;
-}
+    .timeline-item img {
+      cursor: pointer;
+    }
 
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  left: 30px;
-  top: 0;
-  bottom: 0;
-  width: 4px;
-  background: #ffc451;
-  border-radius: 2px;
-}
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: 30px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #ffc451;
+      border-radius: 2px;
+    }
 
-.timeline-item::after {
-  content: "";
-  position: absolute;
-  left: 22px;
-  top: 40px;             
-  width: 18px;
-  height: 18px;
-  border: 4px solid #ffc451;;
-  transition: top 0.5s ease;
-  border: 4px solid transparent;
-  background: white;
-  background-clip: padding-box;
-  border-radius: 50%;
-  border-image: linear-gradient(180deg, #818cf8, #4f46e5) 1;
-  display: none !important;
-}
+    .timeline-item::after {
+      content: "";
+      position: absolute;
+      left: 22px;
+      top: 40px;
+      width: 18px;
+      height: 18px;
+      border: 4px solid #ffc451;
+      ;
+      transition: top 0.5s ease;
+      border: 4px solid transparent;
+      background: white;
+      background-clip: padding-box;
+      border-radius: 50%;
+      border-image: linear-gradient(180deg, #818cf8, #4f46e5) 1;
+      display: none !important;
+    }
 
-.timeline-date {
-  position: absolute;
-  left: 60px;        
-  top: 0;  
-  transform: none;
-  background: #ffc451;
-  color: black;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-weight: 600;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
+    .timeline-date {
+      position: absolute;
+      left: 60px;
+      top: 0;
+      transform: none;
+      background: #ffc451;
+      color: black;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
 
-.timeline-date {
-  position: absolute;
-  left: 80px;
-  top: -5px;
-  background: #ffc451;
-  color: black;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-weight: 600;
-  white-space: nowrap;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
+    .timeline-date {
+      position: absolute;
+      left: 80px;
+      top: -5px;
+      background: #ffc451;
+      color: black;
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-weight: 600;
+      white-space: nowrap;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
 
-.timeline-progress {
-  position: absolute;
-  left: 30px;
-  top: 0;
-  width: 4px;
-  background: linear-gradient(to bottom,  #ffc451,#ffc451);
-  border-radius: 2px;
-  height: 0;
-  transition: height 0.3s ease-out;
-}
+    .timeline-progress {
+      position: absolute;
+      left: 30px;
+      top: 0;
+      width: 4px;
+      background: linear-gradient(to bottom, #ffc451, #ffc451);
+      border-radius: 2px;
+      height: 0;
+      transition: height 0.3s ease-out;
+    }
 
-.timeline-dot {
-  position: absolute;
-  transform: translateY(0);
-  left: 22px;
-  width: 18px;
-  height: 18px;
-  background: white;
-  border-radius: 50%;
-  pointer-events: none;
-  border-image: linear-gradient(to bottom, black, black) 1;
-  transition: top 0.5s ease; 
-  border: 3px solid black;
-  z-index: 5;
-}
+    .timeline-dot {
+      position: absolute;
+      transform: translateY(0);
+      left: 22px;
+      width: 18px;
+      height: 18px;
+      background: white;
+      border-radius: 50%;
+      pointer-events: none;
+      border-image: linear-gradient(to bottom, black, black) 1;
+      transition: top 0.5s ease;
+      border: 3px solid black;
+      z-index: 5;
+    }
 
-#imageModal img {
-  max-height: 90vh;
-  object-fit: contain;
-  transition: transform 0.3s ease;
-}
+    #imageModal img {
+      max-height: 90vh;
+      object-fit: contain;
+      transition: transform 0.3s ease;
+    }
 
-#imageModal img:hover {
-  transform: scale(1.02);
-}
+    #imageModal img:hover {
+      transform: scale(1.02);
+    }
 
-@media (max-width: 768px) {
-  .col-10.col-sm-8.col-lg-6 {
-    max-width: 100% !important;
-    padding: 0 !important;       
-  }
+    @media (max-width: 768px) {
+      .col-10.col-sm-8.col-lg-6 {
+        max-width: 100% !important;
+        padding: 0 !important;
+      }
 
-  .mini-slider-container {
-    width: 100% !important;
-  }
+      .mini-slider-container {
+        width: 100% !important;
+      }
 
-  .mini-item img {
-    width: 100% !important;
-    height: 280px !important;     
-    object-fit: contain;
-  }
-}
+      .mini-item img {
+        width: 100% !important;
+        height: 280px !important;
+        object-fit: contain;
+      }
+    }
 
-@media (max-width: 768px) {
-  .timeline-date {
-    left: 150px !important;
-    top: -5px !important;
-  }
-}
+    @media (max-width: 768px) {
+      .timeline-date {
+        left: 150px !important;
+        top: -5px !important;
+      }
+    }
 
 
-@media (max-width: 768px) {
-  .container-style{
-    height: 100%;
-    max-height: none !important;
-    padding: 8px !important;
-    box-sizing: border-box;
-    overflow: visible !important;
-  }
+    @media (max-width: 768px) {
+      .container-style {
+        height: 100%;
+        max-height: none !important;
+        padding: 8px !important;
+        box-sizing: border-box;
+        overflow: visible !important;
+      }
 
-  .container-style p,
-  .container-style li,
-  .container-style ol{
-    font-size: 13px !important;
-    line-height: 1.3 !important;
-    margin: 0 0 8px !important;
-    word-break: break-word !important;
-    overflow-wrap: anywhere !important;
-  }
+      .container-style p,
+      .container-style li,
+      .container-style ol {
+        font-size: 13px !important;
+        line-height: 1.3 !important;
+        margin: 0 0 8px !important;
+        word-break: break-word !important;
+        overflow-wrap: anywhere !important;
+      }
 
-  .container-style img{
-    max-width: 100% !important;
-    display: block;
-  }
-}
+      .container-style img {
+        max-width: 100% !important;
+        display: block;
+      }
+    }
 
-.animated-button {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 28px;
-  border: 0;
-  font-size: 16px;
-  background-color: #ffc451;
-  color: #111;
-  border-radius: 100px;
-  font-weight: 600;
-  cursor: pointer;
-  overflow: hidden;
-  text-decoration: none;        
-  transition: all 0.6s cubic-bezier(0.23,1,0.32,1);
-}
+    .animated-button {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 28px;
+      border: 0;
+      font-size: 16px;
+      background-color: #ffc451;
+      color: #111;
+      border-radius: 100px;
+      font-weight: 600;
+      cursor: pointer;
+      overflow: hidden;
+      text-decoration: none;
+      transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    }
 
-.animated-button .circle {
-  position: absolute;
-  top: 50%; left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px; height: 20px;
-  border-radius: 50%;
-  background-color: #ffc451;
-  opacity: 0;
-  transition: all 0.8s cubic-bezier(0.23,1,0.32,1);
-}
+    .animated-button .circle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #ffc451;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+    }
 
-.animated-button .text {
-  position: relative;
-  z-index: 2;
-  transform: none !important;
-  transition: none !important;
-}
-.animated-button:hover {
-  background-color: #ffc451;
-  color: #000;
-  border-radius: 12px;
-}
+    .animated-button .text {
+      position: relative;
+      z-index: 2;
+      transform: none !important;
+      transition: none !important;
+    }
 
-.animated-button:hover .circle {
-  width: 220px;
-  height: 220px;
-  opacity: 1;
-}
+    .animated-button:hover {
+      background-color: #ffc451;
+      color: #000;
+      border-radius: 12px;
+    }
 
-.animated-button:active {
-  transform: scale(0.95);
-}
+    .animated-button:hover .circle {
+      width: 220px;
+      height: 220px;
+      opacity: 1;
+    }
 
-@media (max-width: 768px) {
-  .row {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-}
+    .animated-button:active {
+      transform: scale(0.95);
+    }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+    @media (max-width: 768px) {
+      .row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+    }
 
-#hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: url("assets/img/hero-bg.jpg") center center / cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 
-.hero-content {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
+    #hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url("assets/img/hero-bg.jpg") center center / cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
 
-@media (min-width: 1024px) {
-    #hero #index-hero {
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+    }
+
+    @media (min-width: 1024px) {
+      #hero #index-hero {
         font-size: 98px;
         line-height: 54px;
+      }
     }
-}
 
-.hero-content p {
-  font-size: 1.2rem;
-  font-weight: 400;
-  opacity: 0.9;
-}
+    .hero-content p {
+      font-size: 1.2rem;
+      font-weight: 400;
+      opacity: 0.9;
+    }
 
 
-#hero .container {
-  text-align: center;
-  align-items: center;
-}
+    #hero .container {
+      text-align: center;
+      align-items: center;
+    }
 
-.animated {
-  animation: up-down 2s ease-in-out infinite;
-}
+    .animated {
+      animation: up-down 2s ease-in-out infinite;
+    }
 
-#hero {
-  width: 100%;
-  height: 100vh;
-  background: url("./assets/img/hero-bg.jpg") top center / cover no-repeat;
-  position: relative;
-}
+    #hero {
+      width: 100%;
+      height: 100vh;
+      background: url("./assets/img/hero-bg.jpg") top center / cover no-repeat;
+      position: relative;
+    }
 
-#hero:before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.6);
-}
+    #hero:before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
 
-#hero .container {
-  position: relative;
-  z-index: 2;
-  padding-top: 74px;
-  text-align: center;
-}
+    #hero .container {
+      position: relative;
+      z-index: 2;
+      padding-top: 74px;
+      text-align: center;
+    }
 
-#hero h1 {
-  margin: 0;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 64px;
-  color: #fff;
-  font-family: "Poppins", sans-serif;
-}
-
-#hero h2 {
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 24px;
-}
-
-.hero-btn {
-  margin-top: 20px;
-}
-
-@media (max-width: 768px) {
     #hero h1 {
+      margin: 0;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 64px;
+      color: #fff;
+      font-family: "Poppins", sans-serif;
+    }
+
+    #hero h2 {
+      color: rgba(255, 255, 255, 0.9);
+      font-size: 24px;
+    }
+
+    .hero-btn {
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      #hero h1 {
         font-size: 42px;
         line-height: 36px;
+      }
     }
-}
 
-#hero h2, h3 {
-    color: rgba(255, 255, 255, 0.9);
-    margin: 10px 0 0 0;
-    font-size: 24px;
-}
+    #hero h2,
+    h3 {
+      color: rgba(255, 255, 255, 0.9);
+      margin: 10px 0 0 0;
+      font-size: 24px;
+    }
 
-@media (max-width: 576px) {
-  .hero-btn {
-    display: flex !important;
-    justify-content: center;
-  }
+    @media (max-width: 576px) {
+      .hero-btn {
+        display: flex !important;
+        justify-content: center;
+      }
 
-  .hero-btn .animated-button {
-    width: auto;
-  }
-}
-.navbar-mobile {
-  position: fixed !important;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.95);
-  z-index: 9999;
-};
+      .hero-btn .animated-button {
+        width: auto;
+      }
+    }
 
+    .navbar-mobile {
+      position: fixed !important;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.95);
+      z-index: 9999;
+    }
   </style>
 
 
   <script src="https://cdn.jsdelivr.net/npm/confetti-js@0.0.18/dist/index.min.js"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-      gtag('config', 'G-3M7SMRS80F');
-    </script>
-  </head>
+    gtag('config', 'G-3M7SMRS80F');
+  </script>
+</head>
 
-  <body>
-    <header id="header" class="fixed-top ">
+<body>
+  <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="#hero">Coders Forum</a></h1>
@@ -544,149 +1182,330 @@ body.page-transition {
 
     </div>
   </header>
-    
+
   <section id="hero">
-  <div class="container" data-aos="fade-up">
-    <h1>Coders Forum</h1>
-    <h2>Meetups, Contests, Challenges and more...</h2>
+    <div class="container" data-aos="fade-up">
+      <h1>Coders Forum</h1>
+      <h2>Meetups, Contests, Challenges and more...</h2>
 
-    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5 hero-btn">
-      <button class="animated-button" onclick="window.location.href='./meetup.html'">
-        <span class="text">View Meetups</span>
-        <span class="circle"></span>
-      </button>
+      <!--  <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5 hero-btn">
+        <button class="animated-button" onclick="window.location.href='./meetup.html'">
+          <span class="text">View Meetups</span>
+          <span class="circle"></span>
+        </button>
+      </div>-->
     </div>
-  </div>
-</section>
-
-
-<div class="container">
-
-    <div class="timeline-item"><div class="timeline-progress"></div> <div class="timeline-dot"></div>   <span class="timeline-date">16 June 2024</span>
-    <div class="container col-xxl-8 px-4 py-5 container-style">
-      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-lg-6">
-          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Highlight <hr>
-          </h4>
-          <p> 
-            <b>Contest Name:</b> Summer Code Blitz
-            <br />
-            <b>Date: </b>June 16th, 2024<br />
-          </p> <hr>
-          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Event Overview
-          </h2>
-          <p>
-            Join the Summer Code Blitz this June on HackerRank!
-            <br />Students from Panimalar Engineering College can showcase their
-            coding skills, compete across departments, and climb the
-            leaderboard.
-            <br />
-            Register now to be part of the weekly coding contest series!
+  </section>
+  <section id="meetup">
+    <div class="container">
+      <div class="px-4 pt-5 text-center">
+        <h3 class="display-5 fw-bold text-body-emphasis">👥Weekly Meetups</h3>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 text-body-emphasis">
+            Every week we gather to explore new topics, discuss ideas, and strengthen our coding community.
           </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a
-              href="https://codersforum.netlify.app/codeblitz"
-              class="neu-container"
-            >
-              <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
-                More Details
-              </button></a
-            >
-          </div>
-        </div>
-        <div class="col-10 col-sm-8 col-lg-6">
-          <img
-            src="./assets/img/codeblitz1.jpg"
-            class="d-block mx-lg-auto img-fluid zoomable-img"
-            alt="Event Image"
-            loading="lazy"
-            style="
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); border-radius: 20px;"
-          />
         </div>
       </div>
-    </div>
-    </div>
 
-    <div class="timeline-item"><div class="timeline-progress"></div> <div class="timeline-dot"></div>   <span class="timeline-date">20 January 2024</span>
-    <div class="container col-xxl-8 px-4 py-5 container-style">
-      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-lg-6">
-          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Highlight
-          </h4>
-          <hr>
-          <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Winners
-          </h5>
-          <p>
-            <ol>
-              <li>
-                Atchaiyaraj S & Adrian Calvin K A
-              </li>
-              <li>
-                Domesan U
-              </li>
-              <li>
-                K R Nijandhan & Venis Xavier V
-              </li>
-              <li>
-                Ramchandru R & Siranjeevi P
-              </li>
-              <li>
-                Roffin Jason N & Arun Kumar C
-              </li>
-            </ol>
-          </p>
-          <hr>
-          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Event Overview
-          </h2>
-          <p>
-            Participants tackle challenging coding problems under time limits, testing their problem-solving, algorithmic thinking, and programming skills. 
-            <br>With multiple rounds and rising difficulty, PEC Code Quest keeps students sharp and motivated.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a
-              href="https://codersforum.netlify.app/codequest"
-              class="neu-container"
-            >
-              <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
-                More Details
-              </button></a
-            >
+      <div class="datepicker-container">
+        <input type="text" class="date-input" placeholder="Select date" />
+
+        <div class="datepicker" hidden>
+          <div class="datepicker-header">
+            <button class="prev">Prev</button>
+
+            <div>
+              <select class="month-input">
+                <option>January</option>
+                <option>February</option>
+                <option>March</option>
+                <option>April</option>
+                <option>May</option>
+                <option>June</option>
+                <option>July</option>
+                <option>August</option>
+                <option>September</option>
+                <option>October</option>
+                <option>November</option>
+                <option>December</option>
+              </select>
+              <input type="number" class="year-input" min="1900" max="2100" />
+            </div>
+
+            <button class="next">Next</button>
+          </div>
+          <div class="days">
+            <span>Sun</span>
+            <span>Mon</span>
+            <span>Tue</span>
+            <span>Wed</span>
+            <span>Thu</span>
+            <span>Fri</span>
+            <span>Sat</span>
+          </div>
+          <div class="dates"></div>
+          <div class="datepicker-footer">
+            <button class="cancel">Cancel</button>
+            <button class="apply">Apply</button>
           </div>
         </div>
-        <div class="col-10 col-sm-8 col-lg-6">  
-  <div class="mini-slider-container">
-    <div class="mini-slide">                        
-      <div class="mini-item zoomable-img"><img src="./assets/img/flyers/CodeQuest.png" alt=""></div>
-      <div class="mini-item zoomable-img"><img src="./assets/img/events/cq-winners.jpg" alt=""></div>
-    </div>
-    <div class="mini-controls">
-      <button class="mini-prev">◁</button>
-      <button class="mini-next">▷</button>
+      </div>
+
+      <div class="container">
+        <section class="py-5 bg-light">
+          <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+              <h2 class="fw-bold">Our Weekly Meetups:</h2>
+
+              <div>
+                <button class="btn btn-outline-secondary btn-sm" data-bs-target="#blogCarousel" data-bs-slide="prev">
+                  ‹
+                </button>
+                <button class="btn btn-outline-secondary btn-sm" data-bs-target="#blogCarousel" data-bs-slide="next">
+                  ›
+                </button>
+              </div>
+            </div>
+            <div id="meetup-wrapper">
+  <div id="blogCarousel" class="carousel slide" data-bs-touch="true">
+
+    <div class="carousel-inner">
+      <!-- JS will inject slides here -->
     </div>
   </div>
-        </div>
+</div>
+
+            <!-- <div id="meetup-wrapper">
+              <div id="blogCarousel" class="carousel slide" data-bs-touch="true">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row g-3">
+                      <div class="col-12 col-lg-4
+ meetup-card selected-card" data-date="2025-11-04">
+                        <div class="m-card h-100">
+                          <img src="./assets/img/Meetup1.jpg" class="card-img-top blog-card-img" />
+                          <div class="card-body meetup-body">
+                            <h5>Meetup 50</h5>
+                            <p class="meetup-desc">
+                              Weekly Meetup 50 covered DevOps, recursion, JavaScript, and interview experiences.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-4
+ meetup-card selected-card" data-date="2025-11-11">
+                        <div class="m-card h-100">
+                          <img src="./assets/img/Meetup2.jpg" class="card-img-top blog-card-img" />
+                          <div class="card-body meetup-body">
+                            <h5>Meetup 51</h5>
+                            <p class="meetup-desc">
+                              Weekly Meetup 51 covered DevOps, recursion, JavaScript, and interview experiences.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-4
+ meetup-card selected-card" data-date="2025-11-18">
+                        <div class="m-card h-100">
+                          <img src="./assets/img/Meetup1.jpg" class="card-img-top blog-card-img" />
+                          <div class="card-body meetup-body">
+                            <h5>Meetup 52</h5>
+                            <p class="meetup-desc">
+                              Weekly Meetup 52 covered DevOps, recursion, JavaScript, and interview experiences.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="row g-3">
+                      <div class="col-12 col-lg-4
+ meetup-card selected-card" data-date="2025-11-04">
+                        <div class="m-card h-100">
+                          <img src="./assets/img/Meetup1.jpg" class="card-img-top blog-card-img" />
+                          <div class="card-body meetup-body">
+                            <h5>Meetup 50</h5>
+                            <p class="meetup-desc">
+                              Weekly Meetup 50 covered DevOps, recursion, JavaScript, and interview experiences.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-4
+ meetup-card selected-card" data-date="2025-11-11">
+                        <div class="m-card h-100">
+                          <img src="./assets/img/Meetup2.jpg" class="card-img-top blog-card-img" />
+                          <div class="card-body meetup-body">
+                            <h5>Meetup 51</h5>
+                            <p class="meetup-desc">
+                              Weekly Meetup 51 covered DevOps, recursion, JavaScript, and interview experiences.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-lg-4
+ meetup-card selected-card" data-date="2025-11-18">
+                        <div class="m-card h-100">
+                          <img src="./assets/img/Meetup1.jpg" class="card-img-top blog-card-img" />
+                          <div class="card-body meetup-body">
+                            <h5>Meetup 52</h5>
+                            <p class="meetup-desc">
+                              Weekly Meetup 52 covered DevOps, recursion, JavaScript, and interview experiences.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </section>
       </div>
     </div>
-    </div>
+  </section>
 
-    <div class="timeline-item"> <div class="timeline-progress"></div><div class="timeline-dot"></div>   <span class="timeline-date">29 August 2023</span>
-      <div class="container col-xxl-8 px-4 py-5 container-style">
-        <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
-          <div class="col-lg-6">
-            <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-              Highlight
-            </h4>
-            <hr>
-            <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-              Winners
-            </h5>
-            <p>
+  <section id="events">
+    <div class="container">
+      <div class="px-4 pt-5 text-center">
+        <h3 class="display-5 fw-bold text-body-emphasis">🏆Building Coders, Creating Champions</h3>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4 text-body-emphasis">
+            Coders Forum events bring together passionate programmers to compete, collaborate, and grow.
+            With structured rounds and real-world challenges, we turn learning into an exciting experience.
+            <br>
+            <br><br><br>
+          </p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-progress"></div>
+        <div class="timeline-dot"></div> <span class="timeline-date">16 June 2024</span>
+        <div class="container col-xxl-8 px-4 py-5 container-style">
+          <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+              <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Highlight
+                <hr>
+              </h4>
+              <p>
+                <b>Contest Name:</b> Summer Code Blitz
+                <br />
+                <b>Date: </b>June 16th, 2024<br />
+              </p>
+              <hr>
+              <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Event Overview
+              </h2>
+              <p>
+                Join the Summer Code Blitz this June on HackerRank!
+                <br />Students from Panimalar Engineering College can showcase their
+                coding skills, compete across departments, and climb the
+                leaderboard.
+                <br />
+                Register now to be part of the weekly coding contest series!
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://codersforum.netlify.app/codeblitz" class="neu-container">
+                  <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                    More Details
+                  </button></a>
+              </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+              <img src="./assets/img/codeblitz1.jpg" class="d-block mx-lg-auto img-fluid zoomable-img" alt="Event Image"
+                loading="lazy" style="
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4); border-radius: 20px;" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-progress"></div>
+        <div class="timeline-dot"></div> <span class="timeline-date">20 January 2024</span>
+        <div class="container col-xxl-8 px-4 py-5 container-style">
+          <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+              <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Highlight
+              </h4>
+              <hr>
+              <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Winners
+              </h5>
+              <p>
+              <ol>
+                <li>
+                  Atchaiyaraj S & Adrian Calvin K A
+                </li>
+                <li>
+                  Domesan U
+                </li>
+                <li>
+                  K R Nijandhan & Venis Xavier V
+                </li>
+                <li>
+                  Ramchandru R & Siranjeevi P
+                </li>
+                <li>
+                  Roffin Jason N & Arun Kumar C
+                </li>
+              </ol>
+              </p>
+              <hr>
+              <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Event Overview
+              </h2>
+              <p>
+                Participants tackle challenging coding problems under time limits, testing their problem-solving,
+                algorithmic thinking, and programming skills.
+                <br>With multiple rounds and rising difficulty, PEC Code Quest keeps students sharp and motivated.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://codersforum.netlify.app/codequest" class="neu-container">
+                  <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                    More Details
+                  </button></a>
+              </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+              <div class="mini-slider-container">
+                <div class="mini-slide">
+                  <div class="mini-item zoomable-img"><img src="./assets/img/flyers/CodeQuest.png" alt=""></div>
+                  <div class="mini-item zoomable-img"><img src="./assets/img/events/cq-winners.jpg" alt=""></div>
+                </div>
+                <div class="mini-controls">
+                  <button class="mini-prev">◁</button>
+                  <button class="mini-next">▷</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-progress"></div>
+        <div class="timeline-dot"></div> <span class="timeline-date">29 August 2023</span>
+        <div class="container col-xxl-8 px-4 py-5 container-style">
+          <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+              <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Highlight
+              </h4>
+              <hr>
+              <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Winners
+              </h5>
+              <p>
               <ol>
                 <li>
                   Maria Robin Andrew
@@ -696,214 +1515,216 @@ body.page-transition {
                 <li>Emmanuel Jonathan
                 </li>
               </ol>
-            </p>
-            <hr>
-            <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-              Event Overview
-            </h2>
-            <p>
-              Gear up to claim the title of HashKing on August 29, 2023! Join this thrilling contest to test your limits, fuel your coding passion, and master the art of hashing.
-              <br>Register now for an exciting and rewarding challenge!
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a
-                href="https://www.hackerrank.com/august-monthly-contest-hashking-29aug2023"
-                class="neu-container"
-              >
-                <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
-                  More Details
-                </button></a
-              >
+              </p>
+              <hr>
+              <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Event Overview
+              </h2>
+              <p>
+                Gear up to claim the title of HashKing on August 29, 2023! Join this thrilling contest to test your
+                limits, fuel your coding passion, and master the art of hashing.
+                <br>Register now for an exciting and rewarding challenge!
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://www.hackerrank.com/august-monthly-contest-hashking-29aug2023" class="neu-container">
+                  <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                    More Details
+                  </button></a>
+              </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+              <div class="mini-slider-container">
+                <div class="mini-slide">
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking.png" alt=""></div>
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking-winners.png" alt=""></div>
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking-winners.png" alt=""></div>
+                </div>
+                <div class="mini-controls">
+                  <button class="mini-prev">◁</button>
+                  <button class="mini-next">▷</button>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-10 col-sm-8 col-lg-6">  
-    <div class="mini-slider-container">
-      <div class="mini-slide">
-        <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking.png" alt=""></div>
-        <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking-winners.png" alt=""></div>
-        <div class="mini-item  zoomable-img"><img src="./assets/img/events/hashking-winners.png" alt=""></div>
+        </div>
       </div>
-      <div class="mini-controls">
-        <button class="mini-prev">◁</button>
-        <button class="mini-next">▷</button>
-      </div>
-    </div>
+
+      <div class="timeline-item">
+        <div class="timeline-progress"></div>
+        <div class="timeline-dot"></div> <span class="timeline-date">29 August 2023</span>
+        <div class="container col-xxl-8 px-4 py-5 container-style">
+          <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+              <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Highlight
+              </h4>
+              <hr>
+              <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Winners
+              </h5>
+              <p>
+              <ol>
+                <li>
+                  Mohana Priya. S R
+                </li>
+                <li>Samuel Varghese. J
+                </li>
+                <li>Muthu Usha Rani. M
+                </li>
+              </ol>
+              </p>
+              <hr>
+              <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Event Overview
+              </h2>
+              <p>
+                Prepare to be crowned the C Mastermind on August 29, 2023! Join this exciting contest to sharpen your
+                coding skills, celebrate your passion for C programming, and showcase your mastery of the language.
+                <br>Register now and put your skills to the test!
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://www.hackerrank.com/include-craze-c-august-monthly-contest" class="neu-container">
+                  <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                    More Details
+                  </button></a>
+              </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+              <div class="mini-slider-container">
+                <div class="mini-slide">
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/c.png" alt=""></div>
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/august-event-participants.png"
+                      alt=""></div>
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/craze-c-winners.png" alt=""></div>
+                </div>
+                <div class="mini-controls">
+                  <button class="mini-prev">◁</button>
+                  <button class="mini-next">▷</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="timeline-item"> <div class="timeline-progress"></div> <div class="timeline-dot"></div>  <span class="timeline-date">29 August 2023</span>
-    <div class="container col-xxl-8 px-4 py-5 container-style">
-      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-lg-6">
-          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Highlight
-          </h4>
-          <hr>
-          <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Winners
-          </h5>
-          <p>
-            <ol>
-              <li>
-                Mohana Priya. S R
-              </li>
-              <li>Samuel Varghese. J
-              </li>
-              <li>Muthu Usha Rani. M
-              </li>
-            </ol>
-          </p>
-          <hr>
-          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Event Overview
-          </h2>
-          <p>
-            Prepare to be crowned the C Mastermind on August 29, 2023! Join this exciting contest to sharpen your coding skills, celebrate your passion for C programming, and showcase your mastery of the language.
-            <br>Register now and put your skills to the test!
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a
-              href="https://www.hackerrank.com/include-craze-c-august-monthly-contest"
-              class="neu-container"
-            >
-              <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
-                More Details
-              </button></a
-            >
-          </div>
-        </div>
-        <div class="col-10 col-sm-8 col-lg-6">  
-  <div class="mini-slider-container">
-    <div class="mini-slide">
-      <div class="mini-item  zoomable-img"><img src="./assets/img/events/c.png" alt=""></div>
-      <div class="mini-item  zoomable-img"><img src="./assets/img/events/august-event-participants.png" alt=""></div>
-      <div class="mini-item  zoomable-img"><img src="./assets/img/events/craze-c-winners.png" alt=""></div>
-    </div>
-    <div class="mini-controls">
-      <button class="mini-prev">◁</button>
-      <button class="mini-next">▷</button>
-    </div>
-  </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="timeline-item"> <div class="timeline-progress"></div> <div class="timeline-dot"></div>  <span class="timeline-date">27 July 2023</span>
-    <div class="container col-xxl-8 px-4 py-5 container-style">
-      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-lg-6">
-          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Highlight
-          </h4>
-          <hr>
-          <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Winners
-          </h5>
-          <p>
-            <ol>
-              <li>Elavarasar. P
-              </li>
-              <li>Vasanth. R
-              </li>
-              <li>Maria Robin Andrew
-              </li>
-            </ol>
-          </p>
-          <hr>
-          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Event Overview
-          </h2>
-          <p>
-            [MATRICKS] - The coding contest hosted by Coders Forum brought together enthusiasts from various backgrounds to showcase their skills. 
-            <br>It offered a thrilling platform to test coding expertise, logic, and creativity through challenging problems.
-          </p>
-          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-            <a
-              href="https://www.hackerrank.com/coders-forum-july-monthly-contest-matricks"
-              class="neu-container"
-            >
-              <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
-                More Details
-              </button></a
-            >
-          </div>
-        </div>
-        <div class="col-10 col-sm-8 col-lg-6">  
-  <div class="mini-slider-container">
-    <div class="mini-slide">
-      <div class="mini-item  zoomable-img"><img src="./assets/img/events/matricks1.png" alt=""></div>
-      <div class="mini-item  zoomable-img"><img src="./assets/img/events/participants.png" alt=""></div>
-      <div class="mini-item  zoomable-img"><img src="./assets/img/events/winners.png" alt=""></div>
-    </div>
-    <div class="mini-controls">
-      <button class="mini-prev">◁</button>
-      <button class="mini-next">▷</button>
-    </div>
-  </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    
-    <div class="timeline-item"> <div class="timeline-progress"></div> <div class="timeline-dot"></div>  <span class="timeline-date">25 July 2023</span>
-    <div class="container col-xxl-8 px-4 py-5 container-style" style="margin-bottom: 50px;">
-      <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-lg-6">
-          <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Highlight
-          </h4>
-          <hr>
-          <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Guest of Honor:
-          </h5>
-          <p>
-            Mrs. Archana. G
-Data Engg. Associate, Accenture
-          </p>
-          <hr>
-          <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
-            Event Overview
-          </h2>
-          <p>
-            The inauguration began with a warm welcome highlighting the club’s vision and mission, followed by the launch of its website and social media pages, marking unity and growth.
-            <br> Guest of Honor Mrs. Archana G inspired the audience with her words.
-          </p>
-        </div>
-        <div class="col-10 col-sm-8 col-lg-6">  
-  <div class="mini-slider-container">
-    <div class="mini-slide">
-      <div class="mini-item  zoomable-img"><img src="./assets/img/events/Inaguration-poster.png" alt=""></div>
-      <div class="mini-item  zoomable-img"><img src="./assets/img/events/members.jpg" alt=""></div>
-    </div>
-    <div class="mini-controls">
-      <button class="mini-prev">◁</button>
-      <button class="mini-next">▷</button>
-    </div>
-  </div>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="modal fade" id="imageModal" tabindex="-1">
-      <div class="modal-dialog modal-fullscreen">
-        <div class="modal-content bg-dark">
-          <div class="modal-header border-0">
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-          </div>
-          <div class="modal-body d-flex justify-content-center align-items-center">
-            <img id="modalImage" src="" class="img-fluid rounded-4 shadow-lg" />
+      <div class="timeline-item">
+        <div class="timeline-progress"></div>
+        <div class="timeline-dot"></div> <span class="timeline-date">27 July 2023</span>
+        <div class="container col-xxl-8 px-4 py-5 container-style">
+          <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+              <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Highlight
+              </h4>
+              <hr>
+              <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Winners
+              </h5>
+              <p>
+              <ol>
+                <li>Elavarasar. P
+                </li>
+                <li>Vasanth. R
+                </li>
+                <li>Maria Robin Andrew
+                </li>
+              </ol>
+              </p>
+              <hr>
+              <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Event Overview
+              </h2>
+              <p>
+                [MATRICKS] - The coding contest hosted by Coders Forum brought together enthusiasts from various
+                backgrounds to showcase their skills.
+                <br>It offered a thrilling platform to test coding expertise, logic, and creativity through challenging
+                problems.
+              </p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="https://www.hackerrank.com/coders-forum-july-monthly-contest-matricks" class="neu-container">
+                  <button type="button" class="btn btn-lg px-4 me-md-2 neu-btn">
+                    More Details
+                  </button></a>
+              </div>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+              <div class="mini-slider-container">
+                <div class="mini-slide">
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/matricks1.png" alt=""></div>
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/participants.png" alt=""></div>
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/winners.png" alt=""></div>
+                </div>
+                <div class="mini-controls">
+                  <button class="mini-prev">◁</button>
+                  <button class="mini-next">▷</button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+
+      <div class="timeline-item">
+        <div class="timeline-progress"></div>
+        <div class="timeline-dot"></div> <span class="timeline-date">25 July 2023</span>
+        <div class="container col-xxl-8 px-4 py-5 container-style" style="margin-bottom: 50px;">
+          <div class="row flex-column-reverse flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-lg-6">
+              <h4 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Highlight
+              </h4>
+              <hr>
+              <h5 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Guest of Honor:
+              </h5>
+              <p>
+                Mrs. Archana. G
+                Data Engg. Associate, Accenture
+              </p>
+              <hr>
+              <h2 class="display-7 fw-bold text-body-emphasis lh-1 mb-3">
+                Event Overview
+              </h2>
+              <p>
+                The inauguration began with a warm welcome highlighting the club’s vision and mission, followed by the
+                launch of its website and social media pages, marking unity and growth.
+                <br> Guest of Honor Mrs. Archana G inspired the audience with her words.
+              </p>
+            </div>
+            <div class="col-10 col-sm-8 col-lg-6">
+              <div class="mini-slider-container">
+                <div class="mini-slide">
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/Inaguration-poster.png" alt="">
+                  </div>
+                  <div class="mini-item  zoomable-img"><img src="./assets/img/events/members.jpg" alt=""></div>
+                </div>
+                <div class="mini-controls">
+                  <button class="mini-prev">◁</button>
+                  <button class="mini-next">▷</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="imageModal" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content bg-dark">
+            <div class="modal-header border-0">
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body d-flex justify-content-center align-items-center">
+              <img id="modalImage" src="" class="img-fluid rounded-4 shadow-lg" />
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
+  </section>
 
-    <footer id="footer">
+  <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -917,23 +1738,29 @@ Data Engg. Associate, Accenture
                 Bangalore Trunk Road,<br>
                 Varadharajapuram, Poonamallee <br>
                 Chennai - 600 123 <br><br>
-                <i class="bi bi-telephone" style = "color : #ffc451 ;"></i> &nbsp; <span style = "font-family : 'Consolas' ;">+91 93846 78960</span><br>
-                <i class="bi bi-envelope" style = "color : #ffc451 ;"></i> &nbsp; <a href="mailto:coders_forum@outlook.com" style = "color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
-            </p>
+                <i class="bi bi-telephone" style="color : #ffc451 ;"></i> &nbsp; <span
+                  style="font-family : 'Consolas' ;">+91 93846 78960</span><br>
+                <i class="bi bi-envelope" style="color : #ffc451 ;"></i> &nbsp; <a
+                  href="mailto:coders_forum@outlook.com"
+                  style="color: #fff; font-family : 'Consolas' ;">coders_forum@outlook.com</a><br>
+              </p>
 
               <div class="social-links mt-3">
-                <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i class="bx bxl-github"></i></a>
-                <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
-                </div>
+                <a href="https://www.linkedin.com/company/coders-forum" target="_blank" class="linkedin"><i
+                    class="bx bxl-linkedin"></i></a>
+                <a href="https://github.com/Coders-Forum" target="_blank" class="github"><i
+                    class="bx bxl-github"></i></a>
+                <a href="https://www.instagram.com/coders_forum/" target="_blank" class="instagram"><i
+                    class="bx bxl-instagram"></i></a>
+              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6" style = "display : flex ; align-items : center ; justify-content : center ;">
-            <img src="./assets/img/club-logo.png" style = "width : 300px; height : auto ;">
+          <div class="col-lg-4 col-md-6" style="display : flex ; align-items : center ; justify-content : center ;">
+            <img src="./assets/img/club-logo.png" style="width : 300px; height : auto ;">
           </div>
           <div class="col-lg-4 col-md-6 d-none d-sm-block">
-              <div class="row">
+            <div class="row">
               <div class="col-sm-6 col-md-6 footer-links">
                 <h4>Useful Links</h4>
                 <ul>
@@ -948,17 +1775,23 @@ Data Engg. Associate, Accenture
               <div class="col-sm-6 col-md-6 footer-links">
                 <h4>Initiators</h4>
                 <ul>
-                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
-                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
-                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
-                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a
+                      href="https://www.linkedin.com/in/madhavakumar-dhandapani" target="_blank">Madhavakumar D </a>
+                  </li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a
+                      href="https://www.linkedin.com/in/rishab-h-656b97224" target="_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a
+                      href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target="_blank">Karthick V</a>
+                  </li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a
+                      href="https://www.linkedin.com/in/jeswinjosephj" target="_blank">Jeswin Joseph J</a></li>
                 </ul>
               </div>
             </div>
-          </div> 
+          </div>
 
           <!-- Mobile Two-Column Layout -->
-          <div class="col-12 footer-links d-md-none" style = "margin-top: 30px;">
+          <div class="col-12 footer-links d-md-none" style="margin-top: 30px;">
             <div class="row">
               <div class="col-6">
                 <h4>Useful Links</h4>
@@ -973,10 +1806,16 @@ Data Engg. Associate, Accenture
               <div class="col-6">
                 <h4>Initiators</h4>
                 <ul>
-                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/madhavakumar-dhandapani" target = "_blank">Madhavakumar D </a></li>
-                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/rishab-h-656b97224" target = "_blank">Rishab H</a></li>
-                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target = "_blank">Karthick V</a></li>
-                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a href="https://www.linkedin.com/in/jeswinjosephj" target = "_blank">Jeswin Joseph J</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a
+                      href="https://www.linkedin.com/in/madhavakumar-dhandapani" target="_blank">Madhavakumar D </a>
+                  </li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a
+                      href="https://www.linkedin.com/in/rishab-h-656b97224" target="_blank">Rishab H</a></li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a
+                      href="https://www.linkedin.com/in/karthick-vasudevan-062761232" target="_blank">Karthick V</a>
+                  </li>
+                  <li> &nbsp; &nbsp; <i class="bi bi-person"></i> &nbsp; <a
+                      href="https://www.linkedin.com/in/jeswinjosephj" target="_blank">Jeswin Joseph J</a></li>
                 </ul>
               </div>
             </div>
@@ -986,19 +1825,21 @@ Data Engg. Associate, Accenture
     </div>
   </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./assets/js/events.js"></script>
-    <script src="assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/events.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/meetupCards.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-<script>
-  AOS.init({
-    duration: 900,
-    easing: "ease-out-cubic",
-    once: true
-  });
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 900,
+      easing: "ease-out-cubic",
+      once: true
+    });
+  </script>
 
-  </body>
+</body>
+
 </html>

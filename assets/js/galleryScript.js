@@ -8,6 +8,492 @@ rules to build this below array of objects in future:
 3. remaining properties just follow the same template.
 */
 const galleryData = [
+    {
+    title: 'The Final Destination',
+    desc: 'The contest blended creativity and problem solving making it both intense and memorable for everyone who took part.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20143.jpg',
+    date: '2 June, 2025',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'The Final Destination',
+    desc: 'The final destination was a five round treasure hunt style coding contest designed to test different technical skills in a fun and challenging way.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20142.jpg',
+    date: '2 June, 2025',
+    filterType: 'filter-highlight'
+  },
+    {
+    title: 'Weekly MeetUp',
+    desc: 'Kishore RBT ,Explained His Machine learning Project , The tools and tech stack He used.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20141.jpg?updatedAt=1774692529906',
+    date: '2 April, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'We had an engaging group event where members were tasked to build words on a specifc tech domain.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20140.jpg?updatedAt=1774692531395',
+    date: '2 April, 2025',
+    filterType: ''
+  },
+  {
+    title: 'DEV SPRINT',
+    desc: 'The goal of the event Was to introduce our members to the world of open source projects and Help them contribute to it. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20139.jpg?updatedAt=1774692359439',
+    date: '26 March, 2025',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'We 𝗰𝗼𝗹𝗹𝗮𝗯𝗼𝗿𝗮𝘁𝗲𝗱 𝗼𝗻 𝗱𝗲𝗯𝘂𝗴𝗴𝗶𝗻𝗴 𝗰𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲𝘀, splitting into two teams to troubleshoot bugs iteratively. Each iteration brought fresh insights, teamwork and a step closer to the solution! ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20138.jpg?updatedAt=1774692357730',
+    date: '21 March, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Saikumar J, explained how 𝗰𝗼𝗻𝗻𝗲𝗰𝘁𝗶𝗼𝗻 𝗽𝗼𝗼𝗹𝗶𝗻𝗴 optimizes database performance, reduces latency, and improves efficiency in high-load applications. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20137.jpg?updatedAt=1774692345198',
+    date: '21 March, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Avinash M, sharing his insights on 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴 𝗮𝗻 𝗶𝗻𝘁𝘂𝗶𝘁𝗶𝘃𝗲 𝗮𝗻𝗱 𝗲𝗻𝗴𝗮𝗴𝗶𝗻𝗴 𝘂𝘀𝗲𝗿 𝗶𝗻𝘁𝗲𝗿𝗳𝗮𝗰𝗲. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20136.jpg?updatedAt=1774692347752',
+    date: '21 March, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Towards the end of the day we had an interactive session, "𝗧𝗵𝗲 𝗠𝗼𝘀𝘁 𝗦𝗶𝗹𝗹𝘆 𝗕𝘂𝗴 𝗧𝗵𝗮𝘁 𝗜 𝗦𝘁𝗿𝘂𝗴𝗴𝗹𝗲𝗱 𝗪𝗶𝘁𝗵," where members shared the funniest and silliest bugs they had encountered. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20135.jpg?updatedAt=1774692534905',
+    date: '14 March, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Shruti S, presented her 𝗦𝗽𝗿𝗶𝗻𝗴 𝗕𝗼𝗼𝘁 𝗽𝗿𝗼𝗷𝗲𝗰𝘁, which was built using microservices architecture. She broke down the concept of 𝗺𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲𝘀 in a simple and understandable way.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20134.jpg?updatedAt=1774692533881',
+    date: '14 March, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Mohamed Jasim, delivered a session on the 𝘀𝗹𝗶𝗱𝗶𝗻𝗴 𝘄𝗶𝗻𝗱𝗼𝘄 𝗮𝗽𝗽𝗿𝗼𝗮𝗰𝗵 𝗳𝗼𝗿 𝗽𝗿𝗼𝗯𝗹𝗲𝗺 𝘀𝗼𝗹𝘃𝗶𝗻𝗴, highlighting its significance compared to the brute force method.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20133.jpg?updatedAt=1774692236095',
+    date: '14 March, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'During our networking event, our members were grouped based on their 𝗳𝗿𝗼𝗻𝘁-𝗲𝗻𝗱 𝗼𝗿 𝗯𝗮𝗰𝗸-𝗲𝗻𝗱 𝗲𝘅𝗽𝗲𝗿𝘁𝗶𝘀𝗲 and engaged in discussions about the tech stacks they are working on. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20132.jpg',
+    date: '12 March, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: ' Shruti S ,introduced us to 𝗠𝗶𝗰𝗿𝗼𝘀𝗲𝗿𝘃𝗶𝗰𝗲 𝗔𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲, providing valuable insights into its role in modern software development.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20131.jpg',
+    date: '12 March, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'peruvayila vinodh ,delivered a detailed explanation about the 𝗖𝗼𝗹𝗹𝗲𝗰𝘁𝗶𝗼𝗻𝘀 𝗙𝗿𝗮𝗺𝗲𝘄𝗼𝗿𝗸 in java, highlighting its importance and applications.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20130.jpg',
+    date: '12 March, 2025',
+    filterType: ''
+  },
+
+  {
+    title: 'Weekly MeetUp',
+    desc: ' We had an exciting networking event, where members formed groups and shared their technical expertise.  ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20129.jpg',
+    date: '28 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Johith Raj S S, provided a detailed breakdown of Linked Lists, implementing them from scratch.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20128.jpg',
+    date: '28 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'peruvayila vinodh, gave an introduction to Collections, helping attendees understand their significance. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20127.jpg',
+    date: '28 February, 2025',
+    filterType: ''
+  },
+  {
+    title: '𝗗𝗲𝗰𝗿𝘆𝗽𝘁 𝘁𝗵𝗲 𝗢𝘂𝘁𝗽𝘂𝘁, 𝗖𝗼𝗱𝗲 𝘁𝗵𝗲 𝗟𝗼𝗴𝗶𝗰!',
+    desc: 'we hosted our February Monthly Contest. Given only the sample input and output, they had to discover the underlying logic and implement the solution in Java.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20126.png',
+    date: '21 February, 2025',
+    filterType: 'filter-highlight'
+  },
+  
+  {
+    title: 'Weekly MeetUp',
+    desc: ' We wrapped up the day with an exciting 𝗽𝘂𝘇𝘇𝗹𝗲 𝗴𝗮𝗺𝗲, where teams raced to 𝗶𝗱𝗲𝗻𝘁𝗶𝗳𝘆 𝘁𝗲𝗰𝗵𝗻𝗶𝗰𝗮𝗹 𝘁𝗲𝗿𝗺𝘀 𝗯𝗮𝘀𝗲𝗱 𝗼𝗻 𝗴𝗶𝘃𝗲𝗻 𝗰𝗹𝘂𝗲𝘀. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20125.jpg',
+    date: '19 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: ' Gayathri Jayaprakash, showcased her 𝘄𝗲𝗯 𝗮𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗼𝗻 𝗽𝗿𝗼𝗷𝗲𝗰𝘁 using Selenium, explaining its functionality and the code logic behind it.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20124.jpg',
+    date: '19 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Mohamed Jasim, provided an in-depth explanation of key 𝗗𝗦𝗔 𝗰𝗼𝗻𝗰𝗲𝗽𝘁𝘀, 𝗱𝗲𝗺𝗼𝗻𝘀𝘁𝗿𝗮𝘁𝗶𝗻𝗴 𝘁𝗵𝗲𝗶𝗿 𝗮𝗽𝗽𝗹𝗶𝗰𝗮𝘁𝗶𝗼𝗻𝘀 with example problems.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20123.jpg',
+    date: '19 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: ' MURALI DHARAN J ,explained 𝗵𝗲𝗮𝗱𝗲𝗿 𝗳𝗶𝗹𝗲𝘀 𝗶𝗻 𝗖 and showcased impressive 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿 𝘃𝗶𝘀𝗶𝗼𝗻 𝗽𝗿𝗼𝗷𝗲𝗰𝘁𝘀 using OpenCV and 𝗠𝗲𝗱𝗶𝗮𝗣𝗶𝗽𝗲.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20122.jpg',
+    date: '12 February, 2025',
+    filterType: ''
+  },
+   {
+    title: 'Weekly MeetUp',
+    desc: 'We conducted an engaging group event 𝗕𝗿𝗲𝗮𝗸 & 𝗕𝘂𝗶𝗹𝗱, where 𝘁𝗲𝗮𝗺𝘀 𝗱𝗲𝗯𝗮𝘁𝗲𝗱 𝘁𝗵𝗲 𝗽𝗿𝗼𝘀 𝗮𝗻𝗱 𝗰𝗼𝗻𝘀 𝗼𝗳 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝘁 𝘁𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝗶𝗲𝘀.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20121.jpg',
+    date: '12 February, 2025',
+    filterType: ''
+  },
+   {
+    title: 'Weekly MeetUp',
+    desc: 'We conducted an engaging group event 𝗕𝗿𝗲𝗮𝗸 & 𝗕𝘂𝗶𝗹𝗱, where 𝘁𝗲𝗮𝗺𝘀 𝗱𝗲𝗯𝗮𝘁𝗲𝗱 𝘁𝗵𝗲 𝗽𝗿𝗼𝘀 𝗮𝗻𝗱 𝗰𝗼𝗻𝘀 𝗼𝗳 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝘁 𝘁𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝗶𝗲𝘀.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20120.jpg',
+    date: '12 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Rishab H ,lit up the day with an engaging Q&A session, guiding us on to 𝘁𝗮𝗰𝗸𝗹𝗶𝗻𝗴 𝘀𝗰𝗲𝗻𝗮𝗿𝗶𝗼-𝗯𝗮𝘀𝗲𝗱 𝗶𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻𝘀 and respond professionally.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20119.jpg',
+    date: '5 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'AJMAL BASHA A ,introduced us to some essential 𝘁𝗼𝗼𝗹𝘀 𝗳𝗼𝗿 𝗯𝗮𝗰𝗸𝗲𝗻𝗱 𝗱𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿𝘀, including Flyway, Encore, Cursor, Qodo (formerly Codium), etc. showcasing how they simplify backend development.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20118.jpg',
+    date: '5 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Mohamed Jasim ,delivered a knowledge-packed session on 𝗔𝗿𝗿𝗮𝘆𝘀, 𝗛𝗮𝘀𝗵𝗠𝗮𝗽𝘀, 𝗮𝗻𝗱 𝗛𝗮𝘀𝗵𝗦𝗲𝘁𝘀, providing clarity on their use cases in different scenarios.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20117.jpg',
+    date: '5 February, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Vishal I.M ,introduced us to OpenStack, an open source 𝗰𝗹𝗼𝘂𝗱 𝗽𝗹𝗮𝘁𝗳𝗼𝗿𝗺 and its impact on modern cloud computing.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20116.jpg',
+    date: '24 January, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Uvashree Senthilkumar ,led an immersive discussion on 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿 𝘃𝗶𝘀𝗶𝗼𝗻, its challenges and real-world applications.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20115.jpg',
+    date: '24 January, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Pooja B, took us on a journey through 𝘀𝗽𝗮𝗰𝗲 𝘁𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝘆, emphasizing the crucial role of 𝗰𝗼𝗺𝗽𝘂𝘁𝗲𝗿 𝘀𝗰𝗶𝗲𝗻𝗰𝗲 𝗶𝗻 𝘀𝗽𝗮𝗰𝗲 𝗲𝘅𝗽𝗹𝗼𝗿𝗮𝘁𝗶𝗼𝗻.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20114.jpg',
+    date: '24 January, 2025',
+    filterType: ''
+  },
+  {
+    title: 'Techscribe',
+    desc: '𝗔𝗿𝘁𝗶𝗰𝗹𝗲 𝗪𝗿𝗶𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲,𝗠𝗼𝘀𝘁 𝗣𝗼𝗽𝘂𝗹𝗮𝗿 𝗙𝘂𝗹𝗹-𝗦𝘁𝗮𝗰𝗸 𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗺𝗲𝗻𝘁 𝗦𝘁𝗮𝗰𝗸𝘀: 𝗔𝗻 𝗜𝗻-𝗗𝗲𝗽𝘁𝗵 𝗔𝗻𝗮𝗹𝘆𝘀𝗶𝘀 𝗼𝗳 𝗠𝗘𝗔𝗡 𝗮𝗻𝗱 𝗠𝗘𝗥𝗡. by Bharath V.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20113.jpg',
+    date: '17 January, 2025',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Techscribe',
+    desc: '𝗔𝗿𝘁𝗶𝗰𝗹𝗲 𝗪𝗿𝗶𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲,. 𝗤𝘂𝗮𝗻𝘁𝘂𝗺 𝗖𝗹𝗼𝘂𝗱 𝗖𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴: 𝗧𝗵𝗲 𝗙𝘂𝘁𝘂𝗿𝗲 𝗼𝗳 𝗛𝗶𝗴𝗵-𝗣𝗲𝗿𝗳𝗼𝗿𝗺𝗮𝗻𝗰𝗲 𝗖𝗼𝗺𝗽𝘂𝘁𝗶𝗻𝗴 by Mukeash Baskaran.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20112.jpg',
+    date: '17 January, 2025',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Techscribe',
+    desc: '𝗔𝗿𝘁𝗶𝗰𝗹𝗲 𝗪𝗿𝗶𝘁𝗶𝗻𝗴 𝗖𝗵𝗮𝗹𝗹𝗲𝗻𝗴𝗲, 𝗖𝗿𝘆𝗽𝘁𝗼𝗴𝗿𝗮𝗽𝗵𝘆 𝗘𝘅𝗽𝗹𝗮𝗶𝗻𝗲𝗱: 𝗛𝗼𝘄 𝗜𝘁 𝗣𝗿𝗼𝘁𝗲𝗰𝘁𝘀 𝗢𝘂𝗿 𝗗𝗶𝗴𝗶𝘁𝗮𝗹 𝗪𝗼𝗿𝗹𝗱 by Shabeshvaran S ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20111.jpg',
+    date: '17 January, 2025',
+    filterType: 'filter-highlight'
+  },
+  
+  
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Uvashree Senthilkumar ,delivered an insightful introduction to 𝗗𝗮𝘁𝗮 𝗦𝗰𝗶𝗲𝗻𝗰𝗲, shedding light on its growing importance, fundamental concepts.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20110.jpg',
+    date: '14 December, 2024',
+    filterType: ''
+  },
+   {
+    title: 'Weekly MeetUp',
+    desc: 'HARI SRI RAGAVI S ,captivated the audience with a live demonstration of 𝗞𝗮𝗹𝗶 𝗟𝗶𝗻𝘂𝘅, showcasing essential Linux commands like 𝘄𝗵𝗼𝗮𝗺𝗶, 𝗵𝗼𝘀𝘁𝗻𝗮𝗺𝗲, 𝗽𝘄𝗱, 𝗺𝗸𝗱𝗶𝗿, 𝗰𝗱, 𝗲𝘁𝗰. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20109.jpg',
+    date: '14 December, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'HARI SRI RAGAVI S ,captivated the audience with a live demonstration of 𝗞𝗮𝗹𝗶 𝗟𝗶𝗻𝘂𝘅, showcasing essential Linux commands like 𝘄𝗵𝗼𝗮𝗺𝗶, 𝗵𝗼𝘀𝘁𝗻𝗮𝗺𝗲, 𝗽𝘄𝗱, 𝗺𝗸𝗱𝗶𝗿, 𝗰𝗱, 𝗲𝘁𝗰. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20108.jpg',
+    date: '14 December, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Laxman R U, shared his 𝐩𝐥𝐚𝐜𝐞𝐦𝐞𝐧𝐭 𝐣𝐨𝐮𝐫𝐧𝐞𝐲, detailing each round he faced and offering practical tips that resonated with all of us preparing for the job market.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20107.jpg',
+    date: '8 October, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Mohamed Jasim ,gave a technical session on 𝐛𝐢𝐭 𝐦𝐚𝐧𝐢𝐩𝐮𝐥𝐚𝐭𝐢𝐨𝐧, showcasing its efficiency in solving many coding problems and inspiring everyone to dive deeper into this essential concept.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20106.jpg',
+    date: '8 October, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Uvashree Senthilkumar, delivered a mind-blowing session 𝐀𝐈 𝐚𝐧𝐝 𝐢𝐭𝐬 𝐝𝐨𝐦𝐚𝐢𝐧𝐬. She covered core AI concepts and walked us through various ML algorithms, making complex topics accessible and engaging for everyone.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20105.jpg',
+    date: '8 October, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'We hosted the interactive event "𝗚𝗨𝗘𝗦𝗦 𝗧𝗛𝗘 𝗧𝗘𝗖𝗛𝗡𝗢𝗟𝗢𝗚𝗬", where members enthusiastically participated ,identifying various technologies through clues and descriptions.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20104.jpg',
+    date: '1 October, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'peruvayila vinodh ,delivered a comprehensive session on the 𝗲𝘃𝗼𝗹𝘂𝘁𝗶𝗼𝗻 𝗼𝗳 𝗝𝗮𝘃𝗮.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20103.jpg',
+    date: '1 October, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Rishab H ,𝘀𝗵𝗮𝗿𝗲𝗱 𝗵𝗶𝘀 𝗱𝗲𝘁𝗮𝗶𝗹𝗲𝗱 𝗽𝗹𝗮𝗰𝗲𝗺𝗲𝗻𝘁 𝗮𝗻𝗱 𝗶𝗻𝘁𝗲𝗿𝘃𝗶𝗲𝘄 𝗲𝘅𝗽𝗲𝗿𝗶𝗲𝗻𝗰𝗲𝘀, breaking down the various stages involved in the process. He also introduced a range of useful resources and strategies to tackle each phase .',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20102.jpg',
+    date: '1 October, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Mohamed Jasim provided an in-depth explanation of the Sliding Window technique.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20101.jpg',
+    date: '20 September, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Lakshmi Priya Aravamuthan, provided an in-depth explanation of Ethereum, covering its core concepts and potential applications.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%20100.jpg',
+    date: '20 September, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Allen Roddick, delivered an insightful explanation on Power BI with a live demonstration, showcasing its real-world applications.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img99.jpg',
+    date: '20 September, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Replica-Rush',
+    desc: 'we hosted an exhilarating web clone contest, Replica Rush, where our talented members showcased their skills by replicating a given web page within a stipulated time.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2098.jpg',
+    date: '22 August, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Replica-Rush',
+    desc: 'we hosted an exhilarating web clone contest, Replica Rush, where our talented members showcased their skills by replicating a given web page within a stipulated time.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2097.jpg',
+    date: '22 August, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Replica-Rush',
+    desc: 'we hosted an exhilarating web clone contest, Replica Rush, where our talented members showcased their skills by replicating a given web page within a stipulated time.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2096.jpg',
+    date: '22 August, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Allen Roddick delivered an informative session on DevOps, covering various tools essential for modern development practices.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2095.jpg',
+    date: '20 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Madhavakumar Dhandapani, shared his Smart India Hackathon experience, offering invaluable guidance to our members.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2094.jpg',
+    date: '20 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Dr.P.J.Sathish Kumar, Professor, Department of CSE, motivated our members to participate in the prestigious Smart India Hackathon, emphasizing its significance for budding innovators.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2093.jpg',
+    date: '20 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Pathra Shakthi, impressed us with her explanation of Quantum computing concepts,entanglement, and qubits, along with an overview of how classical computing differs from quantum computing.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2092.jpg',
+    date: '13 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Lakshmi Priya Aravamuthan, gave an introduction to Blockchain technology, explaining its concepts and discussing how it powers cryptocurrencies.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2091.jpg',
+    date: '13 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Rishab H, delivered an insightful session on memory management in Java, detailing its connection with the order of execution of Java code.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2090.jpg',
+    date: '13 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'We kicked off the event with an interactive ice-breaking session called "Guess the Technology," which encouraged active participation and sparked curiosity among our members.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2089.jpg',
+    date: '6 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Monisha V, delivered an engaging presentation on Node.js, offering valuable insights that captivated both beginners and experienced developers. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2088.jpg',
+    date: '6 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Pooja B, shared her expertise on Speech Synthesis, providing an in-depth exploration of the latest trends and applications in the field. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2087.jpg',
+    date: '6 August, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Automate.PY',
+    desc: 'It is a team-based contest was designed to enhance the automation skills of our members by providing a competitive platform for them .',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2086.jpg',
+    date: '31 July, 2024',
+    filterType: 'filter-highlight'
+  },{
+    title: 'Automate.PY',
+    desc: 'It is a team-based contest was designed to enhance the automation skills of our members by providing a competitive platform for them .',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2085.jpg',
+    date: '31 July, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Automate.PY',
+    desc: 'It is a team-based contest was designed to enhance the automation skills of our members by providing a competitive platform for them .',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2084.jpg',
+    date: '31 July, 2024',
+    filterType: 'filter-highlight'
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Madhavakumar D ,explained us about 𝐒𝐎𝐋𝐈𝐃 principles, 𝐆𝐎𝐅 (Gang of Four) design pattern. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2083.jpg',
+    date: '30 July, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Harini G delivered an insightful session on Looker, a powerful browser-based data analytics tool.Her explantion gave us a good understanding of How to use Looker for Data Analytics.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2082.jpg',
+    date: '30 July, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Mohamed Jasim, delivered a detailed explanation of, Automation using Python demonstrating its practical applications. ',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2081.jpg',
+    date: '30 July, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'We celebrated one year of Coders Forum .We had an orientation for our new members sharing the purpose of our community and benefits of joining us.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2080.jpg',
+    date: '25 July, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Mohammed Aashif .H ,shared insights on data analytics and gave  a complete road map to learn data analytics.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2079.jpg',
+    date: '16 July, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Naveen Kumar, presented an overview on 𝐜𝐲𝐛𝐞𝐫𝐬𝐞𝐜𝐮𝐫𝐢𝐭𝐲 𝐚𝐭𝐭𝐚𝐜𝐤𝐬. It was a wake-up call to the various cyber threats out there and how crucial it is to stay vigilant.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2078.jpg',
+    date: '16 July, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc: 'Mr.Rengaraj D,shares his knowledge on the evolution of Linux,its powerful use cases,and its unparalleled flexibility.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2077.jpg.jpeg',
+    date: '1 July, 2024',
+    filterType: ''
+  },
+  {
+    title: 'Weekly MeetUp',
+    desc:'Mr.Rengaraj D,shares his knowledge on the evolution of Linux,its powerful use cases,and its unparalleled flexibility.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img76.jpg.jpeg',
+    date: '1 July, 2024',
+    filterType: ''
+  },
+    {
+    title: 'Weekly MeetUp',
+    desc: 'Mr.Rengaraj D,shares his knowledge on the evolution of Linux,its powerful use cases,and its unparalleled flexibility.',
+    imgUrl: 'https://ik.imagekit.io/codersforum/img%2075.jpg.jpeg',
+    date: '1 July, 2024',
+    filterType: ''
+  },
   {
     title: 'Weekly MeetUp',
     desc: 'Sanjay K, a pre-final year student, explained about the neural networks and the training of ML model using python in Machine Learning.',
