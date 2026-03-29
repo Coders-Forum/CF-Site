@@ -1,5 +1,32 @@
 const achievers = [
   {
+    id: "2024PECCS799",
+    name: "Micheal Anto Jerrish C",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Micheal%20Anto%20Jerrish.jpeg",
+    achievements: ["Winner of December Monthly Contest, 2025 - Merry Quest"],
+  },
+  {
+    id: "2024PECCS801",
+    name: "Mohamed Ansari",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Mohamed%20Ansari.jpeg",
+    achievements: ["Winner of December Monthly Contest, 2025 - Merry Quest"],
+  },
+
+  {
+    id: "2024PECCS1075",
+    name: "Arun Meyyappan P I",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Arun%20Meiyappan.jpeg",
+    achievements: ["Winner of July Monthly Contest, 2025 - Replica Rush"],
+  },
+  {
+    id: "2023PECCS838",
+    name: "Barathraj",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Bharathraj.jpeg",
+    achievements: [
+      "Winner of June Monthly Contest, 2025 -  The Final Destination",
+    ],
+  },
+  {
     id: "2022PECCS155",
     name: "Gayathri J",
     img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/gayathri.jpeg",
