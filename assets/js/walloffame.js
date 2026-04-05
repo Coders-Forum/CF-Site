@@ -164,12 +164,12 @@ function renderCard(person) {
                          class="d-block img-fluid wall-of-fame-image"
                          alt="${person.name}"
                          loading="lazy"
-                         style="max-height:300px; object-fit:contain; width:190px; margin-bottom:-40px;">
+                         style="max-height:300px; object-fit:contain; width:190px;">
                   </div>
 
                   <div class="col-md-9 order-1 wall-of-fame-column">
                     <div class="section-title-wf d-flex flex-column align-items-center justify-content-center">
-                      <h2 style="text-align:center; margin-bottom:30px;"><b>${person.name}</b></h2>
+                      <h2 style="text-align:center;margin-bottom:30px;"><b>${person.name}</b></h2>
                       <p style="text-align:center;"><br><b>${person.id}</b></p>
                     </div>
                     <div class="d-flex flex-column align-items-center justify-content-center" style="margin-top:20px;">
