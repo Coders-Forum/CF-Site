@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CLASH OF CODERS – Official Guidelines</title>
 
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/clash_of_coders.css">
 
   <script>
     tailwind.config = {
@@ -19,7 +19,7 @@
             secondary: "#111827",
             accent: "#FFC451",
             glow: "#FFD700",
-            danger: "#EF4444"
+            danger: "#EF4444",
           },
           fontFamily: {
             clash: ["Clash", "sans-serif"]
@@ -100,17 +100,51 @@
       <p class="text-lg text-gray-300">Details to be revealed soon…</p>
     </div>
 
+    <!-- Contact -->
+<div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+  <h3 class="text-2xl text-accent mb-4">Contact</h3>
+
+  <p class="mb-3">
+    For queries regarding Clash of Coders, feel free to reach out to us.
+  </p>
+
+  <p class="mb-3">
+    📧 Email:
+    <a href="mailto:codersforum@outlook.com"
+       class="text-glow underline">
+       codersforum@outlook.com
+    </a>
+  </p>
+
+  <a href="https://codersforum.netlify.app/"
+     target="_blank"
+     class="text-accent font-bold hover:text-glow transition">
+     Visit Coders Forum Website →
+  </a>
+</div>
+
     <!-- Enter Contest Button -->
     <div class="text-center mt-12">
       <button onclick="enterContest()" 
         class="bg-accent hover:bg-glow text-black font-bold px-10 py-4 rounded-full text-xl transition duration-300 transform hover:scale-110 shadow-lg">
         ENTER CONTEST
       </button>
-      <p class="mt-4 text-gray-400">Coders Forum</p>
     </div>
-
   </div>
 
-  <script src="script.js"></script>
+   
+
+  
+
+  <p class="mt-4 text-gray-400">
+    Organized by Coders Forum
+</p>
+
+<p class="text-gray-500 text-sm mt-2">
+    © 2026 Coders Forum, Panimalar Engineering College
+</p>
+
+
+  <script src="./assets/clash_of_coders.js"></script>
 </body>
 </html>
