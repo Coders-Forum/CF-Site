@@ -1,0 +1,231 @@
+@font-face{
+font-family:"Clash";
+src:url("./assets/fonts/ClashDisplay-Regular.otf") format("opentype");
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+background:url("background.png") center center/cover no-repeat fixed;
+animation: bgFloat 20s ease-in-out infinite alternate;
+color:#ffffff;
+font-family:"Clash",sans-serif;
+text-align:center;
+padding:40px;
+}
+@keyframes bgFloat{
+    0%{
+        background-position: center top;
+    }
+    100%{
+        background-position: center bottom;
+    }
+}
+/* Logo */
+
+.logo{
+
+font-size:60px;
+color:#FFC451;
+margin-bottom:10px;
+
+}
+
+
+/* tagline */
+
+.tagline{
+
+font-size:20px;
+
+margin-bottom:30px;
+
+}
+
+
+/* buttons */
+
+button{
+
+font-family:"Clash";
+
+cursor:pointer;
+
+border:none;
+transition:0.3s;
+
+}
+
+
+/* main button */
+
+.primary-btn{
+
+background:#DC2626;
+
+color:white;
+
+padding:15px 35px;
+
+font-size:18px;
+
+border-radius:40px;
+
+}
+
+.primary-btn:hover{
+
+background:#FFC451;
+
+color:#111827;
+
+}
+
+
+/* guidelines */
+
+#guidelines{
+
+margin-top:60px;
+
+display:none;
+
+}
+
+#guidelines h2{
+
+color:#FFC451;
+
+margin-bottom:20px;
+
+}
+
+
+ul{
+
+max-width:800px;
+
+margin:20px auto;
+
+text-align:left;
+
+line-height:1.8;
+
+}
+
+
+/* round buttons */
+
+.round-buttons{
+
+margin-top:30px;
+
+}
+
+.round-buttons button{
+
+background:#FFC451;
+
+color:#111827;
+
+padding:10px 25px;
+
+margin:10px;
+
+border-radius:30px;
+
+}
+
+.round-buttons button:hover{
+
+background:#DC2626;
+
+color:white;
+
+}
+
+
+/* round content */
+
+.round-content{
+
+display:none;
+
+background:#1F2937;
+
+padding:25px;
+
+margin:30px auto;
+
+max-width:800px;
+
+border-radius:15px;
+
+border:2px solid #FFC451;
+
+text-align:left;
+
+}
+
+.round-content h3{
+
+color:#FFC451;
+
+margin-bottom:10px;
+
+}
+
+
+/* contest button */
+
+.contest{
+
+margin-top:60px;
+
+}
+
+.contest-btn{
+
+background:#DC2626;
+
+padding:18px 50px;
+
+font-size:20px;
+
+border-radius:50px;
+
+color:white;
+
+}
+
+.contest-btn:hover{
+
+background:#FFC451;
+
+color:#111827;
+
+}
+.bg-secondary{
+    background: rgba(17, 24, 39, 0.50) !important;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 196, 81, 0.3);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.6),
+        0 0 20px rgba(255,196,81,0.15);
+
+    transition: all 0.4s ease;
+}
+
+.bg-secondary:hover{
+    transform: translateY(-8px) scale(1.02);
+
+    box-shadow:
+        0 25px 50px rgba(0,0,0,0.8),
+        0 0 30px rgba(255,196,81,0.3);
+}
