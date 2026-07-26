@@ -2513,11 +2513,7 @@ h4 {
   }
 }
 
-#hero #confetti-canvas {
-  text-align: center;
-  align-items: center;
-  position: fixed;
-}
+
 #code-blitz-section .events-img {
   height: 650px;
   width: 650px;
@@ -2662,8 +2658,7 @@ h4 {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.4); /* dimmed background */
-  backdrop-filter: blur(6px);
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2673,12 +2668,36 @@ h4 {
   transition: opacity 0.4s ease-in-out;
 }
 
+.popup-overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.4);
+    /* backdrop-filter:blur(6px); */
+
+    z-index:9998;
+}
+
+#confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  pointer-events: none;
+
+  z-index: 10000;
+}
+
 #anniversary-popup.show {
   visibility: visible;
   opacity: 1;
 }
 
 .popup-outer {
+  position:relative;
+  z-index:10000;
   background: linear-gradient(135deg, #f6d365, #fda085, #a1c4fd, #c2e9fb);
   background-size: 300% 300%;
   animation: gradientShift 6s ease infinite;
