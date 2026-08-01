@@ -1,150 +1,395 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CLASH OF CODERS – Official Guidelines</title>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLASH OF CODERS – Official Guidelines</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="./assets/css/clash_of_coders.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/clash_of_coders.css" />
 
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: "#0B0F1A",
-            secondary: "#111827",
-            accent: "#FFC451",
-            glow: "#FFD700",
-            danger: "#EF4444",
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0B0F1A",
+              secondary: "#111827",
+              accent: "#FFC451",
+              glow: "#FFD700",
+              danger: "#EF4444",
+            },
+            fontFamily: {
+              clash: ["Clash", "sans-serif"],
+            },
           },
-          fontFamily: {
-            clash: ["Clash", "sans-serif"]
-          }
+        },
+      };
+    </script>
+  </head>
+
+  <body class="bg-primary text-white font-clash">
+    <div class="max-w-5xl mx-auto px-6 py-12">
+      <h1 class="text-5xl text-center text-accent mb-10 drop-shadow-lg">
+        CLASH OF CODERS
+      </h1>
+      <h3 class="text-3xl text-glow mb-6">Eligibility & Event Details</h3>
+      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+        <p>
+          <span class="text-glow">Eligibility:</span> All 2nd and 3rd year
+          students from Panimalar Engineering College, across all departments.
+        </p>
+
+        <p class="mt-2">
+          <span class="text-glow">Date:</span> 11th & 13th August
+        </p>
+
+        <p class="mt-2"><span class="text-glow">Venue:</span> CC20 or CC21</p>
+      </div>
+
+      <h2 class="text-3xl text-glow mb-6">Official Contest Guidelines</h2>
+
+      <!-- General Instructions -->
+      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+        <h3 class="text-2xl text-accent mb-4">General Instructions</h3>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>
+            All participants must possess an active HackerRank account prior to
+            the contest.
+          </li>
+          <li>
+            Teams must strictly adhere to all rules and round-specific
+            regulations.
+          </li>
+          <li>
+            Any team violating contest guidelines will be immediately
+            disqualified.
+          </li>
+          <li>
+            The use of AI tools, automated solvers, or external coding
+            assistance is strictly prohibited.
+          </li>
+          <li>Discussion is permitted only within registered team members.</li>
+          <li>
+            Decisions made by the organizing committee will be final and
+            binding.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Round 0 -->
+      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+        <h3 class="text-2xl text-accent mb-4">
+          Round 0 – Codefront: The Battle Begins (Online)
+        </h3>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>Each land has a fixed entry limit (first-come, first-served).</li>
+          <li>A team can participate in a maximum of two lands.</li>
+          <li>Only one member per team per land.</li>
+          <li>Highest scorer conquers the land.</li>
+          <li>Each team conquers strictly one land at end of Round 0.</li>
+        </ul>
+      </div>
+
+      <!-- Round 1 -->
+      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+        <h3 class="text-2xl text-accent mb-4">
+          Round 1 – Code Warfare: The Strategic Conquest (Offline)
+        </h3>
+
+        <h4 class="text-xl text-glow mt-4 mb-2">Attacking Phase</h4>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>Teams may attempt to conquer new lands.</li>
+          <li>Each land can be attacked by only one member from a team.</li>
+          <li>
+            Multiple team members may attack different lands simultaneously.
+          </li>
+        </ul>
+
+        <h4 class="text-xl text-glow mt-6 mb-2">Defending Phase</h4>
+        <ul class="list-disc ml-6 space-y-2">
+          <li>Teams must defend previously conquered lands.</li>
+          <li>All four members may participate in defense.</li>
+          <li>Strict time limit will be provided.</li>
+          <li>Top teams with highest conquered lands advance.</li>
+        </ul>
+      </div>
+
+      <!-- Round 2 -->
+      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+        <h3 class="text-2xl text-accent mb-4">
+          Round 2 – Final Conquest (Offline)
+        </h3>
+        <p class="text-lg text-gray-300">Details to be revealed soon…</p>
+      </div>
+      <!---------------------TIMELINE SECTION START-------------------------------->
+      <div class="mb-10">
+        <h2 class="text-3xl text-glow mb-2">TIMELINE OF ROUNDS</h2>
+        <p class="text-gray-400 mb-10">
+          Three lands, three battles, one conqueror
+        </p>
+
+        <div class="relative mb-4">
+          <!-- Mobile line (left aligned) -->
+          <div
+            class="md:hidden absolute left-[27px] top-2 bottom-2 w-[3px] timeline-campaign-line rounded-full"
+          ></div>
+
+          <!-- Desktop horizontal line -->
+          <div
+            class="hidden md:block absolute left-0 right-0 top-[27px] h-[3px] timeline-campaign-line rounded-full"
+          ></div>
+
+          <div
+            class="flex flex-col md:flex-row md:justify-between gap-10 md:gap-6 relative"
+          >
+            <!-- Round 0 -->
+            <div
+              class="flex md:flex-col items-start md:items-center gap-5 md:gap-0 md:w-1/3"
+            >
+              <div class="relative z-10 flex-shrink-0 md:mb-6">
+                <div
+                  class="w-14 h-14 rounded-full bg-secondary border-2 border-accent flex items-center justify-center timeline-node-ring timeline-pulse"
+                >
+                  <span class="text-accent font-bold text-lg">00</span>
+                </div>
+              </div>
+              <div
+                class="bg-secondary border border-white/5 rounded-xl p-5 shadow-xl timeline-card-hover w-full md:text-center"
+              >
+                <div
+                  class="inline-block bg-primary/60 text-glow text-xs px-3 py-1 rounded-full mb-3 tracking-wide"
+                >
+                  ONLINE
+                </div>
+                <h3 class="text-xl text-accent font-bold mb-1">Codefront</h3>
+                <p class="text-sm text-gray-400 mb-3">The Battle Begins</p>
+                <div
+                  class="flex items-center gap-2 justify-center text-glow font-semibold"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  22 August
+                </div>
+                <p class="text-xs text-gray-500 mt-3">
+                  Claim a land. One member per land, highest scorer conquers.
+                </p>
+              </div>
+            </div>
+
+            <!-- Round 1 -->
+            <div
+              class="flex md:flex-col items-start md:items-center gap-5 md:gap-0 md:w-1/3"
+            >
+              <div class="relative z-10 flex-shrink-0 md:mb-6">
+                <div
+                  class="w-14 h-14 rounded-full bg-secondary border-2 border-accent flex items-center justify-center timeline-node-ring timeline-pulse"
+                >
+                  <span class="text-accent font-bold text-lg">01</span>
+                </div>
+              </div>
+              <div
+                class="bg-secondary border border-white/5 rounded-xl p-5 shadow-xl timeline-card-hover w-full md:text-center"
+              >
+                <div
+                  class="inline-block bg-primary/60 text-danger text-xs px-3 py-1 rounded-full mb-3 tracking-wide"
+                >
+                  OFFLINE
+                </div>
+                <h3 class="text-xl text-accent font-bold mb-1">Code Warfare</h3>
+                <p class="text-sm text-gray-400 mb-3">The Strategic Conquest</p>
+                <div
+                  class="flex items-center gap-2 justify-center text-glow font-semibold"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  25 August
+                </div>
+                <p class="text-xs text-gray-500 mt-3">
+                  Attack new lands, then defend what you hold. Top conquerors
+                  advance.
+                </p>
+              </div>
+            </div>
+
+            <!-- Round 2 -->
+            <div
+              class="flex md:flex-col items-start md:items-center gap-5 md:gap-0 md:w-1/3"
+            >
+              <div class="relative z-10 flex-shrink-0 md:mb-6">
+                <div
+                  class="w-14 h-14 rounded-full bg-secondary border-2 border-glow flex items-center justify-center timeline-node-ring timeline-pulse"
+                >
+                  <span class="text-glow font-bold text-lg">02</span>
+                </div>
+              </div>
+              <div
+                class="bg-secondary border border-glow/30 rounded-xl p-5 shadow-xl timeline-card-hover w-full md:text-center"
+              >
+                <div
+                  class="inline-block bg-primary/60 text-danger text-xs px-3 py-1 rounded-full mb-3 tracking-wide"
+                >
+                  OFFLINE
+                </div>
+                <h3 class="text-xl text-glow font-bold mb-1">Final Conquest</h3>
+                <p class="text-sm text-gray-400 mb-3">Details revealed soon</p>
+                <div
+                  class="flex items-center gap-2 justify-center text-glow font-semibold"
+                >
+                  <svg
+                    class="w-4 h-4"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                    />
+                  </svg>
+                  27 August
+                </div>
+                <p class="text-xs text-gray-500 mt-3">
+                  Only the strongest teams remain to claim the throne.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!---------------------TIMELINE SECTION END-------------------------------->
+
+      <!-- Contact -->
+      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+        <h3 class="text-2xl text-accent mb-4">Contact</h3>
+
+        <p class="mb-3">
+          For queries regarding Clash of Coders, feel free to reach out to us.
+        </p>
+
+        <p class="mb-3">
+          📧 Email:
+          <a href="mailto:codersforum@outlook.com" class="text-glow underline">
+            codersforum@outlook.com
+          </a>
+        </p>
+
+        <a
+          href="https://codersforum.netlify.app/"
+          target="_blank"
+          class="text-accent font-bold hover:text-glow transition"
+        >
+          Visit Coders Forum Website →
+        </a>
+      </div>
+
+      <!-- Enter Contest Button -->
+      <div class="text-center mt-12">
+        <button
+          onclick="enterContest()"
+          class="bg-accent hover:bg-glow text-black font-bold px-10 py-4 rounded-full text-xl transition duration-300 transform hover:scale-110 shadow-lg"
+        >
+          ENTER CONTEST
+        </button>
+      </div>
+    </div>
+
+    <p class="mt-4 text-gray-400">Organized by Coders Forum</p>
+
+    <p class="text-gray-500 text-sm mt-2">
+      © 2026 Coders Forum, Panimalar Engineering College
+    </p>
+
+    <!-- Styles for the new Campaign Timeline section only -->
+    <style>
+      .timeline-campaign-line {
+        background: linear-gradient(
+          180deg,
+          transparent,
+          #ffc451 8%,
+          #ffc451 92%,
+          transparent
+        );
+      }
+      @media (min-width: 768px) {
+        .timeline-campaign-line {
+          background: linear-gradient(
+            90deg,
+            transparent,
+            #ffc451 8%,
+            #ffc451 92%,
+            transparent
+          );
         }
       }
-    }
-  </script>
-</head>
+      .timeline-node-ring {
+        box-shadow:
+          0 0 0 4px #0b0f1a,
+          0 0 22px 4px rgba(255, 215, 0, 0.55);
+      }
+      .timeline-card-hover {
+        transition:
+          transform 0.35s ease,
+          box-shadow 0.35s ease,
+          border-color 0.35s ease;
+      }
+      .timeline-card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px -8px rgba(255, 196, 81, 0.25);
+        border-color: rgba(255, 196, 81, 0.5);
+      }
+      @keyframes timelinePulseGlow {
+        0%,
+        100% {
+          box-shadow:
+            0 0 0 4px #0b0f1a,
+            0 0 14px 2px rgba(255, 215, 0, 0.4);
+        }
+        50% {
+          box-shadow:
+            0 0 0 4px #0b0f1a,
+            0 0 26px 6px rgba(255, 215, 0, 0.75);
+        }
+      }
+      .timeline-pulse {
+        animation: timelinePulseGlow 2.6s ease-in-out infinite;
+      }
+      @media (prefers-reduced-motion: reduce) {
+        .timeline-pulse {
+          animation: none;
+        }
+        .timeline-card-hover {
+          transition: none;
+        }
+      }
+    </style>
 
-<body class="bg-primary text-white font-clash">
-
-  <div class="max-w-5xl mx-auto px-6 py-12">
-
-    <h1 class="text-5xl text-center text-accent mb-10 drop-shadow-lg">
-      CLASH OF CODERS
-    </h1>
-    <h3 class="text-3xl text-glow mb-6" >Eligibility & Event Details</h3>
-    <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
-
-  <p><span class="text-glow">Eligibility:</span> All 2nd and 3rd year students from Panimalar Engineering College, across all departments.</p>
-
-  <p class="mt-2"><span class="text-glow">Date:</span> 11th & 13th August</p>
-
-  <p class="mt-2"><span class="text-glow">Venue:</span> CC20 or CC21</p>
-  </div>
-
-    <h2 class="text-3xl text-glow mb-6">Official Contest Guidelines</h2>
-
-    <!-- General Instructions -->
-    <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
-      <h3 class="text-2xl text-accent mb-4">General Instructions</h3>
-      <ul class="list-disc ml-6 space-y-2">
-        <li>All participants must possess an active HackerRank account prior to the contest.</li>
-        <li>Teams must strictly adhere to all rules and round-specific regulations.</li>
-        <li>Any team violating contest guidelines will be immediately disqualified.</li>
-        <li>The use of AI tools, automated solvers, or external coding assistance is strictly prohibited.</li>
-        <li>Discussion is permitted only within registered team members.</li>
-        <li>Decisions made by the organizing committee will be final and binding.</li>
-      </ul>
-    </div>
-
-    <!-- Round 0 -->
-    <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
-      <h3 class="text-2xl text-accent mb-4">Round 0 – Codefront: The Battle Begins (Online)</h3>
-      <ul class="list-disc ml-6 space-y-2">
-        <li>Each land has a fixed entry limit (first-come, first-served).</li>
-        <li>A team can participate in a maximum of two lands.</li>
-        <li>Only one member per team per land.</li>
-        <li>Highest scorer conquers the land.</li>
-        <li>Each team conquers strictly one land at end of Round 0.</li>
-      </ul>
-    </div>
-
-    <!-- Round 1 -->
-    <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
-      <h3 class="text-2xl text-accent mb-4">Round 1 – Code Warfare: The Strategic Conquest (Offline)</h3>
-
-      <h4 class="text-xl text-glow mt-4 mb-2">Attacking Phase</h4>
-      <ul class="list-disc ml-6 space-y-2">
-        <li>Teams may attempt to conquer new lands.</li>
-        <li>Each land can be attacked by only one member from a team.</li>
-        <li>Multiple team members may attack different lands simultaneously.</li>
-      </ul>
-
-      <h4 class="text-xl text-glow mt-6 mb-2">Defending Phase</h4>
-      <ul class="list-disc ml-6 space-y-2">
-        <li>Teams must defend previously conquered lands.</li>
-        <li>All four members may participate in defense.</li>
-        <li>Strict time limit will be provided.</li>
-        <li>Top teams with highest conquered lands advance.</li>
-      </ul>
-    </div>
-
-    <!-- Round 2 -->
-    <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
-      <h3 class="text-2xl text-accent mb-4">Round 2 – Final Conquest (Offline)</h3>
-      <p class="text-lg text-gray-300">Details to be revealed soon…</p>
-    </div>
-
-    <!-- Contact -->
-<div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
-  <h3 class="text-2xl text-accent mb-4">Contact</h3>
-
-  <p class="mb-3">
-    For queries regarding Clash of Coders, feel free to reach out to us.
-  </p>
-
-  <p class="mb-3">
-    📧 Email:
-    <a href="mailto:codersforum@outlook.com"
-       class="text-glow underline">
-       codersforum@outlook.com
-    </a>
-  </p>
-
-  <a href="https://codersforum.netlify.app/"
-     target="_blank"
-     class="text-accent font-bold hover:text-glow transition">
-     Visit Coders Forum Website →
-  </a>
-</div>
-
-    <!-- Enter Contest Button -->
-    <div class="text-center mt-12">
-      <button onclick="enterContest()" 
-        class="bg-accent hover:bg-glow text-black font-bold px-10 py-4 rounded-full text-xl transition duration-300 transform hover:scale-110 shadow-lg">
-        ENTER CONTEST
-      </button>
-    </div>
-  </div>
-
-   
-
-  
-
-  <p class="mt-4 text-gray-400">
-    Organized by Coders Forum
-</p>
-
-<p class="text-gray-500 text-sm mt-2">
-    © 2026 Coders Forum, Panimalar Engineering College
-</p>
-
-
-  <script src="./assets/js/clash_of_coders.js"></script>
-</body>
+    <script src="./assets/js/clash_of_coders.js"></script>
+  </body>
 </html>
