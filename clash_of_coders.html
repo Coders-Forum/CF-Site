@@ -9,7 +9,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/clash_of_coders.css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script>
       tailwind.config = {
         theme: {
@@ -30,7 +32,7 @@
     </script>
   </head>
 
-  <body class="bg-primary text-white font-clash">
+  <body class="bg-primary text-white font-clash" id="code-body">
     <!--<div class="max-w-5xl mx-auto px-6 py-12">
       <h1 class="text-5xl text-center text-accent mb-10 drop-shadow-lg">
         CLASH OF CODERS
@@ -48,7 +50,95 @@
 
         <p class="mt-2"><span class="text-glow">Venue:</span> CC20 or CC21</p>
       </div>-->
-      <!-- Hero Section -->
+      <!-- ======= Header ======= -->
+
+<!-- ======= Header ======= -->
+<header class="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 py-3">
+
+    <!-- Logo -->
+    <a href="/index.html" class="whitespace-nowrap text-white hover:text-[#FFC451] transition"
+   style="font-family:'Raleway', sans-serif; font-size:32px; font-weight:700; letter-spacing:2px; text-transform:uppercase;">
+    Coders Forum
+</a>
+    <!-- Desktop Navigation -->
+<nav class="hidden lg:flex items-center space-x-8">
+  <a href="/index.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Home
+  </a>
+
+  <a href="/about.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     About
+  </a>
+
+  <a href="/Inter_Prep.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Interview Prep
+  </a>
+
+  <a href="/events.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Events
+  </a>
+
+  <a href="/practice.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Practice
+  </a>
+
+  <a href="/gallery.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Gallery
+  </a>
+
+  <a href="/walloffame.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Wall Of Fame
+  </a>
+</nav>
+
+    <!-- Mobile Button -->
+    <button id="menu-btn" class="lg:hidden text-white text-3xl">
+      ☰
+    </button>
+    <div id="mobile-menu" class="hidden lg:hidden bg-black/95 absolute top-full left-0 w-full">
+      <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Home</a>
+      <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">About</a>
+      <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Interview Prep</a>
+      <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Events</a>
+      <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Practice</a>
+      <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Gallery</a>
+      <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Wall Of Fame</a>
+
+    </div>
+
+    </div>
+
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-black/95">
+    <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Home</a>
+    <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">About</a>
+    <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Interview Prep</a>
+    <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Events</a>
+    <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Practice</a>
+    <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Gallery</a>
+    <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Wall Of Fame</a>
+  </div>
+</header>
+  
+
+<!-- Hero Section -->
   <section class="hero">
 
     <div class="hero-content">
@@ -84,7 +174,6 @@
 <section id="highlights" class="highlights">
 
     <div class="section-title">
-        <span>WHY PARTICIPATE?</span>
         <h2 style="color: #FFD700;">Highlights</h2>
     </div>
 
@@ -98,8 +187,8 @@
 
         <div class="highlight-card">
             <div class="icon">🏆</div>
-            <h3>₹10,000 Cash Prize</h3>
-            <p>Win exciting cash prizes worth <strong>₹15,000</strong>.</p>
+            <h3>₹10,000 Cash Prize POOL</h3>
+            <p>Win exciting cash prizes worth <strong>₹10,000</strong>.</p>
         </div>
 
         <div class="highlight-card">
@@ -111,7 +200,7 @@
         <div class="highlight-card">
             <div class="icon">👥</div>
             <h3>Team of 3</h3>
-            <p>Participate as a team of <strong>three members</strong>.</p>
+            <p>Participate as a team of <strong>three members</strong> from <strong>the same department</strong>.</p>
         </div>
 
         <div class="highlight-card">
@@ -147,34 +236,41 @@
 
     <h3 class="text-3xl text-glow mb-6">Announcements</h3>
 
-    <div class="bg-secondary p-6 rounded-xl shadow-xl mb-2">
+    <!-- Announcements List -->
+    <div class="space-y-4">
 
-        <p class="text-gray-300 leading-8 text-lg">
-            📢 <strong class="text-accent">Stay Updated!</strong><br><br>
+        <!-- 1st Announcement -->
+        <div class="bg-secondary p-6 rounded-xl shadow-xl">
+            <h4 class="text-xl font-semibold text-accent mb-3">
+                📢 Stay Updated!
+            </h4>
 
-            Check the <strong>Announcements</strong> section regularly for the latest
-            updates🎉
+            <p class="text-gray-300 leading-8 text-lg">
+                Check the <strong>Announcements</strong> section regularly for the latest updates. 🎉
+                <br><br>
+                🔗 Follow us on
+                <a href="https://www.linkedin.com/company/coders-forum/"
+                   target="_blank"
+                   class="text-accent font-semibold hover:underline">
+                    LinkedIn
+                </a>
+                for instant updates and announcements.
+            </p>
+        </div>
 
-            <br><br>
-
-            🔗 Follow us on
-            <a href="https://www.linkedin.com/company/coders-forum/"
-               target="_blank"
-               class="text-accent font-semibold hover:underline">
-                LinkedIn
-            </a>
-            for instant updates and announcements.
-        </p>
+        <!-- Future announcements will be added here -->
+        <!--
+        <div class="bg-secondary p-6 rounded-xl shadow-xl">
+            ...
+        </div>
+        -->
 
     </div>
 
 </div>
 
-
 <div class="max-w-5xl mx-auto px-6 pt-0 pb-12">
-
-
-      <h2 class="text-3xl text-glow mb-6">Official Contest Guidelines</h2>
+<h2 class="text-3xl text-glow mb-6">Official Contest Guidelines</h2>
 
       <!-- General Instructions -->
       <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
@@ -412,7 +508,8 @@
       <!---------------------TIMELINE SECTION END-------------------------------->
 
       <!-- Contact -->
-      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+        
+        <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
         <h3 class="text-2xl text-accent mb-4">Contact</h3>
 
         <p class="mb-3">
@@ -421,8 +518,8 @@
 
         <p class="mb-3">
           📧 Email:
-          <a href="mailto:codersforum@outlook.com" class="text-glow underline">
-            codersforum@outlook.com
+          <a href="mailto:coders_forum@outlook.com" class="text-glow underline">
+            coders_forum@outlook.com
           </a>
         </p>
 
@@ -449,7 +546,7 @@
     <p class="mt-4 text-gray-400">Organized by Coders Forum</p>
 
     <p class="text-gray-500 text-sm mt-2">
-      © 2026 Coders Forum, Panimalar Engineering College
+      Panimalar Engineering College
     </p>
 
     <!-- Styles for the new Campaign Timeline section only -->
@@ -514,7 +611,15 @@
           transition: none;
         }
       }
-    </style>
+</style>
+<script>
+     const menuBtn = document.getElementById("menu-btn");
+     const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+</script>
 
     <script src="./assets/js/clash_of_coders.js"></script>
   </body>
