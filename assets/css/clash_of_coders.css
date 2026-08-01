@@ -302,3 +302,215 @@ color:#111827;
         max-width:300px;
     }
 }
+.hero{
+min-height:85vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+position:relative;
+}
+
+.hero-content{
+z-index:2;
+}
+
+.hero-title{
+font-size:90px;
+color:#FFC451;
+margin-bottom:15px;
+text-shadow:0 0 20px rgba(255,196,81,.5);
+}
+
+.hero-subtitle{
+letter-spacing:5px;
+font-size:20px;
+margin-bottom:20px;
+color:white;
+}
+
+.hero-tagline{
+font-size:22px;
+letter-spacing:6px;
+margin-bottom:40px;
+}
+
+.coming-soon-btn{
+
+background:#666;
+
+color:#ddd;
+
+padding:18px 40px;
+
+border:none;
+
+border-radius:50px;
+
+cursor:not-allowed;
+
+font-size:18px;
+
+opacity:.8;
+
+}
+
+
+
+.about-section{
+
+padding:100px 0;
+
+}
+
+.highlights{
+
+padding:100px 0;
+
+}
+
+.highlight-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+margin-top:40px;
+
+}
+
+.highlight-card{
+
+background:rgba(17,24,39,.55);
+
+padding:30px;
+
+border-radius:15px;
+
+border:1px solid rgba(255,196,81,.3);
+
+transition:.3s;
+
+}
+
+.highlight-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.announcement{
+
+padding:100px 0;
+
+}
+
+.announcement-card{
+background:rgba(17,24,39,.6);
+padding:20px;
+margin:15px 0;
+border-left:5px solid #FFC451;
+border-radius:10px;
+
+}
+.highlights{
+    padding:100px 8%;
+    background:transparent;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title span{
+    color:#FFC451;
+    letter-spacing:3px;
+    font-size:15px;
+}
+
+.section-title h2{
+    color:#fff;
+    font-size:48px;
+    margin-top:10px;
+}
+
+.highlight-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap:30px;
+
+}
+
+.highlight-card{
+
+    background:rgba(17,24,39,.55);
+
+    backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,196,81,.2);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    transition:.4s;
+
+}
+
+.highlight-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#FFC451;
+
+    box-shadow:0 15px 35px rgba(255,196,81,.2);
+
+}
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    background:#FFC451;
+
+    color:#111827;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:32px;
+
+    margin-bottom:20px;
+
+}
+
+.highlight-card h3{
+
+    color:#FFC451;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.highlight-card p{
+
+    color:#d1d5db;
+
+    line-height:1.8;
+
+}
