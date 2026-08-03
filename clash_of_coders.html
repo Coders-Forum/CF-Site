@@ -196,31 +196,20 @@
     <button id="menu-btn" class="lg:hidden text-white text-3xl">
       ☰
     </button>
-    <div id="mobile-menu" class="hidden lg:hidden bg-black/95 absolute top-full left-0 w-full">
-      <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Home</a>
-      <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">About</a>
-      <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Interview Prep</a>
-      <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Events</a>
-      <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Practice</a>
-      <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Gallery</a>
-      <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Wall Of Fame</a>
-
+    
+      <div id="mobile-menu" class="hidden lg:hidden bg-black/95 absolute top-full left-0 w-full">
+      <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Home</a>
+      <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">About</a>
+      <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Interview Prep</a>
+      <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Events</a>
+      <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Practice</a>
+      <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Gallery</a>
+      <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Wall Of Fame</a>
     </div>
 
-    </div>
+  </div>  
 
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden lg:hidden bg-black/95">
-    <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Home</a>
-    <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">About</a>
-    <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Interview Prep</a>
-    <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Events</a>
-    <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Practice</a>
-    <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Gallery</a>
-    <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Wall Of Fame</a>
-  </div>
+  
 </header>
   
 
@@ -418,7 +407,7 @@
         <h4 class="text-xl text-glow mt-6 mb-2">Defending Phase</h4>
         <ul class="list-disc ml-6 space-y-2">
           <li>Teams must defend previously conquered lands.</li>
-          <li>All four members may participate in defense.</li>
+          <li>All three members may participate in defense.</li>
           <li>Strict time limit will be provided.</li>
           <li>Top teams with highest conquered lands advance.</li>
         </ul>
@@ -603,11 +592,13 @@
         </p>
 
         <p class="mb-3">
-          📧 Email:
-          <a href="mailto:coders_forum@outlook.com" class="text-glow underline">
-            coders_forum@outlook.com
-          </a>
-        </p>
+  📧 Email:
+  <a href="mailto:coders_forum@outlook.com"
+     class="text-white hover:text-[#FFC451] no-underline"
+     style="font-family:'Open Sans', sans-serif; font-size:16px; font-weight:400; text-decoration:none;">
+    coders_forum@outlook.com
+  </a>
+</p>
 
         <a
           href="https://codersforum.netlify.app/"
@@ -698,11 +689,12 @@
         }
       }
 </style>
+<!--Mobile header view-->
 <script>
-     const menuBtn = document.getElementById("menu-btn");
-     const mobileMenu = document.getElementById("mobile-menu");
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
-    menuBtn.addEventListener("click", () => {
+menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
 });
 </script>
