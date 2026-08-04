@@ -196,31 +196,20 @@
     <button id="menu-btn" class="lg:hidden text-white text-3xl">
       ☰
     </button>
-    <div id="mobile-menu" class="hidden lg:hidden bg-black/95 absolute top-full left-0 w-full">
-      <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Home</a>
-      <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">About</a>
-      <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Interview Prep</a>
-      <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Events</a>
-      <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Practice</a>
-      <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Gallery</a>
-      <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black" style="font-family:'Open Sans',sans-serif;font:15px;font-weight:600;">Wall Of Fame</a>
-
+    
+      <div id="mobile-menu" class="hidden lg:hidden bg-black/95 absolute top-full left-0 w-full">
+      <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Home</a>
+      <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">About</a>
+      <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Interview Prep</a>
+      <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Events</a>
+      <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Practice</a>
+      <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Gallery</a>
+      <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Wall Of Fame</a>
     </div>
 
-    </div>
+  </div>  
 
-  </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="hidden lg:hidden bg-black/95">
-    <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Home</a>
-    <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">About</a>
-    <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Interview Prep</a>
-    <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Events</a>
-    <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Practice</a>
-    <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Gallery</a>
-    <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Wall Of Fame</a>
-  </div>
+  
 </header>
   
 
@@ -244,6 +233,30 @@
         <button class="coming-soon-btn" disabled>
             Registrations open on August 6th, 2026 at 9:00 AM
         </button>
+
+
+       <!-- Countdown Timer -->
+      <div id="countdown-timer" class="countdown-timer" aria-live="polite">
+        <div class="countdown-unit">
+          <span class="countdown-value" id="cd-days">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="cd-hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="cd-mins">00</span>
+          <span class="countdown-label">Mins</span>
+        </div>
+        <span class="countdown-sep">:</span>
+        <div class="countdown-unit">
+          <span class="countdown-value" id="cd-secs">00</span>
+          <span class="countdown-label">Secs</span>
+        </div>
+      </div>
 
         <div class="scroll-down">
 
@@ -418,7 +431,7 @@
         <h4 class="text-xl text-glow mt-6 mb-2">Defending Phase</h4>
         <ul class="list-disc ml-6 space-y-2">
           <li>Teams must defend previously conquered lands.</li>
-          <li>All four members may participate in defense.</li>
+          <li>All three members may participate in defense.</li>
           <li>Strict time limit will be provided.</li>
           <li>Top teams with highest conquered lands advance.</li>
         </ul>
@@ -603,11 +616,13 @@
         </p>
 
         <p class="mb-3">
-          📧 Email:
-          <a href="mailto:coders_forum@outlook.com" class="text-glow underline">
-            coders_forum@outlook.com
-          </a>
-        </p>
+  📧 Email:
+  <a href="mailto:coders_forum@outlook.com"
+     class="text-white hover:text-[#FFC451] no-underline"
+     style="font-family:'Open Sans', sans-serif; font-size:16px; font-weight:400; text-decoration:none;">
+    coders_forum@outlook.com
+  </a>
+</p>
 
         <a
           href="https://codersforum.netlify.app/"
@@ -1027,12 +1042,111 @@
           transition: none;
         }
       }
-</style>
-<script>
-     const menuBtn = document.getElementById("menu-btn");
-     const mobileMenu = document.getElementById("mobile-menu");
 
-    menuBtn.addEventListener("click", () => {
+
+      .countdown-timer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+      font-family: "Clash", sans-serif;
+    }
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-width: 64px;
+      background: rgba(17, 24, 39, 0.7); /* secondary w/ transparency */
+      border: 1px solid rgba(255, 196, 81, 0.35);
+      border-radius: 0.75rem;
+      padding: 0.6rem 0.5rem;
+      box-shadow: 0 0 18px 2px rgba(255, 215, 0, 0.15);
+      backdrop-filter: blur(4px);
+    }
+    .countdown-value {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #FFD700; /* glow */
+      line-height: 1;
+      letter-spacing: 0.5px;
+      font-variant-numeric: tabular-nums;
+    }
+    .countdown-label {
+      margin-top: 0.35rem;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: #9CA3AF;
+    }
+    .countdown-sep {
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: #FFC451; /* accent */
+      transform: translateY(-8px);
+    }
+    @media (max-width: 480px) {
+      .countdown-timer { gap: 0.4rem; }
+      .countdown-unit { min-width: 52px; padding: 0.5rem 0.35rem; }
+      .countdown-value { font-size: 1.25rem; }
+      .countdown-sep { font-size: 1.25rem; }
+    }
+</style>
+<!--Mobile header view-->
+<script>
+
+
+
+   (function () {
+      // Registrations open: August 6th, 2026, 9:00 AM IST
+      var targetDate = new Date("2026-08-06T09:00:00+05:30").getTime();
+ 
+      var elDays = document.getElementById("cd-days");
+      var elHours = document.getElementById("cd-hours");
+      var elMins = document.getElementById("cd-mins");
+      var elSecs = document.getElementById("cd-secs");
+      var wrapper = document.getElementById("countdown-timer");
+ 
+      function pad(n) {
+        return String(n).padStart(2, "0");
+      }
+ 
+      function updateCountdown() {
+        var now = new Date().getTime();
+        var diff = targetDate - now;
+ 
+        if (diff <= 0) {
+          elDays.textContent = "00";
+          elHours.textContent = "00";
+          elMins.textContent = "00";
+          elSecs.textContent = "00";
+          if (wrapper) {
+            wrapper.innerHTML = '<span style="color:#FFD700;font-weight:700;font-size:1.1rem;">Registrations are OPEN!</span>';
+          }
+          clearInterval(timerInterval);
+          return;
+        }
+ 
+        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        var secs = Math.floor((diff % (1000 * 60)) / 1000);
+ 
+        elDays.textContent = pad(days);
+        elHours.textContent = pad(hours);
+        elMins.textContent = pad(mins);
+        elSecs.textContent = pad(secs);
+      }
+ 
+      updateCountdown();
+      var timerInterval = setInterval(updateCountdown, 1000);
+    })();
+
+  
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuBtn.addEventListener("click", () => {
     mobileMenu.classList.toggle("hidden");
 });
 </script>
