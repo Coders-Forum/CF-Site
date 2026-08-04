@@ -644,6 +644,336 @@
       </div>
     </div>-->
 
+
+    <!-- ═══════════════════════════════════════════════════════════ -->
+<!-- DASHBOARD START — Clash of Coders: Live Registrations       -->
+<!---------------------------------------------------------------->
+
+<div class="rd-section max-w-5xl mx-auto px-6 py-16 relative">
+
+  <div class="rd-grid absolute inset-0 pointer-events-none"></div>
+
+  <div class="relative">
+
+    <!-- Header -->
+    <h2 class="text-3xl md:text-4xl text-center text-accent mb-4 drop-shadow-lg tracking-tight">
+      Live Registrations
+    </h2>
+
+    <div class="flex items-center justify-center gap-2 mb-14">
+      <span class="w-2.5 h-2.5 rounded-full bg-danger rd-live-dot"></span>
+      <span class="text-xs tracking-[0.25em] uppercase text-gray-400">Live</span>
+      <span class="text-xs text-gray-600" id="rd-updated">· updated just now</span>
+    </div>
+
+    <!-- Stat Cards -->
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+
+      <!-- Total Students -->
+      <div class="rd-card bg-secondary border border-white/5 rounded-2xl p-6">
+        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center rd-icon-ring mb-4">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zM4 20c0-3.3 3.6-6 8-6s8 2.7 8 6"/>
+          </svg>
+        </div>
+        <div class="rd-number text-4xl font-bold text-glow" data-target="0">0</div>
+        <p class="text-xs text-gray-400 mt-2 tracking-wide uppercase">Total Students</p>
+      </div>
+
+      <!-- Total Teams -->
+      <div class="rd-card bg-secondary border border-white/5 rounded-2xl p-6">
+        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center rd-icon-ring mb-4">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-5.13a4 4 0 11-4-4 4 4 0 014 4zm6 0a4 4 0 11-2.6-3.75"/>
+          </svg>
+        </div>
+        <div class="rd-number text-4xl font-bold text-glow" data-target="0">0</div>
+        <p class="text-xs text-gray-400 mt-2 tracking-wide uppercase">Total Teams</p>
+      </div>
+
+      <!-- 2nd Year -->
+      <div class="rd-card bg-secondary border border-white/5 rounded-2xl p-6">
+        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center rd-icon-ring mb-4">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.42A9 9 0 0121 12.5M12 14L5.84 10.58A9 9 0 003 12.5M12 14v7"/>
+          </svg>
+        </div>
+        <div class="rd-number text-4xl font-bold text-glow" data-target="0">0</div>
+        <p class="text-xs text-gray-400 mt-2 tracking-wide uppercase">2nd Year Students</p>
+      </div>
+
+      <!-- 3rd Year -->
+      <div class="rd-card bg-secondary border border-white/5 rounded-2xl p-6">
+        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center rd-icon-ring mb-4">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.42A9 9 0 0121 12.5M12 14L5.84 10.58A9 9 0 003 12.5M12 14v7"/>
+          </svg>
+        </div>
+        <div class="rd-number text-4xl font-bold text-glow" data-target="0">0</div>
+        <p class="text-xs text-gray-400 mt-2 tracking-wide uppercase">3rd Year Students</p>
+      </div>
+
+    </div>
+
+    <!-- Toggle button -->
+    <div class="text-center">
+      <button id="rd-toggle" onclick="rdTogglePanel()"
+        class="rd-toggle-btn inline-flex items-center gap-2 bg-accent hover:bg-glow text-black font-bold px-8 py-3.5 rounded-full text-sm md:text-base tracking-wide">
+        SHOW DEPARTMENT-WISE STATS
+        <svg id="rd-chevron" class="rd-chevron w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Department-wise panel -->
+    <div id="rd-panel" class="rd-panel">
+      <h3 class="text-2xl text-glow mb-6 text-center">Department-wise Team Count</h3>
+      <div class="bg-secondary border border-white/5 rounded-2xl p-6 md:p-8 space-y-5">
+
+        <!-- Department rows: bar width is illustrative, count hardcoded to 0 -->
+        <div class="rd-dept-row">
+          <div class="flex justify-between text-sm mb-1.5">
+            <span class="text-accent font-semibold">CSE</span>
+            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
+          </div>
+          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="rd-dept-row">
+          <div class="flex justify-between text-sm mb-1.5">
+            <span class="text-accent font-semibold">IT</span>
+            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
+          </div>
+          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="rd-dept-row">
+          <div class="flex justify-between text-sm mb-1.5">
+            <span class="text-accent font-semibold">AI & DS</span>
+            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
+          </div>
+          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="rd-dept-row">
+          <div class="flex justify-between text-sm mb-1.5">
+            <span class="text-accent font-semibold">AI & ML</span>
+            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
+          </div>
+          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="rd-dept-row">
+          <div class="flex justify-between text-sm mb-1.5">
+            <span class="text-accent font-semibold">ECE</span>
+            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
+          </div>
+          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="rd-dept-row">
+          <div class="flex justify-between text-sm mb-1.5">
+            <span class="text-accent font-semibold">EEE</span>
+            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
+          </div>
+          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="rd-dept-row">
+          <div class="flex justify-between text-sm mb-1.5">
+            <span class="text-accent font-semibold">MECH</span>
+            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
+          </div>
+          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+        <div class="rd-dept-row">
+          <div class="flex justify-between text-sm mb-1.5">
+            <span class="text-accent font-semibold">CSBS</span>
+            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
+          </div>
+          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
+            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<style>
+  .rd-grid {
+    background-image:
+      linear-gradient(rgba(255,196,81,0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,196,81,0.045) 1px, transparent 1px);
+    background-size: 42px 42px;
+    animation: rd-grid-drift 30s linear infinite;
+  }
+  @keyframes rd-grid-drift {
+    from { background-position: 0 0, 0 0; }
+    to   { background-position: 42px 42px, 42px 42px; }
+  }
+
+  .rd-live-dot {
+    box-shadow: 0 0 0 0 rgba(239,68,68,0.7);
+    animation: rd-live-ping 1.6s cubic-bezier(0.4,0,0.6,1) infinite;
+  }
+  @keyframes rd-live-ping {
+    0%   { box-shadow: 0 0 0 0 rgba(239,68,68,0.55); }
+    70%  { box-shadow: 0 0 0 8px rgba(239,68,68,0); }
+    100% { box-shadow: 0 0 0 0 rgba(239,68,68,0); }
+  }
+
+  .rd-card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+    opacity: 0;
+    transform: translateY(24px);
+    animation: rd-rise 0.7s ease forwards;
+  }
+  .rd-card:nth-child(1) { animation-delay: 0.05s; }
+  .rd-card:nth-child(2) { animation-delay: 0.15s; }
+  .rd-card:nth-child(3) { animation-delay: 0.25s; }
+  .rd-card:nth-child(4) { animation-delay: 0.35s; }
+  @keyframes rd-rise {
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .rd-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 34px -10px rgba(255,196,81,0.3);
+  }
+  .rd-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(120deg, transparent 40%, rgba(255,196,81,0.08) 50%, transparent 60%);
+    transform: translateX(-100%);
+    transition: transform 0.8s ease;
+  }
+  .rd-card:hover::before {
+    transform: translateX(100%);
+  }
+
+  .rd-number {
+    font-variant-numeric: tabular-nums;
+    /* text-shadow: 0 0 18px rgba(255,215,0,0.35); */
+  }
+
+  .rd-icon-ring {
+    box-shadow: 0 0 0 4px #0B0F1A, 0 0 16px 2px rgba(255,215,0,0.4);
+  }
+
+  .rd-toggle-btn {
+    transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+  }
+  .rd-toggle-btn:hover {
+    transform: translateY(-2px) scale(1.03);
+    box-shadow: 0 10px 26px -8px rgba(255,196,81,0.45);
+  }
+  .rd-toggle-btn:active { transform: translateY(0) scale(0.98); }
+
+  .rd-chevron { transition: transform 0.35s ease; }
+  .rd-chevron.rd-open { transform: rotate(180deg); }
+
+  .rd-panel {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.4s ease, margin-top 0.4s ease;
+  }
+  .rd-panel.rd-open {
+    max-height: 900px;
+    opacity: 1;
+    margin-top: 2.5rem;
+  }
+
+  .rd-dept-row {
+    opacity: 0;
+    transform: translateX(-14px);
+    transition: opacity 0.45s ease, transform 0.45s ease;
+  }
+  .rd-panel.rd-open .rd-dept-row {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  .rd-panel.rd-open .rd-dept-row:nth-child(1) { transition-delay: 0.05s; }
+  .rd-panel.rd-open .rd-dept-row:nth-child(2) { transition-delay: 0.1s; }
+  .rd-panel.rd-open .rd-dept-row:nth-child(3) { transition-delay: 0.15s; }
+  .rd-panel.rd-open .rd-dept-row:nth-child(4) { transition-delay: 0.2s; }
+  .rd-panel.rd-open .rd-dept-row:nth-child(5) { transition-delay: 0.25s; }
+  .rd-panel.rd-open .rd-dept-row:nth-child(6) { transition-delay: 0.3s; }
+  .rd-panel.rd-open .rd-dept-row:nth-child(7) { transition-delay: 0.35s; }
+  .rd-panel.rd-open .rd-dept-row:nth-child(8) { transition-delay: 0.4s; }
+
+  .rd-bar-fill {
+    transition: width 1s ease;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .rd-grid, .rd-live-dot, .rd-card, .rd-card::before, .rd-toggle-btn, .rd-chevron,
+    .rd-panel, .rd-dept-row, .rd-bar-fill {
+      animation: none !important;
+      transition: none !important;
+    }
+    .rd-card { opacity: 1; transform: none; }
+  }
+</style>
+
+<script>
+  // Toggle department-wise panel
+  function rdTogglePanel() {
+    var panel = document.getElementById('rd-panel');
+    var chevron = document.getElementById('rd-chevron');
+    var btn = document.getElementById('rd-toggle');
+    var isOpen = panel.classList.toggle('rd-open');
+    chevron.classList.toggle('rd-open', isOpen);
+    btn.firstChild.textContent = isOpen ? 'HIDE DEPARTMENT-WISE STATS ' : 'SHOW DEPARTMENT-WISE STATS ';
+  }
+
+  // Count-up animation, ready for real numbers later —
+  // just change data-target on each .rd-number element and call rdAnimateCounters() again.
+  function rdAnimateCounters() {
+    document.querySelectorAll('.rd-number').forEach(function (el) {
+      var target = parseInt(el.getAttribute('data-target'), 10) || 0;
+      var start = 0;
+      var duration = 900;
+      var startTime = null;
+
+      function step(ts) {
+        if (!startTime) startTime = ts;
+        var progress = Math.min((ts - startTime) / duration, 1);
+        var eased = 1 - Math.pow(1 - progress, 3);
+        el.textContent = Math.round(start + (target - start) * eased);
+        if (progress < 1) requestAnimationFrame(step);
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  rdAnimateCounters();
+</script>
+
+<!-- ----------------------------------------------------------- -->
+<!-- DASHBOARD END          -->
+<!------------------------------------------------------------->
+
     <p class="mt-4 text-gray-400">Organized by Coders Forum</p>
 
     <p class="text-gray-500 text-sm mt-2">
