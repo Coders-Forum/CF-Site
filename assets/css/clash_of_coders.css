@@ -42,53 +42,29 @@ padding:40px;
 /* Logo */
 
 .logo{
-
 font-size:60px;
 color:#FFC451;
 margin-bottom:10px;
-
 }
-
-
 /* tagline */
-
 .tagline{
-
 font-size:20px;
-
 margin-bottom:30px;
-
 }
-
-
 /* buttons */
-
 button{
-
 font-family:"Clash";
-
 cursor:pointer;
-
 border:none;
 transition:0.3s;
-
 }
-
-
 /* main button */
-
 .primary-btn{
-
 background:#DC2626;
-
 color:white;
-
 padding:15px 35px;
-
 font-size:18px;
-
 border-radius:40px;
-
 }
 
 .primary-btn:hover{
@@ -371,59 +347,23 @@ font-size:18px;
 opacity:.8;
 
 }
-
-
-
 .about-section{
-
 padding:100px 0;
-
 }
-
 .highlights{
-
 padding:100px 0;
-
 }
-
 .highlight-grid{
-
 display:grid;
-
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-gap:25px;
-
-margin-top:40px;
-
+grid-template-columns:repeat(3,1fr);
+gap: 30px;
 }
-
-.highlight-card{
-
-background:rgba(17,24,39,.55);
-
-padding:30px;
-
-border-radius:15px;
-
-border:1px solid rgba(255,196,81,.3);
-
-transition:.3s;
-
-}
-
 .highlight-card:hover{
-
 transform:translateY(-8px);
-
 }
-
 .announcement{
-
 padding:100px 0;
-
 }
-
 .announcement-card{
 background:rgba(17,24,39,.6);
 padding:20px;
@@ -453,31 +393,22 @@ border-radius:10px;
     font-size:48px;
     margin-top:10px;
 }
-
 .highlight-grid{
-
     display:grid;
-
     grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
     gap:30px;
-
 }
-
 .highlight-card{
-
-    background:rgba(17,24,39,.55);
-
-    backdrop-filter:blur(12px);
-
-    border:1px solid rgba(255,196,81,.2);
-
-    border-radius:18px;
-
-    padding:35px;
-
-    transition:.4s;
-
+    background: rgba(17,24,39,.55);
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid rgba(255,196,81,.3);
+    transition: .3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 340px;
 }
 
 .highlight-card:hover{
@@ -491,43 +422,28 @@ border-radius:10px;
 }
 
 .icon{
-
-    width:70px;
-
-    height:70px;
-
-    background:#FFC451;
-
-    color:#111827;
-
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    font-size:32px;
-
-    margin-bottom:20px;
-
+width:70px;
+height:70px;
+background:#FFC451;
+color:#111827;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
+margin-bottom:20px;
 }
-
 .highlight-card h3{
-
-    color:#FFC451;
-
-    margin-bottom:15px;
-
-    font-size:24px;
-
+color:#FFC451;
+margin-bottom:15px;
+font-size:24px;
 }
-
 .highlight-card p{
-
-    color:#d1d5db;
-
-    line-height:1.8;
-
+color:#d1d5db;
+line-height:1.8;
+}
+#mobile-menu a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
 }
