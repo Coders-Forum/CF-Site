@@ -1124,71 +1124,102 @@
       .countdown-value { font-size: 1.25rem; }
       .countdown-sep { font-size: 1.25rem; }
     }
+
+    /* Fix for deployment: Ensure button is clickable when timer ends */
+    #register-btn.register-open {
+      background-color: #FFD700; /* Gold background */
+      color: #000000; /* Black text */
+      cursor: pointer !important;
+      pointer-events: auto !important;
+      opacity: 1 !important;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+      animation: pulse-glow 2s infinite;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
+      50% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.9); }
+    }
 </style>
 <!--Mobile header view-->
 <script>
-
-   (function () {
-      // Registrations close: August 19th, 2026, 9:00 PM IST
+    // --- Countdown & Registration Button Logic ---
+    (function () {
+      // Target date: August 19, 2026, 9:00 PM IST (Timezone locked to +05:30)
       var targetDate = new Date("2026-08-19T21:00:00+05:30").getTime();
- 
+      
       var elDays = document.getElementById("cd-days");
       var elHours = document.getElementById("cd-hours");
       var elMins = document.getElementById("cd-mins");
       var elSecs = document.getElementById("cd-secs");
       var wrapper = document.getElementById("countdown-timer");
       var registerBtn = document.getElementById("register-btn");
- 
+      
+      var registrationFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSezM6_wyqO1kXO2zDY7mMvCv1CYM_JDpTLwqdYn0A4yD4u5VQ/viewform";
+
       function pad(n) {
         return String(n).padStart(2, "0");
       }
- 
+
       function updateCountdown() {
         var now = new Date().getTime();
         var diff = targetDate - now;
- 
+
         if (diff <= 0) {
+          // Timer has hit zero
           elDays.textContent = "00";
           elHours.textContent = "00";
           elMins.textContent = "00";
           elSecs.textContent = "00";
+          
+          // Change countdown text
           if (wrapper) {
             wrapper.innerHTML = '<span style="color:#FFD700;font-weight:700;font-size:1.1rem;">Registrations are OPEN!</span>';
           }
+          
+          // Change button to active state
           if (registerBtn) {
             registerBtn.innerText = 'Registrations are open now';
             registerBtn.disabled = false;
-            registerBtn.style.cursor = 'pointer';
-            registerBtn.onclick = function() {
-              window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSezM6_wyqO1kXO2zDY7mMvCv1CYM_JDpTLwqdYn0A4yD4u5VQ/viewform';
-            };
+            registerBtn.classList.add('register-open'); // Triggers CSS override
+            
+            // Use addEventListener for better CSP compatibility on deployment
+            registerBtn.addEventListener('click', function() {
+              window.open(registrationFormUrl, '_blank'); // Opens in new tab
+            });
           }
+          
           clearInterval(timerInterval);
           return;
         }
- 
+
+        // Calculate time remaining
         var days = Math.floor(diff / (1000 * 60 * 60 * 24));
         var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
         var secs = Math.floor((diff % (1000 * 60)) / 1000);
- 
+
         elDays.textContent = pad(days);
         elHours.textContent = pad(hours);
         elMins.textContent = pad(mins);
         elSecs.textContent = pad(secs);
       }
- 
+
+      // Initial call
       updateCountdown();
+      // Start interval
       var timerInterval = setInterval(updateCountdown, 1000);
     })();
 
-  
-const menuBtn = document.getElementById("menu-btn");
-const mobileMenu = document.getElementById("mobile-menu");
+    // --- Mobile Menu Logic ---
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-});
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
 </script>
 
     <script src="./assets/js/clash_of_coders.js"></script>
