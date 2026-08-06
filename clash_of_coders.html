@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="./assets/Logo_shield.png">
 
-    <title>Clash of Coders 2026 | Coders Forum</title>
+    <title>Clash of Coders 2026 | Coders Forum>
 
 
 
@@ -249,8 +249,8 @@
             CODE • COMPETE • CONQUER
         </p>
 
-        <button class="coming-soon-btn" disabled>
-            Registrations open on August 6th, 2026 at 9:00 PM
+        <button id="register-btn" class="coming-soon-btn" disabled>
+            Registrations close on 19th August 2026 at 9:00 PM
         </button>
 
 
@@ -1128,17 +1128,16 @@
 <!--Mobile header view-->
 <script>
 
-
-
    (function () {
-      // Registrations open: August 6th, 2026, 9:00 AM IST
-      var targetDate = new Date("2026-08-06T21:00:00+05:30").getTime();
+      // Registrations close: August 19th, 2026, 9:00 PM IST
+      var targetDate = new Date("2026-08-19T21:00:00+05:30").getTime();
  
       var elDays = document.getElementById("cd-days");
       var elHours = document.getElementById("cd-hours");
       var elMins = document.getElementById("cd-mins");
       var elSecs = document.getElementById("cd-secs");
       var wrapper = document.getElementById("countdown-timer");
+      var registerBtn = document.getElementById("register-btn");
  
       function pad(n) {
         return String(n).padStart(2, "0");
@@ -1155,6 +1154,14 @@
           elSecs.textContent = "00";
           if (wrapper) {
             wrapper.innerHTML = '<span style="color:#FFD700;font-weight:700;font-size:1.1rem;">Registrations are OPEN!</span>';
+          }
+          if (registerBtn) {
+            registerBtn.innerText = 'Registrations are open now';
+            registerBtn.disabled = false;
+            registerBtn.style.cursor = 'pointer';
+            registerBtn.onclick = function() {
+              window.location.href = 'https://docs.google.com/forms/d/e/1FAIpQLSezM6_wyqO1kXO2zDY7mMvCv1CYM_JDpTLwqdYn0A4yD4u5VQ/viewform';
+            };
           }
           clearInterval(timerInterval);
           return;
