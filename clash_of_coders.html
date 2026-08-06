@@ -249,8 +249,8 @@
             CODE • COMPETE • CONQUER
         </p>
 
-        <button class="coming-soon-btn" disabled>
-            Registrations open on August 6th, 2026 at 9:00 PM
+        <button id="register-btn" class="coming-soon-btn" disabled>
+            Registrations open on 6th August 2026 at 9:00 PM
         </button>
 
 
@@ -1124,64 +1124,142 @@
       .countdown-value { font-size: 1.25rem; }
       .countdown-sep { font-size: 1.25rem; }
     }
+
+    /* Fix for deployment: Ensure button is clickable when timer ends */
+    #register-btn.register-open {
+      background-color: #FFD700; /* Gold background */
+      color: #000000; /* Black text */
+      cursor: pointer !important;
+      pointer-events: auto !important;
+      opacity: 1 !important;
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.6);
+      animation: pulse-glow 2s infinite;
+    }
+    
+    #register-btn.register-closed {
+      background-color: #555555; /* Dark grey background */
+      color: #aaaaaa; /* Grey text */
+      cursor: not-allowed !important;
+      pointer-events: none !important;
+      opacity: 0.7 !important;
+      box-shadow: none;
+      animation: none;
+    }
+
+    @keyframes pulse-glow {
+      0%, 100% { box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); }
+      50% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.9); }
+    }
 </style>
 <!--Mobile header view-->
 <script>
-
-
-
-   (function () {
-      // Registrations open: August 6th, 2026, 9:00 AM IST
-      var targetDate = new Date("2026-08-06T21:00:00+05:30").getTime();
- 
+    // --- Countdown & Registration Button Logic ---
+    (function () {
+      // Timeline dates locked to IST (+05:30)
+      var openDate = new Date("2026-08-06T21:00:00+05:30").getTime();
+      var closeDate = new Date("2026-08-19T21:00:00+05:30").getTime();
+      
       var elDays = document.getElementById("cd-days");
       var elHours = document.getElementById("cd-hours");
       var elMins = document.getElementById("cd-mins");
       var elSecs = document.getElementById("cd-secs");
       var wrapper = document.getElementById("countdown-timer");
- 
+      var registerBtn = document.getElementById("register-btn");
+      
+      var registrationFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSezM6_wyqO1kXO2zDY7mMvCv1CYM_JDpTLwqdYn0A4yD4u5VQ/viewform";
+      var timerInterval = null;
+
       function pad(n) {
         return String(n).padStart(2, "0");
       }
- 
+
       function updateCountdown() {
         var now = new Date().getTime();
-        var diff = targetDate - now;
- 
-        if (diff <= 0) {
-          elDays.textContent = "00";
-          elHours.textContent = "00";
-          elMins.textContent = "00";
-          elSecs.textContent = "00";
+        var targetDate;
+        var phase;
+
+        // Determine current phase
+        if (now < openDate) {
+          phase = 1; // Before open
+          targetDate = openDate;
+        } else if (now >= openDate && now < closeDate) {
+          phase = 2; // Open, before close
+          targetDate = closeDate;
+        } else {
+          phase = 3; // Closed
+        }
+
+        // Handle Button States
+        if (phase === 1) {
+          // Phase 1: Waiting to open
+          registerBtn.innerText = 'Registrations open on 6th August 2026 at 9:00 PM';
+          registerBtn.disabled = true;
+          registerBtn.classList.remove('register-open', 'register-closed');
+        } else if (phase === 2) {
+          // Phase 2: Currently open
+          registerBtn.innerText = 'Registrations are open now';
+          registerBtn.disabled = false;
+          registerBtn.classList.add('register-open');
+          registerBtn.classList.remove('register-closed');
+          
+          // Attach click event only once
+          if (!registerBtn.hasAttribute('data-listener-attached')) {
+            registerBtn.addEventListener('click', function() {
+              window.open(registrationFormUrl, '_blank');
+            });
+            registerBtn.setAttribute('data-listener-attached', 'true');
+          }
+        } else if (phase === 3) {
+          // Phase 3: Closed
+          registerBtn.innerText = 'Registrations are closed';
+          registerBtn.disabled = true;
+          registerBtn.classList.add('register-closed');
+          registerBtn.classList.remove('register-open');
+          
+          // Change countdown text and stop timer
           if (wrapper) {
-            wrapper.innerHTML = '<span style="color:#FFD700;font-weight:700;font-size:1.1rem;">Registrations are OPEN!</span>';
+            wrapper.innerHTML = '<span style="color:#FFD700;font-weight:700;font-size:1.1rem;">Registrations are Closed!</span>';
           }
           clearInterval(timerInterval);
           return;
         }
- 
-        var days = Math.floor(diff / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
-        var secs = Math.floor((diff % (1000 * 60)) / 1000);
- 
-        elDays.textContent = pad(days);
-        elHours.textContent = pad(hours);
-        elMins.textContent = pad(mins);
-        elSecs.textContent = pad(secs);
+
+        // Handle Countdown Timer calculation
+        var diff = targetDate - now;
+        if (diff <= 0) {
+          // Edge case fallback
+          elDays.textContent = "00";
+          elHours.textContent = "00";
+          elMins.textContent = "00";
+          elSecs.textContent = "00";
+        } else {
+          var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          var secs = Math.floor((diff % (1000 * 60)) / 1000);
+
+          elDays.textContent = pad(days);
+          elHours.textContent = pad(hours);
+          elMins.textContent = pad(mins);
+          elSecs.textContent = pad(secs);
+        }
       }
- 
+
+      // Initial call
       updateCountdown();
-      var timerInterval = setInterval(updateCountdown, 1000);
+      // Start interval
+      timerInterval = setInterval(updateCountdown, 1000);
     })();
 
-  
-const menuBtn = document.getElementById("menu-btn");
-const mobileMenu = document.getElementById("mobile-menu");
+    // --- Mobile Menu Logic ---
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-menuBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("hidden");
-});
+    if (menuBtn && mobileMenu) {
+      menuBtn.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    }
 </script>
 
     <script src="./assets/js/clash_of_coders.js"></script>
