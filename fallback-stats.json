@@ -1,0 +1,49 @@
+{
+  "totalStudents": 153,
+  "totalTeams": 51,
+  "year2Students": 84,
+  "year3Students": 69,
+  "departmentStats": [
+    {
+      "department": "CSE",
+      "teams": 18,
+      "students": 54
+    },
+    {
+      "department": "IT",
+      "teams": 12,
+      "students": 36
+    },
+    {
+      "department": "AI & DS",
+      "teams": 8,
+      "students": 24
+    },
+    {
+      "department": "AI & ML",
+      "teams": 6,
+      "students": 18
+    },
+    {
+      "department": "ECE",
+      "teams": 4,
+      "students": 12
+    },
+    {
+      "department": "EEE",
+      "teams": 2,
+      "students": 6
+    },
+    {
+      "department": "MECHANICAL",
+      "teams": 1,
+      "students": 3
+    },
+    {
+      "department": "CSBS",
+      "teams": 0,
+      "students": 0
+    }
+  ],
+  "updatedAt": "2026-08-06T12:00:00.000Z"
+}
