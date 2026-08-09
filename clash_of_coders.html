@@ -991,9 +991,10 @@
     el.className = 'text-xs text-gray-600';
   }
 
-  function rdSetRefreshing(isRefreshing) {
+    function rdSetRefreshing(isRefreshing) {
     var btn = document.getElementById('rd-refresh-btn');
     var icon = document.getElementById('rd-refresh-icon');
+    if (!btn || !icon) return;
     btn.disabled = isRefreshing;
     icon.classList.toggle('rd-refresh-icon-spin', isRefreshing);
   }
