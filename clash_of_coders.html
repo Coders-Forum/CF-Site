@@ -649,7 +649,21 @@
       <div class="max-w-5xl mx-auto px-6 text-center mt-12 mb-12" id="enter-contest-section">
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSezM6_wyqO1kXO2zDY7mMvCv1CYM_JDpTLwqdYn0A4yD4u5VQ/viewform" target="_blank"
           class="inline-block bg-accent hover:bg-glow text-black font-bold px-10 py-4 rounded-full text-xl transition duration-300 transform hover:scale-110 shadow-lg">
-          ENTER CONTEST <b>&rarr;</b>
+          ENTER CONTEST <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="margin-left: 8px; vertical-align: middle; display: inline-block;"
+    >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
         </a>
       </div>
 
@@ -1235,7 +1249,21 @@
           registerBtn.classList.remove('register-open', 'register-closed');
         } else if (phase === 2) {
                                      // Phase 2: Currently open
-          registerBtn.innerHTML = 'Registrations are open now <span style="margin-left: 8px; font-size: 1.5em;"><b>&rarr;</b></span>';
+          registerBtn.innerHTML = `Registrations are open now <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="margin-left: 8px; vertical-align: middle; display: inline-block;"
+    >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>`;
           registerBtn.disabled = false;
           registerBtn.classList.add('register-open');
           registerBtn.classList.remove('register-closed');
