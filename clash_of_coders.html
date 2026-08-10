@@ -1243,11 +1243,20 @@
           // Attach click event only once
           if (!registerBtn.hasAttribute('data-listener-attached')) {
             registerBtn.addEventListener('click', function() {
-              var enterContestSection = document.getElementById('enter-contest-section');
-              if (enterContestSection) {
-                enterContestSection.scrollIntoView({ behavior: 'smooth' });
-              }
-            });
+    var enterContestSection = document.getElementById('enter-contest-section');
+
+    if (enterContestSection) {
+        var targetPosition =
+            enterContestSection.getBoundingClientRect().top +
+            window.scrollY -
+            120;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+});
             registerBtn.setAttribute('data-listener-attached', 'true');
           }
         } else if (phase === 3) {
