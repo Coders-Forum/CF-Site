@@ -253,6 +253,10 @@
             Registrations open on 6th August 2026 at 9:00 PM
         </button>
 
+        <h2 style="font-family: 'Clash', sans-serif; text-align: center; margin-top: 2rem; color: #fff; font-size: 1.25rem;">
+            <span>REGISTRATIONS CLOSE IN</span>
+        </h2>
+        <br>
 
        <!-- Countdown Timer -->
       <div id="countdown-timer" class="countdown-timer" aria-live="polite">
@@ -639,6 +643,30 @@
 <!-- TIMELINE END — Clash of Coders: The Campaign Trail          -->
 <!-- ═══════════════════════════════════════════════════════════ -->
 
+
+
+          <!-- Enter Contest Button -->
+      <div class="max-w-5xl mx-auto px-6 text-center mt-12 mb-12" id="enter-contest-section">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSezM6_wyqO1kXO2zDY7mMvCv1CYM_JDpTLwqdYn0A4yD4u5VQ/viewform" target="_blank"
+          class="inline-block bg-accent hover:bg-glow text-black font-bold px-10 py-4 rounded-full text-xl transition duration-300 transform hover:scale-110 shadow-lg">
+          REGISTER NOW <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="margin-left: 8px; vertical-align: middle; display: inline-block;"
+    >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>
+        </a>
+      </div>
+
       <!-- Contact -->
         
         <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
@@ -680,7 +708,7 @@
 
     <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- DASHBOARD START — Clash of Coders: Live Registrations       -->
-<!---------------------------------------------------------------->
+<!-- ═══════════════════════════════════════════════════════════ -->
 
 <div class="rd-section max-w-5xl mx-auto px-6 py-16 relative">
 
@@ -690,14 +718,14 @@
 
     <!-- Header -->
     <h2 class="text-3xl md:text-4xl text-center text-accent mb-4 drop-shadow-lg tracking-tight">
-      Live Registrations
+      Registration Statistics
     </h2>
 
-    <div class="flex items-center justify-center gap-2 mb-14">
+        <!-- <div class="flex items-center justify-center gap-3 mb-14 flex-wrap">
       <span class="w-2.5 h-2.5 rounded-full bg-danger rd-live-dot"></span>
-      <span class="text-xs tracking-[0.25em] uppercase text-gray-400">Live</span>
-      <span class="text-xs text-gray-600" id="rd-updated">· updated just now</span>
-    </div>
+      <span class="text-xs tracking-[0.25em] uppercase text-gray-400">Live Stats</span>
+      <span class="text-xs text-gray-600" id="rd-updated">Finding Warriors .....</span>
+    </div> -->
 
     <!-- Stat Cards -->
     <div class="grid grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
@@ -709,7 +737,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7zM4 20c0-3.3 3.6-6 8-6s8 2.7 8 6"/>
           </svg>
         </div>
-        <div class="rd-number text-4xl font-bold text-glow" data-target="0">0</div>
+        <div class="rd-number text-4xl font-bold text-glow" id="rd-total-students" data-target="0">0</div>
         <p class="text-xs text-gray-400 mt-2 tracking-wide uppercase">Total Students</p>
       </div>
 
@@ -720,7 +748,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a4 4 0 00-3-3.87M9 20H4v-2a4 4 0 013-3.87m6-5.13a4 4 0 11-4-4 4 4 0 014 4zm6 0a4 4 0 11-2.6-3.75"/>
           </svg>
         </div>
-        <div class="rd-number text-4xl font-bold text-glow" data-target="0">0</div>
+        <div class="rd-number text-4xl font-bold text-glow" id="rd-total-teams" data-target="0">0</div>
         <p class="text-xs text-gray-400 mt-2 tracking-wide uppercase">Total Teams</p>
       </div>
 
@@ -731,7 +759,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.42A9 9 0 0121 12.5M12 14L5.84 10.58A9 9 0 003 12.5M12 14v7"/>
           </svg>
         </div>
-        <div class="rd-number text-4xl font-bold text-glow" data-target="0">0</div>
+        <div class="rd-number text-4xl font-bold text-glow" id="rd-year2" data-target="0">0</div>
         <p class="text-xs text-gray-400 mt-2 tracking-wide uppercase">2nd Year Students</p>
       </div>
 
@@ -742,7 +770,7 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.42A9 9 0 0121 12.5M12 14L5.84 10.58A9 9 0 003 12.5M12 14v7"/>
           </svg>
         </div>
-        <div class="rd-number text-4xl font-bold text-glow" data-target="0">0</div>
+        <div class="rd-number text-4xl font-bold text-glow" id="rd-year3" data-target="0">0</div>
         <p class="text-xs text-gray-400 mt-2 tracking-wide uppercase">3rd Year Students</p>
       </div>
 
@@ -759,97 +787,19 @@
       </button>
     </div>
 
-    <!-- Department-wise panel -->
+    <!-- Department-wise panel (rows are generated by JS from live data) -->
     <div id="rd-panel" class="rd-panel">
       <h3 class="text-2xl text-glow mb-6 text-center">Department-wise Team Count</h3>
-      <div class="bg-secondary border border-white/5 rounded-2xl p-6 md:p-8 space-y-5">
-
-        <!-- Department rows: bar width is illustrative, count hardcoded to 0 -->
-        <div class="rd-dept-row">
-          <div class="flex justify-between text-sm mb-1.5">
-            <span class="text-accent font-semibold">CSE</span>
-            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
-          </div>
-          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
-            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
-          </div>
-        </div>
-
-        <div class="rd-dept-row">
-          <div class="flex justify-between text-sm mb-1.5">
-            <span class="text-accent font-semibold">IT</span>
-            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
-          </div>
-          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
-            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
-          </div>
-        </div>
-
-        <div class="rd-dept-row">
-          <div class="flex justify-between text-sm mb-1.5">
-            <span class="text-accent font-semibold">AI & DS</span>
-            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
-          </div>
-          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
-            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
-          </div>
-        </div>
-
-        <div class="rd-dept-row">
-          <div class="flex justify-between text-sm mb-1.5">
-            <span class="text-accent font-semibold">AI & ML</span>
-            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
-          </div>
-          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
-            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
-          </div>
-        </div>
-
-        <div class="rd-dept-row">
-          <div class="flex justify-between text-sm mb-1.5">
-            <span class="text-accent font-semibold">ECE</span>
-            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
-          </div>
-          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
-            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
-          </div>
-        </div>
-
-        <div class="rd-dept-row">
-          <div class="flex justify-between text-sm mb-1.5">
-            <span class="text-accent font-semibold">EEE</span>
-            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
-          </div>
-          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
-            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
-          </div>
-        </div>
-
-        <div class="rd-dept-row">
-          <div class="flex justify-between text-sm mb-1.5">
-            <span class="text-accent font-semibold">MECH</span>
-            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
-          </div>
-          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
-            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
-          </div>
-        </div>
-
-        <div class="rd-dept-row">
-          <div class="flex justify-between text-sm mb-1.5">
-            <span class="text-accent font-semibold">CSBS</span>
-            <span class="text-gray-400"><span class="rd-dept-count">0</span> teams</span>
-          </div>
-          <div class="w-full h-2 bg-primary rounded-full overflow-hidden">
-            <div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:0%"></div>
-          </div>
-        </div>
-
+      <div id="rd-dept-list" class="bg-secondary border border-white/5 rounded-2xl p-6 md:p-8 space-y-5">
+        <p class="text-sm text-gray-500 text-center">No Warriors yet.</p>
       </div>
     </div>
 
   </div>
 </div>
+
+
+       <!-- DASHBOARD END-->
 
 <style>
   .rd-grid {
@@ -960,9 +910,26 @@
     transition: width 1s ease;
   }
 
+  .rd-refresh-btn {
+    transition: background 0.25s ease, color 0.25s ease, transform 0.15s ease, border-color 0.25s ease;
+  }
+  .rd-refresh-btn:hover {
+    background: rgba(255,196,81,0.12);
+    border-color: rgba(255,196,81,0.8);
+  }
+  .rd-refresh-btn:active { transform: scale(0.96); }
+  .rd-refresh-btn:disabled { opacity: 0.5; cursor: default; }
+
+  .rd-refresh-icon-spin {
+    animation: rd-spin 0.8s linear infinite;
+  }
+  @keyframes rd-spin {
+    to { transform: rotate(360deg); }
+  }
+
   @media (prefers-reduced-motion: reduce) {
     .rd-grid, .rd-live-dot, .rd-card, .rd-card::before, .rd-toggle-btn, .rd-chevron,
-    .rd-panel, .rd-dept-row, .rd-bar-fill {
+    .rd-panel, .rd-dept-row, .rd-bar-fill, .rd-refresh-btn, .rd-refresh-icon-spin {
       animation: none !important;
       transition: none !important;
     }
@@ -971,7 +938,10 @@
 </style>
 
 <script>
-  // Toggle department-wise panel
+  const DASHBOARD_API_URL = "https://script.google.com/macros/s/AKfycbymDjZP_8MQ-N2YQ6aTB286EVoHs8kAhuCbUPFLR6hfmiVRsdIXTxmlG0aSCdMt_C51/exec";
+  const DASHBOARD_API_KEY = "8f3d91a7c4e2b5f68d90ab13ef76c24891d7e5b2c3a4f6819e0d5c7b8a2f6e41"; 
+  const FALLBACK_JSON_URL = "./fallback-stats.json";
+
   function rdTogglePanel() {
     var panel = document.getElementById('rd-panel');
     var chevron = document.getElementById('rd-chevron');
@@ -981,26 +951,109 @@
     btn.firstChild.textContent = isOpen ? 'HIDE DEPARTMENT-WISE STATS ' : 'SHOW DEPARTMENT-WISE STATS ';
   }
 
-  // Count-up animation, ready for real numbers later —
-  // just change data-target on each .rd-number element and call rdAnimateCounters() again.
-  function rdAnimateCounters() {
-    document.querySelectorAll('.rd-number').forEach(function (el) {
-      var target = parseInt(el.getAttribute('data-target'), 10) || 0;
-      var start = 0;
-      var duration = 900;
-      var startTime = null;
-
-      function step(ts) {
-        if (!startTime) startTime = ts;
-        var progress = Math.min((ts - startTime) / duration, 1);
-        var eased = 1 - Math.pow(1 - progress, 3);
-        el.textContent = Math.round(start + (target - start) * eased);
-        if (progress < 1) requestAnimationFrame(step);
-      }
-      requestAnimationFrame(step);
-    });
+  function rdAnimateCounter(el, target) {
+    var start = parseInt(el.textContent, 10) || 0;
+    if (start === target) return;
+    var duration = 900; var startTime = null;
+    function step(ts) {
+      if (!startTime) startTime = ts;
+      var progress = Math.min((ts - startTime) / duration, 1);
+      var eased = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(start + (target - start) * eased);
+      if (progress < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
   }
-  rdAnimateCounters();
+
+  function rdRenderDepartments(list) {
+    var container = document.getElementById('rd-dept-list');
+    if (!list || !list.length) {
+      container.innerHTML = '<p class="text-sm text-gray-500 text-center">No registrations yet.</p>';
+      return;
+    }
+    var maxTeams = Math.max.apply(null, list.map(function (d) { return d.teams; }));
+    container.innerHTML = list.map(function (d) {
+      var pct = maxTeams > 0 ? Math.round((d.teams / maxTeams) * 100) : 0;
+      return (
+        '<div class="rd-dept-row">' +
+          '<div class="flex justify-between text-sm mb-1.5">' +
+            '<span class="text-accent font-semibold">' + d.department + '</span>' +
+            '<span class="text-gray-400">' + d.teams + ' team' + (d.teams === 1 ? '' : 's') + '</span>' +
+          '</div>' +
+          '<div class="w-full h-2 bg-primary rounded-full overflow-hidden">' +
+            '<div class="rd-bar-fill h-full bg-gradient-to-r from-accent to-glow rounded-full" style="width:' + pct + '%"></div>' +
+          '</div>' +
+        '</div>'
+      );
+    }).join('');
+  }
+
+  function rdSetUpdatedLabel(iso, state) {
+    var el = document.getElementById('rd-updated');
+    if (state === 'offline') { el.textContent = '· not connected'; el.className = 'text-xs text-danger'; return; }
+    if (state === 'fallback') { el.textContent = '· showing backup data'; el.className = 'text-xs text-accent'; return; }
+    var d = new Date(iso);
+    var timeStr = isNaN(d.getTime()) ? 'just now' : d.toLocaleTimeString();
+    el.textContent = '· updated ' + timeStr;
+    el.className = 'text-xs text-gray-600';
+  }
+
+    function rdSetRefreshing(isRefreshing) {
+    var btn = document.getElementById('rd-refresh-btn');
+    var icon = document.getElementById('rd-refresh-icon');
+    if (!btn || !icon) return;
+    btn.disabled = isRefreshing;
+    icon.classList.toggle('rd-refresh-icon-spin', isRefreshing);
+  }
+
+  async function rdLoadFallback() {
+    try {
+      var res = await fetch(FALLBACK_JSON_URL, { cache: 'no-store' });
+      var data = await res.json();
+      rdAnimateCounter(document.getElementById('rd-total-students'), data.totalStudents || 0);
+      rdAnimateCounter(document.getElementById('rd-total-teams'), data.totalTeams || 0);
+      rdAnimateCounter(document.getElementById('rd-year2'), data.year2Students || 0);
+      rdAnimateCounter(document.getElementById('rd-year3'), data.year3Students || 0);
+      rdRenderDepartments(data.departmentStats || []);
+      rdSetUpdatedLabel(data.updatedAt, 'fallback');
+      return true;
+    } catch (err) {
+      console.error('Fallback JSON also failed to load:', err);
+      rdSetUpdatedLabel(null, 'offline');
+      return false;
+    }
+  }
+
+  async function rdFetchStats() {
+    if (!DASHBOARD_API_URL || DASHBOARD_API_URL.indexOf('PASTE_YOUR') === 0) {
+      await rdLoadFallback(); return;
+    }
+    rdSetRefreshing(true);
+    try {
+      var res = await fetch(DASHBOARD_API_URL + '?key=' + encodeURIComponent(DASHBOARD_API_KEY), { cache: 'no-store' });
+      var data = await res.json();
+
+      if (data.error) {
+        console.error('Dashboard API error:', data.error);
+        await rdLoadFallback();
+        return;
+      }
+
+      rdAnimateCounter(document.getElementById('rd-total-students'), data.totalStudents || 0);
+      rdAnimateCounter(document.getElementById('rd-total-teams'), data.totalTeams || 0);
+      rdAnimateCounter(document.getElementById('rd-year2'), data.year2Students || 0);
+      rdAnimateCounter(document.getElementById('rd-year3'), data.year3Students || 0);
+      rdRenderDepartments(data.departmentStats || []);
+      rdSetUpdatedLabel(data.updatedAt, 'live');
+    } catch (err) {
+      console.error('Dashboard fetch failed, trying fallback:', err);
+      await rdLoadFallback();
+    } finally {
+      rdSetRefreshing(false);
+    }
+  }
+
+  rdFetchStats();
 </script>
 
 <!-- ----------------------------------------------------------- -->
@@ -1008,7 +1061,6 @@
 <!------------------------------------------------------------->
 
     <p class="mt-4 text-gray-400">Organized by Coders Forum</p>
-
     <p class="text-gray-500 text-sm mt-2">
       Panimalar Engineering College
     </p>
@@ -1196,8 +1248,22 @@
           registerBtn.disabled = true;
           registerBtn.classList.remove('register-open', 'register-closed');
         } else if (phase === 2) {
-          // Phase 2: Currently open
-          registerBtn.innerText = 'Registrations are open now';
+                                     // Phase 2: Currently open
+          registerBtn.innerHTML = `Register Now <svg 
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="4"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        style="margin-left: 8px; vertical-align: middle; display: inline-block;"
+    >
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+    </svg>`;
           registerBtn.disabled = false;
           registerBtn.classList.add('register-open');
           registerBtn.classList.remove('register-closed');
@@ -1205,8 +1271,20 @@
           // Attach click event only once
           if (!registerBtn.hasAttribute('data-listener-attached')) {
             registerBtn.addEventListener('click', function() {
-              window.open(registrationFormUrl, '_blank');
-            });
+    var enterContestSection = document.getElementById('enter-contest-section');
+
+    if (enterContestSection) {
+        var targetPosition =
+            enterContestSection.getBoundingClientRect().top +
+            window.scrollY -
+            120;
+
+        window.scrollTo({
+            top: targetPosition,
+            behavior: 'smooth'
+        });
+    }
+});
             registerBtn.setAttribute('data-listener-attached', 'true');
           }
         } else if (phase === 3) {
