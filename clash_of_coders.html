@@ -1004,15 +1004,16 @@
     }).join('');
   }
 
-  function rdSetUpdatedLabel(iso, state) {
+function rdSetUpdatedLabel(iso, state) {
     var el = document.getElementById('rd-updated');
+    if (!el) return; // element isn't on this page — nothing to update, nothing to crash on
     if (state === 'offline') { el.textContent = '· not connected'; el.className = 'text-xs text-danger'; return; }
     if (state === 'fallback') { el.textContent = '· showing backup data'; el.className = 'text-xs text-accent'; return; }
     var d = new Date(iso);
     var timeStr = isNaN(d.getTime()) ? 'just now' : d.toLocaleTimeString();
     el.textContent = '· updated ' + timeStr;
     el.className = 'text-xs text-gray-600';
-  }
+}
 
     function rdSetRefreshing(isRefreshing) {
     var btn = document.getElementById('rd-refresh-btn');
