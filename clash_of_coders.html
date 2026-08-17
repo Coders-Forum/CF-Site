@@ -954,7 +954,7 @@
 </style>
 
 <script>
-  const DASHBOARD_API_URL = "https://script.google.com/macros/s/AKfycbymDjZP_8MQ-N2YQ6aTB286EVoHs8kAhuCbUPFLR6hfmiVRsdIXTxmlG0aSCdMt_C51/exec";
+  const DASHBOARD_API_URL = "https://script.google.com/macros/s/AKfycbyHOM2wMxVT4TJWIoJ4kDQVbAwz93yes3zSvwF1U55X07xr6sy_6OJt89DM6mmgDLvC/exec";
   const DASHBOARD_API_KEY = "8f3d91a7c4e2b5f68d90ab13ef76c24891d7e5b2c3a4f6819e0d5c7b8a2f6e41"; 
   const FALLBACK_JSON_URL = "./fallback-stats.json";
 
@@ -1004,15 +1004,16 @@
     }).join('');
   }
 
-  function rdSetUpdatedLabel(iso, state) {
+function rdSetUpdatedLabel(iso, state) {
     var el = document.getElementById('rd-updated');
+    if (!el) return; // element isn't on this page — nothing to update, nothing to crash on
     if (state === 'offline') { el.textContent = '· not connected'; el.className = 'text-xs text-danger'; return; }
     if (state === 'fallback') { el.textContent = '· showing backup data'; el.className = 'text-xs text-accent'; return; }
     var d = new Date(iso);
     var timeStr = isNaN(d.getTime()) ? 'just now' : d.toLocaleTimeString();
     el.textContent = '· updated ' + timeStr;
     el.className = 'text-xs text-gray-600';
-  }
+}
 
     function rdSetRefreshing(isRefreshing) {
     var btn = document.getElementById('rd-refresh-btn');
