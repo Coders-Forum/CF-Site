@@ -259,29 +259,55 @@
         <br>
 
        <!-- Countdown Timer -->
-      <div id="countdown-timer" class="countdown-timer" aria-live="polite">
-        <div class="countdown-unit">
-          <span class="countdown-value" id="cd-days">00</span>
-          <span class="countdown-label">Days</span>
-        </div>
-        <span class="countdown-sep">:</span>
-        <div class="countdown-unit">
-          <span class="countdown-value" id="cd-hours">00</span>
-          <span class="countdown-label">Hours</span>
-        </div>
-        <span class="countdown-sep">:</span>
-        <div class="countdown-unit">
-          <span class="countdown-value" id="cd-mins">00</span>
-          <span class="countdown-label">Mins</span>
-        </div>
-        <span class="countdown-sep">:</span>
-        <div class="countdown-unit">
-          <span class="countdown-value" id="cd-secs">00</span>
-          <span class="countdown-label">Secs</span>
-        </div>
-      </div>
+                <div id="countdown-timer" class="countdown-timer" aria-live="polite">
+            <div class="countdown-unit">
+              <span class="countdown-value" id="cd-days">00</span>
+              <span class="countdown-label">Days</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-value" id="cd-hours">00</span>
+              <span class="countdown-label">Hours</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-value" id="cd-mins">00</span>
+              <span class="countdown-label">Mins</span>
+            </div>
+            <span class="countdown-sep">:</span>
+            <div class="countdown-unit">
+              <span class="countdown-value" id="cd-secs">00</span>
+              <span class="countdown-label">Secs</span>
+            </div>
+          </div>
 
-        <div class="scroll-down">
+          <!-- Round 0 Countdown Wrapper -->
+          <div id="round0-timer-wrapper" style="display:none; text-align:center; margin-top: 2rem;">
+            <h2 style="font-family: 'Clash', sans-serif; color: #fff; font-size: 1.25rem; margin-bottom: 1rem;">ROUND 0 will start in</h2>
+            <div class="countdown-timer">
+              <div class="countdown-unit">
+                <span class="countdown-value" id="r0-days">00</span>
+                <span class="countdown-label">Days</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-unit">
+                <span class="countdown-value" id="r0-hours">00</span>
+                <span class="countdown-label">Hours</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-unit">
+                <span class="countdown-value" id="r0-mins">00</span>
+                <span class="countdown-label">Mins</span>
+              </div>
+              <span class="countdown-sep">:</span>
+              <div class="countdown-unit">
+                <span class="countdown-value" id="r0-secs">00</span>
+                <span class="countdown-label">Secs</span>
+              </div>
+            </div>
+          </div>
+
+            <div class="scroll-down">
 
             <span></span>
 
@@ -1224,8 +1250,10 @@ function rdSetUpdatedLabel(iso, state) {
     // --- Countdown & Registration Button Logic ---
     (function () {
       // Timeline dates locked to IST (+05:30)
-      var openDate = new Date("2026-08-06T21:00:00+05:30").getTime();
-      var closeDate = new Date("2026-08-19T21:00:00+05:30").getTime();
+            // TEMPORARY TEST DATES
+      var now = new Date().getTime();
+      var openDate = now - 1000; // 1 second ago (Registration is open)
+      var closeDate = now + (10 * 60 * 1000); // 10 minutes from now
       
       var elDays = document.getElementById("cd-days");
       var elHours = document.getElementById("cd-hours");
@@ -1237,8 +1265,44 @@ function rdSetUpdatedLabel(iso, state) {
       var registrationFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSezM6_wyqO1kXO2zDY7mMvCv1CYM_JDpTLwqdYn0A4yD4u5VQ/viewform";
       var timerInterval = null;
 
-      function pad(n) {
+            function pad(n) {
         return String(n).padStart(2, "0");
+      }
+
+      var r0Interval = null;
+      function startRound0Countdown() {
+        var targetDate = new Date("2026-08-22T18:00:00+05:30").getTime();
+        var r0Days = document.getElementById("r0-days");
+        var r0Hours = document.getElementById("r0-hours");
+        var r0Mins = document.getElementById("r0-mins");
+        var r0Secs = document.getElementById("r0-secs");
+        
+        function tick() {
+          var now = new Date().getTime();
+          var diff = targetDate - now;
+          
+          if (diff <= 0) {
+            if(r0Days) r0Days.textContent = "00";
+            if(r0Hours) r0Hours.textContent = "00";
+            if(r0Mins) r0Mins.textContent = "00";
+            if(r0Secs) r0Secs.textContent = "00";
+            clearInterval(r0Interval);
+            return;
+          }
+          
+          var days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+          var secs = Math.floor((diff % (1000 * 60)) / 1000);
+          
+          if(r0Days) r0Days.textContent = pad(days);
+          if(r0Hours) r0Hours.textContent = pad(hours);
+          if(r0Mins) r0Mins.textContent = pad(mins);
+          if(r0Secs) r0Secs.textContent = pad(secs);
+        }
+        
+        tick();
+        r0Interval = setInterval(tick, 1000);
       }
 
       function updateCountdown() {
@@ -1303,17 +1367,33 @@ function rdSetUpdatedLabel(iso, state) {
 });
             registerBtn.setAttribute('data-listener-attached', 'true');
           }
-        } else if (phase === 3) {
+                } else if (phase === 3) {
           // Phase 3: Closed
-          registerBtn.innerText = 'Registrations are closed';
+          registerBtn.innerText = 'Registration Closed';
           registerBtn.disabled = true;
           registerBtn.classList.add('register-closed');
           registerBtn.classList.remove('register-open');
           
-          // Change countdown text and stop timer
+          // Hide original registration countdown
           if (wrapper) {
-            wrapper.innerHTML = '<span style="color:#FFD700;font-weight:700;font-size:1.1rem;">Registrations are Closed!</span>';
+            wrapper.style.display = 'none';
           }
+          
+          // Hide the lower scroll-down register button section
+          var enterContestSection = document.getElementById('enter-contest-section');
+          if (enterContestSection) {
+            enterContestSection.style.display = 'none';
+          }
+          
+          // Show Round 0 Countdown
+          var round0Wrapper = document.getElementById('round0-timer-wrapper');
+          if (round0Wrapper) {
+            round0Wrapper.style.display = 'block';
+          }
+          
+          // Start Round 0 Countdown to 22 Aug 6 PM
+          startRound0Countdown();
+          
           clearInterval(timerInterval);
           return;
         }
