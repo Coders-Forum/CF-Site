@@ -1252,8 +1252,9 @@ function rdSetUpdatedLabel(iso, state) {
       // Timeline dates locked to IST (+05:30)
             // TEMPORARY TEST DATES
       var now = new Date().getTime();
-      var openDate = now - 1000; // 1 second ago (Registration is open)
-      var closeDate = now + (10 * 1000); // 10 minutes from now
+            // Timeline dates locked to IST (+05:30)
+      var openDate = new Date("2026-08-06T21:00:00+05:30").getTime();
+      var closeDate = new Date("2026-08-19T21:00:00+05:30").getTime();
       
       var elDays = document.getElementById("cd-days");
       var elHours = document.getElementById("cd-hours");
