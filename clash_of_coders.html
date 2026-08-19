@@ -253,7 +253,7 @@
             Registrations open on 6th August 2026 at 9:00 PM
         </button>
 
-        <h2 style="font-family: 'Clash', sans-serif; text-align: center; margin-top: 2rem; color: #fff; font-size: 1.25rem;">
+                  <h2 id="reg-close-text" style="font-family: 'Clash', sans-serif; text-align: center; margin-top: 2rem; color: #fff; font-size: 1.25rem;">
             <span>REGISTRATIONS CLOSE IN</span>
         </h2>
         <br>
@@ -1253,7 +1253,7 @@ function rdSetUpdatedLabel(iso, state) {
             // TEMPORARY TEST DATES
       var now = new Date().getTime();
       var openDate = now - 1000; // 1 second ago (Registration is open)
-      var closeDate = now + (10 * 60 * 1000); // 10 minutes from now
+      var closeDate = now + (10 * 1000); // 10 minutes from now
       
       var elDays = document.getElementById("cd-days");
       var elHours = document.getElementById("cd-hours");
@@ -1367,14 +1367,18 @@ function rdSetUpdatedLabel(iso, state) {
 });
             registerBtn.setAttribute('data-listener-attached', 'true');
           }
-                } else if (phase === 3) {
+                        } else if (phase === 3) {
           // Phase 3: Closed
           registerBtn.innerText = 'Registration Closed';
           registerBtn.disabled = true;
           registerBtn.classList.add('register-closed');
           registerBtn.classList.remove('register-open');
           
-          // Hide original registration countdown
+          // Hide original registration text and countdown
+          var regCloseText = document.getElementById('reg-close-text');
+          if (regCloseText) {
+            regCloseText.style.display = 'none';
+          }
           if (wrapper) {
             wrapper.style.display = 'none';
           }
