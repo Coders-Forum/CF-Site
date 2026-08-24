@@ -310,8 +310,21 @@
             <div class="scroll-down">
 
             <span></span>
-
-          
+            
+            <a
+            id="enter-contest-btn"
+            href="https://practice.geeksforgeeks.org/contest/clash-of-coders"
+            target="_blank"
+            style="display:none; margin-top:20px;"
+            >
+            <h2 style="font-family: 'Clash', sans-serif; color: #fff; font-size: 1.25rem; margin-bottom: 1rem;">
+            <button style=" margin: 24px auto 0;width: 320px;  max-width: 90%;  text-align: center;" id="rd-toggle" 
+        class="rd-toggle-btn inline-flex items-center justify-center gap-2 bg-accent hover:bg-glow text-black font-bold px-8 py-3.5 rounded-full text-sm md:text-base tracking-wide">
+        Enter ROUND-0 Contest
+      </button>
+      
+            </h2>
+          </a>
 
         </div>
 </div>
@@ -1349,6 +1362,11 @@ function rdSetUpdatedLabel(iso, state) {
             if(r0Hours) r0Hours.textContent = "00";
             if(r0Mins) r0Mins.textContent = "00";
             if(r0Secs) r0Secs.textContent = "00";
+            // Show Enter Contest button
+            var enterContestBtn = document.getElementById("enter-contest-btn");
+            if (enterContestBtn) {
+              enterContestBtn.style.display = "block";
+            }
             clearInterval(r0Interval);
             return;
           }
