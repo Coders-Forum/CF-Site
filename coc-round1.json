@@ -1,0 +1,821 @@
+[
+  {
+    "sno": 1,
+    "name": "Varun S",
+    "team_name": "Phoneix",
+    "rollno": "2024PECCS645",
+    "dept": "CSE"
+  },
+  {
+    "sno": 2,
+    "name": "Varun S",
+    "team_name": "Phoneix",
+    "rollno": "2024PECCS646",
+    "dept": "CSE"
+  },
+  {
+    "sno": 3,
+    "name": "Udhayakumar V",
+    "team_name": "Phoneix",
+    "rollno": "2024PECCS641",
+    "dept": "CSE"
+  },
+  {
+    "sno": 4,
+    "name": "Al Jaseera Banu H",
+    "team_name": "Team Weberse",
+    "rollno": "2024PECEE106",
+    "dept": "EEE"
+  },
+  {
+    "sno": 5,
+    "name": "Azhari Jasmine H",
+    "team_name": "Team Weberse",
+    "rollno": "2024PECEE109",
+    "dept": "EEE"
+  },
+  {
+    "sno": 6,
+    "name": "Mirudula S",
+    "team_name": "Team Weberse",
+    "rollno": "2025PECEE133",
+    "dept": "EEE"
+  },
+  {
+    "sno": 7,
+    "name": "Aradhana M",
+    "team_name": "TriByte",
+    "rollno": "2025PECCS135",
+    "dept": "CSE"
+  },
+  {
+    "sno": 8,
+    "name": "Aparnaa N J",
+    "team_name": "TriByte",
+    "rollno": "2025PECCS134",
+    "dept": "CSE"
+  },
+  {
+    "sno": 9,
+    "name": "Ayisha Shajitha M",
+    "team_name": "TriByte",
+    "rollno": "2025PECCS144",
+    "dept": "CSE"
+  },
+  {
+    "sno": 10,
+    "name": "Kumaran M",
+    "team_name": "FluxNext",
+    "rollno": "2024PECAI435",
+    "dept": "AIDS"
+  },
+  {
+    "sno": 11,
+    "name": "Krishnamoorthi R",
+    "team_name": "FluxNext",
+    "rollno": "2024PECAI434",
+    "dept": "AIDS"
+  },
+  {
+    "sno": 12,
+    "name": "Kanishraj I",
+    "team_name": "FluxNext",
+    "rollno": "2024PECAI418",
+    "dept": "AIDS"
+  },
+  {
+    "sno": 13,
+    "name": "Harshavarthini G",
+    "team_name": "DYNAMIC TRIO",
+    "rollno": "2025PECIT162",
+    "dept": "IT"
+  },
+  {
+    "sno": 14,
+    "name": "Hemamalini K",
+    "team_name": "DYNAMIC TRIO",
+    "rollno": "2025PECIT168",
+    "dept": "IT"
+  },
+  {
+    "sno": 15,
+    "name": "Kaviya S",
+    "team_name": "DYNAMIC TRIO",
+    "rollno": "2025PECIT199",
+    "dept": "IT"
+  },
+  {
+    "sno": 16,
+    "name": "Johovit V",
+    "team_name": "Zevik",
+    "rollno": "2024PECCS969",
+    "dept": "CSE"
+  },
+  {
+    "sno": 17,
+    "name": "Jeevankumar S",
+    "team_name": "Zevik",
+    "rollno": "2024PECCS956",
+    "dept": "CSE"
+  },
+  {
+    "sno": 18,
+    "name": "Jeffery Rufus P",
+    "team_name": "Zevik",
+    "rollno": "2024PECCS959",
+    "dept": "CSE"
+  },
+  {
+    "sno": 19,
+    "name": "Ramya M",
+    "team_name": "Ctrl Alt Defeat",
+    "rollno": "2024pecit254",
+    "dept": "IT"
+  },
+  {
+    "sno": 20,
+    "name": "Ravuru varsha",
+    "team_name": "Ctrl Alt Defeat",
+    "rollno": "2024pecit256",
+    "dept": "IT"
+  },
+  {
+    "sno": 21,
+    "name": "Preethi R",
+    "team_name": "Ctrl Alt Defeat",
+    "rollno": "2024PECIT238",
+    "dept": "IT"
+  },
+  {
+    "sno": 22,
+    "name": "Arunapriya S",
+    "team_name": "Code vizzzz..",
+    "rollno": "2025PECCS138",
+    "dept": "CSE"
+  },
+  {
+    "sno": 23,
+    "name": "Amalarose E",
+    "team_name": "Code vizzzz..",
+    "rollno": "2025PECCS123",
+    "dept": "CSE"
+  },
+  {
+    "sno": 24,
+    "name": "Bhuvana K",
+    "team_name": "Code vizzzz..",
+    "rollno": "2025PECCS156",
+    "dept": "CSE"
+  },
+  {
+    "sno": 25,
+    "name": "Padmajaa S",
+    "team_name": "Team Runtime error",
+    "rollno": "2024PECCS379",
+    "dept": "CSE"
+  },
+  {
+    "sno": 26,
+    "name": "Ponmagal E",
+    "team_name": "Team Runtime error",
+    "rollno": "2024PECCS385",
+    "dept": "CSE"
+  },
+  {
+    "sno": 27,
+    "name": "Nivetha S",
+    "team_name": "Team Runtime error",
+    "rollno": "2024PECCS373",
+    "dept": "CSE"
+  },
+  {
+    "sno": 28,
+    "name": "TANISHKA PANDEY",
+    "team_name": "The NullPointer",
+    "rollno": "2024PECCS523",
+    "dept": "CSE"
+  },
+  {
+    "sno": 29,
+    "name": "SOUNDAYRA S",
+    "team_name": "The NullPointer",
+    "rollno": "2024PECCS489",
+    "dept": "CSE"
+  },
+  {
+    "sno": 30,
+    "name": "SRI SANJANA VISWANATHAN",
+    "team_name": "The NullPointer",
+    "rollno": "2024PECCS496",
+    "dept": "CSE"
+  },
+  {
+    "sno": 31,
+    "name": "Ashwini S",
+    "team_name": "Archer queens",
+    "rollno": "2024PECCS136",
+    "dept": "CSE"
+  },
+  {
+    "sno": 32,
+    "name": "Abinaya S",
+    "team_name": "Archer queens",
+    "rollno": "2024PECCS106",
+    "dept": "CSE"
+  },
+  {
+    "sno": 33,
+    "name": "Brindha P",
+    "team_name": "Archer queens",
+    "rollno": "2024PECCS155",
+    "dept": "CSE"
+  },
+  {
+    "sno": 34,
+    "name": "Nambi GT",
+    "team_name": "Team Titans",
+    "rollno": "2024PECAI472",
+    "dept": "AIDS"
+  },
+  {
+    "sno": 35,
+    "name": "Karthick K",
+    "team_name": "Team Titans",
+    "rollno": "2024PECAI420",
+    "dept": "AIDS"
+  },
+  {
+    "sno": 36,
+    "name": "Kishore R",
+    "team_name": "Team Titans",
+    "rollno": "2024PECAI427",
+    "dept": "AIDS"
+  },
+  {
+    "sno": 37,
+    "name": "Barath Kumar Basker",
+    "team_name": "Zsymox",
+    "rollno": "2025PECCS628",
+    "dept": "CSE"
+  },
+  {
+    "sno": 38,
+    "name": "Chandru K",
+    "team_name": "Zsymox",
+    "rollno": "2025PECCS638",
+    "dept": "CSE"
+  },
+  {
+    "sno": 39,
+    "name": "Chiranjeevi B",
+    "team_name": "Zsymox",
+    "rollno": "2025PECCS642",
+    "dept": "CSE"
+  },
+  {
+    "sno": 40,
+    "name": "SUBASRI S",
+    "team_name": "team_S",
+    "rollno": "2025PECCS525",
+    "dept": "CSE"
+  },
+  {
+    "sno": 41,
+    "name": "SUBIKSHA SHREE V",
+    "team_name": "team_S",
+    "rollno": "2025PECCS527",
+    "dept": "CSE"
+  },
+  {
+    "sno": 42,
+    "name": "SWETHA S",
+    "team_name": "team_S",
+    "rollno": "2025PECCS539",
+    "dept": "CSE"
+  },
+  {
+    "sno": 43,
+    "name": "Keerthana R",
+    "team_name": "Triple Threat",
+    "rollno": "2024PECCS293",
+    "dept": "CSE"
+  },
+  {
+    "sno": 44,
+    "name": "Keerthana R",
+    "team_name": "Triple Threat",
+    "rollno": "2024PECCS292",
+    "dept": "CSE"
+  },
+  {
+    "sno": 45,
+    "name": "Logeshwari V",
+    "team_name": "Triple Threat",
+    "rollno": "2024PECCS322",
+    "dept": "CSE"
+  },
+  {
+    "sno": 46,
+    "name": "Mohammed Arshath K H",
+    "team_name": "Team Wizards",
+    "rollno": "2024PECCS804",
+    "dept": "CSE"
+  },
+  {
+    "sno": 47,
+    "name": "Monesh Kumar S",
+    "team_name": "Team Wizards",
+    "rollno": "2024PECCS812",
+    "dept": "CSE"
+  },
+  {
+    "sno": 48,
+    "name": "Nigilan P",
+    "team_name": "Team Wizards",
+    "rollno": "2024PECCS841",
+    "dept": "CSE"
+  },
+  {
+    "sno": 49,
+    "name": "SAYANTANI BANERJEE",
+    "team_name": "THE FIRE CODE",
+    "rollno": "2024PECCS464",
+    "dept": "CSE"
+  },
+  {
+    "sno": 50,
+    "name": "Benisha Pros A",
+    "team_name": "THE FIRE CODE",
+    "rollno": "2025PECCS147",
+    "dept": "CSE"
+  },
+  {
+    "sno": 51,
+    "name": "Lavanya J",
+    "team_name": "Pulse",
+    "rollno": "2025PECIT216",
+    "dept": "IT"
+  },
+  {
+    "sno": 52,
+    "name": "Kaviya M",
+    "team_name": "Pulse",
+    "rollno": "2025PECIT198",
+    "dept": "IT"
+  },
+  {
+    "sno": 53,
+    "name": "Keerthika L",
+    "team_name": "Pulse",
+    "rollno": "2025PECIT207",
+    "dept": "IT"
+  },
+  {
+    "sno": 54,
+    "name": "Gayathri N",
+    "team_name": "Code crafters",
+    "rollno": "2024PECCS214",
+    "dept": "CSE"
+  },
+  {
+    "sno": 55,
+    "name": "Dhivya S",
+    "team_name": "Code crafters",
+    "rollno": "2024PECCS186",
+    "dept": "CSE"
+  },
+  {
+    "sno": 56,
+    "name": "Dhanushya C",
+    "team_name": "Code crafters",
+    "rollno": "2024PECCS174",
+    "dept": "CSE"
+  },
+  {
+    "sno": 57,
+    "name": "Abishek. B",
+    "team_name": "Omnipotent shad",
+    "rollno": "2024PECEE167",
+    "dept": "EEE"
+  },
+  {
+    "sno": 58,
+    "name": "Aravindhan. K",
+    "team_name": "Omnipotent shad",
+    "rollno": "2024PECEE173",
+    "dept": "EEE"
+  },
+  {
+    "sno": 60,
+    "name": "Sajan Kumaran M U",
+    "team_name": "AlgoNauts",
+    "rollno": "2024PECCS820",
+    "dept": "CSE"
+  },
+  {
+    "sno": 61,
+    "name": "Mohnish S",
+    "team_name": "AlgoNauts",
+    "rollno": "2024PECCS811",
+    "dept": "CSE"
+  },
+  {
+    "sno": 62,
+    "name": "Nihilarasu M",
+    "team_name": "AlgoNauts",
+    "rollno": "2024PECCS842",
+    "dept": "CSE"
+  },
+  {
+    "sno": 63,
+    "name": "Jasmine banu D",
+    "team_name": "Flycode",
+    "rollno": "2025PECCS261",
+    "dept": "CSE"
+  },
+  {
+    "sno": 64,
+    "name": "Jenilin J",
+    "team_name": "Flycode",
+    "rollno": "2025PECCS276",
+    "dept": "CSE"
+  },
+  {
+    "sno": 65,
+    "name": "Jenifer",
+    "team_name": "Flycode",
+    "rollno": "2025PECCS277",
+    "dept": "CSE"
+  },
+  {
+    "sno": 66,
+    "name": "LOKESH S",
+    "team_name": "dracarys",
+    "rollno": "2024PECIT504",
+    "dept": "IT"
+  },
+  {
+    "sno": 67,
+    "name": "LISHANTH S",
+    "team_name": "dracarys",
+    "rollno": "2024PECIT498",
+    "dept": "IT"
+  },
+  {
+    "sno": 68,
+    "name": "KAUSHIK RAJ.P",
+    "team_name": "dracarys",
+    "rollno": "2024PECIT479",
+    "dept": "IT"
+  },
+  {
+    "sno": 69,
+    "name": "GOMATHI V",
+    "team_name": "Alpha Algorithms",
+    "rollno": "2024PECCS220",
+    "dept": "CSE"
+  },
+  {
+    "sno": 70,
+    "name": "DIVYADARSHINI S",
+    "team_name": "Alpha Algorithms",
+    "rollno": "2024PECCS191",
+    "dept": "CSE"
+  },
+  {
+    "sno": 71,
+    "name": "GOKULA LAKSHMI R",
+    "team_name": "Alpha Algorithms",
+    "rollno": "2024PECCS218",
+    "dept": "CSE"
+  },
+  {
+    "sno": 72,
+    "name": "Pretheba.E",
+    "team_name": "Black box",
+    "rollno": "2024PECCS402",
+    "dept": "CSE"
+  },
+  {
+    "sno": 73,
+    "name": "Raghavi.R",
+    "team_name": "Black box",
+    "rollno": "2024PECCS414",
+    "dept": "CSE"
+  },
+  {
+    "sno": 74,
+    "name": "Preethishree.PK",
+    "team_name": "Black box",
+    "rollno": "2024PECCS401",
+    "dept": "CSE"
+  },
+  {
+    "sno": 75,
+    "name": "Akshaya S M",
+    "team_name": "Code³",
+    "rollno": "2024PECCS114",
+    "dept": "CSE"
+  },
+  {
+    "sno": 76,
+    "name": "Lavanya J",
+    "team_name": "Code³",
+    "rollno": "2024PECCS116",
+    "dept": "CSE"
+  },
+  {
+    "sno": 77,
+    "name": "Charumathi J",
+    "team_name": "Code³",
+    "rollno": "2024PECCS159",
+    "dept": "CSE"
+  },
+  {
+    "sno": 78,
+    "name": "Harini A",
+    "team_name": "Code warriers",
+    "rollno": "2024PECCS228",
+    "dept": "CSE"
+  },
+  {
+    "sno": 79,
+    "name": "Kankipatti Sushmitha Kala",
+    "team_name": "Code warriers",
+    "rollno": "2024PECCS277",
+    "dept": "CSE"
+  },
+  {
+    "sno": 80,
+    "name": "Harini G",
+    "team_name": "Code warriers",
+    "rollno": "2024PECCS233",
+    "dept": "CSE"
+  },
+  {
+    "sno": 81,
+    "name": "BHARATHI POORNA K",
+    "team_name": "CODE CONQUERORS",
+    "rollno": "2024PECCS147",
+    "dept": "CSE"
+  },
+  {
+    "sno": 82,
+    "name": "BANU PRIYA S",
+    "team_name": "CODE CONQUERORS",
+    "rollno": "2024PECCS145",
+    "dept": "CSE"
+  },
+  {
+    "sno": 83,
+    "name": "BHAVYA S",
+    "team_name": "CODE CONQUERORS",
+    "rollno": "2024PECCS148",
+    "dept": "CSE"
+  },
+  {
+    "sno": 84,
+    "name": "Geetha Gayathri H",
+    "team_name": "Brainiacs",
+    "rollno": "2024PECML121",
+    "dept": "AIML"
+  },
+  {
+    "sno": 85,
+    "name": "Depshikha B",
+    "team_name": "Brainiacs",
+    "rollno": "2024PECML121",
+    "dept": "AIML"
+  },
+  {
+    "sno": 86,
+    "name": "Preethi R",
+    "team_name": "Brainiacs",
+    "rollno": "2024PECIT238",
+    "dept": "AIML"
+  },
+  {
+    "sno": 87,
+    "name": "M.Madhuri",
+    "team_name": "Digital Nemesis",
+    "rollno": "2024PECCS353",
+    "dept": "CSE"
+  },
+  {
+    "sno": 88,
+    "name": "Priya Darshini J S",
+    "team_name": "Digital Nemesis",
+    "rollno": "2024PECCS405",
+    "dept": "CSE"
+  },
+  {
+    "sno": 89,
+    "name": "Prabhasri G",
+    "team_name": "Digital Nemesis",
+    "rollno": "2024PECCS396",
+    "dept": "CSE"
+  },
+  {
+    "sno": 90,
+    "name": "MANISHA H",
+    "team_name": "Code Warriors⚡",
+    "rollno": "2025PECCS343",
+    "dept": "CSE"
+  },
+  {
+    "sno": 91,
+    "name": "KAVIYA S",
+    "team_name": "Code Warriors⚡",
+    "rollno": "2025PECCS302",
+    "dept": "CSE"
+  },
+  {
+    "sno": 92,
+    "name": "MADHUMITHA L",
+    "team_name": "Code Warriors⚡",
+    "rollno": "2025PECCS337",
+    "dept": "CSE"
+  },
+  {
+    "sno": 94,
+    "name": "SAMEEHA S",
+    "team_name": "Sheesdiva",
+    "rollno": "2024PECCS448",
+    "dept": "CSE"
+  },
+  {
+    "sno": 95,
+    "name": "SAFIYA M",
+    "team_name": "Sheesdiva",
+    "rollno": "2024PECCS445",
+    "dept": "CSE"
+  },
+  {
+    "sno": 96,
+    "name": "SANJHANA R S",
+    "team_name": "Sheesdiva",
+    "rollno": "2024PECCS459",
+    "dept": "CSE"
+  },
+  {
+    "sno": 97,
+    "name": "Sangavi S",
+    "team_name": "Sangavi S",
+    "rollno": "2025PECCS472",
+    "dept": "CSE"
+  },
+  {
+    "sno": 98,
+    "name": "Sahanaa Densiya D A",
+    "team_name": "Sangavi S",
+    "rollno": "2025PECCS459",
+    "dept": "CSE"
+  },
+  {
+    "sno": 99,
+    "name": "Kirithra EV",
+    "team_name": "Sangavi S",
+    "rollno": "2025PECCS316",
+    "dept": "CSE"
+  },
+  {
+    "sno": 100,
+    "name": "P Rachel Nishika",
+    "team_name": "ByteForce",
+    "rollno": "2024PECCS412",
+    "dept": "CSE"
+  },
+  {
+    "sno": 101,
+    "name": "Nikhitha V",
+    "team_name": "ByteForce",
+    "rollno": "2024PECCS366",
+    "dept": "CSE"
+  },
+  {
+    "sno": 102,
+    "name": "Priya S",
+    "team_name": "ByteForce",
+    "rollno": "2024PECCS407",
+    "dept": "CSE"
+  },
+  {
+    "sno": 103,
+    "name": "Bina Y",
+    "team_name": "Algoverse",
+    "rollno": "2024PECCS153",
+    "dept": "CSE"
+  },
+  {
+    "sno": 104,
+    "name": "AkshithaPriya S",
+    "team_name": "Algoverse",
+    "rollno": "2024PECCS115",
+    "dept": "CSE"
+  },
+  {
+    "sno": 105,
+    "name": "CharuPriya G",
+    "team_name": "Algoverse",
+    "rollno": "2024PECCS160",
+    "dept": "CSE"
+  },
+  {
+    "sno": 106,
+    "name": "Prema Sahithi Aremanda",
+    "team_name": "AlgoRhythm",
+    "rollno": "2024PECCS129",
+    "dept": "CSE"
+  },
+  {
+    "sno": 107,
+    "name": "Afsheen Fathima A",
+    "team_name": "AlgoRhythm",
+    "rollno": "2024PECCS108",
+    "dept": "CSE"
+  },
+  {
+    "sno": 108,
+    "name": "Avnitha Dev",
+    "team_name": "AlgoRhythm",
+    "rollno": "2024PECCS143",
+    "dept": "CSE"
+  },
+  {
+    "sno": 109,
+    "name": "Varshini S",
+    "team_name": "Varshini S",
+    "rollno": "2024PECCB224",
+    "dept": "CSBS"
+  },
+  {
+    "sno": 110,
+    "name": "Ramya J",
+    "team_name": "Varshini S",
+    "rollno": "2024PECCB191",
+    "dept": "CSBS"
+  },
+  {
+    "sno": 111,
+    "name": "Valarmathi R",
+    "team_name": "Varshini S",
+    "rollno": "2024PECCB222",
+    "dept": "CSBS"
+  },
+  {
+    "sno": 112,
+    "name": "SARVAJEETH THEJOANANDA",
+    "team_name": "SARVAJEETH",
+    "rollno": "2024PECCS697",
+    "dept": "CSE"
+  },
+  {
+    "sno": 113,
+    "name": "SANJAY SHRIRAM .N",
+    "team_name": "SARVAJEETH",
+    "rollno": "2024PECCS682",
+    "dept": "CSE"
+  },
+  {
+    "sno": 114,
+    "name": "PRAVEEN RAJ E",
+    "team_name": "HACKPIXEL",
+    "rollno": "2024PECEC354",
+    "dept": "ECE"
+  },
+  {
+    "sno": 115,
+    "name": "SACHIN D",
+    "team_name": "HACKPIXEL",
+    "rollno": "2024PECEC387",
+    "dept": "ECE"
+  },
+  {
+    "sno": 116,
+    "name": "SAI VIGNESH M",
+    "team_name": "HACKPIXEL",
+    "rollno": "2024PECEC391",
+    "dept": "ECE"
+  },
+  {
+    "sno": 117,
+    "name": "Dhanalakshmi N",
+    "team_name": "Code Blind",
+    "rollno": "2024PECCS172",
+    "dept": "LAB"
+  },
+  {
+    "sno": 118,
+    "name": "DHARSHINI V",
+    "team_name": "Code Blind",
+    "rollno": "2024PECCS183",
+    "dept": "CSE"
+  },
+  {
+    "sno": 119,
+    "name": "Dhanishkashri.M.S",
+    "team_name": "Code Blind",
+    "rollno": "2024PECCS173",
+    "dept": "CSE"
+  }
+]
