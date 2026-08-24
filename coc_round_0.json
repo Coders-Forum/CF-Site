@@ -1,0 +1,1852 @@
+[
+    {
+        "SNO": 1,
+        "Team Name": "Phoneix",
+        "Team Status": "Selected",
+        "Team Leader Name": "Varun S",
+        "Team Leader Roll Number": "2024PECCS645",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 348.52
+    },
+    {
+        "SNO": 2,
+        "Team Name": "Team Weberse",
+        "Team Status": "Selected",
+        "Team Leader Name": "Al Jaseera Banu H ",
+        "Team Leader Roll Number": "2024PECEE106 ",
+        "Team Leader Year of Study": "III",
+        "Team Department": "EEE",
+        "Cumulative Marks": 321.64
+    },
+    {
+        "SNO": 3,
+        "Team Name": "TriByte",
+        "Team Status": "Selected",
+        "Team Leader Name": "Aradhana M",
+        "Team Leader Roll Number": "2025PECCS135",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 288.42
+    },
+    {
+        "SNO": 4,
+        "Team Name": "FluxNext",
+        "Team Status": "Selected",
+        "Team Leader Name": "Kumaran M ",
+        "Team Leader Roll Number": "2024PECAI435",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 265.11
+    },
+    {
+        "SNO": 5,
+        "Team Name": "DYNAMIC TRIO ",
+        "Team Status": "Selected",
+        "Team Leader Name": "Harshavarthini G",
+        "Team Leader Roll Number": "2025PECIT162",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 264.16
+    },
+    {
+        "SNO": 6,
+        "Team Name": "Zevik",
+        "Team Status": "Selected",
+        "Team Leader Name": "Johovit V",
+        "Team Leader Roll Number": "2024PECCS969",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 252.78
+    },
+    {
+        "SNO": 7,
+        "Team Name": "Ctrl Alt Defeat",
+        "Team Status": "Selected",
+        "Team Leader Name": " Ramya  M",
+        "Team Leader Roll Number": "2024pecit254",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 239.86
+    },
+    {
+        "SNO": 8,
+        "Team Name": "Code vizzzz..",
+        "Team Status": "Selected",
+        "Team Leader Name": "Arunapriya S",
+        "Team Leader Roll Number": "2025PECCS138",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 226.56
+    },
+    {
+        "SNO": 9,
+        "Team Name": "Team Runtime error ",
+        "Team Status": "Selected",
+        "Team Leader Name": "Padmajaa S",
+        "Team Leader Roll Number": "2024PECCS379",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 215.76
+    },
+    {
+        "SNO": 10,
+        "Team Name": "The NullPointer",
+        "Team Status": "Selected",
+        "Team Leader Name": "TANISHKA PANDEY",
+        "Team Leader Roll Number": "2024PECCS523",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 212.57
+    },
+    {
+        "SNO": 11,
+        "Team Name": "Archer queens",
+        "Team Status": "Selected",
+        "Team Leader Name": "Ashwini S",
+        "Team Leader Roll Number": "2024PECCS136",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 210.58
+    },
+    {
+        "SNO": 12,
+        "Team Name": "Team Titans ",
+        "Team Status": "Selected",
+        "Team Leader Name": "Nambi GT ",
+        "Team Leader Roll Number": "2024PECAI472",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 207.03
+    },
+    {
+        "SNO": 13,
+        "Team Name": "Zsymox",
+        "Team Status": "Selected",
+        "Team Leader Name": "Barath Kumar Basker",
+        "Team Leader Roll Number": "2025PECCS628",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 197.42
+    },
+    {
+        "SNO": 14,
+        "Team Name": "team_S",
+        "Team Status": "Selected",
+        "Team Leader Name": "SUBASRI S",
+        "Team Leader Roll Number": "2025PECCS525",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 196.1
+    },
+    {
+        "SNO": 15,
+        "Team Name": "Triple Threat",
+        "Team Status": "Selected",
+        "Team Leader Name": "Keerthana R",
+        "Team Leader Roll Number": "2024PECCS293",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 189.5
+    },
+    {
+        "SNO": 16,
+        "Team Name": "Team Wizards",
+        "Team Status": "Selected",
+        "Team Leader Name": "Mohammed Arshath K H",
+        "Team Leader Roll Number": "2024PECCS804",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 182.29
+    },
+    {
+        "SNO": 17,
+        "Team Name": "THE FIRE CODERS",
+        "Team Status": "Selected",
+        "Team Leader Name": "SAYANTANI BANERJEE",
+        "Team Leader Roll Number": "2024PECCS464",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 177.57
+    },
+    {
+        "SNO": 18,
+        "Team Name": "Pulse",
+        "Team Status": "Selected",
+        "Team Leader Name": "Lavanya J",
+        "Team Leader Roll Number": "2025PECIT216",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 177.07
+    },
+    {
+        "SNO": 19,
+        "Team Name": "Code crafters ",
+        "Team Status": "Selected",
+        "Team Leader Name": "Gayathri N",
+        "Team Leader Roll Number": "2024PECCS214",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 177.05
+    },
+    {
+        "SNO": 20,
+        "Team Name": "Omnipotent shadow",
+        "Team Status": "Selected",
+        "Team Leader Name": "Abishek. B",
+        "Team Leader Roll Number": "2024PECEE167",
+        "Team Leader Year of Study": "III",
+        "Team Department": "EEE",
+        "Cumulative Marks": 162.64
+    },
+    {
+        "SNO": 21,
+        "Team Name": "AlgoNauts",
+        "Team Status": "Selected",
+        "Team Leader Name": "Sajan Kumaran M U",
+        "Team Leader Roll Number": "2024PECCS820",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 161.53
+    },
+    {
+        "SNO": 22,
+        "Team Name": "Flycode",
+        "Team Status": "Selected",
+        "Team Leader Name": "Jasmine banu D",
+        "Team Leader Roll Number": "2025PECCS261",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 156.59
+    },
+    {
+        "SNO": 23,
+        "Team Name": "dracarys",
+        "Team Status": "Selected",
+        "Team Leader Name": "LOKESH S",
+        "Team Leader Roll Number": "2024PECIT504",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 155.65
+    },
+    {
+        "SNO": 24,
+        "Team Name": "Alpha Algorithms",
+        "Team Status": "Selected",
+        "Team Leader Name": "GOMATHI V",
+        "Team Leader Roll Number": "2024PECCS220",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 151.47
+    },
+    {
+        "SNO": 25,
+        "Team Name": "Black box",
+        "Team Status": "Selected",
+        "Team Leader Name": "Pretheba.E",
+        "Team Leader Roll Number": "2024PECCS402",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 147.05
+    },
+    {
+        "SNO": 26,
+        "Team Name": "Code³",
+        "Team Status": "Selected",
+        "Team Leader Name": "Akshaya S M",
+        "Team Leader Roll Number": "2024PECCS114",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 146.07
+    },
+    {
+        "SNO": 27,
+        "Team Name": "Code warriers",
+        "Team Status": "Selected",
+        "Team Leader Name": "Harini A",
+        "Team Leader Roll Number": "2024PECCS228",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 144.39
+    },
+    {
+        "SNO": 28,
+        "Team Name": "CODE CONQUERORS",
+        "Team Status": "Selected",
+        "Team Leader Name": "BHARATHI POORNA K ",
+        "Team Leader Roll Number": "2024PECCS147 ",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 144.15
+    },
+    {
+        "SNO": 29,
+        "Team Name": "Brainiacs",
+        "Team Status": "Selected",
+        "Team Leader Name": "Geetha Gayathri H",
+        "Team Leader Roll Number": "2024PECML121",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 138.07
+    },
+    {
+        "SNO": 30,
+        "Team Name": "Digital Nemesis",
+        "Team Status": "Selected",
+        "Team Leader Name": "M.Madhuri",
+        "Team Leader Roll Number": "2024PECCS353",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 137.52
+    },
+    {
+        "SNO": 31,
+        "Team Name": "Code Warriors⚡",
+        "Team Status": "Selected",
+        "Team Leader Name": "MANISHA H ",
+        "Team Leader Roll Number": "2025PECCS343",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 137.03
+    },
+    {
+        "SNO": 32,
+        "Team Name": "Sheesdiva",
+        "Team Status": "Selected",
+        "Team Leader Name": "SAMEEHA S",
+        "Team Leader Roll Number": "2024PECCS448",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 135.65
+    },
+    {
+        "SNO": 33,
+        "Team Name": "Sangavi S",
+        "Team Status": "Selected",
+        "Team Leader Name": "Sangavi S",
+        "Team Leader Roll Number": "2025PECCS472",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 127.05
+    },
+    {
+        "SNO": 34,
+        "Team Name": "ByteForce",
+        "Team Status": "Selected",
+        "Team Leader Name": "P Rachel Nishika ",
+        "Team Leader Roll Number": "2024PECCS412 ",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 125.15
+    },
+    {
+        "SNO": 35,
+        "Team Name": "Algoverse",
+        "Team Status": "Selected",
+        "Team Leader Name": "Bina Y",
+        "Team Leader Roll Number": "2024PECCS153",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 122.67
+    },
+    {
+        "SNO": 36,
+        "Team Name": "AlgoRhythm",
+        "Team Status": "Selected",
+        "Team Leader Name": "Prema Sahithi Aremanda",
+        "Team Leader Roll Number": "2024PECCS129",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 119.89
+    },
+    {
+        "SNO": 37,
+        "Team Name": "SARVAJEETH THEJOANANDA ",
+        "Team Status": "Selected",
+        "Team Leader Name": "SARVAJEETH THEJOANANDA ",
+        "Team Leader Roll Number": "2024PECCS697",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 119.5
+    },
+    {
+        "SNO": 38,
+        "Team Name": "Varshini S",
+        "Team Status": "Selected",
+        "Team Leader Name": "Varshini S",
+        "Team Leader Roll Number": "2024PECCB224",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSBS",
+        "Cumulative Marks": 118.47
+    },
+    {
+        "SNO": 39,
+        "Team Name": "HACKPIXEL",
+        "Team Status": "Selected",
+        "Team Leader Name": "PRAVEEN RAJ E ",
+        "Team Leader Roll Number": "2024PECEC354",
+        "Team Leader Year of Study": "III",
+        "Team Department": "ECE",
+        "Cumulative Marks": 116.41
+    },
+    {
+        "SNO": 40,
+        "Team Name": "Code Blind ",
+        "Team Status": "Selected",
+        "Team Leader Name": "Dhanalakshmi N",
+        "Team Leader Roll Number": "2024PECCS172",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 115.57
+    },
+    {
+        "SNO": 41,
+        "Team Name": "Strawhat ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Nk Balaji B",
+        "Team Leader Roll Number": "2024PECCS705",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 108.57
+    },
+    {
+        "SNO": 42,
+        "Team Name": "VARSHINI V",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "VARSHINI V",
+        "Team Leader Roll Number": "2025PECEC300",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 108.05
+    },
+    {
+        "SNO": 43,
+        "Team Name": "Quanta fikrax",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Quanta fikrax",
+        "Team Leader Roll Number": "2024PECCS391",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 107
+    },
+    {
+        "SNO": 44,
+        "Team Name": "CODESTORM",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "BASILA ROSE SMIRNA D",
+        "Team Leader Roll Number": "2025PECEC120",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 106.17
+    },
+    {
+        "SNO": 45,
+        "Team Name": "Clan coders ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Joseph valan V ",
+        "Team Leader Roll Number": "2024PECCS970",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 105.58
+    },
+    {
+        "SNO": 46,
+        "Team Name": "Arun Meyyappan P L",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Arun Meyyappan P L ",
+        "Team Leader Roll Number": "2024PECCS1075 ",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 105.55
+    },
+    {
+        "SNO": 47,
+        "Team Name": "Code Blooded",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Antrim Jovan F",
+        "Team Leader Roll Number": "2025PECCS608",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 105.4
+    },
+    {
+        "SNO": 48,
+        "Team Name": "The Glitch Squad",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "MONISHA S",
+        "Team Leader Roll Number": "2025PECCS358",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 99.5
+    },
+    {
+        "SNO": 49,
+        "Team Name": "Tech Trio",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Dharani R",
+        "Team Leader Roll Number": "2024PECCS177",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 99
+    },
+    {
+        "SNO": 50,
+        "Team Name": "Dev Ninjas",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "ANJANA S",
+        "Team Leader Roll Number": "2024PECCS125",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 98.53
+    },
+    {
+        "SNO": 51,
+        "Team Name": "Apex",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Kaniska R",
+        "Team Leader Roll Number": "2024PECAI177",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 98.05
+    },
+    {
+        "SNO": 52,
+        "Team Name": "TECHTITANS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "BHAVA DARSHINI N",
+        "Team Leader Roll Number": "2025PECCS153",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 88.07
+    },
+    {
+        "SNO": 53,
+        "Team Name": "The Chronicles of Coders ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Mohamed Ansari",
+        "Team Leader Roll Number": "2024PECCS801",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 88.05
+    },
+    {
+        "SNO": 54,
+        "Team Name": "Zenova",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "KEERTHANA J",
+        "Team Leader Roll Number": "2025PECCS312",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 87.07
+    },
+    {
+        "SNO": 55,
+        "Team Name": "Binary Barbarians",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Mah Vaishnavi N ",
+        "Team Leader Roll Number": "2025PECCS339",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 86.6
+    },
+    {
+        "SNO": 56,
+        "Team Name": "Flip the coin",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Lakshana B J",
+        "Team Leader Roll Number": "2024PECCS312",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 86.57
+    },
+    {
+        "SNO": 57,
+        "Team Name": "CodingNinja ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Pavithra K M",
+        "Team Leader Roll Number": "2024PECCS384",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 84.34
+    },
+    {
+        "SNO": 58,
+        "Team Name": "Last-minute Legends",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "SHYAM KUMAR S",
+        "Team Leader Roll Number": "2025PECCS995",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 80
+    },
+    {
+        "SNO": 59,
+        "Team Name": "3bugz",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Rehana Ashifa A",
+        "Team Leader Roll Number": "2024PECCS421",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 79.5
+    },
+    {
+        "SNO": 60,
+        "Team Name": "PUDHUMAI",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Pudhumai Vaseekaran M",
+        "Team Leader Roll Number": "2025PECCS908 ",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 79
+    },
+    {
+        "SNO": 61,
+        "Team Name": "Control c+v",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "DEVAPRASATH R ",
+        "Team Leader Roll Number": "2025PECCS657",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 78.5
+    },
+    {
+        "SNO": 62,
+        "Team Name": "Ryzen",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Surya V",
+        "Team Leader Roll Number": "2025PECCS1034",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 78
+    },
+    {
+        "SNO": 63,
+        "Team Name": "Vexora",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Aaradhana G",
+        "Team Leader Roll Number": "2024PECCS102",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 77.5
+    },
+    {
+        "SNO": 64,
+        "Team Name": "While(true) warriors",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Divyadharshini V",
+        "Team Leader Roll Number": "2024PECCS201",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 77.5
+    },
+    {
+        "SNO": 65,
+        "Team Name": "Slayers",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "SEPRIN SMITH S",
+        "Team Leader Roll Number": "2024PECCS706",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 77.05
+    },
+    {
+        "SNO": 66,
+        "Team Name": "CODESTORM",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Thamizhinian A",
+        "Team Leader Roll Number": "2025PECIT635",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 76.58
+    },
+    {
+        "SNO": 67,
+        "Team Name": "VORTEX",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Hariharan E",
+        "Team Leader Roll Number": "2025PECEC382",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 70
+    },
+    {
+        "SNO": 68,
+        "Team Name": "JYOTSNA S",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "JYOTSNA S",
+        "Team Leader Roll Number": "2024PECAI175",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 70
+    },
+    {
+        "SNO": 69,
+        "Team Name": "Zynora",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sarosha Sylvestina J",
+        "Team Leader Roll Number": "2025PECEE157",
+        "Team Leader Year of Study": "II",
+        "Team Department": "EEE",
+        "Cumulative Marks": 69.5
+    },
+    {
+        "SNO": 70,
+        "Team Name": "LogicLords",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "RITHVEKA P S ",
+        "Team Leader Roll Number": "2024PECCS430 ",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 63.55
+    },
+    {
+        "SNO": 71,
+        "Team Name": "Code Spark",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "ROHINI G",
+        "Team Leader Roll Number": "2024PECCS432 ",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 59.5
+    },
+    {
+        "SNO": 72,
+        "Team Name": "KAVIYA.S",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Kaviya s",
+        "Team Leader Roll Number": "2024PECCS290",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 58.57
+    },
+    {
+        "SNO": 73,
+        "Team Name": "Amateur coders",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sri Chandhiya N",
+        "Team Leader Roll Number": "2025PECCS512",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 58.5
+    },
+    {
+        "SNO": 74,
+        "Team Name": "Tricoders",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sri Harsitha DN",
+        "Team Leader Roll Number": "2024PECCS495",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 58
+    },
+    {
+        "SNO": 75,
+        "Team Name": "Tech divas ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Saranya K",
+        "Team Leader Roll Number": "2025PECML164",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 57.09
+    },
+    {
+        "SNO": 76,
+        "Team Name": "KEERTHANA V ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "KEERTHANA V ",
+        "Team Leader Roll Number": "2025PECCS311 ",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 56.65
+    },
+    {
+        "SNO": 77,
+        "Team Name": "S Sarvesh ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sarvesh S",
+        "Team Leader Roll Number": "2024PECIT474",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 50
+    },
+    {
+        "SNO": 78,
+        "Team Name": "BYTEX",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "JOSPHIN L",
+        "Team Leader Roll Number": "2025PECCS763",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 49.02
+    },
+    {
+        "SNO": 79,
+        "Team Name": "AlgoGang",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "R.Nandini",
+        "Team Leader Roll Number": "2024PECCS359",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 49
+    },
+    {
+        "SNO": 80,
+        "Team Name": "Dark Warlords",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Vishal V",
+        "Team Leader Roll Number": "2025PECEE282",
+        "Team Leader Year of Study": "II",
+        "Team Department": "EEE",
+        "Cumulative Marks": 45.3
+    },
+    {
+        "SNO": 81,
+        "Team Name": "PSYCHO CODERS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Karthikeyan S",
+        "Team Leader Roll Number": "2025PECAI586",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 42.02
+    },
+    {
+        "SNO": 82,
+        "Team Name": "Stack Overflowd",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Manohasan E",
+        "Team Leader Roll Number": "2024PECEE223",
+        "Team Leader Year of Study": "III",
+        "Team Department": "EEE",
+        "Cumulative Marks": 40
+    },
+    {
+        "SNO": 83,
+        "Team Name": "404 error",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Karthikeyan S",
+        "Team Leader Roll Number": "2024PECCS391",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 40
+    },
+    {
+        "SNO": 84,
+        "Team Name": "1)K SWETHA  2)LR SWETHA  3) A SUPRIYA ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "K SWETHA",
+        "Team Leader Roll Number": "2025PECCS535",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 40
+    },
+    {
+        "SNO": 85,
+        "Team Name": "Code Blooded ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Ramela M S ",
+        "Team Leader Roll Number": "2024PECCB190",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSBS",
+        "Cumulative Marks": 39.5
+    },
+    {
+        "SNO": 86,
+        "Team Name": "CodeX3",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sakthi R F ",
+        "Team Leader Roll Number": "2024PECCS446",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 39.5
+    },
+    {
+        "SNO": 87,
+        "Team Name": "Binary Paradox",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Jaya Shri V ",
+        "Team Leader Roll Number": "2024PECCS255",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 39.5
+    },
+    {
+        "SNO": 88,
+        "Team Name": "THE THREE POINTERS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "PREETHI S",
+        "Team Leader Roll Number": "2025PECML150",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 39
+    },
+    {
+        "SNO": 89,
+        "Team Name": "SPAM ACCOUNT",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "POOJA V S",
+        "Team Leader Roll Number": "2024PECCS389",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 38.15
+    },
+    {
+        "SNO": 90,
+        "Team Name": "DebugX",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Hrithick Hari N",
+        "Team Leader Roll Number": "2025PECCS722",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 37.55
+    },
+    {
+        "SNO": 91,
+        "Team Name": "Chefcodes",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Archana A",
+        "Team Leader Roll Number": "2024PECCS128",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 36.1
+    },
+    {
+        "SNO": 92,
+        "Team Name": "code dominion ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "J.S.KRITHIKA",
+        "Team Leader Roll Number": "2025PECML133",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 34.52
+    },
+    {
+        "SNO": 93,
+        "Team Name": "Logicforge",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Anandavalli B",
+        "Team Leader Roll Number": "2025PECCS126",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 30
+    },
+    {
+        "SNO": 94,
+        "Team Name": "Nexora",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Lakshana R ",
+        "Team Leader Roll Number": "2025PECCS325",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 30
+    },
+    {
+        "SNO": 95,
+        "Team Name": "Code ninjas",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Rashika N",
+        "Team Leader Roll Number": "2024PECCS420",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 30
+    },
+    {
+        "SNO": 96,
+        "Team Name": "Syntax Squad",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Ramya R",
+        "Team Leader Roll Number": "2025PECCS439",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 30
+    },
+    {
+        "SNO": 97,
+        "Team Name": "CodeCraft Trio",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Rithika B",
+        "Team Leader Roll Number": "2025PECCS444",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 29.5
+    },
+    {
+        "SNO": 98,
+        "Team Name": "Zyntra",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Arul niranjanaa S S",
+        "Team Leader Roll Number": "2024PECCS131",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 29.5
+    },
+    {
+        "SNO": 99,
+        "Team Name": "Quantum Coders",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Saranya S",
+        "Team Leader Roll Number": "2025PECCS481 ",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 29.5
+    },
+    {
+        "SNO": 100,
+        "Team Name": "Kratos",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "JUDE ALLEN ",
+        "Team Leader Roll Number": "2025PECEC404",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 29.02
+    },
+    {
+        "SNO": 101,
+        "Team Name": "Neutral ninjas",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Harini S",
+        "Team Leader Roll Number": "2024PECCS236",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 26.74
+    },
+    {
+        "SNO": 102,
+        "Team Name": "Tech Maz",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "P LINGARAJ",
+        "Team Leader Roll Number": "2025PECIT484",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 24.2
+    },
+    {
+        "SNO": 103,
+        "Team Name": "Dcube ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Krishna Kumar P ",
+        "Team Leader Roll Number": "2024PECCS890",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 20
+    },
+    {
+        "SNO": 104,
+        "Team Name": "Night Owls",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Bhavya Shree D",
+        "Team Leader Roll Number": "2024PECAI113",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 20
+    },
+    {
+        "SNO": 105,
+        "Team Name": "Tech Titans",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Harini S",
+        "Team Leader Roll Number": "2024PECCS237",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 20
+    },
+    {
+        "SNO": 106,
+        "Team Name": "Cyber Titans",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "PARTHASARATHY P",
+        "Team Leader Roll Number": "2025PECEC474",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 20
+    },
+    {
+        "SNO": 107,
+        "Team Name": "ERROR 404",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "E J ISHITHA",
+        "Team Leader Roll Number": "2024PECCS248",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 20
+    },
+    {
+        "SNO": 108,
+        "Team Name": "Byte Forge",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "KATHIRAVAN K",
+        "Team Leader Roll Number": "2025PECCS779",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 10
+    },
+    {
+        "SNO": 109,
+        "Team Name": "TRUSTERS TECH ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Ayyappa Saravanan B ",
+        "Team Leader Roll Number": "2025PECEE178",
+        "Team Leader Year of Study": "II",
+        "Team Department": "EEE",
+        "Cumulative Marks": 10
+    },
+    {
+        "SNO": 110,
+        "Team Name": "CodeNova",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "PRIYADHARSHINI K",
+        "Team Leader Roll Number": "2024PECCS406",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 10
+    },
+    {
+        "SNO": 111,
+        "Team Name": "TriIQ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Lakshitha Mathiyalagan",
+        "Team Leader Roll Number": "2024PECCS317",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 10
+    },
+    {
+        "SNO": 112,
+        "Team Name": "CodeRush",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "DIVYASRI M ",
+        "Team Leader Roll Number": "2024PECCS202",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 10
+    },
+    {
+        "SNO": 113,
+        "Team Name": "Bug Smashers",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Vijayalakshmi S",
+        "Team Leader Roll Number": "2024PECIT316",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 10
+    },
+    {
+        "SNO": 114,
+        "Team Name": "Code Conquerers",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sanjeevani Rout ",
+        "Team Leader Roll Number": "2025PECCS476",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 10
+    },
+    {
+        "SNO": 115,
+        "Team Name": "Quantum coders",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Dinesh G",
+        "Team Leader Roll Number": "2024PECCS1019",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 9.5
+    },
+    {
+        "SNO": 116,
+        "Team Name": "BINARY BRAINS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "P.VIKRAM",
+        "Team Leader Roll Number": "2025PECEC588",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 9.02
+    },
+    {
+        "SNO": 117,
+        "Team Name": "NEXORA",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "PRIYANKA C",
+        "Team Leader Roll Number": "2025PECCS428",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 9.02
+    },
+    {
+        "SNO": 118,
+        "Team Name": "Logic Lords",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Pravin T",
+        "Team Leader Roll Number": "2024PECCS749",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 8.57
+    },
+    {
+        "SNO": 119,
+        "Team Name": "Deep thinkers",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Krishnan. V",
+        "Team Leader Roll Number": "2024PECEC426",
+        "Team Leader Year of Study": "III",
+        "Team Department": "ECE",
+        "Cumulative Marks": 7.74
+    },
+    {
+        "SNO": 120,
+        "Team Name": "Byte Crunchers",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "MANIKANDAN S",
+        "Team Leader Roll Number": "2025PECML259 ",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 121,
+        "Team Name": "Tech titans",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Pradeep s",
+        "Team Leader Roll Number": "2024PECAI489",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 122,
+        "Team Name": "Tech Titans",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Lourdu Ferdine A",
+        "Team Leader Roll Number": "2025PECIT219",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 123,
+        "Team Name": "AlgoX",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Yoshni L",
+        "Team Leader Roll Number": "2025PECIT370",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 124,
+        "Team Name": "E-Class",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Tarun P",
+        "Team Leader Roll Number": "2024PECIT389E",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 125,
+        "Team Name": "Code Trinity",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "S.Deepalakshmi",
+        "Team Leader Roll Number": "2024PECIT132",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 126,
+        "Team Name": "404: Code Not Found",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "JAGANATH B",
+        "Team Leader Roll Number": "2025PECEE212",
+        "Team Leader Year of Study": "II",
+        "Team Department": "EEE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 127,
+        "Team Name": "SELVA BHARATHI P",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "SELVA BHARATHI P ",
+        "Team Leader Roll Number": "2025PECIT597",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 128,
+        "Team Name": "Archer Queens",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Jude Inika V ",
+        "Team Leader Roll Number": "2025PECEC167",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 129,
+        "Team Name": "Team_X",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Dhanveer M",
+        "Team Leader Roll Number": "2024PECCS1007",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 130,
+        "Team Name": "Tech titans ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Shalini M",
+        "Team Leader Roll Number": "2024PECIT280",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 131,
+        "Team Name": "Code Warriors",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Nandhinipriya S ",
+        "Team Leader Roll Number": "2024PECCS356",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 132,
+        "Team Name": "Code leaders",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Aswini K",
+        "Team Leader Roll Number": "2024PECCS140",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 133,
+        "Team Name": "ELITE CODERS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "UMESH RANGANATH N",
+        "Team Leader Roll Number": "2024PECCS642",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 134,
+        "Team Name": "AlgoX",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Nandika S",
+        "Team Leader Roll Number": "2025PECIT246",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 135,
+        "Team Name": "Ricky Alfred A",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Ricky Alfred A ",
+        "Team Leader Roll Number": "2025PECEE249",
+        "Team Leader Year of Study": "II",
+        "Team Department": "EEE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 136,
+        "Team Name": "GUTBYTEZ ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "R MUTHUKUMAR ",
+        "Team Leader Roll Number": "2025PECCS848",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 137,
+        "Team Name": "CODE REAPERS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "SAANTHOSH M G",
+        "Team Leader Roll Number": "2024PECCS789",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 138,
+        "Team Name": "Thanvanth sk ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Thanvanth sk ",
+        "Team Leader Roll Number": "2025PECEC567",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 139,
+        "Team Name": "CODE DOMINATORS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "THARUN KUMAR K",
+        "Team Leader Roll Number": "2024PECCS632",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 140,
+        "Team Name": "CodeNova",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "R.Jersica Sweetlin ",
+        "Team Leader Roll Number": "2024PECEC160 ",
+        "Team Leader Year of Study": "III",
+        "Team Department": "ECE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 141,
+        "Team Name": "Recoders",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Gokulrajan P",
+        "Team Leader Roll Number": "2024PECCS1036",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 142,
+        "Team Name": "Code spartans",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Gopikrishnan R",
+        "Team Leader Roll Number": "2024PECIT564",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 143,
+        "Team Name": "CodeX",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sharan Kumar R",
+        "Team Leader Roll Number": "2025PECIT604",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 144,
+        "Team Name": "Beyond Thinkers",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Maanisha ",
+        "Team Leader Roll Number": "2024PECEC280",
+        "Team Leader Year of Study": "III",
+        "Team Department": "ECE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 145,
+        "Team Name": "Tech Titans",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "S Arul",
+        "Team Leader Roll Number": "2024PECCS1072",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 146,
+        "Team Name": "NAAN BOYS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Adhwed Krishna",
+        "Team Leader Roll Number": "2025PECML192",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 147,
+        "Team Name": "Warriors ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Prasanna kumar S",
+        "Team Leader Roll Number": "2024 PECML252",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 148,
+        "Team Name": "TEAM PARADOX",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "JASPER S",
+        "Team Leader Roll Number": "2024PECML340",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 149,
+        "Team Name": "Alpha g",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Humaira M ",
+        "Team Leader Roll Number": "2024PECCS244 ",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 150,
+        "Team Name": "VIKASH K ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "VIKASH K ",
+        "Team Leader Roll Number": "2025PECIT652",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 151,
+        "Team Name": "quantum  thinkers ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "ANNAMDEVARA SHANMUKH VEERA VENKATA RAMANA",
+        "Team Leader Roll Number": "2024PECCS1068",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 152,
+        "Team Name": "Pirates ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Visweshwaran S ",
+        "Team Leader Roll Number": "2025PECIT658 ",
+        "Team Leader Year of Study": "II",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 153,
+        "Team Name": "Code Titans",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sri Sharan V M",
+        "Team Leader Roll Number": "2025PECEC549",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 154,
+        "Team Name": "Byte Blusters",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "PRITHIKA R",
+        "Team Leader Roll Number": "2024PECCS403",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 155,
+        "Team Name": "JIL JUNK JUCK",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "YOGAVEL A",
+        "Team Leader Roll Number": "2025PECEE286",
+        "Team Leader Year of Study": "II",
+        "Team Department": "EEE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 156,
+        "Team Name": "Web Trinity",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Nandhinee K ",
+        "Team Leader Roll Number": "2025PECML143",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 157,
+        "Team Name": "HONEY BIOS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "DEVARAJ V",
+        "Team Leader Roll Number": "2025PECML217",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 158,
+        "Team Name": "CODING STARS",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Beshma Sharen JS",
+        "Team Leader Roll Number": "2025PECCS148",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 159,
+        "Team Name": "YUVARAJ S",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "YUVARAJ S",
+        "Team Leader Roll Number": "2024PECML226",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 160,
+        "Team Name": "Crazy Coders ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Joshika I.B",
+        "Team Leader Roll Number": "2025PECML127",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 161,
+        "Team Name": "Codex",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Hajj Mohaiyadeen A ",
+        "Team Leader Roll Number": "2025PECCS704",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 162,
+        "Team Name": "D²E",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "DIVYA A",
+        "Team Leader Roll Number": "2024PECCS190",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 163,
+        "Team Name": "Code of royals",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "KAVITHA SS",
+        "Team Leader Roll Number": "2024PECCS286",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 164,
+        "Team Name": "DataMinds",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "LOHIT S",
+        "Team Leader Roll Number": "2024PECAI440",
+        "Team Leader Year of Study": "III",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 165,
+        "Team Name": "Tech Spark",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Mathivathani S P",
+        "Team Leader Roll Number": "2024PECIT208",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 166,
+        "Team Name": "Outlaws",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Yaswanth J",
+        "Team Leader Roll Number": "2024PECIT348",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 167,
+        "Team Name": "Level up",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "SHALINI K",
+        "Team Leader Roll Number": "2025pecml165",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 168,
+        "Team Name": "Golden Trio",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Ketaa Kiyathi M.S.",
+        "Team Leader Roll Number": "2024PECCS300",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 169,
+        "Team Name": "Shanmuga A",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Shanmuga A",
+        "Team Leader Roll Number": "2024PECIT283",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 170,
+        "Team Name": "golden trio",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "kirthana K",
+        "Team Leader Roll Number": "2024pecit183",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 171,
+        "Team Name": "TriForge",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Teena S",
+        "Team Leader Roll Number": "2024PECIT301",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 172,
+        "Team Name": "TechNova ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Dhanusri R",
+        "Team Leader Roll Number": "2024PECIT137",
+        "Team Leader Year of Study": "III",
+        "Team Department": "IT",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 173,
+        "Team Name": "CODE AVENGERS ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Amizhdhiniyan",
+        "Team Leader Roll Number": "2025PECEC324",
+        "Team Leader Year of Study": "II",
+        "Team Department": "ECE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 174,
+        "Team Name": "Vixens ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Lakshana M",
+        "Team Leader Roll Number": "2024PECCS313",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 175,
+        "Team Name": "Kirithivasan T",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Kirithivasan T",
+        "Team Leader Roll Number": "2024PECCB286",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSBS",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 176,
+        "Team Name": "Mohana. V",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Mohana. V",
+        "Team Leader Roll Number": "2025PECCS352",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 177,
+        "Team Name": "The Blitz Brigade",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Polishetty Geisha ",
+        "Team Leader Roll Number": "2024PECCB176",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSBS",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 178,
+        "Team Name": "Xplay boys",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "THARUN S",
+        "Team Leader Roll Number": "2025PECML329",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 179,
+        "Team Name": "TECHNOVA",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Sarojj kumar D",
+        "Team Leader Roll Number": "2025PECML307",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & ML",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 180,
+        "Team Name": "Tech Innovators",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Nikitha M",
+        "Team Leader Roll Number": "2024PECCS367",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 181,
+        "Team Name": "Finishers",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Ashwin I S",
+        "Team Leader Roll Number": "2024PECCS1081",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 182,
+        "Team Name": "Logic & Lipgloss",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "S Harini",
+        "Team Leader Roll Number": "2025PECAI194",
+        "Team Leader Year of Study": "II",
+        "Team Department": "AI & DS",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 183,
+        "Team Name": "QUANTUM CODERS ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Ranjith R",
+        "Team Leader Roll Number": "2025PECCS922",
+        "Team Leader Year of Study": "II",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 184,
+        "Team Name": "Runtime Rebels",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Nithya Sri S",
+        "Team Leader Roll Number": "2024PECCS370",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSE",
+        "Cumulative Marks": 0
+    },
+    {
+        "SNO": 185,
+        "Team Name": "Web Weavers ",
+        "Team Status": "Not Selected",
+        "Team Leader Name": "Swetha.R",
+        "Team Leader Roll Number": "2024PECCB217",
+        "Team Leader Year of Study": "III",
+        "Team Department": "CSBS",
+        "Cumulative Marks": 0
+    }
+]
