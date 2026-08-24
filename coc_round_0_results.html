@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/Logo_shield.png">
+
+    <title>Clash of Coders 2026 | Coders Forum</title>
+
+
+
+
+    <!--GOOGLE TAG (ANALYTICS)-->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-3M7SMRS80F');
+    </script>
+
+
+    <!-- Primary SEO -->
+    <meta name="title" content="Clash of Coders 2026 | Coders Forum">
+
+    <meta
+      name="description"
+      content="🚀 Panimalar Engineering College's flagship interdepartment coding contest. Form a team, conquer coding challenges, and compete for exciting cash prizes!"
+    >
+
+    <meta
+      name="keywords"
+      content="Clash of Coders, Coders Forum, Panimalar Engineering College, Coding Contest, Programming Contest, Competitive Programming, COC 2026"
+    >
+
+    <meta name="author" content="Coders Forum">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0F172A">
+
+    <link
+      rel="canonical"
+      href="https://codersforum.netlify.app/clash_of_coders"
+    >
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Coders Forum">
+    <meta property="og:locale" content="en_IN">
+
+    <meta
+      property="og:url"
+      content="https://codersforum.netlify.app/clash_of_coders"
+    >
+
+    <meta
+      property="og:title"
+      content="Clash of Coders 2026 | Coders Forum"
+    >
+
+    <meta
+      property="og:description"
+      content="🚀 Panimalar Engineering College's flagship interdepartment coding contest. Form a team, conquer coding challenges, and compete for exciting cash prizes!"
+    >
+
+    <meta
+      property="og:image"
+      content="https://codersforum.netlify.app/assets/open_graph.png"
+    >
+
+    <meta
+      property="og:image:secure_url"
+      content="https://codersforum.netlify.app/assets/open_graph.png"
+    >
+
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta
+      property="og:image:alt"
+      content="Clash of Coders 2026 - Official Coding Contest by Coders Forum"
+    >
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta
+      name="twitter:title"
+      content="Clash of Coders 2026 | Coders Forum"
+    >
+
+    <meta
+      name="twitter:description"
+      content="🚀 Panimalar Engineering College's flagship interdepartment coding contest. Form a team, conquer coding challenges, and compete for exciting cash prizes!"
+    >
+
+    <meta
+      name="twitter:image"
+      content="https://codersforum.netlify.app/assets/open_graph.png"
+    >
+
+    <meta
+      name="twitter:image:alt"
+      content="Clash of Coders 2026 - Official Coding Contest by Coders Forum"
+    >
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/clash_of_coders.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#0B0F1A",
+              secondary: "#111827",
+              accent: "#FFC451",
+              glow: "#FFD700",
+              danger: "#EF4444",
+            },
+            fontFamily: {
+              clash: ["Clash", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+<style>
+  .results-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #050505;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 80px;
+    
+}
+
+.results-table th {
+    background: #333333;
+    color: #ffffff;
+    padding: 16px 12px;
+    border: 1px solid #FFD700;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.results-table td {
+    padding: 13px 10px;
+    border: 1px solid #FFD700;
+    font-size: 14px;
+}
+
+.results-table tbody tr:hover {
+    background: #111111;
+}
+.status-dot {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+}
+
+.status-dot.selected {
+    background-color: #22c55e;
+    box-shadow: 0 0 8px #22c55e;
+}
+
+.status-dot.not-selected {
+    background-color: #ef4444;
+    box-shadow: 0 0 8px #ef4444;
+}
+</style>
+    
+  </head>
+
+  <body class="bg-primary text-white font-clash" id="code-body">
+    <!--<div class="max-w-5xl mx-auto px-6 py-12">
+      <h1 class="text-5xl text-center text-accent mb-10 drop-shadow-lg">
+        CLASH OF CODERS
+      </h1>
+      <h3 class="text-3xl text-glow mb-6">Eligibility & Event Details</h3>
+      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+        <p>
+          <span class="text-glow">Eligibility:</span> All 2nd and 3rd year
+          students from Panimalar Engineering College, across all departments.
+        </p>
+
+        <p class="mt-2">
+          <span class="text-glow">Date:</span> 11th & 13th August
+        </p>
+
+        <p class="mt-2"><span class="text-glow">Venue:</span> CC20 or CC21</p>
+      </div>-->
+      <!-- ======= Header ======= -->
+
+<!-- ======= Header ======= -->
+<header class="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-blur-md">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-5 py-3">
+
+    <!-- Logo -->
+    <a href="/index.html" class="whitespace-nowrap text-white hover:text-[#FFC451] transition"
+   style="font-family:'Raleway', sans-serif; font-size:32px; font-weight:700; letter-spacing:2px; text-transform:uppercase;">
+    Coders Forum
+</a>
+    <!-- Desktop Navigation -->
+<nav class="hidden lg:flex items-center space-x-8">
+  <a href="/index.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Home
+  </a>
+
+  <a href="/about.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     About
+  </a>
+
+  <a href="/Inter_Prep.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Interview Prep
+  </a>
+
+  <a href="/events.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Events
+  </a>
+
+  <a href="/practice.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Practice
+  </a>
+
+  <a href="/gallery.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Gallery
+  </a>
+
+  <a href="/walloffame.html"
+     class="text-white hover:text-[#FFC451] transition"
+     style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+     Wall Of Fame
+  </a>
+</nav>
+
+    <!-- Mobile Button -->
+    <button id="menu-btn" class="lg:hidden text-white text-3xl">
+      ☰
+    </button>
+    
+      <div id="mobile-menu" class="hidden lg:hidden bg-black/95 absolute top-full left-0 w-full">
+      <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Home</a>
+      <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">About</a>
+      <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Interview Prep</a>
+      <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Events</a>
+      <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Practice</a>
+      <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Gallery</a>
+      <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Wall Of Fame</a>
+    </div>
+
+  </div>  
+</header>
+
+<table class="results-table" style="margin-top: 80px;">
+    <thead>
+    <tr>
+        <th>S.NO</th>
+        <th>TEAM NAME</th>
+        <th>TEAM LEADER</th>
+        <th>ROLL NUMBER</th>
+        <th>YEAR</th>
+        <th>DEPARTMENT</th>
+        <th>SCORE</th>
+        <th>STATUS</th>
+    </tr>
+</thead>
+
+<tbody id="resultsBody"></tbody>
+</table>
+
+<script>
+   document.addEventListener("DOMContentLoaded", () => {
+
+    const tableBody = document.getElementById("resultsBody");
+
+    fetch("./coc_round_0.json")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to load JSON: ${response.status}`);
+            }
+
+            return response.json();
+        })
+
+        .then(data => {
+
+            tableBody.innerHTML = "";
+
+            data.forEach(team => {
+
+                const row = document.createElement("tr");
+
+                row.innerHTML = `
+                    <td>${team["SNO"]}</td>
+                    <td>${team["Team Name"]}</td>
+                    <td>${team["Team Leader Name"]}</td>
+                    <td>${team["Team Leader Roll Number"]}</td>
+                    <td>${team["Team Leader Year of Study"]}</td>
+                    <td>${team["Team Department"]}</td>
+                    <td>${team["Cumulative Marks"]}</td>
+                    <td>
+        <span class="status-dot ${
+            team["Team Status"].toLowerCase() === "selected"
+                ? "selected"
+                : "not-selected"
+        }">
+        </span>
+        ${team["Team Status"]}
+    </td>
+                `;
+
+                tableBody.appendChild(row);
+            });
+
+        })
+
+        .catch(error => {
+
+            console.error("Error:", error);
+
+            tableBody.innerHTML = `
+                <tr>
+                    <td colspan="8">
+                        Unable to load participant data.
+                    </td>
+                </tr>
+            `;
+        });
+
+});
+</script>
+        
+
+</body>
+</html>
