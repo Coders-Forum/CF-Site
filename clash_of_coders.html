@@ -113,6 +113,49 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>/* ROUND-1 ARENA BUTTON */
+.round1-arena-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 24px;
+    padding: 14px 32px;
+
+    background-color: #FFD700;
+    color: #000000;
+
+    font-family: "Clash", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    border: 2px solid #FFD700;
+    border-radius: 9999px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    box-shadow: 0 0 18px rgba(255, 215, 0, 0.45);
+
+    transition: all 0.3s ease;
+}
+
+.round1-arena-btn:hover {
+    background-color: #FFC451;
+    border-color: #FFC451;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(255, 215, 0, 0.7),
+        0 0 40px rgba(255, 215, 0, 0.35);
+}
+
+.round1-arena-btn:active {
+    transform: scale(0.97);
+}</style>
     <script>
       tailwind.config = {
         theme: {
@@ -249,8 +292,8 @@
             CODE • COMPETE • CONQUER
         </p>
 
-        <button id="register-btn" class="coming-soon-btn" disabled>
-            Registrations open on 6th August 2026 at 9:00 PM
+         <!-- <button id="register-btn" class="coming-soon-btn" disabled>
+             Registrations open on 6th August 2026 at 9:00 PM 
         </button>
 
                   <h2 id="reg-close-text" style="font-family: 'Clash', sans-serif; text-align: center; margin-top: 2rem; color: #fff; font-size: 1.25rem;">
@@ -258,7 +301,7 @@
         </h2>
         <br>
 
-       <!-- Countdown Timer -->
+       <!-- Countdown Timer 
                 <div id="countdown-timer" class="countdown-timer" aria-live="polite">
             <div class="countdown-unit">
               <span class="countdown-value" id="cd-days">00</span>
@@ -279,9 +322,9 @@
               <span class="countdown-value" id="cd-secs">00</span>
               <span class="countdown-label">Secs</span>
             </div>
-          </div>
+          </div>-->
 
-          <!-- Round 0 Countdown Wrapper -->
+          <!-- Round 0 Countdown Wrapper 
           <div id="round0-timer-wrapper" style="display:none; text-align:center; margin-top: 2rem;">
             <h2 style="font-family: 'Clash', sans-serif; color: #fff; font-size: 1.25rem; margin-bottom: 1rem;">ROUND 0 will start in</h2>
             <div class="countdown-timer">
@@ -310,7 +353,6 @@
             <div class="scroll-down">
 
             <span></span>
-            
             <a
             id="enter-contest-btn"
             href="https://clashofcoders-theta.vercel.app/login?round=1"
@@ -318,7 +360,7 @@
             style="display:none; margin-top:20px;"
             >
             <h2 style="font-family: 'Clash', sans-serif; color: #fff; font-size: 1.25rem; margin-bottom: 1rem;">
-            <button style=" margin: 24px auto 0;width: 320px;  max-width: 90%;  text-align: center;" id="rd-toggle" 
+            <button style=" margin: 24px auto 0;width: 320px;  max-width: 90%;  text-align: center;" 
         class="rd-toggle-btn inline-flex items-center justify-center gap-2 bg-accent hover:bg-glow text-black font-bold px-8 py-3.5 rounded-full text-sm md:text-base tracking-wide">
         Enter ROUND-1 Arena
       </button>
@@ -326,7 +368,15 @@
             </h2>
           </a>
 
-        </div>
+        </div> -->
+        <a
+    id="enter-contest-btn"
+    href="https://clashofcoders-theta.vercel.app/login?round=1"
+    target="_blank"
+    class="round1-arena-btn"
+>
+    ENTER ROUND-1 ARENA →
+</a>
 </div>
 
 </section>
