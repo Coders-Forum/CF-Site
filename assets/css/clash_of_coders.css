@@ -421,3 +421,95 @@ ul {
   font-size: 15px;
   font-weight: 600;
 }
+/* =========================================
+   MOBILE HAMBURGER MENU
+========================================= */
+
+#menu-btn {
+    display: none;
+    background: transparent !important;
+    color: white !important;
+    border: none !important;
+    font-size: 32px;
+    cursor: pointer;
+    width: auto !important;
+    max-width: none !important;
+    padding: 5px 10px;
+    z-index: 99999;
+}
+
+/* Menu hidden initially */
+#mobile-menu {
+    display: none;
+}
+
+/* =========================================
+   MOBILE VIEW
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Show hamburger */
+    #menu-btn {
+        display: block !important;
+    }
+
+    /* Menu closed */
+    #mobile-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.97);
+        border-top: 1px solid #ffc451;
+        z-index: 99998;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    }
+
+    /* Menu OPEN */
+    #mobile-menu.mobile-open {
+        display: block !important;
+    }
+
+    /* Links */
+    #mobile-menu a {
+        display: block;
+        width: 100%;
+        padding: 16px 25px;
+
+        color: white !important;
+        background: transparent;
+
+        text-decoration: none;
+
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        font-weight: 600;
+
+        text-align: left;
+
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    #mobile-menu a:hover {
+        background: #ffc451;
+        color: #111827 !important;
+    }
+}
+
+/* =========================================
+   DESKTOP
+========================================= */
+
+@media (min-width: 769px) {
+
+    #menu-btn {
+        display: none !important;
+    }
+
+    #mobile-menu {
+        display: none !important;
+    }
+
+}
