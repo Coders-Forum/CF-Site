@@ -155,7 +155,61 @@
 
 .round1-arena-btn:active {
     transform: scale(0.97);
-}</style>
+}
+
+.contest-signup-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    margin-top: 24px;
+    padding: 14px 32px;
+
+    background-color: #2EC866;
+    color: #000000;
+
+    font-family: "Clash", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    border: 2px solid #2EC866;
+    border-radius: 9999px;
+
+    text-decoration: none;
+    cursor: pointer;
+
+    box-shadow: 0 0 18px rgba(46, 200, 102, 0.35);
+
+    transition: all 0.3s ease;
+}
+
+.contest-signup-button:hover {
+    background-color: #3DDC84;
+    border-color: #3DDC84;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(46, 200, 102, 0.7),
+        0 0 40px rgba(46, 200, 102, 0.35);
+}
+
+.contest-signup-button:active {
+    transform: scale(0.97);
+}
+
+.coc-LP-buttonsContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+</style>
     <script>
       tailwind.config = {
         theme: {
@@ -353,14 +407,21 @@
           </a>
 
         </div> -->
-        <a
-    id="enter-contest-btn"
-    href="https://clashofcoders-theta.vercel.app/login?round=1"
-    target="_blank"
-    class="round1-arena-btn"
->
-    ENTER ROUND-1 ARENA →
-</a>
+        <div id="coc-LP-buttonsContainer" class="coc-LP-buttonsContainer">
+          <a    id="contest-signup-button"
+            href="https://www.hackerrank.com/coc-r2-phase1"
+            target="_blank"
+            class="contest-signup-button"> SIGN UP FOR CONTEST</a>  
+          <a
+            id="enter-contest-btn"
+            href="https://clashofcoders-theta.vercel.app/arena?round=2&phase=1"
+            target="_blank"
+            class="round1-arena-btn"
+          >
+            ENTER ROUND-2 PHASE-1 ARENA →
+          </a>
+        </div>
+
 </div>
 
 </section>
