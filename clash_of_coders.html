@@ -641,27 +641,57 @@
       </div>
 
       <!-- Round 2 -->
-      <div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
-        <h3 class="text-2xl text-accent mb-4">
-          Round 2 – Final Conquest (Offline)
-        </h3>
-        <h4 class="text-xl text-glow mt-4 mb-2">Attacking Phase</h4>
-        <ul class="list-disc ml-6 space-y-2">
-          <li>Teams may attempt to conquer new lands.</li>
-          <li>Each land can be attacked by only one member from a team.</li>
-          <li>
-            Multiple team members may attack different lands simultaneously.
-          </li>
-        </ul>
+<div class="bg-secondary p-6 rounded-xl shadow-xl mb-10">
+  <h3 class="text-2xl text-accent mb-4">
+    Round 2 – Final Conquest (Offline)
+  </h3>
 
-        <h4 class="text-xl text-glow mt-6 mb-2">Defending Phase</h4>
-        <ul class="list-disc ml-6 space-y-2">
-          <li>Teams must defend previously conquered lands.</li>
-          <li>All three members may participate in defense.</li>
-          <li>Strict time limit will be provided.</li>
-          <li>Top teams with highest conquered lands advance.</li>
-        </ul>
-      </div>
+  <p class="mb-4">
+    Round 2 consists of <strong>3 phases</strong>, with each phase lasting
+    <strong>40 minutes</strong>.
+  </p>
+
+  <h4 class="text-xl text-glow mt-4 mb-2">Land Ownership</h4>
+  <ul class="list-disc ml-6 space-y-2">
+    <li>A team that successfully defends its land retains ownership.</li>
+    <li>A team whose land is successfully conquered loses that land to the attacker.</li>
+    <li>A team that neither conquers a new land nor successfully defends its existing land becomes landless.</li>
+    <li>Teams that own at least one land may both attack and defend.</li>
+  </ul>
+
+  <h4 class="text-xl text-glow mt-6 mb-2">Attacking Rules</h4>
+  <ul class="list-disc ml-6 space-y-2">
+    <li>One member from a team can attack one land at a time.</li>
+    <li>A team cannot send more than one member to attack the same land.</li>
+    <li>Multiple members of a team may attack different lands simultaneously.</li>
+    <li>If a member finishes early, they may switch to attacking a different land within the phase.</li>
+    <li>An attacking team must target a land currently owned by another team.</li>
+    <li>A land is conquered when the attacker scores strictly higher than the defending team.</li>
+    <li>If the attacker and defender have equal scores, the attacker wins the land.</li>
+    <li>If multiple teams attack the same land and defeat the defender, the attacker with the highest score conquers the land.</li>
+    <li>Land ownership is finalized only when the phase ends; no ownership changes are announced during the phase.</li>
+  </ul>
+
+  <h4 class="text-xl text-glow mt-6 mb-2">Defending Rules</h4>
+  <ul class="list-disc ml-6 space-y-2">
+    <li>Only teams currently owning a land can defend.</li>
+    <li>Multiple members from the same team may defend the same land.</li>
+    <li>All three members may participate in defense when permitted by the phase allocation.</li>
+    <li>All defenders use the team's shared HackerRank account and collaborate on the same system.</li>
+    <li>A defending team retains its land only if its score is strictly higher than all attackers targeting that land.</li>
+  </ul>
+
+  <h4 class="text-xl text-glow mt-6 mb-2">Phase-Specific Allocation</h4>
+  <ul class="list-disc ml-6 space-y-2">
+    <li><strong>Phase 1:</strong> At least 1 member must attack, and a maximum of 2 members may defend.</li>
+    <li><strong>Phase 2 &amp; Phase 3:</strong> Teams owning land have no mandatory attack requirement, and all 3 members may defend if the team chooses.</li>
+  </ul>
+
+  <h4 class="text-xl text-glow mt-6 mb-2">Elimination</h4>
+  <ul class="list-disc ml-6 space-y-2">
+    <li>The 5 trailing teams with the fewest lands at the end of each phase will be eliminated.</li>
+  </ul>
+</div>
 </div>
 <!-- ═══════════════════════════════════════════════════════════ -->
 <!-- TIMELINE START — Clash of Coders: The Campaign Trail        -->
