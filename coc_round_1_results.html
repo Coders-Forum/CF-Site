@@ -284,11 +284,7 @@
     <tr>
         <th>S.NO</th>
         <th>TEAM NAME</th>
-        <th>TEAM LEADER</th>
-        <th>ROLL NUMBER</th>
-        <th>YEAR</th>
-        <th>DEPARTMENT</th>
-        <th>LANDS</th>
+        <th>LANDS CONQUERED</th>
     </tr>
 </thead>
 
@@ -322,15 +318,7 @@
         row.innerHTML = `
             <td>${team["SNO"]}</td>
             <td>${team["Team Name"]}</td>
-            <td>${team["Team Leader Name"]}</td>
-            <td>${team["Team Leader Roll Number"]}</td>
-            <td>${team["Team Leader Year of Study"]}</td>
-            <td>${team["Team Department"]}</td>
-
-            <td class="land-cell">
-                <span class="land-dot ${conquered ? "green-dot" : "red-dot"}"></span>
-                ${team["Lands Conquored"]}
-            </td>
+            <td>${team["Lands Conquered"]}</td>
         `;
 
         tableBody.appendChild(row);
