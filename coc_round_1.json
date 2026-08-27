@@ -1,362 +1,107 @@
 [
     {
         "SNO": 1,
-        "Team Name": "Phoneix",
-        "Team Leader Name": "Varun S",
-        "Team Leader Roll Number": "2024PECCS645",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Mystery Land"
+        "Team Name": "Runtime Error",
+        "Lands Conquered":"Bit manipulation , Math"
     },
-    {
+        {
         "SNO": 2,
-        "Team Name": "Team Weberse",
-        "Team Leader Name": "Al Jaseera Banu H",
-        "Team Leader Roll Number": "2024PECEE106",
-        "Team Leader Year of Study": "III",
-        "Team Department": "EEE",
-        "Lands Conquored": "Sorting Coliseum"
-    },
-    {
-        "SNO": 3,
-        "Team Name": "Zevik",
-        "Team Leader Name": "Johovit V",
-        "Team Leader Roll Number": "2024PECCS969",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Sliding Window Pedestal"
-    },
-    {
-        "SNO": 4,
-        "Team Name": "Ctrl Alt Defeat",
-        "Team Leader Name": "Ramya M",
-        "Team Leader Roll Number": "2024pecit254",
-        "Team Leader Year of Study": "III",
-        "Team Department": "IT",
-        "Lands Conquored": "Queue Gate"
-    },
-    {
-        "SNO": 5,
-        "Team Name": "Code vizzzz..",
-        "Team Leader Name": "Arunapriya S",
-        "Team Leader Roll Number": "2025PECCS138",
-        "Team Leader Year of Study": "II",
-        "Team Department": "CSE",
-        "Lands Conquored": "Hash Table Isle"
-    },
-    {
-        "SNO": 6,
-        "Team Name": "Team Runtime error",
-        "Team Leader Name": "Padmajaa S",
-        "Team Leader Roll Number": "2024PECCS379",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Bit Manipulation Shrine"
-    },
-    {
-        "SNO": 7,
-        "Team Name": "Archer queens",
-        "Team Leader Name": "Ashwini S",
-        "Team Leader Roll Number": "2024PECCS136",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "2 Pointers Pagoda"
-    },
-    {
-        "SNO": 8,
         "Team Name": "Team Titans",
-        "Team Leader Name": "Nambi GT",
-        "Team Leader Roll Number": "2024PECAI472",
-        "Team Leader Year of Study": "III",
-        "Team Department": "AI & DS",
-        "Lands Conquored": "Stack Citadel"
+        "Lands Conquered":"Stack citadel , Patten Tower"
     },
-    {
-        "SNO": 9,
-        "Team Name": "Triple Threat",
-        "Team Leader Name": "Keerthana R",
-        "Team Leader Roll Number": "2024PECCS293",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Set Sanctuary"
+        {
+        "SNO": 3,
+        "Team Name": "Team Weberse",
+        "Lands Conquered":"Sorting , Searching"
     },
-    {
-        "SNO": 10,
-        "Team Name": "THE FIRE CODERS",
-        "Team Leader Name": "SAYANTANI BANERJEE",
-        "Team Leader Roll Number": "2024PECCS464",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Database Temple"
+        {
+        "SNO": 4,
+        "Team Name": "The Fire Coders",
+        "Lands Conquered":"Database Temple , Greedy Pillars , Mystery Land"
+    },    {
+        "SNO": 5,
+        "Team Name": "Omnipotent Shadow",
+        "Lands Conquered":"Recursion"
     },
-    {
-        "SNO": 11,
-        "Team Name": "Omnipotent shadow",
-        "Team Leader Name": "Abishek. B",
-        "Team Leader Roll Number": "2024PECEE167",
-        "Team Leader Year of Study": "III",
-        "Team Department": "EEE",
-        "Lands Conquored": "Pattern Tower"
-    },
-    {
-        "SNO": 12,
+        {
+        "SNO": 6,
+        "Team Name": "Byteforce",
+        "Lands Conquered":"Hash Table Isle"
+    },    {
+        "SNO": 7,
+        "Team Name": "Code Warriors",
+        "Lands Conquered":"String Sanctum"
+    },    {
+        "SNO": 8,
         "Team Name": "Flycode",
-        "Team Leader Name": "Jasmine banu D",
-        "Team Leader Roll Number": "2025PECCS261",
-        "Team Leader Year of Study": "II",
-        "Team Department": "CSE",
-        "Lands Conquored": "DFS Forest"
-    },
-    {
-        "SNO": 13,
-        "Team Name": "dracarys",
-        "Team Leader Name": "LOKESH S",
-        "Team Leader Roll Number": "2024PECIT504",
-        "Team Leader Year of Study": "III",
-        "Team Department": "IT",
-        "Lands Conquored": "Math Arena"
-    },
-    {
-        "SNO": 14,
-        "Team Name": "Alpha Algorithms",
-        "Team Leader Name": "GOMATHI V",
-        "Team Leader Roll Number": "2024PECCS220",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Priority Queue Necropolis"
-    },
-    {
-        "SNO": 15,
-        "Team Name": "Black box",
-        "Team Leader Name": "Pretheba.E",
-        "Team Leader Roll Number": "2024PECCS402",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Recursion Barracks"
-    },
-    {
-        "SNO": 16,
-        "Team Name": "Code warriers",
-        "Team Leader Name": "Harini A",
-        "Team Leader Roll Number": "2024PECCS228",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "BFS Ruins"
-    },
-    {
-        "SNO": 17,
-        "Team Name": "Digital Nemesis",
-        "Team Leader Name": "M.Madhuri",
-        "Team Leader Roll Number": "2024PECCS353",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Backtracking Palace"
-    },
-    {
-        "SNO": 18,
-        "Team Name": "Code Warriors⚡",
-        "Team Leader Name": "MANISHA H",
-        "Team Leader Roll Number": "2025PECCS343",
-        "Team Leader Year of Study": "II",
-        "Team Department": "CSE",
-        "Lands Conquored": "String Sanctum"
-    },
-    {
-        "SNO": 19,
-        "Team Name": "Sheesdiva",
-        "Team Leader Name": "SAMEEHA S",
-        "Team Leader Roll Number": "2024PECCS448",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Linked List Fort"
-    },
-    {
-        "SNO": 20,
+        "Lands Conquered":"DFS"
+    },    {
+        "SNO": 9,
+        "Team Name": "Hack Pixel",
+        "Lands Conquered":"Two Pointers"
+    },    {
+        "SNO": 10,
         "Team Name": "Sangavi S",
-        "Team Leader Name": "Sangavi S",
-        "Team Leader Roll Number": "2025PECCS472",
-        "Team Leader Year of Study": "II",
-        "Team Department": "CSE",
-        "Lands Conquored": "Matrix Shrine"
-    },
-    {
-        "SNO": 21,
-        "Team Name": "ByteForce",
-        "Team Leader Name": "P Rachel Nishika",
-        "Team Leader Roll Number": "2024PECCS412",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Prefix & Suffix Realm"
-    },
-    {
-        "SNO": 22,
-        "Team Name": "Algoverse",
-        "Team Leader Name": "Bina Y",
-        "Team Leader Roll Number": "2024PECCS153",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "DP Monument"
-    },
-    {
-        "SNO": 23,
-        "Team Name": "AlgoRhythm",
-        "Team Leader Name": "Prema Sahithi Aremanda",
-        "Team Leader Roll Number": "2024PECCS129",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "Greedy Pillars"
-    },
-    {
-        "SNO": 24,
+        "Lands Conquered":"Matrix"
+    },    {
+        "SNO": 11,
+        "Team Name": "Sheesdiva",
+        "Lands Conquered":"Prefix & Suffix"
+    },    {
+        "SNO": 12,
+        "Team Name": "Triple Threat",
+        "Lands Conquered":"Set Sanctuary"
+    },    {
+        "SNO": 13,
+        "Team Name": "Zevik",
+        "Lands Conquered":"Sliding Window"
+    },    {
+        "SNO": 14,
         "Team Name": "Varshini S",
-        "Team Leader Name": "Varshini S",
-        "Team Leader Roll Number": "2024PECCB224",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSBS",
-        "Lands Conquored": "Searching Pyramid"
-    },
-    {
+        "Lands Conquered":"-"
+    },    {
+        "SNO": 15,
+        "Team Name": "Alpha Algorithms",
+        "Lands Conquered":"-"
+    },    {
+        "SNO": 16,
+        "Team Name": "Black Box",
+        "Lands Conquered":"-"
+    },    {
+        "SNO": 17,
+        "Team Name": "Code Warriers",
+        "Lands Conquered":"Array"
+    },    {
+        "SNO": 18,
+        "Team Name": "Ctrl_alt_delete",
+        "Lands Conquered":"-"
+    },    {
+        "SNO": 19,
+        "Team Name": "Dracarys",
+        "Lands Conquered":"-"
+    },    {
+        "SNO": 20,
+        "Team Name": "Code vizzzz",
+        "Lands Conquered":"-"
+    },    {
+        "SNO": 21,
+        "Team Name": "Digital Nemesis",
+        "Lands Conquered":"-"
+    },    {
+        "SNO": 22,
+        "Team Name": "Phoenix",
+        "Lands Conquered":"ELIMINATED"
+    },    {
+        "SNO": 23,
+        "Team Name": "Algorhythm",
+        "Lands Conquered":"ELIMINATED"
+    },    {
+        "SNO": 24,
+        "Team Name": "Algoverse",
+        "Lands Conquered":"ELIMINATED"
+    },    {
         "SNO": 25,
-        "Team Name": "HACKPIXEL",
-        "Team Leader Name": "PRAVEEN RAJ E",
-        "Team Leader Roll Number": "2024PECEC354",
-        "Team Leader Year of Study": "III",
-        "Team Department": "ECE",
-        "Lands Conquored": "Array Realm"
-    },
-    {
-        "SNO": 26,
-        "Team Name": "TriByte",
-        "Team Leader Name": "Aradhana M",
-        "Team Leader Roll Number": "2025PECCS135",
-        "Team Leader Year of Study": "II",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 27,
-        "Team Name": "FluxNext",
-        "Team Leader Name": "Kumaran M",
-        "Team Leader Roll Number": "2024PECAI435",
-        "Team Leader Year of Study": "III",
-        "Team Department": "AI & DS",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 28,
-        "Team Name": "DYNAMIC TRIO",
-        "Team Leader Name": "Harshavarthini G",
-        "Team Leader Roll Number": "2025PECIT162",
-        "Team Leader Year of Study": "II",
-        "Team Department": "IT",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 29,
-        "Team Name": "The NullPointer",
-        "Team Leader Name": "TANISHKA PANDEY",
-        "Team Leader Roll Number": "2024PECCS523",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 30,
-        "Team Name": "Zsymox",
-        "Team Leader Name": "Barath Kumar Basker",
-        "Team Leader Roll Number": "2025PECCS628",
-        "Team Leader Year of Study": "II",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 31,
-        "Team Name": "team_S",
-        "Team Leader Name": "SUBASRI S",
-        "Team Leader Roll Number": "2025PECCS525",
-        "Team Leader Year of Study": "II",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 32,
-        "Team Name": "Team Wizards",
-        "Team Leader Name": "Mohammed Arshath K H",
-        "Team Leader Roll Number": "2024PECCS804",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 33,
-        "Team Name": "Pulse",
-        "Team Leader Name": "Lavanya J",
-        "Team Leader Roll Number": "2025PECIT216",
-        "Team Leader Year of Study": "II",
-        "Team Department": "IT",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 34,
-        "Team Name": "Code crafters",
-        "Team Leader Name": "Gayathri N",
-        "Team Leader Roll Number": "2024PECCS214",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 35,
-        "Team Name": "AlgoNauts",
-        "Team Leader Name": "Sajan Kumaran M U",
-        "Team Leader Roll Number": "2024PECCS820",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 36,
-        "Team Name": "Code³",
-        "Team Leader Name": "Akshaya S M",
-        "Team Leader Roll Number": "2024PECCS114",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 37,
-        "Team Name": "CODE CONQUERORS",
-        "Team Leader Name": "BHARATHI POORNA K",
-        "Team Leader Roll Number": "2024PECCS147",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 38,
-        "Team Name": "Brainiacs",
-        "Team Leader Name": "Geetha Gayathri H",
-        "Team Leader Roll Number": "2024PECML121",
-        "Team Leader Year of Study": "III",
-        "Team Department": "AI & ML",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 39,
-        "Team Name": "SARVAJEETH THEJOANANDA",
-        "Team Leader Name": "SARVAJEETH THEJOANANDA",
-        "Team Leader Roll Number": "2024PECCS697",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
-    },
-    {
-        "SNO": 40,
-        "Team Name": "Code Blind",
-        "Team Leader Name": "Dhanalakshmi N",
-        "Team Leader Roll Number": "2024PECCS172",
-        "Team Leader Year of Study": "III",
-        "Team Department": "CSE",
-        "Lands Conquored": "No Lands"
+        "Team Name": "Archer Queens",
+        "Lands Conquered":"ELIMINATED"
     }
 ]
