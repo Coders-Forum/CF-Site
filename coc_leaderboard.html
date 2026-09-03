@@ -1,0 +1,741 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="./assets/Logo_shield.png">
+
+  <title>Clash of Coders 2026 | Results</title>
+
+
+
+
+  <!--GOOGLE TAG (ANALYTICS)-->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-3M7SMRS80F');
+  </script>
+
+
+  <!-- Primary SEO -->
+  <meta name="title" content="Clash of Coders 2026 | Coders Forum">
+
+  <meta name="description"
+    content="🚀 Panimalar Engineering College's flagship interdepartment coding contest. Form a team, conquer coding challenges, and compete for exciting cash prizes!">
+
+  <meta name="keywords"
+    content="Clash of Coders, Coders Forum, Panimalar Engineering College, Coding Contest, Programming Contest, Competitive Programming, COC 2026">
+
+  <meta name="author" content="Coders Forum">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#0F172A">
+
+  <link rel="canonical" href="https://codersforum.netlify.app/clash_of_coders">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Coders Forum">
+  <meta property="og:locale" content="en_IN">
+
+  <meta property="og:url" content="https://codersforum.netlify.app/clash_of_coders">
+
+  <meta property="og:title" content="Clash of Coders 2026 | Coders Forum">
+
+  <meta property="og:description"
+    content="🚀 Panimalar Engineering College's flagship interdepartment coding contest. Form a team, conquer coding challenges, and compete for exciting cash prizes!">
+
+  <meta property="og:image" content="https://codersforum.netlify.app/assets/open_graph.png">
+
+  <meta property="og:image:secure_url" content="https://codersforum.netlify.app/assets/open_graph.png">
+
+  <meta property="og:image:type" content="image/png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <meta property="og:image:alt" content="Clash of Coders 2026 - Official Coding Contest by Coders Forum">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+
+  <meta name="twitter:title" content="Clash of Coders 2026 | Coders Forum">
+
+  <meta name="twitter:description"
+    content="🚀 Panimalar Engineering College's flagship interdepartment coding contest. Form a team, conquer coding challenges, and compete for exciting cash prizes!">
+
+  <meta name="twitter:image" content="https://codersforum.netlify.app/assets/open_graph.png">
+
+  <meta name="twitter:image:alt" content="Clash of Coders 2026 - Official Coding Contest by Coders Forum">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/css/clash_of_coders.css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#0B0F1A",
+            secondary: "#111827",
+            accent: "#FFC451",
+            glow: "#FFD700",
+            danger: "#EF4444",
+          },
+          fontFamily: {
+            clash: ["Clash", "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      margin: 0;
+      background: #050505;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    /* ===== TOP BUTTONS ===== */
+
+    .round-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 30px 20px;
+      flex-wrap: wrap;
+    }
+
+    .round-btn {
+      padding: 12px 22px;
+      border: 1px solid #FFD700;
+      background: transparent;
+      color: white;
+      cursor: pointer;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .round-btn:hover {
+      background: #FFD700;
+      color: black;
+    }
+
+    .round-btn.active {
+      background: #FFD700;
+      color: black;
+    }
+
+
+    /* ===== TABLE ===== */
+
+    .table-container {
+      width: 95%;
+      margin: 20px auto;
+      overflow-x: auto;
+    }
+
+    .results-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #050505;
+      color: white;
+      text-align: center;
+    }
+
+    .results-table th {
+      background: #333333;
+      padding: 15px 12px;
+      border: 1px solid #FFD700;
+      font-size: 14px;
+    }
+
+    .results-table td {
+      padding: 13px 10px;
+      border: 1px solid #FFD700;
+      font-size: 14px;
+    }
+
+    .results-table tbody tr:hover {
+      background: #111111;
+    }
+
+
+    /* ===== STATUS DOT ===== */
+
+    .status-dot {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
+
+    .selected {
+      background: #22c55e;
+      box-shadow: 0 0 8px #22c55e;
+    }
+
+    .not-selected {
+      background: #ef4444;
+      box-shadow: 0 0 8px #ef4444;
+    }
+
+
+    /* ===== LOADING ===== */
+
+    .message {
+      text-align: center;
+      padding: 30px;
+      font-size: 16px;
+    }
+
+    .member-column {
+      vertical-align: middle;
+    }
+
+    .member {
+      padding: 8px 5px;
+      min-height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid #555;
+    }
+
+    .member:last-child {
+      border-bottom: none;
+    }
+  </style>
+
+
+</head>
+
+<body class="bg-primary text-white font-clash" id="code-body">
+
+
+  <!-- ======= Header ======= -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-black/60 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-5 py-3">
+
+      <!-- Logo -->
+      <a href="/index.html" class="whitespace-nowrap text-white hover:text-[#FFC451] transition"
+        style="font-family:'Raleway', sans-serif; font-size:32px; font-weight:700; letter-spacing:2px; text-transform:uppercase;">
+        Coders Forum
+      </a>
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center space-x-8">
+        <a href="/index.html" class="text-white hover:text-[#FFC451] transition"
+          style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+          Home
+        </a>
+
+        <a href="/about.html" class="text-white hover:text-[#FFC451] transition"
+          style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+          About
+        </a>
+
+        <a href="/Inter_Prep.html" class="text-white hover:text-[#FFC451] transition"
+          style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+          Interview Prep
+        </a>
+
+        <a href="/events.html" class="text-white hover:text-[#FFC451] transition"
+          style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+          Events
+        </a>
+
+        <a href="/practice.html" class="text-white hover:text-[#FFC451] transition"
+          style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+          Practice
+        </a>
+
+        <a href="/gallery.html" class="text-white hover:text-[#FFC451] transition"
+          style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+          Gallery
+        </a>
+
+        <a href="/walloffame.html" class="text-white hover:text-[#FFC451] transition"
+          style="font-family:'Open Sans',sans-serif;font-size:15px;font-weight:600;">
+          Wall Of Fame
+        </a>
+      </nav>
+
+      <!-- Mobile Button -->
+      <button id="menu-btn" class="lg:hidden text-white text-3xl">
+        ☰
+      </button>
+
+      <div id="mobile-menu" class="hidden lg:hidden bg-black/95 absolute top-full left-0 w-full">
+        <a href="/index.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Home</a>
+        <a href="/about.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">About</a>
+        <a href="/Inter_Prep.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Interview
+          Prep</a>
+        <a href="/events.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Events</a>
+        <a href="/practice.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Practice</a>
+        <a href="/gallery.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Gallery</a>
+        <a href="/walloffame.html" class="block px-8 py-4 text-white hover:bg-[#FFC451] hover:text-black">Wall Of
+          Fame</a>
+      </div>
+
+    </div>
+  </header>
+  <br>
+  <br>
+  <!-- =========================
+         ROUND BUTTONS
+    ========================== -->
+  <div>
+    <button id="round0Btn" class="round-btn" onclick="loadRound('round0', this)">
+      Round 0
+    </button>
+
+    <button id="round1Btn" class="round-btn" onclick="loadRound('round1', this)">
+      Round 1
+    </button>
+
+    <button id="phase1Btn" class="round-btn" onclick="loadRound('phase1', this)">
+      Round 2 Phase 1
+    </button>
+
+    <button id="phase2Btn" class="round-btn" onclick="loadRound('phase2', this)">
+      Round 2 Phase 2
+    </button>
+
+    <button id="phase3Btn" class="round-btn" onclick="loadRound('phase3', this)">
+      Round 2 Phase 3
+    </button>
+  </div>
+
+
+
+  <!-- =========================
+         TABLE
+    ========================== -->
+
+  <div class="table-container">
+
+    <table class="results-table">
+
+      <thead id="tableHead">
+        <!-- Dynamically generated -->
+      </thead>
+
+      <tbody id="resultsBody">
+        <!-- Dynamically generated -->
+      </tbody>
+
+    </table>
+
+    <div id="message" class="message"></div>
+
+  </div>
+
+
+  <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+
+  <script>
+    const roundFiles = {
+
+      round0: "assets/results/coc_round_0.json",
+
+      round1: "assets/results/coc_round_1.json",
+
+      phase1: "assets/results/coc_round_2_phase_1.json",
+
+      phase2: "assets/results/coc_round_2_phase_2.json",
+
+      phase3: "assets/results/coc_round_2_phase_3.json"
+
+    };
+
+
+
+
+    function loadRound(round, button) {
+
+      console.log("Selected round:", round);
+      document.querySelectorAll(".round-btn").forEach(btn => {
+        btn.classList.remove("active");
+      });
+
+      button.classList.add("active");
+
+      const file = roundFiles[round];
+
+      console.log("Trying to load:", file);
+
+      if (!file) {
+        console.error("Invalid round:", round);
+        return;
+      }
+
+      fetch(file)
+        .then(response => {
+
+          console.log("Response:", response);
+          console.log("Status:", response.status);
+
+          if (!response.ok) {
+            throw new Error(
+              `Failed to load ${file} - HTTP ${response.status}`
+            );
+          }
+
+          return response.json();
+        })
+
+        .then(data => {
+
+          console.log("JSON loaded successfully:");
+          console.log(data);
+
+          if (!Array.isArray(data)) {
+            throw new Error("JSON is not an array");
+          }
+
+          if (round === "round0") {
+            generateRound0Table(data);
+
+          } else if (round === "phase3") {
+            generatePhase3Table(data);
+
+          } else {
+            generateOtherRoundTable(data);
+          }
+        })
+
+        .catch(error => {
+
+          console.error("FULL ERROR:", error);
+
+          alert("Unable to load data. Check Console (F12).");
+
+        });
+    }
+
+
+    function generateRound0Table(data) {
+
+      const tableHead = document.getElementById("tableHead");
+      const tableBody = document.getElementById("resultsBody");
+
+
+      // Clear old table
+      tableHead.innerHTML = "";
+      tableBody.innerHTML = "";
+
+
+      // -------------------------
+      // HEADER
+      // -------------------------
+
+      const headerRow = document.createElement("tr");
+
+      headerRow.innerHTML = `
+        <th>SNO</th>
+        <th>Team Name</th>
+        <th>Team Leader</th>
+        <th>Roll Number</th>
+        <th>Year of Study</th>
+        <th>Department</th>
+        <th>Status</th>
+        <th>Cumulative Marks</th>
+    `;
+
+      tableHead.appendChild(headerRow);
+
+
+      // -------------------------
+      // BODY
+      // -------------------------
+
+      data.forEach(team => {
+
+        const row = document.createElement("tr");
+
+
+        // Status dot
+
+        const status =
+          team["Team Status"]?.toLowerCase() === "selected";
+
+
+        const statusHTML = `
+    <span class="status-dot ${status ? "selected" : "not-selected"}"></span>
+    ${team["Team Status"]}
+`;
+
+
+        row.innerHTML = `
+
+            <td>
+                ${team["SNO"]}
+            </td>
+
+            <td>
+                ${team["Team Name"]}
+            </td>
+
+            <td>
+                ${team["Team Leader Name"]}
+            </td>
+
+            <td>
+                ${team["Team Leader Roll Number"]}
+            </td>
+
+            <td>
+                ${team["Team Leader Year of Study"]}
+            </td>
+
+            <td>
+                ${team["Team Department"]}
+            </td>
+
+            <td>
+                ${statusHTML}
+            </td>
+
+            <td>
+                ${team["Cumulative Marks"]}
+            </td>
+
+        `;
+
+
+        tableBody.appendChild(row);
+
+      });
+
+    }
+    function generateOtherRoundTable(data) {
+
+      const tableHead = document.getElementById("tableHead");
+      const tableBody = document.getElementById("resultsBody");
+
+
+      // Clear previous table
+      tableHead.innerHTML = "";
+      tableBody.innerHTML = "";
+
+
+      // -------------------------
+      // HEADER
+      // -------------------------
+
+      const headerRow = document.createElement("tr");
+
+      headerRow.innerHTML = `
+        <th>SNO</th>
+        <th>Team Name</th>
+        <th>Team Members</th>
+        <th>Roll No</th>
+        <th>Department</th>
+        <th>Year of Study</th>
+        <th>Lands Conquored</th>
+    `;
+
+      tableHead.appendChild(headerRow);
+
+
+      // -------------------------
+      // BODY
+      // -------------------------
+
+      data.forEach(team => {
+
+        const row = document.createElement("tr");
+
+
+        // Create member lists
+
+        const members = team["Team Members"] || [];
+        const rollNumbers = team["Roll No"] || [];
+        const departments = team["Department"] || [];
+        const years = team["Year of Study"] || [];
+
+
+        // Generate members HTML
+
+        const membersHTML = members
+          .map(member => `<div class="member">${member}</div>`)
+          .join("");
+
+
+        // Generate roll number HTML
+
+        const rollHTML = rollNumbers
+          .map(roll => `<div class="member">${roll}</div>`)
+          .join("");
+
+
+        // Generate department HTML
+
+        const deptHTML = departments
+          .map(dept => `<div class="member">${dept}</div>`)
+          .join("");
+
+
+        // Generate year HTML
+
+        const yearHTML = years
+          .map(year => `<div class="member">${year}</div>`)
+          .join("");
+
+
+        row.innerHTML = `
+
+            <td>
+                ${team["SNO"]}
+            </td>
+
+            <td>
+                ${team["Team Name"]}
+            </td>
+
+            <td class="member-column">
+                ${membersHTML}
+            </td>
+
+            <td class="member-column">
+                ${rollHTML}
+            </td>
+
+            <td class="member-column">
+                ${deptHTML}
+            </td>
+
+            <td class="member-column">
+                ${yearHTML}
+            </td>
+
+            <td>
+                ${team["Lands Conquored"]}
+            </td>
+
+        `;
+
+
+        tableBody.appendChild(row);
+
+      });
+
+    }
+    function generatePhase3Table(data) {
+    const tableHead = document.getElementById("tableHead");
+    const tableBody = document.getElementById("resultsBody");
+
+    tableHead.innerHTML = "";
+    tableBody.innerHTML = "";
+
+    // Table Header
+    const headerRow = document.createElement("tr");
+
+    headerRow.innerHTML = `
+        <th>Rank</th>
+        <th>Team Name</th>
+        <th>Team Members</th>
+        <th>Roll No</th>
+        <th>Department</th>
+        <th>Year of Study</th>
+        <th>Lands Conquered</th>
+    `;
+
+    tableHead.appendChild(headerRow);
+
+    // Table Data
+    data.forEach(team => {
+
+        const row = document.createElement("tr");
+
+        const members = team["Team Members"] || [];
+        const rollNumbers = team["Roll No"] || [];
+        const departments = team["Department"] || [];
+        const years = team["Year of Study"] || [];
+
+        // Generate 3 separate lines inside each cell
+        const membersHTML = members
+            .map(member => `<div class="member">${member}</div>`)
+            .join("");
+
+        const rollHTML = rollNumbers
+            .map(roll => `<div class="member">${roll}</div>`)
+            .join("");
+
+        const deptHTML = departments
+            .map(dept => `<div class="member">${dept}</div>`)
+            .join("");
+
+        const yearHTML = years
+            .map(year => `<div class="member">${year}</div>`)
+            .join("");
+
+        row.innerHTML = `
+            <td>${team["Rank"]}</td>
+
+            <td>${team["Team Name"]}</td>
+
+            <td class="member-column">
+                ${membersHTML}
+            </td>
+
+            <td class="member-column">
+                ${rollHTML}
+            </td>
+
+            <td class="member-column">
+                ${deptHTML}
+            </td>
+
+            <td class="member-column">
+                ${yearHTML}
+            </td>
+
+            <td>${team["Lands Conquered"]}</td>
+        `;
+
+        tableBody.appendChild(row);
+    });
+}
+
+    // Load Round-0 when page opens
+
+    window.addEventListener("DOMContentLoaded", () => {
+
+      const params = new URLSearchParams(window.location.search);
+      const round = params.get("round");
+
+      if (round && roundFiles[round]) {
+
+        const button = document.getElementById(round + "Btn");
+
+        loadRound(round, button);
+
+      } else {
+
+        loadRound(
+          "round0",
+          document.getElementById("round0Btn")
+        );
+
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>

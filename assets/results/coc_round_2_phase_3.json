@@ -1,0 +1,123 @@
+[
+  {
+    "Rank": 1,
+    "Team Name": "Team Titans",
+    "Team Members": [
+      "Nambi GT",
+      "Karthick K",
+      "Kishore R"
+    ],
+    "Roll No": [
+      "2024PECAI472",
+      "2024PECAI420",
+      "2024PECAI427"
+    ],
+    "Department": [
+      "AI & DS",
+      "AI & DS",
+      "AI & DS"
+    ],
+    "Year of Study": [
+      "III",
+      "III",
+      "III"
+    ],
+    "Lands Conquered": "Bit Manipulation Shrine,<br> Pattern Tower,<br> Stack Citadel"
+  },
+  {
+    "Rank": 2,
+    "Team Name": "Fire Coders",
+    "Team Members": [
+      "SAYANTANI BANERJEE",
+      "Benisha Pros A"
+    ],
+    "Roll No": [
+      "2024PECCS464",
+      "2025PECCS147"
+    ],
+    "Department": [
+      "CSE",
+      "CSE"
+    ],
+    "Year of Study": [
+      "III",
+      "II"
+    ],
+    "Lands Conquered": "String Sanctum,<br> Greedy Pillars"
+  },
+  {
+    "Rank": 3,
+    "Team Name": "Dracarys",
+    "Team Members": [
+      "LOKESH S",
+      "LISHANTH S",
+      "KAUSHIK RAJ.P"
+    ],
+    "Roll No": [
+      "2024PECIT504",
+      "2024PECIT498",
+      "2024PECIT479"
+    ],
+    "Department": [
+      "IT",
+      "IT",
+      "IT"
+    ],
+    "Year of Study": [
+      "III",
+      "III",
+      "III"
+    ],
+    "Lands Conquered": "Sliding Window Pedestal,<br> 2 Pointers Pagoda"
+  },
+  {
+    "Rank": 4,
+    "Team Name": "Shesdiva",
+    "Team Members": [
+      "SAMEEHA S",
+      "SAFIYA M",
+      "SANJHANA R S"
+    ],
+    "Roll No": [
+      "2024PECCS448",
+      "2024PECCS445",
+      "2024PECCS459"
+    ],
+    "Department": [
+      "CSE",
+      "CSE",
+      "CSE"
+    ],
+    "Year of Study": [
+      "III",
+      "III",
+      "III"
+    ],
+    "Lands Conquered": "Mystery Land,<br> Sorting Coliseum"
+  },
+  {
+    "Rank": 5,
+    "Team Name": "Zevik",
+    "Team Members": [
+      "Johovit V",
+      "Jeevankumar S",
+      "Jeffery Rufus P"
+    ],
+    "Roll No": [
+      "2024PECCS969",
+      "2024PECCS956",
+      "2024PECCS959"
+    ],
+    "Department": [
+      "CSE",
+      "CSE",
+      "CSE"
+    ],
+    "Year of Study": [
+      "III",
+      "III",
+      "III"
+    ],
+    "Lands Conquered": "Linked List Fort"
+  }
+]
