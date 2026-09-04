@@ -1,9 +1,22 @@
 const achievers = [
   {
+    id: "2024PECCS873",
+    name: "Kevin James",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Kevin%20James.jpeg",
+    achievements: ["Extensive Contribution to ClashOfCoders Contest Website"],
+  },
+  {
+    id: "2024PECCS446",
+    name: "Sakthi R F",
+    img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Sakthi.jpeg",
+    achievements: ["Extensive Contribution to ClashOfCoders Contest Website"],
+  },
+  {
     id: "2024PECCS799",
     name: "Micheal Anto Jerrish C",
     img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/Micheal%20Anto%20Jerrish.jpeg",
-    achievements: ["Winner of December Monthly Contest, 2025 - Merry Quest"],
+    achievements: ["Active Contributor",
+      "Winner of December Monthly Contest, 2025 - Merry Quest"],
   },
   {
     id: "2024PECCS801",
@@ -62,7 +75,8 @@ const achievers = [
     id: "2023PECCS556",
     name: "Rahul N",
     img: "https://ik.imagekit.io/codersforum/Wall%20of%20fame/wall%20of%20fame/rahul.jpg",
-    achievements: ["Winner of July Monthly Contest, 2024 - Automate.PY"],
+    achievements: ["Extensive Contribution to ClashOfCoders Contest Website",
+      "Winner of July Monthly Contest, 2024 - Automate.PY"],
   },
   {
     id: "2023PECCS432",
