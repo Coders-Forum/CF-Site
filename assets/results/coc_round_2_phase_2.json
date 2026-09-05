@@ -1,0 +1,243 @@
+[
+  {
+    "SNO": 1,
+    "Team Name": "Zevik",
+    "Team Members": ["Johovit V", "Jeevankumar S", "Jeffery Rufus P"],
+    "Roll No": ["2024PECCS969", "2024PECCS956", "2024PECCS959"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Hash Table Isle, Sliding Window Pedestal"
+  },
+  {
+    "SNO": 2,
+    "Team Name": "dracarys",
+    "Team Members": ["LOKESH S", "LISHANTH S", "KAUSHIK RAJ.P"],
+    "Roll No": ["2024PECIT504", "2024PECIT498", "2024PECIT479"],
+    "Department": ["IT", "IT", "IT"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Array Realm, 2 Pointers Pagoda"
+  },
+  {
+    "SNO": 3,
+    "Team Name": "Ctrl Alt Defeat",
+    "Team Members": ["Ramya M", "Ravuru varsha", "Preethi R"],
+    "Roll No": ["2024pecit254", "2024pecit256", "2024PECIT238"],
+    "Department": ["IT", "IT", "IT"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Priority Queue Necropolis"
+  },
+  {
+    "SNO": 4,
+    "Team Name": "Team Runtime error",
+    "Team Members": ["Padmajaa S", "Ponmagal E", "Nivetha S"],
+    "Roll No": ["2024PECCS379", "2024PECCS385", "2024PECCS373"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Bit Manipulation Shrine"
+  },
+  {
+    "SNO": 5,
+    "Team Name": "Team Titans",
+    "Team Members": ["Nambi GT", "Karthick K", "Kishore R"],
+    "Roll No": ["2024PECAI472", "2024PECAI420", "2024PECAI427"],
+    "Department": ["AI & DS", "AI & DS", "AI & DS"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Stack Citadel"
+  },
+  {
+    "SNO": 6,
+    "Team Name": "Black box",
+    "Team Members": ["Pretheba.E", "Raghavi.R", "Preethishree.PK"],
+    "Roll No": ["2024PECCS402", "2024PECCS414", "2024PECCS401"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Pattern Tower"
+  },
+  {
+    "SNO": 7,
+    "Team Name": "Code Warriors⚡",
+    "Team Members": ["MANISHA H", "KAVIYA S", "MADHUMITHA L"],
+    "Roll No": ["2025PECCS343", "2025PECCS302", "2025PECCS337"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["II", "II", "II"],
+    "Lands Conquored": "Recursion Barracks"
+  },
+  {
+    "SNO": 8,
+    "Team Name": "Sheesdiva",
+    "Team Members": ["SAMEEHA S", "SAFIYA M", "SANJHANA R S"],
+    "Roll No": ["2024PECCS448", "2024PECCS445", "2024PECCS459"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Mystery Land"
+  },
+  {
+    "SNO": 9,
+    "Team Name": "ByteForce",
+    "Team Members": ["P Rachel Nishika", "Nikhitha V", "Priya S"],
+    "Roll No": ["2024PECCS412", "2024PECCS366", "2024PECCS407"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Linked List Fort"
+  },
+  {
+    "SNO": 10,
+    "Team Name": "HACKPIXEL",
+    "Team Members": ["PRAVEEN RAJ E", "SACHIN D", "SAI VIGNESH M"],
+    "Roll No": ["2024PECEC354", "2024PECEC387", "2024PECEC391"],
+    "Department": ["ECE", "ECE", "ECE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "Prefix & Suffix Realm"
+  },
+  {
+    "SNO": 11,
+    "Team Name": "THE FIRE CODERS",
+    "Team Members": ["SAYANTANI BANERJEE", "Benisha Pros A"],
+    "Roll No": ["2024PECCS464", "2025PECCS147"],
+    "Department": ["CSE", "CSE"],
+    "Year of Study": ["III", "II"],
+    "Lands Conquored": "-"
+  },
+  {
+    "SNO": 12,
+    "Team Name": "Flycode",
+    "Team Members": ["Jasmine banu D", "Jenilin J", "Jenifer"],
+    "Roll No": ["2025PECCS261", "2025PECCS276", "2025PECCS277"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["II", "II", "II"],
+    "Lands Conquored": "-"
+  },
+  {
+    "SNO": 13,
+    "Team Name": "Code warriers",
+    "Team Members": ["Harini A", "Kankipatti Sushmitha Kala", "Harini G"],
+    "Roll No": ["2024PECCS228", "2024PECCS277", "2024PECCS233"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "-"
+  },
+  {
+    "SNO": 14,
+    "Team Name": "Sangavi S",
+    "Team Members": ["Sangavi S", "Sahanaa Densiya D A", "Kirithra EV"],
+    "Roll No": ["2025PECCS472", "2025PECCS459", "2025PECCS316"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["II", "II", "II"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 15,
+    "Team Name": "Phoneix",
+    "Team Members": ["Varun S", "Varun S", "Udhayakumar V"],
+    "Roll No": ["2024PECCS645", "2024PECCS646", "2024PECCS641"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 16,
+    "Team Name": "Team Weberse",
+    "Team Members": ["Al Jaseera Banu H", "Azhari Jasmine H", "Mirudula S"],
+    "Roll No": ["2024PECEE106", "2024PECEE109", "2025PECEE133"],
+    "Department": ["EEE", "EEE", "EEE"],
+    "Year of Study": ["III", "III", "II"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 17,
+    "Team Name": "Code vizzzz..",
+    "Team Members": ["Arunapriya S", "Amalarose E", "Bhuvana K"],
+    "Roll No": ["2025PECCS138", "2025PECCS123", "2025PECCS156"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["II", "II", "II"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 18,
+    "Team Name": "Archer queens",
+    "Team Members": ["Ashwini S", "Abinaya S", "Brindha P"],
+    "Roll No": ["2024PECCS136", "2024PECCS106", "2024PECCS155"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 19,
+    "Team Name": "Triple Threat",
+    "Team Members": ["Keerthana R", "Keerthana R", "Logeshwari V"],
+    "Roll No": ["2024PECCS293", "2024PECCS292", "2024PECCS322"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 20,
+    "Team Name": "Omnipotent shadow",
+    "Team Members": [
+      "Abishek. B",
+      "Aravindhan. K",
+      "Mohan Raj"
+    ],
+    "Roll No": [
+      "2024PECEE167",
+      "2024PECEE173",
+      "2024PECEE229"
+    ],
+    "Department": [
+      "EEE",
+      "EEE",
+      "EEE"
+    ],
+    "Year of Study": [
+      "III",
+      "III",
+      "III"
+    ],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 21,
+    "Team Name": "Alpha Algorithms",
+    "Team Members": ["GOMATHI V", "DIVYADARSHINI S", "GOKULA LAKSHMI R"],
+    "Roll No": ["2024PECCS220", "2024PECCS191", "2024PECCS218"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 22,
+    "Team Name": "Digital Nemesis",
+    "Team Members": ["M.Madhuri", "Priya Darshini J S", "Prabhasri G"],
+    "Roll No": ["2024PECCS353", "2024PECCS405", "2024PECCS396"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 23,
+    "Team Name": "Algoverse",
+    "Team Members": ["Bina Y", "AkshithaPriya S", "CharuPriya G"],
+    "Roll No": ["2024PECCS153", "2024PECCS115", "2024PECCS160"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 24,
+    "Team Name": "AlgoRhythm",
+    "Team Members": ["Prema Sahithi Aremanda", "Afsheen Fathima A", "Avnitha Dev"],
+    "Roll No": ["2024PECCS129", "2024PECCS108", "2024PECCS143"],
+    "Department": ["CSE", "CSE", "CSE"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "ELIMINATED"
+  },
+  {
+    "SNO": 25,
+    "Team Name": "Varshini S",
+    "Team Members": ["Varshini S", "Ramya J", "Valarmathi R"],
+    "Roll No": ["2024PECCB224", "2024PECCB191", "2024PECCB222"],
+    "Department": ["CSBS", "CSBS", "CSBS"],
+    "Year of Study": ["III", "III", "III"],
+    "Lands Conquored": "ELIMINATED"
+  }
+]
