@@ -42,72 +42,78 @@
   <meta property="twitter:description" content="Coders Forum is a growing network of student developers and programmers in Chennai." />
   <meta property="twitter:image" content="https://codersforum.netlify.app/assets/img/team/cf-og.jpg" />
 
-  <Style>
-   
-  /* Global Styling */
-  @media (min-width: 643px) and (max-width: 835px) {
-    /* Container adjustments */
-    .container {
-        padding: 8px;
-    }
-
-    /* Adjust image size for better fit */
+  <style>
     .wall-of-fame-image {
-        max-height: 220px !important;
-        padding-bottom: 30px !important;
+      max-height: 280px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      margin-bottom: 0 !important;
     }
 
-    /* Adjust text alignment and spacing */
-    .wall-of-fame-column {
+    @media (max-width: 768px) {
+      .custom-card {
+        max-height: none !important;
+        height: auto !important;
+        padding: 20px 15px !important;
+      }
+
+      .premium-card {
+        min-height: auto !important;
+        border-width: 10px !important;
+      }
+
+      .wall-of-fame-row {
+        flex-direction: column !important;
+        align-items: center !important;
+      }
+
+      .wall-of-fame-image {
+        max-height: 200px !important;
+        margin: 0 auto 15px auto !important;
+        padding-bottom: 0 !important;
+      }
+
+      .wall-of-fame-column {
+        width: 100% !important;
+        padding: 0 !important;
         text-align: center !important;
-        padding: 8px !important;
-    }
+      }
 
-    /* Reduce heading size */
-    .section-title-wf h2 {
-        font-size: 1.4rem !important;
-        margin-bottom: 12px !important;
-    }
+      .section-title-wf h2 {
+        font-size: 1.3rem !important;
+        margin-bottom: 10px !important;
+      }
 
-    /* Reduce paragraph size */
-    .section-title-wf p {
+      .section-title-wf p {
         font-size: 0.95rem !important;
-    }
+        margin-bottom: 5px !important;
+      }
 
-    /* Adjust spacing for contest details */
-    .d-flex.align-items-center.justify-content-center p {
+      .wall-of-fame-column .d-flex p {
         font-size: 0.95rem !important;
-        margin-top: 8px !important;
+        margin-bottom: 6px !important;
+      }
     }
 
-    /* Ensure carousel images resize properly */
-    .carousel-item img {
-        max-width: 140px !important;
-        max-height: 220px !important;
-        object-fit: contain;
+    @media (max-width: 480px) {
+      .wall-of-fame-image {
+        max-height: 170px !important;
+      }
+
+      .section-title-wf h2 {
+        font-size: 1.15rem !important;
+      }
+
+      .section-title-wf p {
+        font-size: 0.85rem !important;
+      }
+
+      .wall-of-fame-column .d-flex p {
+        font-size: 0.85rem !important;
+      }
     }
-}
-
-
-
-
-  @media (max-width: 480px) { /* Extra Small Mobile Devices */
-    h2 {
-      font-size: 18px;
-    }
-
-    p {
-      font-size: 12px;
-    }
-
-    .wall-of-fame-image {
-      max-height: 180px;
-    }
-  }
-</style>
-
-
-  </Style>
+  </style>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3M7SMRS80F"></script>
   <script>
